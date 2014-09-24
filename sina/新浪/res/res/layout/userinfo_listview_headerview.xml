@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/profile_cover_background" >
+
+        <ImageView
+            android:id="@+id/ivicon"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="14dp"
+            android:src="@drawable/new_regist_poppic_default" />
+
+        <TextView
+            android:id="@+id/tvdseciption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ivicon"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:singleLine="true"
+            android:text="用户信息简介"
+            android:textColor="@color/blackcolor" />
+
+        <TextView
+            android:id="@+id/btlike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tvdseciption"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/meyou_button_background_normal"
+            android:drawableLeft="@drawable/compose_more_add"
+            android:gravity="center_vertical"
+            android:padding="6dp"
+            android:text="加关注"
+            android:textColor="@color/whitecolor"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tvdetailname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/ivicon"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/ivicon"
+            android:text="名字"
+            android:singleLine="true"
+            android:maxLength="14"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/blackcolor" />
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f0f0f0"
+            android:orientation="horizontal" 
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/page_shadow"
+                android:gravity="center"
+                android:text="详细           信息"
+                android:textColor="@color/blackcolor" />
+
+            <TextView
+                android:id="@+id/guanzhu"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/page_shadow"
+                android:gravity="center"
+                android:text="110 \n关注"
+                android:textColor="@color/blackcolor" />
+
+            <TextView
+                android:id="@+id/fensi"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/page_shadow"
+                android:gravity="center"
+                android:text="110 \n粉丝"
+                android:textColor="@color/blackcolor" />
+
+            <TextView
+                android:id="@+id/zan"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/page_shadow"
+                android:gravity="center"
+                android:text="30\n 赞"
+                android:textColor="@color/blackcolor" />
+             <TextView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/page_shadow"
+                android:gravity="center"
+                android:text="话题"
+                android:textColor="@color/blackcolor" />
+              <TextView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/page_shadow"
+                android:gravity="center"
+                android:text="相册"
+                android:textColor="@color/blackcolor" />
+               <TextView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/page_shadow"
+                android:gravity="center"
+                android:text="游戏"
+                android:textColor="@color/blackcolor" />
+                <TextView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/page_shadow"
+                android:gravity="center"
+                android:text="书包"
+                android:textColor="@color/blackcolor" />
+                 <TextView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/page_shadow"
+                android:gravity="center"
+                android:text="音乐"
+                android:textColor="@color/blackcolor" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>

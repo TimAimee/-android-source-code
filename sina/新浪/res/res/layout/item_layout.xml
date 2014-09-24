@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whitecolor" >
+
+        <ImageView
+            android:id="@+id/ivicon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp"
+            android:src="@drawable/new_regist_poppic_default" />
+
+        <ImageView
+            android:id="@+id/statusesimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvtext"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/tvtext"
+            android:autoLink="web"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/username"
+            android:layout_below="@+id/ivicon"
+            android:text="微博内容"
+            android:textColor="@color/blackcolor"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/commentcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/username"
+            android:layout_marginRight="10dp"
+            android:drawableLeft="@drawable/comment_icon"
+            android:text="10"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/redirectcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/username"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/commentcount"
+            android:drawableLeft="@drawable/redirect_icon"
+            android:text="10"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="15dp"
+            android:layout_toLeftOf="@+id/redirectcount"
+            android:layout_toRightOf="@+id/ivicon"
+            android:gravity="left"
+            android:maxLength="16"
+            android:singleLine="true"
+            android:text="名字"
+            android:textColor="@color/blackcolor"
+            android:textSize="18dp" />
+
+        <RelativeLayout
+            android:id="@+id/retw_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvtext"
+            android:layout_below="@+id/statusesimg"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/popup"
+            android:visibility="invisible" >
+
+            <TextView
+                android:id="@+id/red_stu_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blackcolor"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:id="@+id/red_stu_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/red_stu_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:paddingBottom="5dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/retw_layout"
+            android:layout_below="@+id/retw_layout"
+            android:paddingTop="6dp"
+            android:text="1分钟前"
+            android:textColor="#B535E5"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tvsource"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/retw_layout"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tvtime"
+            android:paddingTop="6dp"
+            android:text="来至于新浪微博"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/likecount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tvsource"
+            android:layout_margin="3dp"
+            android:drawableLeft="@drawable/icon_unlike_detail"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="+1" />
+    </RelativeLayout>
+
+</LinearLayout>

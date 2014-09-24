@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/window_bg"
+    android:orientation="horizontal" >
+
+    <!-- 头像 -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/weibo_item_headimage"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_marginLeft="2dip" />
+    </LinearLayout>
+
+    <!--  -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <!-- 名字 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/weibo_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:textColor="#8FB200"/>
+
+            <!-- 转发 -->
+
+            <ImageView
+                android:id="@+id/weibo_item_repostImage"
+                android:layout_width="15dip"
+                android:layout_height="15dip"
+                android:src="@drawable/repose_icon"
+                android:layout_toLeftOf="@+id/weibo_item_repost" />
+
+            <TextView
+                android:id="@+id/weibo_item_repost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_alignBottom="@+id/weibo_item_repostImage"
+                android:layout_toLeftOf="@+id/weibo_item_commentImage"
+                android:textSize="10sp" />
+
+            <!-- 评论 -->
+
+            <ImageView
+            	android:id="@+id/weibo_item_commentImage"
+                android:layout_width="15dip"
+                android:layout_height="15dip"
+                android:src="@drawable/comment_icon" 
+                android:layout_toLeftOf="@+id/weibo_item_comment"/>
+
+            <TextView
+                android:id="@+id/weibo_item_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_alignBottom="@+id/weibo_item_commentImage"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dip"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+
+        <!-- 内容 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dip"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/weibo_item_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/weibo_item_textImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            
+            <LinearLayout
+                android:id="@+id/weibo_item_ll_retweeted_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/retweeted_status">
+            <TextView
+                android:id="@+id/weibo_item_retweeted_status_texts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            </LinearLayout>
+            
+        </LinearLayout>
+
+        <!-- 时间 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/weibo_item_time"
+                android:layout_width="wrap_content"
+                android:layout_height="20dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

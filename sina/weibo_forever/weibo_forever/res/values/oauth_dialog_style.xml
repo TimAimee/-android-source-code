@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="oauth_style" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item><!-- Dialog没有边框 -->
+        <item name="android:windowIsFloating">true</item><!-- 是否浮activity上 -->
+        <item name="android:windowIsTranslucent">false</item><!-- 是否半透明-->
+        <item name="android:windowNoTitle">true</item><!-- 没有title -->
+        <item name="android:windowBackground">@drawable/dialog_bg</item><!-- 没有title -->
+        
+    </style>
+
+</resources>

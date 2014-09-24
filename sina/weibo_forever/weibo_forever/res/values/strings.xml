@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, LoadActivity!</string>
+    <string name="app_name">foreverWeibo</string>
+    
+    <string name="network_error">网络连接失败</string>
+    <string name="weibo_counter">0</string>
+    <string name="weibo_hint">说点什么吧...</string>
+    <string name="weibo_share">分享</string>
+
+</resources>

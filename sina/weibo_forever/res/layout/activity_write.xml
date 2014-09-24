@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top" >
+
+    <LinearLayout
+        android:id="@+id/share_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="left"
+        android:orientation="vertical" >
+        <include layout="@layout/footview" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/share_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/share_image_view"
+        android:gravity="top"
+        android:background="@drawable/bg_edittext_drawble"
+        android:hint="@string/weibo_hint"
+        android:scrollbars="vertical" />
+
+</RelativeLayout>

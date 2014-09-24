@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AnjoyoSinaWeibo</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <color name="blackcolor">#000000</color>
+    <color name="whitecolor">#ffffff</color>
+     <color name="bluecolor">#537092</color>
+    <string name="pull_to_refresh_pull_label">拖拽刷新...</string>
+    <string name="pull_to_refresh_release_label">松手即可刷新...</string>
+    <string name="pull_to_refresh_refreshing_label">刷新...</string>
+    <string name="pull_to_refresh_tap_label">点击刷新...</string>
+
+</resources>

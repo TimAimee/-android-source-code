@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">weibo</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_">Activity</string>
+    <string name="title_activity_main1">Main1Activity</string>
+    <string name="title_activity_send_weibo">SendWeibo</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_friend">FriendActivity</string>
+    <string name="title_activity_test">TestActivity</string>
+
+</resources>

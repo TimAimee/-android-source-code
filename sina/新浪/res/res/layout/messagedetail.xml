@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitecolor"
+    android:orientation="vertical" >
+
+    <com.example.anjoyosinaweibo.customui.PullToRefreshListView
+        android:layout_marginTop="20dp"
+        android:paddingTop="20dp"
+        android:background="@color/whitecolor"
+        android:id="@+id/pullToRefreshListView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </com.example.anjoyosinaweibo.customui.PullToRefreshListView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/titlebar_bg_nor" >
+        <TextView
+            android:id="@+id/tvtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="消息"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/blackcolor" />
+    </RelativeLayout>
+</RelativeLayout>

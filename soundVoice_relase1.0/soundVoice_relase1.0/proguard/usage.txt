@@ -1,0 +1,24 @@
+com.soundvoice.james.R
+com.soundvoice.james.R$anim
+com.soundvoice.james.R$attr
+com.soundvoice.james.R$color
+com.soundvoice.james.R$drawable
+com.soundvoice.james.R$id
+com.soundvoice.james.R$layout
+com.soundvoice.james.R$string
+com.soundvoice.james.R$style
+com.soundvoice.james.soundVoice:
+    private static final int VOICE_RECOGNITION_REQUEST_CODE
+    private static final int SHOW_TIME_OUT
+    private static final int SHOW_SEARCHING_MSG
+    private static final java.lang.String TAG
+    private static final int END_SEARCHING_MSG
+    private static final int KEY_CMD_UNINSTALL
+    private static final int KEY_CMD_OPENING
+    private static final int KEY_CMD_LOCATION
+    private static final int KEY_CMD_LIGHT
+    private static final int KEY_CMD_DIAL
+    private static final int KEY_CMD_LED
+com.soundvoice.util.LEDControl:
+    23:36:public static void processLEDOnClick(android.hardware.Camera)
+com.soundvoice.util.LEDControl$1

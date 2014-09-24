@@ -1,0 +1,77 @@
+com.soundvoice.james.helpContent -> com.soundvoice.james.helpContent:
+    android.widget.RelativeLayout totalLayout -> b
+    android.view.ViewGroup mViewGroup -> c
+    android.widget.TextView mHelpView -> d
+    android.widget.Button mButton -> e
+    boolean isRemindAgain -> a
+    void onCreate(android.os.Bundle) -> onCreate
+    void WriteSharedPreferences() -> a
+    void onClick(android.view.View) -> onClick
+com.soundvoice.james.helpContent$1 -> com.soundvoice.james.g:
+    com.soundvoice.james.helpContent this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.soundvoice.james.helpContent$2 -> com.soundvoice.james.h:
+    com.soundvoice.james.helpContent this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.soundvoice.james.soundVoice -> com.soundvoice.james.soundVoice:
+    android.widget.Button btn_speak -> b
+    android.widget.ListView lv_mylist -> c
+    android.widget.TextView mSearch_TextView -> d
+    java.lang.String[] array -> e
+    int search_out_time -> f
+    android.speech.tts.TextToSpeech mSpeech -> g
+    android.content.Intent intent -> h
+    int KEY_WORDS -> i
+    boolean isFindKeyWord -> j
+    boolean isNeedDown -> k
+    android.os.Handler mHandler -> l
+    android.hardware.Camera camera -> m
+    com.soundvoice.james.soundVoice$searchMatchThread msearchMatchThread -> n
+    java.util.ArrayList matches -> a
+    void onCreate(android.os.Bundle) -> onCreate
+    void onClick(android.view.View) -> onClick
+    boolean dispatchKeyEvent(android.view.KeyEvent) -> dispatchKeyEvent
+    void dialog() -> a
+    void onActivityResult(int,int,android.content.Intent) -> onActivityResult
+    void onDestroy() -> onDestroy
+    android.widget.TextView access$0(com.soundvoice.james.soundVoice) -> a
+    android.os.Handler access$1(com.soundvoice.james.soundVoice) -> b
+    android.widget.ListView access$2(com.soundvoice.james.soundVoice) -> c
+    java.lang.String[] access$3() -> b
+    void access$4(java.lang.String[]) -> a
+    void access$5(com.soundvoice.james.soundVoice,int) -> a
+    int access$6(com.soundvoice.james.soundVoice) -> d
+    void access$7(com.soundvoice.james.soundVoice,boolean) -> a
+    void access$8(com.soundvoice.james.soundVoice,android.content.Intent) -> a
+    android.content.Intent access$9(com.soundvoice.james.soundVoice) -> e
+    boolean access$10(com.soundvoice.james.soundVoice) -> f
+    android.widget.Button access$11(com.soundvoice.james.soundVoice) -> g
+    android.speech.tts.TextToSpeech access$12(com.soundvoice.james.soundVoice) -> h
+com.soundvoice.james.soundVoice$1 -> com.soundvoice.james.b:
+    com.soundvoice.james.soundVoice this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.soundvoice.james.soundVoice$1$1 -> com.soundvoice.james.f:
+    com.soundvoice.james.soundVoice$1 this$1 -> a
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+com.soundvoice.james.soundVoice$2 -> com.soundvoice.james.d:
+    com.soundvoice.james.soundVoice this$0 -> a
+    void onInit(int) -> onInit
+com.soundvoice.james.soundVoice$3 -> com.soundvoice.james.c:
+    com.soundvoice.james.soundVoice this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.soundvoice.james.soundVoice$4 -> com.soundvoice.james.a:
+    com.soundvoice.james.soundVoice this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.soundvoice.james.soundVoice$searchMatchThread -> com.soundvoice.james.e:
+    int keyWord -> a
+    android.content.Intent data -> b
+    com.soundvoice.james.soundVoice this$0 -> c
+    void run() -> run
+com.soundvoice.util.UninstallControl -> com.soundvoice.a.c:
+    java.util.List getAllApps(android.content.Context) -> a
+    boolean dumpApk(android.content.Context,java.lang.String[]) -> a
+com.soundvoice.util.commonCtrlCmd -> com.soundvoice.a.b:
+    boolean containKeyWords(java.lang.String,java.lang.String,java.lang.String,java.lang.String) -> a
+    java.lang.String rmKeyWords(java.lang.String,java.lang.String,java.lang.String,java.lang.String) -> b
+com.soundvoice.util.startAppControl -> com.soundvoice.a.a:
+    android.content.Intent getPackage(android.content.Context,java.lang.String[]) -> a

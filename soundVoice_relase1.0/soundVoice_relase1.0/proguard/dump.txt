@@ -1,0 +1,3848 @@
+_____________________________________________________________________
++ Program class: com/soundvoice/james/soundVoice
+  Superclass:    android/app/Activity
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x21
+    = public class com.soundvoice.james.soundVoice extends android.app.Activity
+
+Interfaces (count = 1):
+  - Class [android/view/View$OnClickListener]
+
+Constant Pool (count = 339):
+  - Integer [268435456]
+  - Integer [2130903041]
+  - Integer [2131230722]
+  - Integer [2131230723]
+  - Integer [2131230724]
+  - String [android.intent.action.VIEW]
+  - String [android.speech.action.RECOGNIZE_SPEECH]
+  - String [android.speech.extra.LANGUAGE_MODEL]
+  - String [android.speech.extra.PROMPT]
+  - String [free_form]
+  - String [fuck all ady！！！擦擦擦]
+  - String [function key is pressed!]
+  - String [http://market.android.com/details?id=com.google.android.voicesearch]
+  - String [james]
+  - String [james_voice_control]
+  - String [key code=]
+  - String [off]
+  - String [open apk ]
+  - String [shut!!get voice=====]
+  - String [shut!!get voice~~~]
+  - String [sound control]
+  - String [取消]
+  - String [结束]
+  - String [请先下载语音搜索插件]
+  - String [退出程序]
+  - Class [android/app/Activity]
+  - Class [android/app/AlertDialog]
+  - Class [android/app/AlertDialog$Builder]
+  - Class [android/content/DialogInterface]
+  - Class [android/content/DialogInterface$OnClickListener]
+  - Class [android/content/Intent]
+  - Class [android/content/pm/PackageManager]
+  - Class [android/hardware/Camera]
+  - Class [android/hardware/Camera$Parameters]
+  - Class [android/net/Uri]
+  - Class [android/speech/tts/TextToSpeech]
+  - Class [android/speech/tts/TextToSpeech$OnInitListener]
+  - Class [android/util/Log]
+  - Class [android/view/KeyEvent]
+  - Class [android/view/View]
+  - Class [android/view/View$OnClickListener]
+  - Class [android/widget/Button]
+  - Class [android/widget/ListView]
+  - Class [android/widget/TextView]
+  - Class [com/soundvoice/james/a]
+  - Class [com/soundvoice/james/b]
+  - Class [com/soundvoice/james/c]
+  - Class [com/soundvoice/james/d]
+  - Class [com/soundvoice/james/e]
+  - Class [com/soundvoice/james/soundVoice]
+  - Class [java/lang/StringBuilder]
+  - Class [java/util/List]
+  - Fieldref [com/soundvoice/james/soundVoice.b Landroid/widget/Button;]
+  - Fieldref [com/soundvoice/james/soundVoice.c Landroid/widget/ListView;]
+  - Fieldref [com/soundvoice/james/soundVoice.d Landroid/widget/TextView;]
+  - Fieldref [com/soundvoice/james/soundVoice.e [Ljava/lang/String;]
+  - Fieldref [com/soundvoice/james/soundVoice.f I]
+  - Fieldref [com/soundvoice/james/soundVoice.g Landroid/speech/tts/TextToSpeech;]
+  - Fieldref [com/soundvoice/james/soundVoice.h Landroid/content/Intent;]
+  - Fieldref [com/soundvoice/james/soundVoice.i I]
+  - Fieldref [com/soundvoice/james/soundVoice.j Z]
+  - Fieldref [com/soundvoice/james/soundVoice.k Z]
+  - Fieldref [com/soundvoice/james/soundVoice.l Landroid/os/Handler;]
+  - Fieldref [com/soundvoice/james/soundVoice.m Landroid/hardware/Camera;]
+  - Fieldref [com/soundvoice/james/soundVoice.n Lcom/soundvoice/james/e;]
+  - Methodref [android/app/Activity.<init> ()V]
+  - Methodref [android/app/Activity.dispatchKeyEvent (Landroid/view/KeyEvent;)Z]
+  - Methodref [android/app/Activity.onActivityResult (IILandroid/content/Intent;)V]
+  - Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
+  - Methodref [android/app/Activity.onDestroy ()V]
+  - Methodref [android/app/AlertDialog.show ()V]
+  - Methodref [android/app/AlertDialog$Builder.<init> (Landroid/content/Context;)V]
+  - Methodref [android/app/AlertDialog$Builder.create ()Landroid/app/AlertDialog;]
+  - Methodref [android/app/AlertDialog$Builder.setMessage (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+  - Methodref [android/app/AlertDialog$Builder.setNegativeButton (Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+  - Methodref [android/app/AlertDialog$Builder.setPositiveButton (Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+  - Methodref [android/app/AlertDialog$Builder.setTitle (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+  - Methodref [android/content/Intent.<init> (Ljava/lang/String;)V]
+  - Methodref [android/content/Intent.<init> (Ljava/lang/String;Landroid/net/Uri;)V]
+  - Methodref [android/content/Intent.addFlags (I)Landroid/content/Intent;]
+  - Methodref [android/content/Intent.putExtra (Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;]
+  - Methodref [android/content/pm/PackageManager.queryIntentActivities (Landroid/content/Intent;I)Ljava/util/List;]
+  - Methodref [android/hardware/Camera.getParameters ()Landroid/hardware/Camera$Parameters;]
+  - Methodref [android/hardware/Camera.release ()V]
+  - Methodref [android/hardware/Camera.setParameters (Landroid/hardware/Camera$Parameters;)V]
+  - Methodref [android/hardware/Camera.stopPreview ()V]
+  - Methodref [android/hardware/Camera$Parameters.setFlashMode (Ljava/lang/String;)V]
+  - Methodref [android/net/Uri.parse (Ljava/lang/String;)Landroid/net/Uri;]
+  - Methodref [android/speech/tts/TextToSpeech.<init> (Landroid/content/Context;Landroid/speech/tts/TextToSpeech$OnInitListener;)V]
+  - Methodref [android/speech/tts/TextToSpeech.shutdown ()V]
+  - Methodref [android/speech/tts/TextToSpeech.stop ()I]
+  - Methodref [android/util/Log.d (Ljava/lang/String;Ljava/lang/String;)I]
+  - Methodref [android/util/Log.i (Ljava/lang/String;Ljava/lang/String;)I]
+  - Methodref [android/view/KeyEvent.getAction ()I]
+  - Methodref [android/view/KeyEvent.getKeyCode ()I]
+  - Methodref [android/view/View.getId ()I]
+  - Methodref [android/widget/Button.setClickable (Z)V]
+  - Methodref [android/widget/Button.setOnClickListener (Landroid/view/View$OnClickListener;)V]
+  - Methodref [android/widget/Button.setText (Ljava/lang/CharSequence;)V]
+  - Methodref [android/widget/ListView.setVisibility (I)V]
+  - Methodref [com/soundvoice/james/a.<init> (Lcom/soundvoice/james/soundVoice;)V]
+  - Methodref [com/soundvoice/james/b.<init> (Lcom/soundvoice/james/soundVoice;)V]
+  - Methodref [com/soundvoice/james/c.<init> (Lcom/soundvoice/james/soundVoice;)V]
+  - Methodref [com/soundvoice/james/d.<init> (Lcom/soundvoice/james/soundVoice;)V]
+  - Methodref [com/soundvoice/james/e.<init> (Lcom/soundvoice/james/soundVoice;ILandroid/content/Intent;)V]
+  - Methodref [com/soundvoice/james/e.start ()V]
+  - Methodref [com/soundvoice/james/soundVoice.a ()V]
+  - Methodref [com/soundvoice/james/soundVoice.findViewById (I)Landroid/view/View;]
+  - Methodref [com/soundvoice/james/soundVoice.getPackageManager ()Landroid/content/pm/PackageManager;]
+  - Methodref [com/soundvoice/james/soundVoice.setContentView (I)V]
+  - Methodref [com/soundvoice/james/soundVoice.startActivity (Landroid/content/Intent;)V]
+  - Methodref [com/soundvoice/james/soundVoice.startActivityForResult (Landroid/content/Intent;I)V]
+  - Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
+  - Methodref [java/lang/StringBuilder.append (I)Ljava/lang/StringBuilder;]
+  - Methodref [java/lang/StringBuilder.append (Z)Ljava/lang/StringBuilder;]
+  - Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+  - InterfaceMethodref [java/util/List.size ()I]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (Landroid/content/Context;)V]
+  + NameAndType [<init> (Landroid/content/Context;Landroid/speech/tts/TextToSpeech$OnInitListener;)V]
+  + NameAndType [<init> (Lcom/soundvoice/james/soundVoice;)V]
+  + NameAndType [<init> (Lcom/soundvoice/james/soundVoice;ILandroid/content/Intent;)V]
+  + NameAndType [<init> (Ljava/lang/String;)V]
+  + NameAndType [<init> (Ljava/lang/String;Landroid/net/Uri;)V]
+  + NameAndType [a ()V]
+  + NameAndType [addFlags (I)Landroid/content/Intent;]
+  + NameAndType [append (I)Ljava/lang/StringBuilder;]
+  + NameAndType [append (Z)Ljava/lang/StringBuilder;]
+  + NameAndType [b Landroid/widget/Button;]
+  + NameAndType [c Landroid/widget/ListView;]
+  + NameAndType [create ()Landroid/app/AlertDialog;]
+  + NameAndType [d (Ljava/lang/String;Ljava/lang/String;)I]
+  + NameAndType [d Landroid/widget/TextView;]
+  + NameAndType [dispatchKeyEvent (Landroid/view/KeyEvent;)Z]
+  + NameAndType [e [Ljava/lang/String;]
+  + NameAndType [f I]
+  + NameAndType [findViewById (I)Landroid/view/View;]
+  + NameAndType [g Landroid/speech/tts/TextToSpeech;]
+  + NameAndType [getAction ()I]
+  + NameAndType [getId ()I]
+  + NameAndType [getKeyCode ()I]
+  + NameAndType [getPackageManager ()Landroid/content/pm/PackageManager;]
+  + NameAndType [getParameters ()Landroid/hardware/Camera$Parameters;]
+  + NameAndType [h Landroid/content/Intent;]
+  + NameAndType [i (Ljava/lang/String;Ljava/lang/String;)I]
+  + NameAndType [i I]
+  + NameAndType [j Z]
+  + NameAndType [k Z]
+  + NameAndType [l Landroid/os/Handler;]
+  + NameAndType [m Landroid/hardware/Camera;]
+  + NameAndType [n Lcom/soundvoice/james/e;]
+  + NameAndType [onActivityResult (IILandroid/content/Intent;)V]
+  + NameAndType [onCreate (Landroid/os/Bundle;)V]
+  + NameAndType [onDestroy ()V]
+  + NameAndType [parse (Ljava/lang/String;)Landroid/net/Uri;]
+  + NameAndType [putExtra (Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;]
+  + NameAndType [queryIntentActivities (Landroid/content/Intent;I)Ljava/util/List;]
+  + NameAndType [release ()V]
+  + NameAndType [setClickable (Z)V]
+  + NameAndType [setContentView (I)V]
+  + NameAndType [setFlashMode (Ljava/lang/String;)V]
+  + NameAndType [setMessage (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+  + NameAndType [setNegativeButton (Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+  + NameAndType [setOnClickListener (Landroid/view/View$OnClickListener;)V]
+  + NameAndType [setParameters (Landroid/hardware/Camera$Parameters;)V]
+  + NameAndType [setPositiveButton (Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+  + NameAndType [setText (Ljava/lang/CharSequence;)V]
+  + NameAndType [setTitle (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+  + NameAndType [setVisibility (I)V]
+  + NameAndType [show ()V]
+  + NameAndType [shutdown ()V]
+  + NameAndType [size ()I]
+  + NameAndType [start ()V]
+  + NameAndType [startActivity (Landroid/content/Intent;)V]
+  + NameAndType [startActivityForResult (Landroid/content/Intent;I)V]
+  + NameAndType [stop ()I]
+  + NameAndType [stopPreview ()V]
+  + NameAndType [toString ()Ljava/lang/String;]
+  + Utf8 [()I]
+  + Utf8 [()Landroid/app/AlertDialog;]
+  + Utf8 [()Landroid/content/pm/PackageManager;]
+  + Utf8 [()Landroid/hardware/Camera$Parameters;]
+  + Utf8 [()Ljava/lang/String;]
+  + Utf8 [()V]
+  + Utf8 [()[Ljava/lang/String;]
+  + Utf8 [(I)Landroid/content/Intent;]
+  + Utf8 [(I)Landroid/view/View;]
+  + Utf8 [(I)Ljava/lang/StringBuilder;]
+  + Utf8 [(I)V]
+  + Utf8 [(IILandroid/content/Intent;)V]
+  + Utf8 [(Landroid/content/Context;)V]
+  + Utf8 [(Landroid/content/Context;Landroid/speech/tts/TextToSpeech$OnInitListener;)V]
+  + Utf8 [(Landroid/content/Intent;)V]
+  + Utf8 [(Landroid/content/Intent;I)Ljava/util/List;]
+  + Utf8 [(Landroid/content/Intent;I)V]
+  + Utf8 [(Landroid/hardware/Camera$Parameters;)V]
+  + Utf8 [(Landroid/os/Bundle;)V]
+  + Utf8 [(Landroid/view/KeyEvent;)Z]
+  + Utf8 [(Landroid/view/View$OnClickListener;)V]
+  + Utf8 [(Landroid/view/View;)V]
+  + Utf8 [(Lcom/soundvoice/james/soundVoice;)I]
+  + Utf8 [(Lcom/soundvoice/james/soundVoice;)Landroid/content/Intent;]
+  + Utf8 [(Lcom/soundvoice/james/soundVoice;)Landroid/os/Handler;]
+  + Utf8 [(Lcom/soundvoice/james/soundVoice;)Landroid/speech/tts/TextToSpeech;]
+  + Utf8 [(Lcom/soundvoice/james/soundVoice;)Landroid/widget/Button;]
+  + Utf8 [(Lcom/soundvoice/james/soundVoice;)Landroid/widget/ListView;]
+  + Utf8 [(Lcom/soundvoice/james/soundVoice;)Landroid/widget/TextView;]
+  + Utf8 [(Lcom/soundvoice/james/soundVoice;)V]
+  + Utf8 [(Lcom/soundvoice/james/soundVoice;)Z]
+  + Utf8 [(Lcom/soundvoice/james/soundVoice;I)V]
+  + Utf8 [(Lcom/soundvoice/james/soundVoice;ILandroid/content/Intent;)V]
+  + Utf8 [(Lcom/soundvoice/james/soundVoice;Landroid/content/Intent;)V]
+  + Utf8 [(Lcom/soundvoice/james/soundVoice;Z)V]
+  + Utf8 [(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+  + Utf8 [(Ljava/lang/CharSequence;)V]
+  + Utf8 [(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+  + Utf8 [(Ljava/lang/String;)Landroid/net/Uri;]
+  + Utf8 [(Ljava/lang/String;)V]
+  + Utf8 [(Ljava/lang/String;Landroid/net/Uri;)V]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/String;)I]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;]
+  + Utf8 [(Z)Ljava/lang/StringBuilder;]
+  + Utf8 [(Z)V]
+  + Utf8 [([Ljava/lang/String;)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [I]
+  + Utf8 [Landroid/content/Intent;]
+  + Utf8 [Landroid/hardware/Camera;]
+  + Utf8 [Landroid/os/Handler;]
+  + Utf8 [Landroid/speech/tts/TextToSpeech;]
+  + Utf8 [Landroid/widget/Button;]
+  + Utf8 [Landroid/widget/ListView;]
+  + Utf8 [Landroid/widget/TextView;]
+  + Utf8 [Lcom/soundvoice/james/e;]
+  + Utf8 [Ljava/util/ArrayList;]
+  + Utf8 [StackMapTable]
+  + Utf8 [Z]
+  + Utf8 [[Ljava/lang/String;]
+  + Utf8 [a]
+  + Utf8 [addFlags]
+  + Utf8 [android.intent.action.VIEW]
+  + Utf8 [android.speech.action.RECOGNIZE_SPEECH]
+  + Utf8 [android.speech.extra.LANGUAGE_MODEL]
+  + Utf8 [android.speech.extra.PROMPT]
+  + Utf8 [android/app/Activity]
+  + Utf8 [android/app/AlertDialog]
+  + Utf8 [android/app/AlertDialog$Builder]
+  + Utf8 [android/content/DialogInterface]
+  + Utf8 [android/content/DialogInterface$OnClickListener]
+  + Utf8 [android/content/Intent]
+  + Utf8 [android/content/pm/PackageManager]
+  + Utf8 [android/hardware/Camera]
+  + Utf8 [android/hardware/Camera$Parameters]
+  + Utf8 [android/net/Uri]
+  + Utf8 [android/speech/tts/TextToSpeech]
+  + Utf8 [android/speech/tts/TextToSpeech$OnInitListener]
+  + Utf8 [android/util/Log]
+  + Utf8 [android/view/KeyEvent]
+  + Utf8 [android/view/View]
+  + Utf8 [android/view/View$OnClickListener]
+  + Utf8 [android/widget/Button]
+  + Utf8 [android/widget/ListView]
+  + Utf8 [android/widget/TextView]
+  + Utf8 [append]
+  + Utf8 [b]
+  + Utf8 [c]
+  + Utf8 [com/soundvoice/james/a]
+  + Utf8 [com/soundvoice/james/b]
+  + Utf8 [com/soundvoice/james/c]
+  + Utf8 [com/soundvoice/james/d]
+  + Utf8 [com/soundvoice/james/e]
+  + Utf8 [com/soundvoice/james/soundVoice]
+  + Utf8 [create]
+  + Utf8 [d]
+  + Utf8 [dispatchKeyEvent]
+  + Utf8 [e]
+  + Utf8 [f]
+  + Utf8 [findViewById]
+  + Utf8 [free_form]
+  + Utf8 [fuck all ady！！！擦擦擦]
+  + Utf8 [function key is pressed!]
+  + Utf8 [g]
+  + Utf8 [getAction]
+  + Utf8 [getId]
+  + Utf8 [getKeyCode]
+  + Utf8 [getPackageManager]
+  + Utf8 [getParameters]
+  + Utf8 [h]
+  + Utf8 [http://market.android.com/details?id=com.google.android.voicesearch]
+  + Utf8 [i]
+  + Utf8 [j]
+  + Utf8 [james]
+  + Utf8 [james_voice_control]
+  + Utf8 [java/lang/StringBuilder]
+  + Utf8 [java/util/List]
+  + Utf8 [k]
+  + Utf8 [key code=]
+  + Utf8 [l]
+  + Utf8 [m]
+  + Utf8 [n]
+  + Utf8 [off]
+  + Utf8 [onActivityResult]
+  + Utf8 [onClick]
+  + Utf8 [onCreate]
+  + Utf8 [onDestroy]
+  + Utf8 [open apk ]
+  + Utf8 [parse]
+  + Utf8 [putExtra]
+  + Utf8 [queryIntentActivities]
+  + Utf8 [release]
+  + Utf8 [setClickable]
+  + Utf8 [setContentView]
+  + Utf8 [setFlashMode]
+  + Utf8 [setMessage]
+  + Utf8 [setNegativeButton]
+  + Utf8 [setOnClickListener]
+  + Utf8 [setParameters]
+  + Utf8 [setPositiveButton]
+  + Utf8 [setText]
+  + Utf8 [setTitle]
+  + Utf8 [setVisibility]
+  + Utf8 [show]
+  + Utf8 [shut!!get voice=====]
+  + Utf8 [shut!!get voice~~~]
+  + Utf8 [shutdown]
+  + Utf8 [size]
+  + Utf8 [sound control]
+  + Utf8 [start]
+  + Utf8 [startActivity]
+  + Utf8 [startActivityForResult]
+  + Utf8 [stop]
+  + Utf8 [stopPreview]
+  + Utf8 [toString]
+  + Utf8 [取消]
+  + Utf8 [结束]
+  + Utf8 [请先下载语音搜索插件]
+  + Utf8 [退出程序]
+
+Fields (count = 14):
+  + Field:        b Landroid/widget/Button;
+    Access flags: 0x2
+      = private android.widget.Button b
+  + Field:        c Landroid/widget/ListView;
+    Access flags: 0x2
+      = private android.widget.ListView c
+  + Field:        d Landroid/widget/TextView;
+    Access flags: 0x2
+      = private android.widget.TextView d
+  + Field:        e [Ljava/lang/String;
+    Access flags: 0xa
+      = private static java.lang.String[] e
+  + Field:        f I
+    Access flags: 0x2
+      = private int f
+  + Field:        g Landroid/speech/tts/TextToSpeech;
+    Access flags: 0x2
+      = private android.speech.tts.TextToSpeech g
+  + Field:        h Landroid/content/Intent;
+    Access flags: 0x2
+      = private android.content.Intent h
+  + Field:        i I
+    Access flags: 0x2
+      = private int i
+  + Field:        j Z
+    Access flags: 0x2
+      = private boolean j
+  + Field:        k Z
+    Access flags: 0x2
+      = private boolean k
+  + Field:        l Landroid/os/Handler;
+    Access flags: 0x2
+      = private android.os.Handler l
+  + Field:        m Landroid/hardware/Camera;
+    Access flags: 0x2
+      = private android.hardware.Camera m
+  + Field:        n Lcom/soundvoice/james/e;
+    Access flags: 0x2
+      = private com.soundvoice.james.e n
+  + Field:        a Ljava/util/ArrayList;
+    Access flags: 0x1
+      = public java.util.ArrayList a
+
+Methods (count = 20):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public soundVoice()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 37, locals = 1, stack = 4):
+      [0] aload_0 v0
+      [1] invokespecial #66
+        - Methodref [android/app/Activity.<init> ()V]
+      [4] aload_0 v0
+      [5] iconst_4
+      [6] putfield #57
+        - Fieldref [com/soundvoice/james/soundVoice.f I]
+      [9] aload_0 v0
+      [10] iconst_m1
+      [11] putfield #60
+        - Fieldref [com/soundvoice/james/soundVoice.i I]
+      [14] aload_0 v0
+      [15] iconst_0
+      [16] putfield #61
+        - Fieldref [com/soundvoice/james/soundVoice.j Z]
+      [19] aload_0 v0
+      [20] iconst_0
+      [21] putfield #62
+        - Fieldref [com/soundvoice/james/soundVoice.k Z]
+      [24] aload_0 v0
+      [25] new #46
+        - Class [com/soundvoice/james/b]
+      [28] dup
+      [29] aload_0 v0
+      [30] invokespecial #102
+        - Methodref [com/soundvoice/james/b.<init> (Lcom/soundvoice/james/soundVoice;)V]
+      [33] putfield #63
+        - Fieldref [com/soundvoice/james/soundVoice.l Landroid/os/Handler;]
+      [36] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onCreate(Landroid/os/Bundle;)V
+    Access flags: 0x1
+      = public void onCreate(android.os.Bundle)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 136, locals = 2, stack = 7):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] invokespecial #69
+        - Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
+      [5] aload_0 v0
+      [6] ldc #2
+        - Integer [2130903041]
+      [8] invokevirtual #110
+        - Methodref [com/soundvoice/james/soundVoice.setContentView (I)V]
+      [11] aload_0 v0
+      [12] aload_0 v0
+      [13] ldc #5
+        - Integer [2131230724]
+      [15] invokevirtual #108
+        - Methodref [com/soundvoice/james/soundVoice.findViewById (I)Landroid/view/View;]
+      [18] checkcast #42
+        - Class [android/widget/Button]
+      [21] putfield #53
+        - Fieldref [com/soundvoice/james/soundVoice.b Landroid/widget/Button;]
+      [24] aload_0 v0
+      [25] aload_0 v0
+      [26] ldc #3
+        - Integer [2131230722]
+      [28] invokevirtual #108
+        - Methodref [com/soundvoice/james/soundVoice.findViewById (I)Landroid/view/View;]
+      [31] checkcast #44
+        - Class [android/widget/TextView]
+      [34] putfield #55
+        - Fieldref [com/soundvoice/james/soundVoice.d Landroid/widget/TextView;]
+      [37] aload_0 v0
+      [38] aload_0 v0
+      [39] ldc #4
+        - Integer [2131230723]
+      [41] invokevirtual #108
+        - Methodref [com/soundvoice/james/soundVoice.findViewById (I)Landroid/view/View;]
+      [44] checkcast #43
+        - Class [android/widget/ListView]
+      [47] putfield #54
+        - Fieldref [com/soundvoice/james/soundVoice.c Landroid/widget/ListView;]
+      [50] aload_0 v0
+      [51] invokevirtual #109
+        - Methodref [com/soundvoice/james/soundVoice.getPackageManager ()Landroid/content/pm/PackageManager;]
+      [54] new #31
+        - Class [android/content/Intent]
+      [57] dup
+      [58] ldc #7
+        - String [android.speech.action.RECOGNIZE_SPEECH]
+      [60] invokespecial #78
+        - Methodref [android/content/Intent.<init> (Ljava/lang/String;)V]
+      [63] iconst_0
+      [64] invokevirtual #82
+        - Methodref [android/content/pm/PackageManager.queryIntentActivities (Landroid/content/Intent;I)Ljava/util/List;]
+      [67] astore_1 v1
+      [68] aload_0 v0
+      [69] new #36
+        - Class [android/speech/tts/TextToSpeech]
+      [72] dup
+      [73] aload_0 v0
+      [74] new #48
+        - Class [com/soundvoice/james/d]
+      [77] dup
+      [78] aload_0 v0
+      [79] invokespecial #104
+        - Methodref [com/soundvoice/james/d.<init> (Lcom/soundvoice/james/soundVoice;)V]
+      [82] invokespecial #89
+        - Methodref [android/speech/tts/TextToSpeech.<init> (Landroid/content/Context;Landroid/speech/tts/TextToSpeech$OnInitListener;)V]
+      [85] putfield #58
+        - Fieldref [com/soundvoice/james/soundVoice.g Landroid/speech/tts/TextToSpeech;]
+      [88] aload_1 v1
+      [89] invokeinterface #117
+        - InterfaceMethodref [java/util/List.size ()I]
+      [94] ifeq +11 (target=105)
+      [97] aload_0 v0
+      [98] iconst_0
+      [99] putfield #62
+        - Fieldref [com/soundvoice/james/soundVoice.k Z]
+      [102] goto +25 (target=127)
+      [105] aload_0 v0
+      [106] iconst_1
+      [107] putfield #62
+        - Fieldref [com/soundvoice/james/soundVoice.k Z]
+      [110] aload_0 v0
+      [111] getfield #53
+        - Fieldref [com/soundvoice/james/soundVoice.b Landroid/widget/Button;]
+      [114] ldc #24
+        - String [请先下载语音搜索插件]
+      [116] invokevirtual #99
+        - Methodref [android/widget/Button.setText (Ljava/lang/CharSequence;)V]
+      [119] ldc #14
+        - String [james]
+      [121] ldc #11
+        - String [fuck all ady！！！擦擦擦]
+      [123] invokestatic #93
+        - Methodref [android/util/Log.i (Ljava/lang/String;Ljava/lang/String;)I]
+      [126] pop
+      [127] aload_0 v0
+      [128] getfield #53
+        - Fieldref [com/soundvoice/james/soundVoice.b Landroid/widget/Button;]
+      [131] aload_0 v0
+      [132] invokevirtual #98
+        - Methodref [android/widget/Button.setOnClickListener (Landroid/view/View$OnClickListener;)V]
+      [135] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 2):
+        - [105] Var: ...[a:android/content/pm/PackageManager][a:java/util/List], Stack: (empty)
+        - [127] Var: ..., Stack: (empty)
+  + Method:       onClick(Landroid/view/View;)V
+    Access flags: 0x1
+      = public void onClick(android.view.View)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 131, locals = 3, stack = 4):
+      [0] aload_1 v1
+      [1] invokevirtual #96
+        - Methodref [android/view/View.getId ()I]
+      [4] ldc #5
+        - Integer [2131230724]
+      [6] ificmpne +124 (target=130)
+      [9] ldc #15
+        - String [james_voice_control]
+      [11] new #51
+        - Class [java/lang/StringBuilder]
+      [14] dup
+      [15] ldc #19
+        - String [shut!!get voice=====]
+      [17] invokespecial #113
+        - Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
+      [20] aload_0 v0
+      [21] getfield #62
+        - Fieldref [com/soundvoice/james/soundVoice.k Z]
+      [24] invokevirtual #115
+        - Methodref [java/lang/StringBuilder.append (Z)Ljava/lang/StringBuilder;]
+      [27] invokevirtual #116
+        - Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [30] invokestatic #93
+        - Methodref [android/util/Log.i (Ljava/lang/String;Ljava/lang/String;)I]
+      [33] pop
+      [34] aload_0 v0
+      [35] getfield #62
+        - Fieldref [com/soundvoice/james/soundVoice.k Z]
+      [38] ifeq +39 (target=77)
+      [41] ldc #15
+        - String [james_voice_control]
+      [43] ldc #20
+        - String [shut!!get voice~~~]
+      [45] invokestatic #93
+        - Methodref [android/util/Log.i (Ljava/lang/String;Ljava/lang/String;)I]
+      [48] pop
+      [49] new #31
+        - Class [android/content/Intent]
+      [52] dup
+      [53] ldc #6
+        - String [android.intent.action.VIEW]
+      [55] ldc #13
+        - String [http://market.android.com/details?id=com.google.android.voicesearch]
+      [57] invokestatic #88
+        - Methodref [android/net/Uri.parse (Ljava/lang/String;)Landroid/net/Uri;]
+      [60] invokespecial #79
+        - Methodref [android/content/Intent.<init> (Ljava/lang/String;Landroid/net/Uri;)V]
+      [63] dup
+      [64] astore_1 v1
+      [65] ldc #1
+        - Integer [268435456]
+      [67] invokevirtual #80
+        - Methodref [android/content/Intent.addFlags (I)Landroid/content/Intent;]
+      [70] pop
+      [71] aload_0 v0
+      [72] aload_1 v1
+      [73] invokevirtual #111
+        - Methodref [com/soundvoice/james/soundVoice.startActivity (Landroid/content/Intent;)V]
+      [76] return
+      [77] aload_0 v0
+      [78] getfield #53
+        - Fieldref [com/soundvoice/james/soundVoice.b Landroid/widget/Button;]
+      [81] iconst_0
+      [82] invokevirtual #97
+        - Methodref [android/widget/Button.setClickable (Z)V]
+      [85] aload_0 v0
+      [86] dup
+      [87] astore_1 v1
+      [88] getfield #54
+        - Fieldref [com/soundvoice/james/soundVoice.c Landroid/widget/ListView;]
+      [91] iconst_4
+      [92] invokevirtual #100
+        - Methodref [android/widget/ListView.setVisibility (I)V]
+      [95] new #31
+        - Class [android/content/Intent]
+      [98] dup
+      [99] ldc #7
+        - String [android.speech.action.RECOGNIZE_SPEECH]
+      [101] invokespecial #78
+        - Methodref [android/content/Intent.<init> (Ljava/lang/String;)V]
+      [104] dup
+      [105] astore_2 v2
+      [106] ldc #8
+        - String [android.speech.extra.LANGUAGE_MODEL]
+      [108] ldc #10
+        - String [free_form]
+      [110] invokevirtual #81
+        - Methodref [android/content/Intent.putExtra (Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;]
+      [113] pop
+      [114] aload_2 v2
+      [115] ldc #9
+        - String [android.speech.extra.PROMPT]
+      [117] ldc #18
+        - String [open apk ]
+      [119] invokevirtual #81
+        - Methodref [android/content/Intent.putExtra (Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;]
+      [122] pop
+      [123] aload_1 v1
+      [124] aload_2 v2
+      [125] bipush 7
+      [127] invokevirtual #112
+        - Methodref [com/soundvoice/james/soundVoice.startActivityForResult (Landroid/content/Intent;I)V]
+      [130] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 2):
+        - [77] Var: ..., Stack: (empty)
+        - [130] Var: ..., Stack: (empty)
+  + Method:       dispatchKeyEvent(Landroid/view/KeyEvent;)Z
+    Access flags: 0x1
+      = public boolean dispatchKeyEvent(android.view.KeyEvent)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 75, locals = 4, stack = 4):
+      [0] aload_1 v1
+      [1] invokevirtual #95
+        - Methodref [android/view/KeyEvent.getKeyCode ()I]
+      [4] istore_2 v2
+      [5] aload_1 v1
+      [6] invokevirtual #94
+        - Methodref [android/view/KeyEvent.getAction ()I]
+      [9] istore_3 v3
+      [10] ldc #15
+        - String [james_voice_control]
+      [12] new #51
+        - Class [java/lang/StringBuilder]
+      [15] dup
+      [16] ldc #16
+        - String [key code=]
+      [18] invokespecial #113
+        - Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
+      [21] iload_2 v2
+      [22] invokevirtual #114
+        - Methodref [java/lang/StringBuilder.append (I)Ljava/lang/StringBuilder;]
+      [25] invokevirtual #116
+        - Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [28] invokestatic #92
+        - Methodref [android/util/Log.d (Ljava/lang/String;Ljava/lang/String;)I]
+      [31] pop
+      [32] iconst_4
+      [33] iload_2 v2
+      [34] ificmpne +33 (target=67)
+      [37] iload_3 v3
+      [38] ifne +29 (target=67)
+      [41] ldc #15
+        - String [james_voice_control]
+      [43] new #51
+        - Class [java/lang/StringBuilder]
+      [46] dup
+      [47] ldc #12
+        - String [function key is pressed!]
+      [49] invokespecial #113
+        - Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
+      [52] iload_2 v2
+      [53] invokevirtual #114
+        - Methodref [java/lang/StringBuilder.append (I)Ljava/lang/StringBuilder;]
+      [56] invokevirtual #116
+        - Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [59] invokestatic #92
+        - Methodref [android/util/Log.d (Ljava/lang/String;Ljava/lang/String;)I]
+      [62] pop
+      [63] aload_0 v0
+      [64] invokevirtual #107
+        - Methodref [com/soundvoice/james/soundVoice.a ()V]
+      [67] aload_0 v0
+      [68] aload_1 v1
+      [69] invokespecial #67
+        - Methodref [android/app/Activity.dispatchKeyEvent (Landroid/view/KeyEvent;)Z]
+      [72] pop
+      [73] iconst_0
+      [74] ireturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 1):
+        - [67] Var: ...[i][i], Stack: (empty)
+  + Method:       a()V
+    Access flags: 0x14
+      = protected final void a()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 61, locals = 2, stack = 5):
+      [0] new #28
+        - Class [android/app/AlertDialog$Builder]
+      [3] dup
+      [4] aload_0 v0
+      [5] invokespecial #72
+        - Methodref [android/app/AlertDialog$Builder.<init> (Landroid/content/Context;)V]
+      [8] dup
+      [9] astore_1 v1
+      [10] ldc #25
+        - String [退出程序]
+      [12] invokevirtual #74
+        - Methodref [android/app/AlertDialog$Builder.setMessage (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+      [15] pop
+      [16] aload_1 v1
+      [17] ldc #21
+        - String [sound control]
+      [19] invokevirtual #77
+        - Methodref [android/app/AlertDialog$Builder.setTitle (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+      [22] pop
+      [23] aload_1 v1
+      [24] ldc #23
+        - String [结束]
+      [26] new #47
+        - Class [com/soundvoice/james/c]
+      [29] dup
+      [30] aload_0 v0
+      [31] invokespecial #103
+        - Methodref [com/soundvoice/james/c.<init> (Lcom/soundvoice/james/soundVoice;)V]
+      [34] invokevirtual #76
+        - Methodref [android/app/AlertDialog$Builder.setPositiveButton (Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+      [37] pop
+      [38] aload_1 v1
+      [39] ldc #22
+        - String [取消]
+      [41] new #45
+        - Class [com/soundvoice/james/a]
+      [44] dup
+      [45] aload_0 v0
+      [46] invokespecial #101
+        - Methodref [com/soundvoice/james/a.<init> (Lcom/soundvoice/james/soundVoice;)V]
+      [49] invokevirtual #75
+        - Methodref [android/app/AlertDialog$Builder.setNegativeButton (Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+      [52] pop
+      [53] aload_1 v1
+      [54] invokevirtual #73
+        - Methodref [android/app/AlertDialog$Builder.create ()Landroid/app/AlertDialog;]
+      [57] invokevirtual #71
+        - Methodref [android/app/AlertDialog.show ()V]
+      [60] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onActivityResult(IILandroid/content/Intent;)V
+    Access flags: 0x4
+      = protected void onActivityResult(int,int,android.content.Intent)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 66, locals = 4, stack = 6):
+      [0] iload_1 v1
+      [1] bipush 7
+      [3] ificmpne +47 (target=50)
+      [6] iload_2 v2
+      [7] iconst_m1
+      [8] ificmpne +42 (target=50)
+      [11] aload_0 v0
+      [12] getfield #65
+        - Fieldref [com/soundvoice/james/soundVoice.n Lcom/soundvoice/james/e;]
+      [15] ifnull +8 (target=23)
+      [18] aload_0 v0
+      [19] aconst_null
+      [20] putfield #65
+        - Fieldref [com/soundvoice/james/soundVoice.n Lcom/soundvoice/james/e;]
+      [23] aload_0 v0
+      [24] new #49
+        - Class [com/soundvoice/james/e]
+      [27] dup
+      [28] aload_0 v0
+      [29] aload_0 v0
+      [30] getfield #60
+        - Fieldref [com/soundvoice/james/soundVoice.i I]
+      [33] aload_3 v3
+      [34] invokespecial #105
+        - Methodref [com/soundvoice/james/e.<init> (Lcom/soundvoice/james/soundVoice;ILandroid/content/Intent;)V]
+      [37] putfield #65
+        - Fieldref [com/soundvoice/james/soundVoice.n Lcom/soundvoice/james/e;]
+      [40] aload_0 v0
+      [41] getfield #65
+        - Fieldref [com/soundvoice/james/soundVoice.n Lcom/soundvoice/james/e;]
+      [44] invokevirtual #106
+        - Methodref [com/soundvoice/james/e.start ()V]
+      [47] goto +11 (target=58)
+      [50] aload_0 v0
+      [51] getfield #53
+        - Fieldref [com/soundvoice/james/soundVoice.b Landroid/widget/Button;]
+      [54] iconst_1
+      [55] invokevirtual #97
+        - Methodref [android/widget/Button.setClickable (Z)V]
+      [58] aload_0 v0
+      [59] iload_1 v1
+      [60] iload_2 v2
+      [61] aload_3 v3
+      [62] invokespecial #68
+        - Methodref [android/app/Activity.onActivityResult (IILandroid/content/Intent;)V]
+      [65] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 3):
+        - [23] Var: ..., Stack: (empty)
+        - [50] Var: ..., Stack: (empty)
+        - [58] Var: ..., Stack: (empty)
+  + Method:       onDestroy()V
+    Access flags: 0x4
+      = protected void onDestroy()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 75, locals = 3, stack = 2):
+      [0] aload_0 v0
+      [1] invokespecial #70
+        - Methodref [android/app/Activity.onDestroy ()V]
+      [4] aload_0 v0
+      [5] getfield #58
+        - Fieldref [com/soundvoice/james/soundVoice.g Landroid/speech/tts/TextToSpeech;]
+      [8] ifnull +18 (target=26)
+      [11] aload_0 v0
+      [12] getfield #58
+        - Fieldref [com/soundvoice/james/soundVoice.g Landroid/speech/tts/TextToSpeech;]
+      [15] invokevirtual #91
+        - Methodref [android/speech/tts/TextToSpeech.stop ()I]
+      [18] pop
+      [19] aload_0 v0
+      [20] getfield #58
+        - Fieldref [com/soundvoice/james/soundVoice.g Landroid/speech/tts/TextToSpeech;]
+      [23] invokevirtual #90
+        - Methodref [android/speech/tts/TextToSpeech.shutdown ()V]
+      [26] aload_0 v0
+      [27] getfield #65
+        - Fieldref [com/soundvoice/james/soundVoice.n Lcom/soundvoice/james/e;]
+      [30] ifnull +8 (target=38)
+      [33] aload_0 v0
+      [34] aconst_null
+      [35] putfield #65
+        - Fieldref [com/soundvoice/james/soundVoice.n Lcom/soundvoice/james/e;]
+      [38] aload_0 v0
+      [39] getfield #64
+        - Fieldref [com/soundvoice/james/soundVoice.m Landroid/hardware/Camera;]
+      [42] ifnull +32 (target=74)
+      [45] aload_0 v0
+      [46] getfield #64
+        - Fieldref [com/soundvoice/james/soundVoice.m Landroid/hardware/Camera;]
+      [49] dup
+      [50] astore_1 v1
+      [51] invokevirtual #83
+        - Methodref [android/hardware/Camera.getParameters ()Landroid/hardware/Camera$Parameters;]
+      [54] dup
+      [55] astore_2 v2
+      [56] ldc #17
+        - String [off]
+      [58] invokevirtual #87
+        - Methodref [android/hardware/Camera$Parameters.setFlashMode (Ljava/lang/String;)V]
+      [61] aload_1 v1
+      [62] aload_2 v2
+      [63] invokevirtual #85
+        - Methodref [android/hardware/Camera.setParameters (Landroid/hardware/Camera$Parameters;)V]
+      [66] aload_1 v1
+      [67] invokevirtual #86
+        - Methodref [android/hardware/Camera.stopPreview ()V]
+      [70] aload_1 v1
+      [71] invokevirtual #84
+        - Methodref [android/hardware/Camera.release ()V]
+      [74] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 3):
+        - [26] Var: ..., Stack: (empty)
+        - [38] Var: ..., Stack: (empty)
+        - [74] Var: ..., Stack: (empty)
+  + Method:       a(Lcom/soundvoice/james/soundVoice;)Landroid/widget/TextView;
+    Access flags: 0x1008
+      = static android.widget.TextView a(com.soundvoice.james.soundVoice)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] getfield #55
+        - Fieldref [com/soundvoice/james/soundVoice.d Landroid/widget/TextView;]
+      [4] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       b(Lcom/soundvoice/james/soundVoice;)Landroid/os/Handler;
+    Access flags: 0x1008
+      = static android.os.Handler b(com.soundvoice.james.soundVoice)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] getfield #63
+        - Fieldref [com/soundvoice/james/soundVoice.l Landroid/os/Handler;]
+      [4] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       c(Lcom/soundvoice/james/soundVoice;)Landroid/widget/ListView;
+    Access flags: 0x1008
+      = static android.widget.ListView c(com.soundvoice.james.soundVoice)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] getfield #54
+        - Fieldref [com/soundvoice/james/soundVoice.c Landroid/widget/ListView;]
+      [4] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       b()[Ljava/lang/String;
+    Access flags: 0x1008
+      = static java.lang.String[] b()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 4, locals = 0, stack = 1):
+      [0] getstatic #56
+        - Fieldref [com/soundvoice/james/soundVoice.e [Ljava/lang/String;]
+      [3] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a([Ljava/lang/String;)V
+    Access flags: 0x1008
+      = static void a(java.lang.String[])
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] putstatic #56
+        - Fieldref [com/soundvoice/james/soundVoice.e [Ljava/lang/String;]
+      [4] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a(Lcom/soundvoice/james/soundVoice;I)V
+    Access flags: 0x1008
+      = static void a(com.soundvoice.james.soundVoice,int)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 6, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] iload_1 v1
+      [2] putfield #60
+        - Fieldref [com/soundvoice/james/soundVoice.i I]
+      [5] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       d(Lcom/soundvoice/james/soundVoice;)I
+    Access flags: 0x1008
+      = static int d(com.soundvoice.james.soundVoice)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] getfield #60
+        - Fieldref [com/soundvoice/james/soundVoice.i I]
+      [4] ireturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a(Lcom/soundvoice/james/soundVoice;Z)V
+    Access flags: 0x1008
+      = static void a(com.soundvoice.james.soundVoice,boolean)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 6, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] iload_1 v1
+      [2] putfield #61
+        - Fieldref [com/soundvoice/james/soundVoice.j Z]
+      [5] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a(Lcom/soundvoice/james/soundVoice;Landroid/content/Intent;)V
+    Access flags: 0x1008
+      = static void a(com.soundvoice.james.soundVoice,android.content.Intent)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 6, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #59
+        - Fieldref [com/soundvoice/james/soundVoice.h Landroid/content/Intent;]
+      [5] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       e(Lcom/soundvoice/james/soundVoice;)Landroid/content/Intent;
+    Access flags: 0x1008
+      = static android.content.Intent e(com.soundvoice.james.soundVoice)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] getfield #59
+        - Fieldref [com/soundvoice/james/soundVoice.h Landroid/content/Intent;]
+      [4] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       f(Lcom/soundvoice/james/soundVoice;)Z
+    Access flags: 0x1008
+      = static boolean f(com.soundvoice.james.soundVoice)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] getfield #61
+        - Fieldref [com/soundvoice/james/soundVoice.j Z]
+      [4] ireturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       g(Lcom/soundvoice/james/soundVoice;)Landroid/widget/Button;
+    Access flags: 0x1008
+      = static android.widget.Button g(com.soundvoice.james.soundVoice)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] getfield #53
+        - Fieldref [com/soundvoice/james/soundVoice.b Landroid/widget/Button;]
+      [4] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       h(Lcom/soundvoice/james/soundVoice;)Landroid/speech/tts/TextToSpeech;
+    Access flags: 0x1008
+      = static android.speech.tts.TextToSpeech h(com.soundvoice.james.soundVoice)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] getfield #58
+        - Fieldref [com/soundvoice/james/soundVoice.g Landroid/speech/tts/TextToSpeech;]
+      [4] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/soundvoice/james/a
+  Superclass:    java/lang/Object
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x30
+    = final class com.soundvoice.james.a extends java.lang.Object
+
+Interfaces (count = 1):
+  - Class [android/content/DialogInterface$OnClickListener]
+
+Constant Pool (count = 26):
+  - Class [android/content/DialogInterface]
+  - Class [android/content/DialogInterface$OnClickListener]
+  - Class [com/soundvoice/james/a]
+  - Class [com/soundvoice/james/soundVoice]
+  - Class [java/lang/Object]
+  - Fieldref [com/soundvoice/james/a.a Lcom/soundvoice/james/soundVoice;]
+  - Methodref [java/lang/Object.<init> ()V]
+  - InterfaceMethodref [android/content/DialogInterface.dismiss ()V]
+  + NameAndType [<init> ()V]
+  + NameAndType [a Lcom/soundvoice/james/soundVoice;]
+  + NameAndType [dismiss ()V]
+  + Utf8 [()V]
+  + Utf8 [(Landroid/content/DialogInterface;I)V]
+  + Utf8 [(Lcom/soundvoice/james/soundVoice;)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Lcom/soundvoice/james/soundVoice;]
+  + Utf8 [a]
+  + Utf8 [android/content/DialogInterface]
+  + Utf8 [android/content/DialogInterface$OnClickListener]
+  + Utf8 [com/soundvoice/james/a]
+  + Utf8 [com/soundvoice/james/soundVoice]
+  + Utf8 [dismiss]
+  + Utf8 [java/lang/Object]
+  + Utf8 [onClick]
+
+Fields (count = 1):
+  + Field:        a Lcom/soundvoice/james/soundVoice;
+    Access flags: 0x1002
+      = private com.soundvoice.james.soundVoice a
+
+Methods (count = 2):
+  - Method:       <init>(Lcom/soundvoice/james/soundVoice;)V
+    Access flags: 0x0
+      = a(com.soundvoice.james.soundVoice)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #6
+        - Fieldref [com/soundvoice/james/a.a Lcom/soundvoice/james/soundVoice;]
+      [5] aload_0 v0
+      [6] invokespecial #7
+        - Methodref [java/lang/Object.<init> ()V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onClick(Landroid/content/DialogInterface;I)V
+    Access flags: 0x11
+      = public final void onClick(android.content.DialogInterface,int)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 7, locals = 3, stack = 1):
+      [0] aload_1 v1
+      [1] invokeinterface #8
+        - InterfaceMethodref [android/content/DialogInterface.dismiss ()V]
+      [6] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/soundvoice/james/b
+  Superclass:    android/os/Handler
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x30
+    = final class com.soundvoice.james.b extends android.os.Handler
+
+Interfaces (count = 0):
+
+Constant Pool (count = 143):
+  - Integer [-16711936]
+  - Integer [17367043]
+  - Integer [268435456]
+  - Float [35.0]
+  - String [Searching...]
+  - String [android.intent.action.VIEW]
+  - String [http://www.google.com/search?q=]
+  - String [not found the apk!!!]
+  - String [sorry]
+  - Class [android/content/Intent]
+  - Class [android/net/Uri]
+  - Class [android/os/Handler]
+  - Class [android/os/Message]
+  - Class [android/util/Log]
+  - Class [android/widget/AdapterView]
+  - Class [android/widget/AdapterView$OnItemClickListener]
+  - Class [android/widget/ArrayAdapter]
+  - Class [android/widget/ListView]
+  - Class [android/widget/TextView]
+  - Class [com/soundvoice/james/b]
+  - Class [com/soundvoice/james/f]
+  - Class [com/soundvoice/james/soundVoice]
+  - Class [java/lang/StringBuilder]
+  - Fieldref [android/os/Message.what I]
+  - Fieldref [com/soundvoice/james/b.a Lcom/soundvoice/james/soundVoice;]
+  - Fieldref [com/soundvoice/james/soundVoice.a Ljava/util/ArrayList;]
+  - Methodref [android/content/Intent.<init> (Ljava/lang/String;Landroid/net/Uri;)V]
+  - Methodref [android/content/Intent.addFlags (I)Landroid/content/Intent;]
+  - Methodref [android/net/Uri.parse (Ljava/lang/String;)Landroid/net/Uri;]
+  - Methodref [android/os/Handler.<init> ()V]
+  - Methodref [android/os/Handler.sendEmptyMessage (I)Z]
+  - Methodref [android/util/Log.i (Ljava/lang/String;Ljava/lang/String;)I]
+  - Methodref [android/widget/ArrayAdapter.<init> (Landroid/content/Context;ILjava/util/List;)V]
+  - Methodref [android/widget/ListView.setAdapter (Landroid/widget/ListAdapter;)V]
+  - Methodref [android/widget/ListView.setOnItemClickListener (Landroid/widget/AdapterView$OnItemClickListener;)V]
+  - Methodref [android/widget/ListView.setVisibility (I)V]
+  - Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
+  - Methodref [android/widget/TextView.setTextColor (I)V]
+  - Methodref [android/widget/TextView.setTextSize (F)V]
+  - Methodref [android/widget/TextView.setVisibility (I)V]
+  - Methodref [com/soundvoice/james/f.<init> (Lcom/soundvoice/james/b;)V]
+  - Methodref [com/soundvoice/james/soundVoice.a ()V]
+  - Methodref [com/soundvoice/james/soundVoice.a (Lcom/soundvoice/james/soundVoice;)Landroid/widget/TextView;]
+  - Methodref [com/soundvoice/james/soundVoice.b ()[Ljava/lang/String;]
+  - Methodref [com/soundvoice/james/soundVoice.b (Lcom/soundvoice/james/soundVoice;)Landroid/os/Handler;]
+  - Methodref [com/soundvoice/james/soundVoice.c (Lcom/soundvoice/james/soundVoice;)Landroid/widget/ListView;]
+  - Methodref [com/soundvoice/james/soundVoice.startActivity (Landroid/content/Intent;)V]
+  - Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
+  - Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+  - Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (Landroid/content/Context;ILjava/util/List;)V]
+  + NameAndType [<init> (Lcom/soundvoice/james/b;)V]
+  + NameAndType [<init> (Ljava/lang/String;)V]
+  + NameAndType [<init> (Ljava/lang/String;Landroid/net/Uri;)V]
+  + NameAndType [a ()V]
+  + NameAndType [a (Lcom/soundvoice/james/soundVoice;)Landroid/widget/TextView;]
+  + NameAndType [a Lcom/soundvoice/james/soundVoice;]
+  + NameAndType [a Ljava/util/ArrayList;]
+  + NameAndType [addFlags (I)Landroid/content/Intent;]
+  + NameAndType [append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+  + NameAndType [b ()[Ljava/lang/String;]
+  + NameAndType [b (Lcom/soundvoice/james/soundVoice;)Landroid/os/Handler;]
+  + NameAndType [c (Lcom/soundvoice/james/soundVoice;)Landroid/widget/ListView;]
+  + NameAndType [i (Ljava/lang/String;Ljava/lang/String;)I]
+  + NameAndType [parse (Ljava/lang/String;)Landroid/net/Uri;]
+  + NameAndType [sendEmptyMessage (I)Z]
+  + NameAndType [setAdapter (Landroid/widget/ListAdapter;)V]
+  + NameAndType [setOnItemClickListener (Landroid/widget/AdapterView$OnItemClickListener;)V]
+  + NameAndType [setText (Ljava/lang/CharSequence;)V]
+  + NameAndType [setTextColor (I)V]
+  + NameAndType [setTextSize (F)V]
+  + NameAndType [setVisibility (I)V]
+  + NameAndType [startActivity (Landroid/content/Intent;)V]
+  + NameAndType [toString ()Ljava/lang/String;]
+  + NameAndType [what I]
+  + Utf8 [()Ljava/lang/String;]
+  + Utf8 [()V]
+  + Utf8 [()[Ljava/lang/String;]
+  + Utf8 [(F)V]
+  + Utf8 [(I)Landroid/content/Intent;]
+  + Utf8 [(I)V]
+  + Utf8 [(I)Z]
+  + Utf8 [(Landroid/content/Context;ILjava/util/List;)V]
+  + Utf8 [(Landroid/content/Intent;)V]
+  + Utf8 [(Landroid/os/Message;)V]
+  + Utf8 [(Landroid/widget/AdapterView$OnItemClickListener;)V]
+  + Utf8 [(Landroid/widget/ListAdapter;)V]
+  + Utf8 [(Lcom/soundvoice/james/b;)V]
+  + Utf8 [(Lcom/soundvoice/james/soundVoice;)Landroid/os/Handler;]
+  + Utf8 [(Lcom/soundvoice/james/soundVoice;)Landroid/widget/ListView;]
+  + Utf8 [(Lcom/soundvoice/james/soundVoice;)Landroid/widget/TextView;]
+  + Utf8 [(Lcom/soundvoice/james/soundVoice;)V]
+  + Utf8 [(Ljava/lang/CharSequence;)V]
+  + Utf8 [(Ljava/lang/String;)Landroid/net/Uri;]
+  + Utf8 [(Ljava/lang/String;)Ljava/lang/StringBuilder;]
+  + Utf8 [(Ljava/lang/String;)V]
+  + Utf8 [(Ljava/lang/String;Landroid/net/Uri;)V]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/String;)I]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [I]
+  + Utf8 [Lcom/soundvoice/james/soundVoice;]
+  + Utf8 [Ljava/util/ArrayList;]
+  + Utf8 [Searching...]
+  + Utf8 [StackMapTable]
+  + Utf8 [a]
+  + Utf8 [addFlags]
+  + Utf8 [android.intent.action.VIEW]
+  + Utf8 [android/content/Intent]
+  + Utf8 [android/net/Uri]
+  + Utf8 [android/os/Handler]
+  + Utf8 [android/os/Message]
+  + Utf8 [android/util/Log]
+  + Utf8 [android/widget/AdapterView]
+  + Utf8 [android/widget/AdapterView$OnItemClickListener]
+  + Utf8 [android/widget/ArrayAdapter]
+  + Utf8 [android/widget/ListView]
+  + Utf8 [android/widget/TextView]
+  + Utf8 [append]
+  + Utf8 [b]
+  + Utf8 [c]
+  + Utf8 [com/soundvoice/james/b]
+  + Utf8 [com/soundvoice/james/f]
+  + Utf8 [com/soundvoice/james/soundVoice]
+  + Utf8 [handleMessage]
+  + Utf8 [http://www.google.com/search?q=]
+  + Utf8 [i]
+  + Utf8 [java/lang/StringBuilder]
+  + Utf8 [not found the apk!!!]
+  + Utf8 [parse]
+  + Utf8 [sendEmptyMessage]
+  + Utf8 [setAdapter]
+  + Utf8 [setOnItemClickListener]
+  + Utf8 [setText]
+  + Utf8 [setTextColor]
+  + Utf8 [setTextSize]
+  + Utf8 [setVisibility]
+  + Utf8 [sorry]
+  + Utf8 [startActivity]
+  + Utf8 [toString]
+  + Utf8 [what]
+
+Fields (count = 1):
+  + Field:        a Lcom/soundvoice/james/soundVoice;
+    Access flags: 0x1010
+      = final com.soundvoice.james.soundVoice a
+
+Methods (count = 2):
+  - Method:       <init>(Lcom/soundvoice/james/soundVoice;)V
+    Access flags: 0x0
+      = b(com.soundvoice.james.soundVoice)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #25
+        - Fieldref [com/soundvoice/james/b.a Lcom/soundvoice/james/soundVoice;]
+      [5] aload_0 v0
+      [6] invokespecial #30
+        - Methodref [android/os/Handler.<init> ()V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       handleMessage(Landroid/os/Message;)V
+    Access flags: 0x11
+      = public final void handleMessage(android.os.Message)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 242, locals = 2, stack = 6):
+      [0] aload_1 v1
+      [1] getfield #24
+        - Fieldref [android/os/Message.what I]
+      [4] lookupswitch (3 offsets, default=237) (target=241)
+        5: offset = 36, target = 40
+        9: offset = 105, target = 109
+        17: offset = 44, target = 48
+        default: offset = 237, target = 241
+      [40] aload_0 v0
+      [41] getfield #25
+        - Fieldref [com/soundvoice/james/b.a Lcom/soundvoice/james/soundVoice;]
+      [44] invokevirtual #42
+        - Methodref [com/soundvoice/james/soundVoice.a ()V]
+      [47] return
+      [48] aload_0 v0
+      [49] getfield #25
+        - Fieldref [com/soundvoice/james/b.a Lcom/soundvoice/james/soundVoice;]
+      [52] invokestatic #43
+        - Methodref [com/soundvoice/james/soundVoice.a (Lcom/soundvoice/james/soundVoice;)Landroid/widget/TextView;]
+      [55] ldc #5
+        - String [Searching...]
+      [57] invokevirtual #37
+        - Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
+      [60] aload_0 v0
+      [61] getfield #25
+        - Fieldref [com/soundvoice/james/b.a Lcom/soundvoice/james/soundVoice;]
+      [64] invokestatic #43
+        - Methodref [com/soundvoice/james/soundVoice.a (Lcom/soundvoice/james/soundVoice;)Landroid/widget/TextView;]
+      [67] ldc #4
+        - Float [35.0]
+      [69] invokevirtual #39
+        - Methodref [android/widget/TextView.setTextSize (F)V]
+      [72] aload_0 v0
+      [73] getfield #25
+        - Fieldref [com/soundvoice/james/b.a Lcom/soundvoice/james/soundVoice;]
+      [76] invokestatic #43
+        - Methodref [com/soundvoice/james/soundVoice.a (Lcom/soundvoice/james/soundVoice;)Landroid/widget/TextView;]
+      [79] ldc #1
+        - Integer [-16711936]
+      [81] invokevirtual #38
+        - Methodref [android/widget/TextView.setTextColor (I)V]
+      [84] aload_0 v0
+      [85] getfield #25
+        - Fieldref [com/soundvoice/james/b.a Lcom/soundvoice/james/soundVoice;]
+      [88] invokestatic #43
+        - Methodref [com/soundvoice/james/soundVoice.a (Lcom/soundvoice/james/soundVoice;)Landroid/widget/TextView;]
+      [91] iconst_0
+      [92] invokevirtual #40
+        - Methodref [android/widget/TextView.setVisibility (I)V]
+      [95] aload_0 v0
+      [96] getfield #25
+        - Fieldref [com/soundvoice/james/b.a Lcom/soundvoice/james/soundVoice;]
+      [99] invokestatic #45
+        - Methodref [com/soundvoice/james/soundVoice.b (Lcom/soundvoice/james/soundVoice;)Landroid/os/Handler;]
+      [102] bipush 9
+      [104] invokevirtual #31
+        - Methodref [android/os/Handler.sendEmptyMessage (I)Z]
+      [107] pop
+      [108] return
+      [109] aload_0 v0
+      [110] getfield #25
+        - Fieldref [com/soundvoice/james/b.a Lcom/soundvoice/james/soundVoice;]
+      [113] invokestatic #46
+        - Methodref [com/soundvoice/james/soundVoice.c (Lcom/soundvoice/james/soundVoice;)Landroid/widget/ListView;]
+      [116] iconst_0
+      [117] invokevirtual #36
+        - Methodref [android/widget/ListView.setVisibility (I)V]
+      [120] ldc #9
+        - String [sorry]
+      [122] ldc #8
+        - String [not found the apk!!!]
+      [124] invokestatic #32
+        - Methodref [android/util/Log.i (Ljava/lang/String;Ljava/lang/String;)I]
+      [127] pop
+      [128] aload_0 v0
+      [129] getfield #25
+        - Fieldref [com/soundvoice/james/b.a Lcom/soundvoice/james/soundVoice;]
+      [132] invokestatic #46
+        - Methodref [com/soundvoice/james/soundVoice.c (Lcom/soundvoice/james/soundVoice;)Landroid/widget/ListView;]
+      [135] new #17
+        - Class [android/widget/ArrayAdapter]
+      [138] dup
+      [139] aload_0 v0
+      [140] getfield #25
+        - Fieldref [com/soundvoice/james/b.a Lcom/soundvoice/james/soundVoice;]
+      [143] ldc #2
+        - Integer [17367043]
+      [145] aload_0 v0
+      [146] getfield #25
+        - Fieldref [com/soundvoice/james/b.a Lcom/soundvoice/james/soundVoice;]
+      [149] getfield #26
+        - Fieldref [com/soundvoice/james/soundVoice.a Ljava/util/ArrayList;]
+      [152] invokespecial #33
+        - Methodref [android/widget/ArrayAdapter.<init> (Landroid/content/Context;ILjava/util/List;)V]
+      [155] invokevirtual #34
+        - Methodref [android/widget/ListView.setAdapter (Landroid/widget/ListAdapter;)V]
+      [158] invokestatic #44
+        - Methodref [com/soundvoice/james/soundVoice.b ()[Ljava/lang/String;]
+      [161] arraylength
+      [162] iconst_1
+      [163] ificmpne +7 (target=170)
+      [166] iconst_1
+      [167] goto +4 (target=171)
+      [170] iconst_0
+      [171] ifeq +52 (target=223)
+      [174] new #10
+        - Class [android/content/Intent]
+      [177] dup
+      [178] ldc #6
+        - String [android.intent.action.VIEW]
+      [180] new #23
+        - Class [java/lang/StringBuilder]
+      [183] dup
+      [184] ldc #7
+        - String [http://www.google.com/search?q=]
+      [186] invokespecial #48
+        - Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
+      [189] invokestatic #44
+        - Methodref [com/soundvoice/james/soundVoice.b ()[Ljava/lang/String;]
+      [192] iconst_0
+      [193] aaload
+      [194] invokevirtual #49
+        - Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [197] invokevirtual #50
+        - Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [200] invokestatic #29
+        - Methodref [android/net/Uri.parse (Ljava/lang/String;)Landroid/net/Uri;]
+      [203] invokespecial #27
+        - Methodref [android/content/Intent.<init> (Ljava/lang/String;Landroid/net/Uri;)V]
+      [206] dup
+      [207] astore_1 v1
+      [208] ldc #3
+        - Integer [268435456]
+      [210] invokevirtual #28
+        - Methodref [android/content/Intent.addFlags (I)Landroid/content/Intent;]
+      [213] pop
+      [214] aload_0 v0
+      [215] getfield #25
+        - Fieldref [com/soundvoice/james/b.a Lcom/soundvoice/james/soundVoice;]
+      [218] aload_1 v1
+      [219] invokevirtual #47
+        - Methodref [com/soundvoice/james/soundVoice.startActivity (Landroid/content/Intent;)V]
+      [222] return
+      [223] aload_0 v0
+      [224] getfield #25
+        - Fieldref [com/soundvoice/james/b.a Lcom/soundvoice/james/soundVoice;]
+      [227] invokestatic #46
+        - Methodref [com/soundvoice/james/soundVoice.c (Lcom/soundvoice/james/soundVoice;)Landroid/widget/ListView;]
+      [230] new #21
+        - Class [com/soundvoice/james/f]
+      [233] dup
+      [234] aload_0 v0
+      [235] invokespecial #41
+        - Methodref [com/soundvoice/james/f.<init> (Lcom/soundvoice/james/b;)V]
+      [238] invokevirtual #35
+        - Methodref [android/widget/ListView.setOnItemClickListener (Landroid/widget/AdapterView$OnItemClickListener;)V]
+      [241] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 8):
+        - [40] Var: ..., Stack: (empty)
+        - [48] Var: ..., Stack: (empty)
+        - [109] Var: ..., Stack: (empty)
+        - [170] Var: ..., Stack: (empty)
+        - [171] Var: ..., Stack: [i]
+        - [223] Var: ...[i], Stack: (empty)
+        - [241] Var: ..., Stack: (empty)
+        - [241] Var: -1, Stack: (empty)
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/soundvoice/james/c
+  Superclass:    java/lang/Object
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x30
+    = final class com.soundvoice.james.c extends java.lang.Object
+
+Interfaces (count = 1):
+  - Class [android/content/DialogInterface$OnClickListener]
+
+Constant Pool (count = 29):
+  - Class [android/content/DialogInterface]
+  - Class [android/content/DialogInterface$OnClickListener]
+  - Class [com/soundvoice/james/c]
+  - Class [com/soundvoice/james/soundVoice]
+  - Class [java/lang/Object]
+  - Fieldref [com/soundvoice/james/c.a Lcom/soundvoice/james/soundVoice;]
+  - Methodref [com/soundvoice/james/soundVoice.finish ()V]
+  - Methodref [java/lang/Object.<init> ()V]
+  - InterfaceMethodref [android/content/DialogInterface.dismiss ()V]
+  + NameAndType [<init> ()V]
+  + NameAndType [a Lcom/soundvoice/james/soundVoice;]
+  + NameAndType [dismiss ()V]
+  + NameAndType [finish ()V]
+  + Utf8 [()V]
+  + Utf8 [(Landroid/content/DialogInterface;I)V]
+  + Utf8 [(Lcom/soundvoice/james/soundVoice;)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Lcom/soundvoice/james/soundVoice;]
+  + Utf8 [a]
+  + Utf8 [android/content/DialogInterface]
+  + Utf8 [android/content/DialogInterface$OnClickListener]
+  + Utf8 [com/soundvoice/james/c]
+  + Utf8 [com/soundvoice/james/soundVoice]
+  + Utf8 [dismiss]
+  + Utf8 [finish]
+  + Utf8 [java/lang/Object]
+  + Utf8 [onClick]
+
+Fields (count = 1):
+  + Field:        a Lcom/soundvoice/james/soundVoice;
+    Access flags: 0x1002
+      = private com.soundvoice.james.soundVoice a
+
+Methods (count = 2):
+  - Method:       <init>(Lcom/soundvoice/james/soundVoice;)V
+    Access flags: 0x0
+      = c(com.soundvoice.james.soundVoice)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #6
+        - Fieldref [com/soundvoice/james/c.a Lcom/soundvoice/james/soundVoice;]
+      [5] aload_0 v0
+      [6] invokespecial #8
+        - Methodref [java/lang/Object.<init> ()V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onClick(Landroid/content/DialogInterface;I)V
+    Access flags: 0x11
+      = public final void onClick(android.content.DialogInterface,int)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 14, locals = 3, stack = 1):
+      [0] aload_1 v1
+      [1] invokeinterface #9
+        - InterfaceMethodref [android/content/DialogInterface.dismiss ()V]
+      [6] aload_0 v0
+      [7] getfield #6
+        - Fieldref [com/soundvoice/james/c.a Lcom/soundvoice/james/soundVoice;]
+      [10] invokevirtual #7
+        - Methodref [com/soundvoice/james/soundVoice.finish ()V]
+      [13] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/soundvoice/james/d
+  Superclass:    java/lang/Object
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x30
+    = final class com.soundvoice.james.d extends java.lang.Object
+
+Interfaces (count = 1):
+  - Class [android/speech/tts/TextToSpeech$OnInitListener]
+
+Constant Pool (count = 54):
+  - String [lanageTag]
+  - String [not use]
+  - String [welcome to use]
+  - Class [android/speech/tts/TextToSpeech]
+  - Class [android/speech/tts/TextToSpeech$OnInitListener]
+  - Class [android/util/Log]
+  - Class [com/soundvoice/james/d]
+  - Class [com/soundvoice/james/soundVoice]
+  - Class [java/lang/Object]
+  - Class [java/util/Locale]
+  - Fieldref [com/soundvoice/james/d.a Lcom/soundvoice/james/soundVoice;]
+  - Fieldref [java/util/Locale.ENGLISH Ljava/util/Locale;]
+  - Methodref [android/speech/tts/TextToSpeech.setLanguage (Ljava/util/Locale;)I]
+  - Methodref [android/speech/tts/TextToSpeech.speak (Ljava/lang/String;ILjava/util/HashMap;)I]
+  - Methodref [android/util/Log.e (Ljava/lang/String;Ljava/lang/String;)I]
+  - Methodref [com/soundvoice/james/soundVoice.h (Lcom/soundvoice/james/soundVoice;)Landroid/speech/tts/TextToSpeech;]
+  - Methodref [java/lang/Object.<init> ()V]
+  + NameAndType [<init> ()V]
+  + NameAndType [ENGLISH Ljava/util/Locale;]
+  + NameAndType [a Lcom/soundvoice/james/soundVoice;]
+  + NameAndType [e (Ljava/lang/String;Ljava/lang/String;)I]
+  + NameAndType [h (Lcom/soundvoice/james/soundVoice;)Landroid/speech/tts/TextToSpeech;]
+  + NameAndType [setLanguage (Ljava/util/Locale;)I]
+  + NameAndType [speak (Ljava/lang/String;ILjava/util/HashMap;)I]
+  + Utf8 [()V]
+  + Utf8 [(I)V]
+  + Utf8 [(Lcom/soundvoice/james/soundVoice;)Landroid/speech/tts/TextToSpeech;]
+  + Utf8 [(Lcom/soundvoice/james/soundVoice;)V]
+  + Utf8 [(Ljava/lang/String;ILjava/util/HashMap;)I]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/String;)I]
+  + Utf8 [(Ljava/util/Locale;)I]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [ENGLISH]
+  + Utf8 [Lcom/soundvoice/james/soundVoice;]
+  + Utf8 [Ljava/util/Locale;]
+  + Utf8 [StackMapTable]
+  + Utf8 [a]
+  + Utf8 [android/speech/tts/TextToSpeech]
+  + Utf8 [android/speech/tts/TextToSpeech$OnInitListener]
+  + Utf8 [android/util/Log]
+  + Utf8 [com/soundvoice/james/d]
+  + Utf8 [com/soundvoice/james/soundVoice]
+  + Utf8 [e]
+  + Utf8 [h]
+  + Utf8 [java/lang/Object]
+  + Utf8 [java/util/Locale]
+  + Utf8 [lanageTag]
+  + Utf8 [not use]
+  + Utf8 [onInit]
+  + Utf8 [setLanguage]
+  + Utf8 [speak]
+  + Utf8 [welcome to use]
+
+Fields (count = 1):
+  + Field:        a Lcom/soundvoice/james/soundVoice;
+    Access flags: 0x1002
+      = private com.soundvoice.james.soundVoice a
+
+Methods (count = 2):
+  - Method:       <init>(Lcom/soundvoice/james/soundVoice;)V
+    Access flags: 0x0
+      = d(com.soundvoice.james.soundVoice)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #11
+        - Fieldref [com/soundvoice/james/d.a Lcom/soundvoice/james/soundVoice;]
+      [5] aload_0 v0
+      [6] invokespecial #17
+        - Methodref [java/lang/Object.<init> ()V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onInit(I)V
+    Access flags: 0x11
+      = public final void onInit(int)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 54, locals = 2, stack = 4):
+      [0] iload_1 v1
+      [1] ifne +52 (target=53)
+      [4] aload_0 v0
+      [5] getfield #11
+        - Fieldref [com/soundvoice/james/d.a Lcom/soundvoice/james/soundVoice;]
+      [8] invokestatic #16
+        - Methodref [com/soundvoice/james/soundVoice.h (Lcom/soundvoice/james/soundVoice;)Landroid/speech/tts/TextToSpeech;]
+      [11] getstatic #12
+        - Fieldref [java/util/Locale.ENGLISH Ljava/util/Locale;]
+      [14] invokevirtual #13
+        - Methodref [android/speech/tts/TextToSpeech.setLanguage (Ljava/util/Locale;)I]
+      [17] dup
+      [18] istore_1 v1
+      [19] iconst_m1
+      [20] ificmpeq +9 (target=29)
+      [23] iload_1 v1
+      [24] bipush -2
+      [26] ificmpne +12 (target=38)
+      [29] ldc #1
+        - String [lanageTag]
+      [31] ldc #2
+        - String [not use]
+      [33] invokestatic #15
+        - Methodref [android/util/Log.e (Ljava/lang/String;Ljava/lang/String;)I]
+      [36] pop
+      [37] return
+      [38] aload_0 v0
+      [39] getfield #11
+        - Fieldref [com/soundvoice/james/d.a Lcom/soundvoice/james/soundVoice;]
+      [42] invokestatic #16
+        - Methodref [com/soundvoice/james/soundVoice.h (Lcom/soundvoice/james/soundVoice;)Landroid/speech/tts/TextToSpeech;]
+      [45] ldc #3
+        - String [welcome to use]
+      [47] iconst_0
+      [48] aconst_null
+      [49] invokevirtual #14
+        - Methodref [android/speech/tts/TextToSpeech.speak (Ljava/lang/String;ILjava/util/HashMap;)I]
+      [52] pop
+      [53] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 3):
+        - [29] Var: ...[i], Stack: (empty)
+        - [38] Var: ..., Stack: (empty)
+        - [53] Var: -1, Stack: (empty)
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/soundvoice/a/a
+  Superclass:    java/lang/Object
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x31
+    = public final class com.soundvoice.a.a extends java.lang.Object
+
+Interfaces (count = 0):
+
+Constant Pool (count = 96):
+  - String []
+  - String [ ]
+  - String [启动]
+  - String [开启]
+  - String [打开]
+  - Class [[Ljava/lang/String;]
+  - Class [android/content/Context]
+  - Class [android/content/pm/ApplicationInfo]
+  - Class [android/content/pm/PackageInfo]
+  - Class [android/content/pm/PackageManager]
+  - Class [com/soundvoice/a/a]
+  - Class [com/soundvoice/a/b]
+  - Class [com/soundvoice/a/c]
+  - Class [java/lang/CharSequence]
+  - Class [java/lang/Object]
+  - Class [java/lang/String]
+  - Class [java/util/List]
+  - Fieldref [android/content/pm/PackageInfo.applicationInfo Landroid/content/pm/ApplicationInfo;]
+  - Fieldref [android/content/pm/PackageInfo.packageName Ljava/lang/String;]
+  - Methodref [android/content/Context.getPackageManager ()Landroid/content/pm/PackageManager;]
+  - Methodref [android/content/pm/PackageManager.getApplicationLabel (Landroid/content/pm/ApplicationInfo;)Ljava/lang/CharSequence;]
+  - Methodref [android/content/pm/PackageManager.getLaunchIntentForPackage (Ljava/lang/String;)Landroid/content/Intent;]
+  - Methodref [com/soundvoice/a/b.b (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
+  - Methodref [com/soundvoice/a/c.a (Landroid/content/Context;)Ljava/util/List;]
+  - Methodref [java/lang/Object.<init> ()V]
+  - Methodref [java/lang/String.contains (Ljava/lang/CharSequence;)Z]
+  - Methodref [java/lang/String.replaceAll (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
+  - Methodref [java/lang/String.toLowerCase ()Ljava/lang/String;]
+  - Methodref [java/lang/String.trim ()Ljava/lang/String;]
+  - InterfaceMethodref [java/lang/CharSequence.toString ()Ljava/lang/String;]
+  - InterfaceMethodref [java/util/List.get (I)Ljava/lang/Object;]
+  - InterfaceMethodref [java/util/List.size ()I]
+  + NameAndType [<init> ()V]
+  + NameAndType [a (Landroid/content/Context;)Ljava/util/List;]
+  + NameAndType [applicationInfo Landroid/content/pm/ApplicationInfo;]
+  + NameAndType [b (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
+  + NameAndType [contains (Ljava/lang/CharSequence;)Z]
+  + NameAndType [get (I)Ljava/lang/Object;]
+  + NameAndType [getApplicationLabel (Landroid/content/pm/ApplicationInfo;)Ljava/lang/CharSequence;]
+  + NameAndType [getLaunchIntentForPackage (Ljava/lang/String;)Landroid/content/Intent;]
+  + NameAndType [getPackageManager ()Landroid/content/pm/PackageManager;]
+  + NameAndType [packageName Ljava/lang/String;]
+  + NameAndType [replaceAll (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
+  + NameAndType [size ()I]
+  + NameAndType [toLowerCase ()Ljava/lang/String;]
+  + NameAndType [toString ()Ljava/lang/String;]
+  + NameAndType [trim ()Ljava/lang/String;]
+  + Utf8 []
+  + Utf8 [ ]
+  + Utf8 [()I]
+  + Utf8 [()Landroid/content/pm/PackageManager;]
+  + Utf8 [()Ljava/lang/String;]
+  + Utf8 [()V]
+  + Utf8 [(I)Ljava/lang/Object;]
+  + Utf8 [(Landroid/content/Context;)Ljava/util/List;]
+  + Utf8 [(Landroid/content/Context;[Ljava/lang/String;)Landroid/content/Intent;]
+  + Utf8 [(Landroid/content/pm/ApplicationInfo;)Ljava/lang/CharSequence;]
+  + Utf8 [(Ljava/lang/CharSequence;)Z]
+  + Utf8 [(Ljava/lang/String;)Landroid/content/Intent;]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Landroid/content/pm/ApplicationInfo;]
+  + Utf8 [Ljava/lang/String;]
+  + Utf8 [StackMapTable]
+  + Utf8 [[Ljava/lang/String;]
+  + Utf8 [a]
+  + Utf8 [android/content/Context]
+  + Utf8 [android/content/pm/ApplicationInfo]
+  + Utf8 [android/content/pm/PackageInfo]
+  + Utf8 [android/content/pm/PackageManager]
+  + Utf8 [applicationInfo]
+  + Utf8 [b]
+  + Utf8 [com/soundvoice/a/a]
+  + Utf8 [com/soundvoice/a/b]
+  + Utf8 [com/soundvoice/a/c]
+  + Utf8 [contains]
+  + Utf8 [get]
+  + Utf8 [getApplicationLabel]
+  + Utf8 [getLaunchIntentForPackage]
+  + Utf8 [getPackageManager]
+  + Utf8 [java/lang/CharSequence]
+  + Utf8 [java/lang/Object]
+  + Utf8 [java/lang/String]
+  + Utf8 [java/util/List]
+  + Utf8 [packageName]
+  + Utf8 [replaceAll]
+  + Utf8 [size]
+  + Utf8 [toLowerCase]
+  + Utf8 [toString]
+  + Utf8 [trim]
+  + Utf8 [启动]
+  + Utf8 [开启]
+  + Utf8 [打开]
+
+Fields (count = 0):
+
+Methods (count = 2):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public a()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] invokespecial #25
+        - Methodref [java/lang/Object.<init> ()V]
+      [4] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a(Landroid/content/Context;[Ljava/lang/String;)Landroid/content/Intent;
+    Access flags: 0x9
+      = public static android.content.Intent a(android.content.Context,java.lang.String[])
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 170, locals = 7, stack = 6):
+      [0] aload_0 v0
+      [1] invokevirtual #20
+        - Methodref [android/content/Context.getPackageManager ()Landroid/content/pm/PackageManager;]
+      [4] astore_2 v2
+      [5] aload_0 v0
+      [6] invokestatic #24
+        - Methodref [com/soundvoice/a/c.a (Landroid/content/Context;)Ljava/util/List;]
+      [9] astore_0 v0
+      [10] iconst_0
+      [11] istore v5
+      [13] goto +144 (target=157)
+      [16] aload_0 v0
+      [17] iload v5
+      [19] invokeinterface #31
+        - InterfaceMethodref [java/util/List.get (I)Ljava/lang/Object;]
+      [24] checkcast #9
+        - Class [android/content/pm/PackageInfo]
+      [27] dup
+      [28] astore_3 v3
+      [29] getfield #19
+        - Fieldref [android/content/pm/PackageInfo.packageName Ljava/lang/String;]
+      [32] astore v4
+      [34] aload_3 v3
+      [35] getfield #18
+        - Fieldref [android/content/pm/PackageInfo.applicationInfo Landroid/content/pm/ApplicationInfo;]
+      [38] astore_3 v3
+      [39] aload_2 v2
+      [40] aload_3 v3
+      [41] invokevirtual #21
+        - Methodref [android/content/pm/PackageManager.getApplicationLabel (Landroid/content/pm/ApplicationInfo;)Ljava/lang/CharSequence;]
+      [44] invokeinterface #30
+        - InterfaceMethodref [java/lang/CharSequence.toString ()Ljava/lang/String;]
+      [49] invokevirtual #29
+        - Methodref [java/lang/String.trim ()Ljava/lang/String;]
+      [52] ldc #2
+        - String [ ]
+      [54] ldc #1
+        - String []
+      [56] invokevirtual #27
+        - Methodref [java/lang/String.replaceAll (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
+      [59] astore_3 v3
+      [60] iconst_0
+      [61] istore v6
+      [63] goto +84 (target=147)
+      [66] aload_1 v1
+      [67] iload v6
+      [69] aload_1 v1
+      [70] iload v6
+      [72] aaload
+      [73] ldc #5
+        - String [打开]
+      [75] ldc #4
+        - String [开启]
+      [77] ldc #3
+        - String [启动]
+      [79] invokestatic #23
+        - Methodref [com/soundvoice/a/b.b (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
+      [82] aastore
+      [83] aload_3 v3
+      [84] invokevirtual #28
+        - Methodref [java/lang/String.toLowerCase ()Ljava/lang/String;]
+      [87] aload_1 v1
+      [88] iload v6
+      [90] aaload
+      [91] invokevirtual #28
+        - Methodref [java/lang/String.toLowerCase ()Ljava/lang/String;]
+      [94] invokevirtual #29
+        - Methodref [java/lang/String.trim ()Ljava/lang/String;]
+      [97] ldc #2
+        - String [ ]
+      [99] ldc #1
+        - String []
+      [101] invokevirtual #27
+        - Methodref [java/lang/String.replaceAll (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
+      [104] invokevirtual #26
+        - Methodref [java/lang/String.contains (Ljava/lang/CharSequence;)Z]
+      [107] ifne +30 (target=137)
+      [110] aload_1 v1
+      [111] iload v6
+      [113] aaload
+      [114] invokevirtual #28
+        - Methodref [java/lang/String.toLowerCase ()Ljava/lang/String;]
+      [117] invokevirtual #29
+        - Methodref [java/lang/String.trim ()Ljava/lang/String;]
+      [120] ldc #2
+        - String [ ]
+      [122] ldc #1
+        - String []
+      [124] invokevirtual #27
+        - Methodref [java/lang/String.replaceAll (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
+      [127] aload_3 v3
+      [128] invokevirtual #28
+        - Methodref [java/lang/String.toLowerCase ()Ljava/lang/String;]
+      [131] invokevirtual #26
+        - Methodref [java/lang/String.contains (Ljava/lang/CharSequence;)Z]
+      [134] ifeq +10 (target=144)
+      [137] aload_2 v2
+      [138] aload v4
+      [140] invokevirtual #22
+        - Methodref [android/content/pm/PackageManager.getLaunchIntentForPackage (Ljava/lang/String;)Landroid/content/Intent;]
+      [143] areturn
+      [144] iinc v6, 1
+      [147] iload v6
+      [149] aload_1 v1
+      [150] arraylength
+      [151] ificmplt -85 (target=66)
+      [154] iinc v5, 1
+      [157] iload v5
+      [159] aload_0 v0
+      [160] invokeinterface #32
+        - InterfaceMethodref [java/util/List.size ()I]
+      [165] ificmplt -149 (target=16)
+      [168] aconst_null
+      [169] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 6):
+        - [16] Var: [a:android/content/Context][a:[Ljava/lang/String;][a:android/content/pm/PackageManager][a:java/util/List][a:java/lang/String][a:java/lang/String][i], Stack: 
+        - [66] Var: ...[a:android/content/pm/PackageInfo][a:android/content/pm/ApplicationInfo][i], Stack: (empty)
+        - [137] Var: ..., Stack: (empty)
+        - [144] Var: ..., Stack: (empty)
+        - [147] Var: ..., Stack: (empty)
+        - [157] Var: -3, Stack: (empty)
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/soundvoice/james/e
+  Superclass:    java/lang/Thread
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x31
+    = public final class com.soundvoice.james.e extends java.lang.Thread
+
+Interfaces (count = 0):
+
+Constant Pool (count = 173):
+  - String [**********size===]
+  - String [android.speech.extra.RESULTS]
+  - String [james_voice_control]
+  - String [光线增加]
+  - String [删除]
+  - String [卸载]
+  - String [启动]
+  - String [定位]
+  - String [导航]
+  - String [开启]
+  - String [开灯]
+  - String [手电筒]
+  - String [打开]
+  - String [打电话]
+  - String [拨号]
+  - String [移除]
+  - String [震动]
+  - Class [[Ljava/lang/String;]
+  - Class [android/content/Intent]
+  - Class [android/os/Handler]
+  - Class [android/util/Log]
+  - Class [android/widget/Button]
+  - Class [com/soundvoice/a/a]
+  - Class [com/soundvoice/a/b]
+  - Class [com/soundvoice/a/c]
+  - Class [com/soundvoice/james/e]
+  - Class [com/soundvoice/james/soundVoice]
+  - Class [java/lang/String]
+  - Class [java/lang/StringBuilder]
+  - Class [java/lang/Thread]
+  - Class [java/util/ArrayList]
+  - Fieldref [com/soundvoice/james/e.a I]
+  - Fieldref [com/soundvoice/james/e.b Landroid/content/Intent;]
+  - Fieldref [com/soundvoice/james/e.c Lcom/soundvoice/james/soundVoice;]
+  - Fieldref [com/soundvoice/james/soundVoice.a Ljava/util/ArrayList;]
+  - Methodref [android/content/Intent.getStringArrayListExtra (Ljava/lang/String;)Ljava/util/ArrayList;]
+  - Methodref [android/os/Handler.sendEmptyMessage (I)Z]
+  - Methodref [android/util/Log.i (Ljava/lang/String;Ljava/lang/String;)I]
+  - Methodref [android/widget/Button.setClickable (Z)V]
+  - Methodref [com/soundvoice/a/a.a (Landroid/content/Context;[Ljava/lang/String;)Landroid/content/Intent;]
+  - Methodref [com/soundvoice/a/b.a (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z]
+  - Methodref [com/soundvoice/a/c.a (Landroid/content/Context;[Ljava/lang/String;)Z]
+  - Methodref [com/soundvoice/james/soundVoice.a (Lcom/soundvoice/james/soundVoice;I)V]
+  - Methodref [com/soundvoice/james/soundVoice.a (Lcom/soundvoice/james/soundVoice;Landroid/content/Intent;)V]
+  - Methodref [com/soundvoice/james/soundVoice.a (Lcom/soundvoice/james/soundVoice;Z)V]
+  - Methodref [com/soundvoice/james/soundVoice.a ([Ljava/lang/String;)V]
+  - Methodref [com/soundvoice/james/soundVoice.b ()[Ljava/lang/String;]
+  - Methodref [com/soundvoice/james/soundVoice.b (Lcom/soundvoice/james/soundVoice;)Landroid/os/Handler;]
+  - Methodref [com/soundvoice/james/soundVoice.d (Lcom/soundvoice/james/soundVoice;)I]
+  - Methodref [com/soundvoice/james/soundVoice.e (Lcom/soundvoice/james/soundVoice;)Landroid/content/Intent;]
+  - Methodref [com/soundvoice/james/soundVoice.f (Lcom/soundvoice/james/soundVoice;)Z]
+  - Methodref [com/soundvoice/james/soundVoice.g (Lcom/soundvoice/james/soundVoice;)Landroid/widget/Button;]
+  - Methodref [com/soundvoice/james/soundVoice.startActivity (Landroid/content/Intent;)V]
+  - Methodref [java/lang/String.contains (Ljava/lang/CharSequence;)Z]
+  - Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
+  - Methodref [java/lang/StringBuilder.append (I)Ljava/lang/StringBuilder;]
+  - Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+  - Methodref [java/lang/Thread.<init> ()V]
+  - Methodref [java/lang/Thread.run ()V]
+  - Methodref [java/util/ArrayList.size ()I]
+  - Methodref [java/util/ArrayList.toArray ([Ljava/lang/Object;)[Ljava/lang/Object;]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (Ljava/lang/String;)V]
+  + NameAndType [a (Landroid/content/Context;[Ljava/lang/String;)Landroid/content/Intent;]
+  + NameAndType [a (Landroid/content/Context;[Ljava/lang/String;)Z]
+  + NameAndType [a (Lcom/soundvoice/james/soundVoice;I)V]
+  + NameAndType [a (Lcom/soundvoice/james/soundVoice;Landroid/content/Intent;)V]
+  + NameAndType [a (Lcom/soundvoice/james/soundVoice;Z)V]
+  + NameAndType [a (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z]
+  + NameAndType [a ([Ljava/lang/String;)V]
+  + NameAndType [a I]
+  + NameAndType [a Ljava/util/ArrayList;]
+  + NameAndType [append (I)Ljava/lang/StringBuilder;]
+  + NameAndType [b ()[Ljava/lang/String;]
+  + NameAndType [b (Lcom/soundvoice/james/soundVoice;)Landroid/os/Handler;]
+  + NameAndType [b Landroid/content/Intent;]
+  + NameAndType [c Lcom/soundvoice/james/soundVoice;]
+  + NameAndType [contains (Ljava/lang/CharSequence;)Z]
+  + NameAndType [d (Lcom/soundvoice/james/soundVoice;)I]
+  + NameAndType [e (Lcom/soundvoice/james/soundVoice;)Landroid/content/Intent;]
+  + NameAndType [f (Lcom/soundvoice/james/soundVoice;)Z]
+  + NameAndType [g (Lcom/soundvoice/james/soundVoice;)Landroid/widget/Button;]
+  + NameAndType [getStringArrayListExtra (Ljava/lang/String;)Ljava/util/ArrayList;]
+  + NameAndType [i (Ljava/lang/String;Ljava/lang/String;)I]
+  + NameAndType [run ()V]
+  + NameAndType [sendEmptyMessage (I)Z]
+  + NameAndType [setClickable (Z)V]
+  + NameAndType [size ()I]
+  + NameAndType [startActivity (Landroid/content/Intent;)V]
+  + NameAndType [toArray ([Ljava/lang/Object;)[Ljava/lang/Object;]
+  + NameAndType [toString ()Ljava/lang/String;]
+  + Utf8 [()I]
+  + Utf8 [()Ljava/lang/String;]
+  + Utf8 [()V]
+  + Utf8 [()[Ljava/lang/String;]
+  + Utf8 [(I)Ljava/lang/StringBuilder;]
+  + Utf8 [(I)Z]
+  + Utf8 [(Landroid/content/Context;[Ljava/lang/String;)Landroid/content/Intent;]
+  + Utf8 [(Landroid/content/Context;[Ljava/lang/String;)Z]
+  + Utf8 [(Landroid/content/Intent;)V]
+  + Utf8 [(Lcom/soundvoice/james/soundVoice;)I]
+  + Utf8 [(Lcom/soundvoice/james/soundVoice;)Landroid/content/Intent;]
+  + Utf8 [(Lcom/soundvoice/james/soundVoice;)Landroid/os/Handler;]
+  + Utf8 [(Lcom/soundvoice/james/soundVoice;)Landroid/widget/Button;]
+  + Utf8 [(Lcom/soundvoice/james/soundVoice;)Z]
+  + Utf8 [(Lcom/soundvoice/james/soundVoice;I)V]
+  + Utf8 [(Lcom/soundvoice/james/soundVoice;ILandroid/content/Intent;)V]
+  + Utf8 [(Lcom/soundvoice/james/soundVoice;Landroid/content/Intent;)V]
+  + Utf8 [(Lcom/soundvoice/james/soundVoice;Z)V]
+  + Utf8 [(Ljava/lang/CharSequence;)Z]
+  + Utf8 [(Ljava/lang/String;)Ljava/util/ArrayList;]
+  + Utf8 [(Ljava/lang/String;)V]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/String;)I]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z]
+  + Utf8 [(Z)V]
+  + Utf8 [([Ljava/lang/Object;)[Ljava/lang/Object;]
+  + Utf8 [([Ljava/lang/String;)V]
+  + Utf8 [**********size===]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [I]
+  + Utf8 [Landroid/content/Intent;]
+  + Utf8 [Lcom/soundvoice/james/soundVoice;]
+  + Utf8 [Ljava/util/ArrayList;]
+  + Utf8 [[Ljava/lang/String;]
+  + Utf8 [a]
+  + Utf8 [android.speech.extra.RESULTS]
+  + Utf8 [android/content/Intent]
+  + Utf8 [android/os/Handler]
+  + Utf8 [android/util/Log]
+  + Utf8 [android/widget/Button]
+  + Utf8 [append]
+  + Utf8 [b]
+  + Utf8 [c]
+  + Utf8 [com/soundvoice/a/a]
+  + Utf8 [com/soundvoice/a/b]
+  + Utf8 [com/soundvoice/a/c]
+  + Utf8 [com/soundvoice/james/e]
+  + Utf8 [com/soundvoice/james/soundVoice]
+  + Utf8 [contains]
+  + Utf8 [d]
+  + Utf8 [e]
+  + Utf8 [f]
+  + Utf8 [g]
+  + Utf8 [getStringArrayListExtra]
+  + Utf8 [i]
+  + Utf8 [james_voice_control]
+  + Utf8 [java/lang/String]
+  + Utf8 [java/lang/StringBuilder]
+  + Utf8 [java/lang/Thread]
+  + Utf8 [java/util/ArrayList]
+  + Utf8 [run]
+  + Utf8 [sendEmptyMessage]
+  + Utf8 [setClickable]
+  + Utf8 [size]
+  + Utf8 [startActivity]
+  + Utf8 [toArray]
+  + Utf8 [toString]
+  + Utf8 [光线增加]
+  + Utf8 [删除]
+  + Utf8 [卸载]
+  + Utf8 [启动]
+  + Utf8 [定位]
+  + Utf8 [导航]
+  + Utf8 [开启]
+  + Utf8 [开灯]
+  + Utf8 [手电筒]
+  + Utf8 [打开]
+  + Utf8 [打电话]
+  + Utf8 [拨号]
+  + Utf8 [移除]
+  + Utf8 [震动]
+
+Fields (count = 3):
+  + Field:        a I
+    Access flags: 0x2
+      = private int a
+  + Field:        b Landroid/content/Intent;
+    Access flags: 0x2
+      = private android.content.Intent b
+  + Field:        c Lcom/soundvoice/james/soundVoice;
+    Access flags: 0x1002
+      = private com.soundvoice.james.soundVoice c
+
+Methods (count = 2):
+  - Method:       <init>(Lcom/soundvoice/james/soundVoice;ILandroid/content/Intent;)V
+    Access flags: 0x1
+      = public e(com.soundvoice.james.soundVoice,int,android.content.Intent)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 20, locals = 4, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #34
+        - Fieldref [com/soundvoice/james/e.c Lcom/soundvoice/james/soundVoice;]
+      [5] aload_0 v0
+      [6] invokespecial #58
+        - Methodref [java/lang/Thread.<init> ()V]
+      [9] aload_0 v0
+      [10] iload_2 v2
+      [11] putfield #32
+        - Fieldref [com/soundvoice/james/e.a I]
+      [14] aload_0 v0
+      [15] aload_3 v3
+      [16] putfield #33
+        - Fieldref [com/soundvoice/james/e.b Landroid/content/Intent;]
+      [19] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       run()V
+    Access flags: 0x11
+      = public final void run()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 463, locals = 3, stack = 4):
+      [0] aload_0 v0
+      [1] aload_0 v0
+      [2] getfield #33
+        - Fieldref [com/soundvoice/james/e.b Landroid/content/Intent;]
+      [5] astore_2 v2
+      [6] dup
+      [7] astore_1 v1
+      [8] getfield #34
+        - Fieldref [com/soundvoice/james/e.c Lcom/soundvoice/james/soundVoice;]
+      [11] aload_2 v2
+      [12] ldc #2
+        - String [android.speech.extra.RESULTS]
+      [14] invokevirtual #36
+        - Methodref [android/content/Intent.getStringArrayListExtra (Ljava/lang/String;)Ljava/util/ArrayList;]
+      [17] putfield #35
+        - Fieldref [com/soundvoice/james/soundVoice.a Ljava/util/ArrayList;]
+      [20] aload_1 v1
+      [21] getfield #34
+        - Fieldref [com/soundvoice/james/e.c Lcom/soundvoice/james/soundVoice;]
+      [24] getfield #35
+        - Fieldref [com/soundvoice/james/soundVoice.a Ljava/util/ArrayList;]
+      [27] invokevirtual #60
+        - Methodref [java/util/ArrayList.size ()I]
+      [30] istore_2 v2
+      [31] aload_1 v1
+      [32] getfield #34
+        - Fieldref [com/soundvoice/james/e.c Lcom/soundvoice/james/soundVoice;]
+      [35] getfield #35
+        - Fieldref [com/soundvoice/james/soundVoice.a Ljava/util/ArrayList;]
+      [38] iload_2 v2
+      [39] anewarray #28
+        - Class [java/lang/String]
+      [42] invokevirtual #61
+        - Methodref [java/util/ArrayList.toArray ([Ljava/lang/Object;)[Ljava/lang/Object;]
+      [45] checkcast #18
+        - Class [[Ljava/lang/String;]
+      [48] invokestatic #46
+        - Methodref [com/soundvoice/james/soundVoice.a ([Ljava/lang/String;)V]
+      [51] ldc #3
+        - String [james_voice_control]
+      [53] new #29
+        - Class [java/lang/StringBuilder]
+      [56] dup
+      [57] ldc #1
+        - String [**********size===]
+      [59] invokespecial #55
+        - Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
+      [62] invokestatic #47
+        - Methodref [com/soundvoice/james/soundVoice.b ()[Ljava/lang/String;]
+      [65] arraylength
+      [66] invokevirtual #56
+        - Methodref [java/lang/StringBuilder.append (I)Ljava/lang/StringBuilder;]
+      [69] invokevirtual #57
+        - Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [72] invokestatic #38
+        - Methodref [android/util/Log.i (Ljava/lang/String;Ljava/lang/String;)I]
+      [75] pop
+      [76] iconst_0
+      [77] istore_2 v2
+      [78] goto +211 (target=289)
+      [81] invokestatic #47
+        - Methodref [com/soundvoice/james/soundVoice.b ()[Ljava/lang/String;]
+      [84] iload_2 v2
+      [85] aaload
+      [86] ldc #6
+        - String [卸载]
+      [88] ldc #16
+        - String [移除]
+      [90] ldc #5
+        - String [删除]
+      [92] invokestatic #41
+        - Methodref [com/soundvoice/a/b.a (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z]
+      [95] ifeq +14 (target=109)
+      [98] aload_1 v1
+      [99] getfield #34
+        - Fieldref [com/soundvoice/james/e.c Lcom/soundvoice/james/soundVoice;]
+      [102] iconst_1
+      [103] invokestatic #43
+        - Methodref [com/soundvoice/james/soundVoice.a (Lcom/soundvoice/james/soundVoice;I)V]
+      [106] goto +191 (target=297)
+      [109] invokestatic #47
+        - Methodref [com/soundvoice/james/soundVoice.b ()[Ljava/lang/String;]
+      [112] iload_2 v2
+      [113] aaload
+      [114] ldc #13
+        - String [打开]
+      [116] ldc #10
+        - String [开启]
+      [118] ldc #7
+        - String [启动]
+      [120] invokestatic #41
+        - Methodref [com/soundvoice/a/b.a (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z]
+      [123] ifeq +14 (target=137)
+      [126] aload_1 v1
+      [127] getfield #34
+        - Fieldref [com/soundvoice/james/e.c Lcom/soundvoice/james/soundVoice;]
+      [130] iconst_2
+      [131] invokestatic #43
+        - Methodref [com/soundvoice/james/soundVoice.a (Lcom/soundvoice/james/soundVoice;I)V]
+      [134] goto +163 (target=297)
+      [137] invokestatic #47
+        - Methodref [com/soundvoice/james/soundVoice.b ()[Ljava/lang/String;]
+      [140] iload_2 v2
+      [141] aaload
+      [142] ldc #8
+        - String [定位]
+      [144] invokevirtual #54
+        - Methodref [java/lang/String.contains (Ljava/lang/CharSequence;)Z]
+      [147] ifne +16 (target=163)
+      [150] invokestatic #47
+        - Methodref [com/soundvoice/james/soundVoice.b ()[Ljava/lang/String;]
+      [153] iload_2 v2
+      [154] aaload
+      [155] ldc #9
+        - String [导航]
+      [157] invokevirtual #54
+        - Methodref [java/lang/String.contains (Ljava/lang/CharSequence;)Z]
+      [160] ifeq +14 (target=174)
+      [163] aload_1 v1
+      [164] getfield #34
+        - Fieldref [com/soundvoice/james/e.c Lcom/soundvoice/james/soundVoice;]
+      [167] iconst_3
+      [168] invokestatic #43
+        - Methodref [com/soundvoice/james/soundVoice.a (Lcom/soundvoice/james/soundVoice;I)V]
+      [171] goto +126 (target=297)
+      [174] invokestatic #47
+        - Methodref [com/soundvoice/james/soundVoice.b ()[Ljava/lang/String;]
+      [177] iload_2 v2
+      [178] aaload
+      [179] ldc #4
+        - String [光线增加]
+      [181] invokevirtual #54
+        - Methodref [java/lang/String.contains (Ljava/lang/CharSequence;)Z]
+      [184] ifne +16 (target=200)
+      [187] invokestatic #47
+        - Methodref [com/soundvoice/james/soundVoice.b ()[Ljava/lang/String;]
+      [190] iload_2 v2
+      [191] aaload
+      [192] ldc #17
+        - String [震动]
+      [194] invokevirtual #54
+        - Methodref [java/lang/String.contains (Ljava/lang/CharSequence;)Z]
+      [197] ifeq +14 (target=211)
+      [200] aload_1 v1
+      [201] getfield #34
+        - Fieldref [com/soundvoice/james/e.c Lcom/soundvoice/james/soundVoice;]
+      [204] iconst_4
+      [205] invokestatic #43
+        - Methodref [com/soundvoice/james/soundVoice.a (Lcom/soundvoice/james/soundVoice;I)V]
+      [208] goto +89 (target=297)
+      [211] invokestatic #47
+        - Methodref [com/soundvoice/james/soundVoice.b ()[Ljava/lang/String;]
+      [214] iload_2 v2
+      [215] aaload
+      [216] ldc #15
+        - String [拨号]
+      [218] invokevirtual #54
+        - Methodref [java/lang/String.contains (Ljava/lang/CharSequence;)Z]
+      [221] ifne +16 (target=237)
+      [224] invokestatic #47
+        - Methodref [com/soundvoice/james/soundVoice.b ()[Ljava/lang/String;]
+      [227] iload_2 v2
+      [228] aaload
+      [229] ldc #14
+        - String [打电话]
+      [231] invokevirtual #54
+        - Methodref [java/lang/String.contains (Ljava/lang/CharSequence;)Z]
+      [234] ifeq +14 (target=248)
+      [237] aload_1 v1
+      [238] getfield #34
+        - Fieldref [com/soundvoice/james/e.c Lcom/soundvoice/james/soundVoice;]
+      [241] iconst_5
+      [242] invokestatic #43
+        - Methodref [com/soundvoice/james/soundVoice.a (Lcom/soundvoice/james/soundVoice;I)V]
+      [245] goto +52 (target=297)
+      [248] invokestatic #47
+        - Methodref [com/soundvoice/james/soundVoice.b ()[Ljava/lang/String;]
+      [251] iload_2 v2
+      [252] aaload
+      [253] ldc #11
+        - String [开灯]
+      [255] invokevirtual #54
+        - Methodref [java/lang/String.contains (Ljava/lang/CharSequence;)Z]
+      [258] ifne +16 (target=274)
+      [261] invokestatic #47
+        - Methodref [com/soundvoice/james/soundVoice.b ()[Ljava/lang/String;]
+      [264] iload_2 v2
+      [265] aaload
+      [266] ldc #12
+        - String [手电筒]
+      [268] invokevirtual #54
+        - Methodref [java/lang/String.contains (Ljava/lang/CharSequence;)Z]
+      [271] ifeq +15 (target=286)
+      [274] aload_1 v1
+      [275] getfield #34
+        - Fieldref [com/soundvoice/james/e.c Lcom/soundvoice/james/soundVoice;]
+      [278] bipush 6
+      [280] invokestatic #43
+        - Methodref [com/soundvoice/james/soundVoice.a (Lcom/soundvoice/james/soundVoice;I)V]
+      [283] goto +14 (target=297)
+      [286] iinc v2, 1
+      [289] iload_2 v2
+      [290] invokestatic #47
+        - Methodref [com/soundvoice/james/soundVoice.b ()[Ljava/lang/String;]
+      [293] arraylength
+      [294] ificmplt -213 (target=81)
+      [297] aload_1 v1
+      [298] getfield #34
+        - Fieldref [com/soundvoice/james/e.c Lcom/soundvoice/james/soundVoice;]
+      [301] invokestatic #49
+        - Methodref [com/soundvoice/james/soundVoice.d (Lcom/soundvoice/james/soundVoice;)I]
+      [304] tableswitch (6 offsets, default=109) (target=413)
+        1: offset = 40, target = 344
+        2: offset = 60, target = 364
+        3: offset = 109, target = 413
+        4: offset = 109, target = 413
+        5: offset = 109, target = 413
+        6: offset = 109, target = 413
+        default: offset = 109, target = 413
+      [344] aload_1 v1
+      [345] getfield #34
+        - Fieldref [com/soundvoice/james/e.c Lcom/soundvoice/james/soundVoice;]
+      [348] aload_1 v1
+      [349] getfield #34
+        - Fieldref [com/soundvoice/james/e.c Lcom/soundvoice/james/soundVoice;]
+      [352] invokestatic #47
+        - Methodref [com/soundvoice/james/soundVoice.b ()[Ljava/lang/String;]
+      [355] invokestatic #42
+        - Methodref [com/soundvoice/a/c.a (Landroid/content/Context;[Ljava/lang/String;)Z]
+      [358] invokestatic #45
+        - Methodref [com/soundvoice/james/soundVoice.a (Lcom/soundvoice/james/soundVoice;Z)V]
+      [361] goto +52 (target=413)
+      [364] aload_1 v1
+      [365] getfield #34
+        - Fieldref [com/soundvoice/james/e.c Lcom/soundvoice/james/soundVoice;]
+      [368] aload_1 v1
+      [369] getfield #34
+        - Fieldref [com/soundvoice/james/e.c Lcom/soundvoice/james/soundVoice;]
+      [372] invokestatic #47
+        - Methodref [com/soundvoice/james/soundVoice.b ()[Ljava/lang/String;]
+      [375] invokestatic #40
+        - Methodref [com/soundvoice/a/a.a (Landroid/content/Context;[Ljava/lang/String;)Landroid/content/Intent;]
+      [378] invokestatic #44
+        - Methodref [com/soundvoice/james/soundVoice.a (Lcom/soundvoice/james/soundVoice;Landroid/content/Intent;)V]
+      [381] aload_1 v1
+      [382] getfield #34
+        - Fieldref [com/soundvoice/james/e.c Lcom/soundvoice/james/soundVoice;]
+      [385] invokestatic #50
+        - Methodref [com/soundvoice/james/soundVoice.e (Lcom/soundvoice/james/soundVoice;)Landroid/content/Intent;]
+      [388] ifnull +25 (target=413)
+      [391] aload_1 v1
+      [392] getfield #34
+        - Fieldref [com/soundvoice/james/e.c Lcom/soundvoice/james/soundVoice;]
+      [395] aload_1 v1
+      [396] getfield #34
+        - Fieldref [com/soundvoice/james/e.c Lcom/soundvoice/james/soundVoice;]
+      [399] invokestatic #50
+        - Methodref [com/soundvoice/james/soundVoice.e (Lcom/soundvoice/james/soundVoice;)Landroid/content/Intent;]
+      [402] invokevirtual #53
+        - Methodref [com/soundvoice/james/soundVoice.startActivity (Landroid/content/Intent;)V]
+      [405] aload_1 v1
+      [406] getfield #34
+        - Fieldref [com/soundvoice/james/e.c Lcom/soundvoice/james/soundVoice;]
+      [409] iconst_1
+      [410] invokestatic #45
+        - Methodref [com/soundvoice/james/soundVoice.a (Lcom/soundvoice/james/soundVoice;Z)V]
+      [413] aload_1 v1
+      [414] getfield #34
+        - Fieldref [com/soundvoice/james/e.c Lcom/soundvoice/james/soundVoice;]
+      [417] invokestatic #51
+        - Methodref [com/soundvoice/james/soundVoice.f (Lcom/soundvoice/james/soundVoice;)Z]
+      [420] ifeq +14 (target=434)
+      [423] aload_1 v1
+      [424] getfield #34
+        - Fieldref [com/soundvoice/james/e.c Lcom/soundvoice/james/soundVoice;]
+      [427] iconst_0
+      [428] invokestatic #45
+        - Methodref [com/soundvoice/james/soundVoice.a (Lcom/soundvoice/james/soundVoice;Z)V]
+      [431] goto +16 (target=447)
+      [434] aload_1 v1
+      [435] getfield #34
+        - Fieldref [com/soundvoice/james/e.c Lcom/soundvoice/james/soundVoice;]
+      [438] invokestatic #48
+        - Methodref [com/soundvoice/james/soundVoice.b (Lcom/soundvoice/james/soundVoice;)Landroid/os/Handler;]
+      [441] bipush 9
+      [443] invokevirtual #37
+        - Methodref [android/os/Handler.sendEmptyMessage (I)Z]
+      [446] pop
+      [447] aload_1 v1
+      [448] getfield #34
+        - Fieldref [com/soundvoice/james/e.c Lcom/soundvoice/james/soundVoice;]
+      [451] invokestatic #52
+        - Methodref [com/soundvoice/james/soundVoice.g (Lcom/soundvoice/james/soundVoice;)Landroid/widget/Button;]
+      [454] iconst_1
+      [455] invokevirtual #39
+        - Methodref [android/widget/Button.setClickable (Z)V]
+      [458] aload_0 v0
+      [459] invokespecial #59
+        - Methodref [java/lang/Thread.run ()V]
+      [462] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/soundvoice/a/b
+  Superclass:    java/lang/Object
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x31
+    = public final class com.soundvoice.a.b extends java.lang.Object
+
+Interfaces (count = 0):
+
+Constant Pool (count = 27):
+  - String []
+  - Class [com/soundvoice/a/b]
+  - Class [java/lang/Object]
+  - Class [java/lang/String]
+  - Methodref [java/lang/Object.<init> ()V]
+  - Methodref [java/lang/String.contains (Ljava/lang/CharSequence;)Z]
+  - Methodref [java/lang/String.replaceAll (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
+  + NameAndType [<init> ()V]
+  + NameAndType [contains (Ljava/lang/CharSequence;)Z]
+  + NameAndType [replaceAll (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
+  + Utf8 []
+  + Utf8 [()V]
+  + Utf8 [(Ljava/lang/CharSequence;)Z]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [StackMapTable]
+  + Utf8 [a]
+  + Utf8 [b]
+  + Utf8 [com/soundvoice/a/b]
+  + Utf8 [contains]
+  + Utf8 [java/lang/Object]
+  + Utf8 [java/lang/String]
+  + Utf8 [replaceAll]
+
+Fields (count = 0):
+
+Methods (count = 3):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public b()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] invokespecial #5
+        - Methodref [java/lang/Object.<init> ()V]
+      [4] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    Access flags: 0x9
+      = public static boolean a(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 28, locals = 4, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] invokevirtual #6
+        - Methodref [java/lang/String.contains (Ljava/lang/CharSequence;)Z]
+      [5] ifne +19 (target=24)
+      [8] aload_0 v0
+      [9] aload_2 v2
+      [10] invokevirtual #6
+        - Methodref [java/lang/String.contains (Ljava/lang/CharSequence;)Z]
+      [13] ifne +11 (target=24)
+      [16] aload_0 v0
+      [17] aload_3 v3
+      [18] invokevirtual #6
+        - Methodref [java/lang/String.contains (Ljava/lang/CharSequence;)Z]
+      [21] ifeq +5 (target=26)
+      [24] iconst_1
+      [25] ireturn
+      [26] iconst_0
+      [27] ireturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 2):
+        - [24] Var: ..., Stack: (empty)
+        - [26] Var: ..., Stack: (empty)
+  + Method:       b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    Access flags: 0x9
+      = public static java.lang.String b(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 46, locals = 4, stack = 3):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] invokevirtual #6
+        - Methodref [java/lang/String.contains (Ljava/lang/CharSequence;)Z]
+      [5] ifne +19 (target=24)
+      [8] aload_0 v0
+      [9] aload_2 v2
+      [10] invokevirtual #6
+        - Methodref [java/lang/String.contains (Ljava/lang/CharSequence;)Z]
+      [13] ifne +11 (target=24)
+      [16] aload_0 v0
+      [17] aload_3 v3
+      [18] invokevirtual #6
+        - Methodref [java/lang/String.contains (Ljava/lang/CharSequence;)Z]
+      [21] ifeq +23 (target=44)
+      [24] aload_0 v0
+      [25] aload_1 v1
+      [26] ldc #1
+        - String []
+      [28] invokevirtual #7
+        - Methodref [java/lang/String.replaceAll (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
+      [31] aload_2 v2
+      [32] ldc #1
+        - String []
+      [34] invokevirtual #7
+        - Methodref [java/lang/String.replaceAll (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
+      [37] aload_3 v3
+      [38] ldc #1
+        - String []
+      [40] invokevirtual #7
+        - Methodref [java/lang/String.replaceAll (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
+      [43] astore_0 v0
+      [44] aload_0 v0
+      [45] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 2):
+        - [24] Var: ..., Stack: (empty)
+        - [44] Var: ..., Stack: (empty)
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/soundvoice/james/f
+  Superclass:    java/lang/Object
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x30
+    = final class com.soundvoice.james.f extends java.lang.Object
+
+Interfaces (count = 1):
+  - Class [android/widget/AdapterView$OnItemClickListener]
+
+Constant Pool (count = 69):
+  - Integer [268435456]
+  - String [android.intent.action.VIEW]
+  - String [http://www.google.com/search?q=]
+  - Class [android/content/Intent]
+  - Class [android/net/Uri]
+  - Class [android/widget/AdapterView]
+  - Class [android/widget/AdapterView$OnItemClickListener]
+  - Class [com/soundvoice/james/b]
+  - Class [com/soundvoice/james/f]
+  - Class [com/soundvoice/james/soundVoice]
+  - Class [java/lang/Object]
+  - Class [java/lang/StringBuilder]
+  - Fieldref [com/soundvoice/james/b.a Lcom/soundvoice/james/soundVoice;]
+  - Fieldref [com/soundvoice/james/f.a Lcom/soundvoice/james/b;]
+  - Methodref [android/content/Intent.<init> (Ljava/lang/String;Landroid/net/Uri;)V]
+  - Methodref [android/content/Intent.addFlags (I)Landroid/content/Intent;]
+  - Methodref [android/net/Uri.parse (Ljava/lang/String;)Landroid/net/Uri;]
+  - Methodref [com/soundvoice/james/soundVoice.b ()[Ljava/lang/String;]
+  - Methodref [com/soundvoice/james/soundVoice.startActivity (Landroid/content/Intent;)V]
+  - Methodref [java/lang/Object.<init> ()V]
+  - Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
+  - Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+  - Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (Ljava/lang/String;)V]
+  + NameAndType [<init> (Ljava/lang/String;Landroid/net/Uri;)V]
+  + NameAndType [a Lcom/soundvoice/james/b;]
+  + NameAndType [a Lcom/soundvoice/james/soundVoice;]
+  + NameAndType [addFlags (I)Landroid/content/Intent;]
+  + NameAndType [append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+  + NameAndType [b ()[Ljava/lang/String;]
+  + NameAndType [parse (Ljava/lang/String;)Landroid/net/Uri;]
+  + NameAndType [startActivity (Landroid/content/Intent;)V]
+  + NameAndType [toString ()Ljava/lang/String;]
+  + Utf8 [()Ljava/lang/String;]
+  + Utf8 [()V]
+  + Utf8 [()[Ljava/lang/String;]
+  + Utf8 [(I)Landroid/content/Intent;]
+  + Utf8 [(Landroid/content/Intent;)V]
+  + Utf8 [(Landroid/widget/AdapterView;Landroid/view/View;IJ)V]
+  + Utf8 [(Lcom/soundvoice/james/b;)V]
+  + Utf8 [(Ljava/lang/String;)Landroid/net/Uri;]
+  + Utf8 [(Ljava/lang/String;)Ljava/lang/StringBuilder;]
+  + Utf8 [(Ljava/lang/String;)V]
+  + Utf8 [(Ljava/lang/String;Landroid/net/Uri;)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Lcom/soundvoice/james/b;]
+  + Utf8 [Lcom/soundvoice/james/soundVoice;]
+  + Utf8 [a]
+  + Utf8 [addFlags]
+  + Utf8 [android.intent.action.VIEW]
+  + Utf8 [android/content/Intent]
+  + Utf8 [android/net/Uri]
+  + Utf8 [android/widget/AdapterView]
+  + Utf8 [android/widget/AdapterView$OnItemClickListener]
+  + Utf8 [append]
+  + Utf8 [b]
+  + Utf8 [com/soundvoice/james/b]
+  + Utf8 [com/soundvoice/james/f]
+  + Utf8 [com/soundvoice/james/soundVoice]
+  + Utf8 [http://www.google.com/search?q=]
+  + Utf8 [java/lang/Object]
+  + Utf8 [java/lang/StringBuilder]
+  + Utf8 [onItemClick]
+  + Utf8 [parse]
+  + Utf8 [startActivity]
+  + Utf8 [toString]
+
+Fields (count = 1):
+  + Field:        a Lcom/soundvoice/james/b;
+    Access flags: 0x1002
+      = private com.soundvoice.james.b a
+
+Methods (count = 2):
+  - Method:       <init>(Lcom/soundvoice/james/b;)V
+    Access flags: 0x0
+      = f(com.soundvoice.james.b)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #14
+        - Fieldref [com/soundvoice/james/f.a Lcom/soundvoice/james/b;]
+      [5] aload_0 v0
+      [6] invokespecial #20
+        - Methodref [java/lang/Object.<init> ()V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
+    Access flags: 0x11
+      = public final void onItemClick(android.widget.AdapterView,android.view.View,int,long)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 52, locals = 6, stack = 6):
+      [0] new #4
+        - Class [android/content/Intent]
+      [3] dup
+      [4] ldc #2
+        - String [android.intent.action.VIEW]
+      [6] new #12
+        - Class [java/lang/StringBuilder]
+      [9] dup
+      [10] ldc #3
+        - String [http://www.google.com/search?q=]
+      [12] invokespecial #21
+        - Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
+      [15] invokestatic #18
+        - Methodref [com/soundvoice/james/soundVoice.b ()[Ljava/lang/String;]
+      [18] iload_3 v3
+      [19] aaload
+      [20] invokevirtual #22
+        - Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [23] invokevirtual #23
+        - Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [26] invokestatic #17
+        - Methodref [android/net/Uri.parse (Ljava/lang/String;)Landroid/net/Uri;]
+      [29] invokespecial #15
+        - Methodref [android/content/Intent.<init> (Ljava/lang/String;Landroid/net/Uri;)V]
+      [32] dup
+      [33] astore_1 v1
+      [34] ldc #1
+        - Integer [268435456]
+      [36] invokevirtual #16
+        - Methodref [android/content/Intent.addFlags (I)Landroid/content/Intent;]
+      [39] pop
+      [40] aload_0 v0
+      [41] getfield #14
+        - Fieldref [com/soundvoice/james/f.a Lcom/soundvoice/james/b;]
+      [44] getfield #13
+        - Fieldref [com/soundvoice/james/b.a Lcom/soundvoice/james/soundVoice;]
+      [47] aload_1 v1
+      [48] invokevirtual #19
+        - Methodref [com/soundvoice/james/soundVoice.startActivity (Landroid/content/Intent;)V]
+      [51] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/soundvoice/james/g
+  Superclass:    java/lang/Object
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x30
+    = final class com.soundvoice.james.g extends java.lang.Object
+
+Interfaces (count = 1):
+  - Class [android/content/DialogInterface$OnClickListener]
+
+Constant Pool (count = 53):
+  - Integer [2130968576]
+  - Integer [2130968577]
+  - Class [android/content/DialogInterface]
+  - Class [android/content/DialogInterface$OnClickListener]
+  - Class [android/content/Intent]
+  - Class [com/soundvoice/james/g]
+  - Class [com/soundvoice/james/helpContent]
+  - Class [com/soundvoice/james/soundVoice]
+  - Class [java/lang/Object]
+  - Fieldref [com/soundvoice/james/g.a Lcom/soundvoice/james/helpContent;]
+  - Fieldref [com/soundvoice/james/helpContent.a Z]
+  - Methodref [android/content/Intent.<init> ()V]
+  - Methodref [android/content/Intent.setClass (Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;]
+  - Methodref [com/soundvoice/james/helpContent.a ()V]
+  - Methodref [com/soundvoice/james/helpContent.finish ()V]
+  - Methodref [com/soundvoice/james/helpContent.overridePendingTransition (II)V]
+  - Methodref [com/soundvoice/james/helpContent.startActivity (Landroid/content/Intent;)V]
+  - Methodref [java/lang/Object.<init> ()V]
+  - InterfaceMethodref [android/content/DialogInterface.dismiss ()V]
+  + NameAndType [<init> ()V]
+  + NameAndType [a ()V]
+  + NameAndType [a Lcom/soundvoice/james/helpContent;]
+  + NameAndType [a Z]
+  + NameAndType [dismiss ()V]
+  + NameAndType [finish ()V]
+  + NameAndType [overridePendingTransition (II)V]
+  + NameAndType [setClass (Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;]
+  + NameAndType [startActivity (Landroid/content/Intent;)V]
+  + Utf8 [()V]
+  + Utf8 [(II)V]
+  + Utf8 [(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;]
+  + Utf8 [(Landroid/content/DialogInterface;I)V]
+  + Utf8 [(Landroid/content/Intent;)V]
+  + Utf8 [(Lcom/soundvoice/james/helpContent;)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Lcom/soundvoice/james/helpContent;]
+  + Utf8 [Z]
+  + Utf8 [a]
+  + Utf8 [android/content/DialogInterface]
+  + Utf8 [android/content/DialogInterface$OnClickListener]
+  + Utf8 [android/content/Intent]
+  + Utf8 [com/soundvoice/james/g]
+  + Utf8 [com/soundvoice/james/helpContent]
+  + Utf8 [com/soundvoice/james/soundVoice]
+  + Utf8 [dismiss]
+  + Utf8 [finish]
+  + Utf8 [java/lang/Object]
+  + Utf8 [onClick]
+  + Utf8 [overridePendingTransition]
+  + Utf8 [setClass]
+  + Utf8 [startActivity]
+
+Fields (count = 1):
+  + Field:        a Lcom/soundvoice/james/helpContent;
+    Access flags: 0x1002
+      = private com.soundvoice.james.helpContent a
+
+Methods (count = 2):
+  - Method:       <init>(Lcom/soundvoice/james/helpContent;)V
+    Access flags: 0x0
+      = g(com.soundvoice.james.helpContent)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #10
+        - Fieldref [com/soundvoice/james/g.a Lcom/soundvoice/james/helpContent;]
+      [5] aload_0 v0
+      [6] invokespecial #18
+        - Methodref [java/lang/Object.<init> ()V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onClick(Landroid/content/DialogInterface;I)V
+    Access flags: 0x11
+      = public final void onClick(android.content.DialogInterface,int)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 67, locals = 3, stack = 3):
+      [0] aload_1 v1
+      [1] invokeinterface #19
+        - InterfaceMethodref [android/content/DialogInterface.dismiss ()V]
+      [6] aload_0 v0
+      [7] getfield #10
+        - Fieldref [com/soundvoice/james/g.a Lcom/soundvoice/james/helpContent;]
+      [10] iconst_0
+      [11] putfield #11
+        - Fieldref [com/soundvoice/james/helpContent.a Z]
+      [14] aload_0 v0
+      [15] getfield #10
+        - Fieldref [com/soundvoice/james/g.a Lcom/soundvoice/james/helpContent;]
+      [18] invokevirtual #14
+        - Methodref [com/soundvoice/james/helpContent.a ()V]
+      [21] new #5
+        - Class [android/content/Intent]
+      [24] dup
+      [25] invokespecial #12
+        - Methodref [android/content/Intent.<init> ()V]
+      [28] dup
+      [29] astore_1 v1
+      [30] aload_0 v0
+      [31] getfield #10
+        - Fieldref [com/soundvoice/james/g.a Lcom/soundvoice/james/helpContent;]
+      [34] ldc #8
+        - Class [com/soundvoice/james/soundVoice]
+      [36] invokevirtual #13
+        - Methodref [android/content/Intent.setClass (Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;]
+      [39] pop
+      [40] aload_0 v0
+      [41] getfield #10
+        - Fieldref [com/soundvoice/james/g.a Lcom/soundvoice/james/helpContent;]
+      [44] aload_1 v1
+      [45] invokevirtual #17
+        - Methodref [com/soundvoice/james/helpContent.startActivity (Landroid/content/Intent;)V]
+      [48] aload_0 v0
+      [49] getfield #10
+        - Fieldref [com/soundvoice/james/g.a Lcom/soundvoice/james/helpContent;]
+      [52] ldc #1
+        - Integer [2130968576]
+      [54] ldc #2
+        - Integer [2130968577]
+      [56] invokevirtual #16
+        - Methodref [com/soundvoice/james/helpContent.overridePendingTransition (II)V]
+      [59] aload_0 v0
+      [60] getfield #10
+        - Fieldref [com/soundvoice/james/g.a Lcom/soundvoice/james/helpContent;]
+      [63] invokevirtual #15
+        - Methodref [com/soundvoice/james/helpContent.finish ()V]
+      [66] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/soundvoice/james/h
+  Superclass:    java/lang/Object
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x30
+    = final class com.soundvoice.james.h extends java.lang.Object
+
+Interfaces (count = 1):
+  - Class [android/content/DialogInterface$OnClickListener]
+
+Constant Pool (count = 53):
+  - Integer [2130968576]
+  - Integer [2130968577]
+  - Class [android/content/DialogInterface]
+  - Class [android/content/DialogInterface$OnClickListener]
+  - Class [android/content/Intent]
+  - Class [com/soundvoice/james/h]
+  - Class [com/soundvoice/james/helpContent]
+  - Class [com/soundvoice/james/soundVoice]
+  - Class [java/lang/Object]
+  - Fieldref [com/soundvoice/james/h.a Lcom/soundvoice/james/helpContent;]
+  - Fieldref [com/soundvoice/james/helpContent.a Z]
+  - Methodref [android/content/Intent.<init> ()V]
+  - Methodref [android/content/Intent.setClass (Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;]
+  - Methodref [com/soundvoice/james/helpContent.a ()V]
+  - Methodref [com/soundvoice/james/helpContent.finish ()V]
+  - Methodref [com/soundvoice/james/helpContent.overridePendingTransition (II)V]
+  - Methodref [com/soundvoice/james/helpContent.startActivity (Landroid/content/Intent;)V]
+  - Methodref [java/lang/Object.<init> ()V]
+  - InterfaceMethodref [android/content/DialogInterface.dismiss ()V]
+  + NameAndType [<init> ()V]
+  + NameAndType [a ()V]
+  + NameAndType [a Lcom/soundvoice/james/helpContent;]
+  + NameAndType [a Z]
+  + NameAndType [dismiss ()V]
+  + NameAndType [finish ()V]
+  + NameAndType [overridePendingTransition (II)V]
+  + NameAndType [setClass (Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;]
+  + NameAndType [startActivity (Landroid/content/Intent;)V]
+  + Utf8 [()V]
+  + Utf8 [(II)V]
+  + Utf8 [(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;]
+  + Utf8 [(Landroid/content/DialogInterface;I)V]
+  + Utf8 [(Landroid/content/Intent;)V]
+  + Utf8 [(Lcom/soundvoice/james/helpContent;)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Lcom/soundvoice/james/helpContent;]
+  + Utf8 [Z]
+  + Utf8 [a]
+  + Utf8 [android/content/DialogInterface]
+  + Utf8 [android/content/DialogInterface$OnClickListener]
+  + Utf8 [android/content/Intent]
+  + Utf8 [com/soundvoice/james/h]
+  + Utf8 [com/soundvoice/james/helpContent]
+  + Utf8 [com/soundvoice/james/soundVoice]
+  + Utf8 [dismiss]
+  + Utf8 [finish]
+  + Utf8 [java/lang/Object]
+  + Utf8 [onClick]
+  + Utf8 [overridePendingTransition]
+  + Utf8 [setClass]
+  + Utf8 [startActivity]
+
+Fields (count = 1):
+  + Field:        a Lcom/soundvoice/james/helpContent;
+    Access flags: 0x1002
+      = private com.soundvoice.james.helpContent a
+
+Methods (count = 2):
+  - Method:       <init>(Lcom/soundvoice/james/helpContent;)V
+    Access flags: 0x0
+      = h(com.soundvoice.james.helpContent)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #10
+        - Fieldref [com/soundvoice/james/h.a Lcom/soundvoice/james/helpContent;]
+      [5] aload_0 v0
+      [6] invokespecial #18
+        - Methodref [java/lang/Object.<init> ()V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onClick(Landroid/content/DialogInterface;I)V
+    Access flags: 0x11
+      = public final void onClick(android.content.DialogInterface,int)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 67, locals = 3, stack = 3):
+      [0] aload_1 v1
+      [1] invokeinterface #19
+        - InterfaceMethodref [android/content/DialogInterface.dismiss ()V]
+      [6] aload_0 v0
+      [7] getfield #10
+        - Fieldref [com/soundvoice/james/h.a Lcom/soundvoice/james/helpContent;]
+      [10] iconst_1
+      [11] putfield #11
+        - Fieldref [com/soundvoice/james/helpContent.a Z]
+      [14] aload_0 v0
+      [15] getfield #10
+        - Fieldref [com/soundvoice/james/h.a Lcom/soundvoice/james/helpContent;]
+      [18] invokevirtual #14
+        - Methodref [com/soundvoice/james/helpContent.a ()V]
+      [21] new #5
+        - Class [android/content/Intent]
+      [24] dup
+      [25] invokespecial #12
+        - Methodref [android/content/Intent.<init> ()V]
+      [28] dup
+      [29] astore_1 v1
+      [30] aload_0 v0
+      [31] getfield #10
+        - Fieldref [com/soundvoice/james/h.a Lcom/soundvoice/james/helpContent;]
+      [34] ldc #8
+        - Class [com/soundvoice/james/soundVoice]
+      [36] invokevirtual #13
+        - Methodref [android/content/Intent.setClass (Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;]
+      [39] pop
+      [40] aload_0 v0
+      [41] getfield #10
+        - Fieldref [com/soundvoice/james/h.a Lcom/soundvoice/james/helpContent;]
+      [44] aload_1 v1
+      [45] invokevirtual #17
+        - Methodref [com/soundvoice/james/helpContent.startActivity (Landroid/content/Intent;)V]
+      [48] aload_0 v0
+      [49] getfield #10
+        - Fieldref [com/soundvoice/james/h.a Lcom/soundvoice/james/helpContent;]
+      [52] ldc #1
+        - Integer [2130968576]
+      [54] ldc #2
+        - Integer [2130968577]
+      [56] invokevirtual #16
+        - Methodref [com/soundvoice/james/helpContent.overridePendingTransition (II)V]
+      [59] aload_0 v0
+      [60] getfield #10
+        - Fieldref [com/soundvoice/james/h.a Lcom/soundvoice/james/helpContent;]
+      [63] invokevirtual #15
+        - Methodref [com/soundvoice/james/helpContent.finish ()V]
+      [66] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/soundvoice/a/c
+  Superclass:    java/lang/Object
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x31
+    = public final class com.soundvoice.a.c extends java.lang.Object
+
+Interfaces (count = 0):
+
+Constant Pool (count = 124):
+  - String []
+  - String [ ]
+  - String [android.intent.action.DELETE]
+  - String [package]
+  - String [删除]
+  - String [卸载]
+  - String [移除]
+  - Class [[Ljava/lang/String;]
+  - Class [android/content/Context]
+  - Class [android/content/Intent]
+  - Class [android/content/pm/ApplicationInfo]
+  - Class [android/content/pm/PackageInfo]
+  - Class [android/content/pm/PackageManager]
+  - Class [android/net/Uri]
+  - Class [com/soundvoice/a/b]
+  - Class [com/soundvoice/a/c]
+  - Class [java/lang/CharSequence]
+  - Class [java/lang/Object]
+  - Class [java/lang/String]
+  - Class [java/util/ArrayList]
+  - Class [java/util/List]
+  - Fieldref [android/content/pm/ApplicationInfo.flags I]
+  - Fieldref [android/content/pm/PackageInfo.applicationInfo Landroid/content/pm/ApplicationInfo;]
+  - Fieldref [android/content/pm/PackageInfo.packageName Ljava/lang/String;]
+  - Methodref [android/content/Context.getPackageManager ()Landroid/content/pm/PackageManager;]
+  - Methodref [android/content/Context.startActivity (Landroid/content/Intent;)V]
+  - Methodref [android/content/Intent.<init> (Ljava/lang/String;Landroid/net/Uri;)V]
+  - Methodref [android/content/pm/PackageManager.getApplicationLabel (Landroid/content/pm/ApplicationInfo;)Ljava/lang/CharSequence;]
+  - Methodref [android/content/pm/PackageManager.getInstalledPackages (I)Ljava/util/List;]
+  - Methodref [android/net/Uri.fromParts (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri;]
+  - Methodref [com/soundvoice/a/b.b (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
+  - Methodref [com/soundvoice/a/c.a (Landroid/content/Context;)Ljava/util/List;]
+  - Methodref [java/lang/Object.<init> ()V]
+  - Methodref [java/lang/String.contains (Ljava/lang/CharSequence;)Z]
+  - Methodref [java/lang/String.replaceAll (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
+  - Methodref [java/lang/String.toLowerCase ()Ljava/lang/String;]
+  - Methodref [java/lang/String.trim ()Ljava/lang/String;]
+  - Methodref [java/util/ArrayList.<init> ()V]
+  - InterfaceMethodref [java/lang/CharSequence.toString ()Ljava/lang/String;]
+  - InterfaceMethodref [java/util/List.add (Ljava/lang/Object;)Z]
+  - InterfaceMethodref [java/util/List.get (I)Ljava/lang/Object;]
+  - InterfaceMethodref [java/util/List.size ()I]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (Ljava/lang/String;Landroid/net/Uri;)V]
+  + NameAndType [a (Landroid/content/Context;)Ljava/util/List;]
+  + NameAndType [add (Ljava/lang/Object;)Z]
+  + NameAndType [applicationInfo Landroid/content/pm/ApplicationInfo;]
+  + NameAndType [b (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
+  + NameAndType [contains (Ljava/lang/CharSequence;)Z]
+  + NameAndType [flags I]
+  + NameAndType [fromParts (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri;]
+  + NameAndType [get (I)Ljava/lang/Object;]
+  + NameAndType [getApplicationLabel (Landroid/content/pm/ApplicationInfo;)Ljava/lang/CharSequence;]
+  + NameAndType [getInstalledPackages (I)Ljava/util/List;]
+  + NameAndType [getPackageManager ()Landroid/content/pm/PackageManager;]
+  + NameAndType [packageName Ljava/lang/String;]
+  + NameAndType [replaceAll (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
+  + NameAndType [size ()I]
+  + NameAndType [startActivity (Landroid/content/Intent;)V]
+  + NameAndType [toLowerCase ()Ljava/lang/String;]
+  + NameAndType [toString ()Ljava/lang/String;]
+  + NameAndType [trim ()Ljava/lang/String;]
+  + Utf8 []
+  + Utf8 [ ]
+  + Utf8 [()I]
+  + Utf8 [()Landroid/content/pm/PackageManager;]
+  + Utf8 [()Ljava/lang/String;]
+  + Utf8 [()V]
+  + Utf8 [(I)Ljava/lang/Object;]
+  + Utf8 [(I)Ljava/util/List;]
+  + Utf8 [(Landroid/content/Context;)Ljava/util/List;]
+  + Utf8 [(Landroid/content/Context;[Ljava/lang/String;)Z]
+  + Utf8 [(Landroid/content/Intent;)V]
+  + Utf8 [(Landroid/content/pm/ApplicationInfo;)Ljava/lang/CharSequence;]
+  + Utf8 [(Ljava/lang/CharSequence;)Z]
+  + Utf8 [(Ljava/lang/Object;)Z]
+  + Utf8 [(Ljava/lang/String;Landroid/net/Uri;)V]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri;]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [I]
+  + Utf8 [Landroid/content/pm/ApplicationInfo;]
+  + Utf8 [Ljava/lang/String;]
+  + Utf8 [StackMapTable]
+  + Utf8 [[Ljava/lang/String;]
+  + Utf8 [a]
+  + Utf8 [add]
+  + Utf8 [android.intent.action.DELETE]
+  + Utf8 [android/content/Context]
+  + Utf8 [android/content/Intent]
+  + Utf8 [android/content/pm/ApplicationInfo]
+  + Utf8 [android/content/pm/PackageInfo]
+  + Utf8 [android/content/pm/PackageManager]
+  + Utf8 [android/net/Uri]
+  + Utf8 [applicationInfo]
+  + Utf8 [b]
+  + Utf8 [com/soundvoice/a/b]
+  + Utf8 [com/soundvoice/a/c]
+  + Utf8 [contains]
+  + Utf8 [flags]
+  + Utf8 [fromParts]
+  + Utf8 [get]
+  + Utf8 [getApplicationLabel]
+  + Utf8 [getInstalledPackages]
+  + Utf8 [getPackageManager]
+  + Utf8 [java/lang/CharSequence]
+  + Utf8 [java/lang/Object]
+  + Utf8 [java/lang/String]
+  + Utf8 [java/util/ArrayList]
+  + Utf8 [java/util/List]
+  + Utf8 [package]
+  + Utf8 [packageName]
+  + Utf8 [replaceAll]
+  + Utf8 [size]
+  + Utf8 [startActivity]
+  + Utf8 [toLowerCase]
+  + Utf8 [toString]
+  + Utf8 [trim]
+  + Utf8 [删除]
+  + Utf8 [卸载]
+  + Utf8 [移除]
+
+Fields (count = 0):
+
+Methods (count = 3):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public c()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] invokespecial #33
+        - Methodref [java/lang/Object.<init> ()V]
+      [4] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a(Landroid/content/Context;)Ljava/util/List;
+    Access flags: 0x9
+      = public static java.util.List a(android.content.Context)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 95, locals = 4, stack = 2):
+      [0] new #20
+        - Class [java/util/ArrayList]
+      [3] dup
+      [4] invokespecial #38
+        - Methodref [java/util/ArrayList.<init> ()V]
+      [7] astore_1 v1
+      [8] aload_0 v0
+      [9] invokevirtual #25
+        - Methodref [android/content/Context.getPackageManager ()Landroid/content/pm/PackageManager;]
+      [12] sipush 8192
+      [15] invokevirtual #29
+        - Methodref [android/content/pm/PackageManager.getInstalledPackages (I)Ljava/util/List;]
+      [18] astore_0 v0
+      [19] iconst_0
+      [20] istore_2 v2
+      [21] goto +62 (target=83)
+      [24] aload_0 v0
+      [25] iload_2 v2
+      [26] invokeinterface #41
+        - InterfaceMethodref [java/util/List.get (I)Ljava/lang/Object;]
+      [31] checkcast #12
+        - Class [android/content/pm/PackageInfo]
+      [34] dup
+      [35] astore_3 v3
+      [36] getfield #23
+        - Fieldref [android/content/pm/PackageInfo.applicationInfo Landroid/content/pm/ApplicationInfo;]
+      [39] getfield #22
+        - Fieldref [android/content/pm/ApplicationInfo.flags I]
+      [42] iconst_1
+      [43] iand
+      [44] ifeq +17 (target=61)
+      [47] aload_3 v3
+      [48] getfield #23
+        - Fieldref [android/content/pm/PackageInfo.applicationInfo Landroid/content/pm/ApplicationInfo;]
+      [51] getfield #22
+        - Fieldref [android/content/pm/ApplicationInfo.flags I]
+      [54] sipush 128
+      [57] iand
+      [58] ifeq +14 (target=72)
+      [61] aload_1 v1
+      [62] aload_3 v3
+      [63] invokeinterface #40
+        - InterfaceMethodref [java/util/List.add (Ljava/lang/Object;)Z]
+      [68] pop
+      [69] goto +11 (target=80)
+      [72] aload_1 v1
+      [73] aload_3 v3
+      [74] invokeinterface #40
+        - InterfaceMethodref [java/util/List.add (Ljava/lang/Object;)Z]
+      [79] pop
+      [80] iinc v2, 1
+      [83] iload_2 v2
+      [84] aload_0 v0
+      [85] invokeinterface #42
+        - InterfaceMethodref [java/util/List.size ()I]
+      [90] ificmplt -66 (target=24)
+      [93] aload_1 v1
+      [94] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 5):
+        - [24] Var: [a:android/content/Context][a:java/util/List][a:android/content/pm/PackageManager][a:java/util/List][i], Stack: 
+        - [61] Var: ...[a:android/content/pm/PackageInfo], Stack: (empty)
+        - [72] Var: ..., Stack: (empty)
+        - [80] Var: -1, Stack: (empty)
+        - [83] Var: ..., Stack: (empty)
+  + Method:       a(Landroid/content/Context;[Ljava/lang/String;)Z
+    Access flags: 0x9
+      = public static boolean a(android.content.Context,java.lang.String[])
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 197, locals = 8, stack = 6):
+      [0] aload_0 v0
+      [1] invokevirtual #25
+        - Methodref [android/content/Context.getPackageManager ()Landroid/content/pm/PackageManager;]
+      [4] astore_2 v2
+      [5] aload_0 v0
+      [6] invokestatic #32
+        - Methodref [com/soundvoice/a/c.a (Landroid/content/Context;)Ljava/util/List;]
+      [9] astore_3 v3
+      [10] iconst_0
+      [11] istore v6
+      [13] goto +171 (target=184)
+      [16] aload_3 v3
+      [17] iload v6
+      [19] invokeinterface #41
+        - InterfaceMethodref [java/util/List.get (I)Ljava/lang/Object;]
+      [24] checkcast #12
+        - Class [android/content/pm/PackageInfo]
+      [27] dup
+      [28] astore v4
+      [30] getfield #24
+        - Fieldref [android/content/pm/PackageInfo.packageName Ljava/lang/String;]
+      [33] astore v5
+      [35] aload v4
+      [37] getfield #23
+        - Fieldref [android/content/pm/PackageInfo.applicationInfo Landroid/content/pm/ApplicationInfo;]
+      [40] astore v4
+      [42] aload_2 v2
+      [43] aload v4
+      [45] invokevirtual #28
+        - Methodref [android/content/pm/PackageManager.getApplicationLabel (Landroid/content/pm/ApplicationInfo;)Ljava/lang/CharSequence;]
+      [48] invokeinterface #39
+        - InterfaceMethodref [java/lang/CharSequence.toString ()Ljava/lang/String;]
+      [53] invokevirtual #37
+        - Methodref [java/lang/String.trim ()Ljava/lang/String;]
+      [56] ldc #2
+        - String [ ]
+      [58] ldc #1
+        - String []
+      [60] invokevirtual #35
+        - Methodref [java/lang/String.replaceAll (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
+      [63] astore v4
+      [65] iconst_0
+      [66] istore v7
+      [68] goto +106 (target=174)
+      [71] aload_1 v1
+      [72] iload v7
+      [74] aload_1 v1
+      [75] iload v7
+      [77] aaload
+      [78] ldc #6
+        - String [卸载]
+      [80] ldc #7
+        - String [移除]
+      [82] ldc #5
+        - String [删除]
+      [84] invokestatic #31
+        - Methodref [com/soundvoice/a/b.b (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
+      [87] aastore
+      [88] aload v4
+      [90] invokevirtual #36
+        - Methodref [java/lang/String.toLowerCase ()Ljava/lang/String;]
+      [93] aload_1 v1
+      [94] iload v7
+      [96] aaload
+      [97] invokevirtual #36
+        - Methodref [java/lang/String.toLowerCase ()Ljava/lang/String;]
+      [100] invokevirtual #37
+        - Methodref [java/lang/String.trim ()Ljava/lang/String;]
+      [103] ldc #2
+        - String [ ]
+      [105] ldc #1
+        - String []
+      [107] invokevirtual #35
+        - Methodref [java/lang/String.replaceAll (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
+      [110] invokevirtual #34
+        - Methodref [java/lang/String.contains (Ljava/lang/CharSequence;)Z]
+      [113] ifne +31 (target=144)
+      [116] aload_1 v1
+      [117] iload v7
+      [119] aaload
+      [120] invokevirtual #36
+        - Methodref [java/lang/String.toLowerCase ()Ljava/lang/String;]
+      [123] invokevirtual #37
+        - Methodref [java/lang/String.trim ()Ljava/lang/String;]
+      [126] ldc #2
+        - String [ ]
+      [128] ldc #1
+        - String []
+      [130] invokevirtual #35
+        - Methodref [java/lang/String.replaceAll (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
+      [133] aload v4
+      [135] invokevirtual #36
+        - Methodref [java/lang/String.toLowerCase ()Ljava/lang/String;]
+      [138] invokevirtual #34
+        - Methodref [java/lang/String.contains (Ljava/lang/CharSequence;)Z]
+      [141] ifeq +30 (target=171)
+      [144] ldc #4
+        - String [package]
+      [146] aload v5
+      [148] aconst_null
+      [149] invokestatic #30
+        - Methodref [android/net/Uri.fromParts (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri;]
+      [152] astore_1 v1
+      [153] new #10
+        - Class [android/content/Intent]
+      [156] dup
+      [157] ldc #3
+        - String [android.intent.action.DELETE]
+      [159] aload_1 v1
+      [160] invokespecial #27
+        - Methodref [android/content/Intent.<init> (Ljava/lang/String;Landroid/net/Uri;)V]
+      [163] astore_1 v1
+      [164] aload_0 v0
+      [165] aload_1 v1
+      [166] invokevirtual #26
+        - Methodref [android/content/Context.startActivity (Landroid/content/Intent;)V]
+      [169] iconst_1
+      [170] ireturn
+      [171] iinc v7, 1
+      [174] iload v7
+      [176] aload_1 v1
+      [177] arraylength
+      [178] ificmplt -107 (target=71)
+      [181] iinc v6, 1
+      [184] iload v6
+      [186] aload_3 v3
+      [187] invokeinterface #42
+        - InterfaceMethodref [java/util/List.size ()I]
+      [192] ificmplt -176 (target=16)
+      [195] iconst_0
+      [196] ireturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 6):
+        - [16] Var: [a:android/content/Context][a:[Ljava/lang/String;][a:android/content/pm/PackageManager][a:java/util/List][a:java/lang/String][a:java/lang/String][i], Stack: 
+        - [71] Var: ...[a:android/content/pm/PackageInfo][a:android/content/pm/ApplicationInfo][i], Stack: (empty)
+        - [144] Var: ..., Stack: (empty)
+        - [171] Var: ..., Stack: (empty)
+        - [174] Var: ..., Stack: (empty)
+        - [184] Var: -3, Stack: (empty)
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/soundvoice/james/helpContent
+  Superclass:    android/app/Activity
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x21
+    = public class com.soundvoice.james.helpContent extends android.app.Activity
+
+Interfaces (count = 1):
+  - Class [android/view/View$OnClickListener]
+
+Constant Pool (count = 167):
+  - Integer [2130903040]
+  - Integer [2131230720]
+  - Integer [2131230721]
+  - String [INFO]
+  - String [help_info]
+  - String [不再提示]
+  - String [取消]
+  - String [帮助信息]
+  - String [本软件利用google自带语音识别进行控制:
+
+‘打开’或‘开启’+‘软件名称’
+'删除'或'卸载'+‘软件名称’
+   
+
+软件所有者归作者本人，严禁在作者不知情的情况下用于其他用途，具体参见《计算机软件保护条例》。]
+  - String [需要每次进入提示吗？]
+  - Class [android/app/Activity]
+  - Class [android/app/AlertDialog]
+  - Class [android/app/AlertDialog$Builder]
+  - Class [android/content/DialogInterface]
+  - Class [android/content/DialogInterface$OnClickListener]
+  - Class [android/content/Intent]
+  - Class [android/content/SharedPreferences]
+  - Class [android/content/SharedPreferences$Editor]
+  - Class [android/view/View]
+  - Class [android/view/View$OnClickListener]
+  - Class [android/widget/Button]
+  - Class [android/widget/RelativeLayout]
+  - Class [android/widget/TextView]
+  - Class [com/soundvoice/james/g]
+  - Class [com/soundvoice/james/h]
+  - Class [com/soundvoice/james/helpContent]
+  - Class [com/soundvoice/james/soundVoice]
+  - Fieldref [com/soundvoice/james/helpContent.a Z]
+  - Fieldref [com/soundvoice/james/helpContent.b Landroid/widget/RelativeLayout;]
+  - Fieldref [com/soundvoice/james/helpContent.c Landroid/view/ViewGroup;]
+  - Fieldref [com/soundvoice/james/helpContent.d Landroid/widget/TextView;]
+  - Fieldref [com/soundvoice/james/helpContent.e Landroid/widget/Button;]
+  - Methodref [android/app/Activity.<init> ()V]
+  - Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
+  - Methodref [android/app/AlertDialog.show ()V]
+  - Methodref [android/app/AlertDialog$Builder.<init> (Landroid/content/Context;)V]
+  - Methodref [android/app/AlertDialog$Builder.create ()Landroid/app/AlertDialog;]
+  - Methodref [android/app/AlertDialog$Builder.setMessage (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+  - Methodref [android/app/AlertDialog$Builder.setNegativeButton (Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+  - Methodref [android/app/AlertDialog$Builder.setPositiveButton (Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+  - Methodref [android/app/AlertDialog$Builder.setTitle (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+  - Methodref [android/content/Intent.<init> ()V]
+  - Methodref [android/content/Intent.setClass (Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;]
+  - Methodref [android/view/View.getId ()I]
+  - Methodref [android/view/View.inflate (Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;]
+  - Methodref [android/widget/Button.setOnClickListener (Landroid/view/View$OnClickListener;)V]
+  - Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
+  - Methodref [com/soundvoice/james/g.<init> (Lcom/soundvoice/james/helpContent;)V]
+  - Methodref [com/soundvoice/james/h.<init> (Lcom/soundvoice/james/helpContent;)V]
+  - Methodref [com/soundvoice/james/helpContent.findViewById (I)Landroid/view/View;]
+  - Methodref [com/soundvoice/james/helpContent.finish ()V]
+  - Methodref [com/soundvoice/james/helpContent.getSharedPreferences (Ljava/lang/String;I)Landroid/content/SharedPreferences;]
+  - Methodref [com/soundvoice/james/helpContent.setContentView (Landroid/view/View;)V]
+  - Methodref [com/soundvoice/james/helpContent.startActivity (Landroid/content/Intent;)V]
+  - InterfaceMethodref [android/content/SharedPreferences.edit ()Landroid/content/SharedPreferences$Editor;]
+  - InterfaceMethodref [android/content/SharedPreferences.getBoolean (Ljava/lang/String;Z)Z]
+  - InterfaceMethodref [android/content/SharedPreferences$Editor.commit ()Z]
+  - InterfaceMethodref [android/content/SharedPreferences$Editor.putBoolean (Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (Landroid/content/Context;)V]
+  + NameAndType [<init> (Lcom/soundvoice/james/helpContent;)V]
+  + NameAndType [a Z]
+  + NameAndType [b Landroid/widget/RelativeLayout;]
+  + NameAndType [c Landroid/view/ViewGroup;]
+  + NameAndType [commit ()Z]
+  + NameAndType [create ()Landroid/app/AlertDialog;]
+  + NameAndType [d Landroid/widget/TextView;]
+  + NameAndType [e Landroid/widget/Button;]
+  + NameAndType [edit ()Landroid/content/SharedPreferences$Editor;]
+  + NameAndType [findViewById (I)Landroid/view/View;]
+  + NameAndType [finish ()V]
+  + NameAndType [getBoolean (Ljava/lang/String;Z)Z]
+  + NameAndType [getId ()I]
+  + NameAndType [getSharedPreferences (Ljava/lang/String;I)Landroid/content/SharedPreferences;]
+  + NameAndType [inflate (Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;]
+  + NameAndType [onCreate (Landroid/os/Bundle;)V]
+  + NameAndType [putBoolean (Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;]
+  + NameAndType [setClass (Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;]
+  + NameAndType [setContentView (Landroid/view/View;)V]
+  + NameAndType [setMessage (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+  + NameAndType [setNegativeButton (Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+  + NameAndType [setOnClickListener (Landroid/view/View$OnClickListener;)V]
+  + NameAndType [setPositiveButton (Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+  + NameAndType [setText (Ljava/lang/CharSequence;)V]
+  + NameAndType [setTitle (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+  + NameAndType [show ()V]
+  + NameAndType [startActivity (Landroid/content/Intent;)V]
+  + Utf8 [()I]
+  + Utf8 [()Landroid/app/AlertDialog;]
+  + Utf8 [()Landroid/content/SharedPreferences$Editor;]
+  + Utf8 [()V]
+  + Utf8 [()Z]
+  + Utf8 [(I)Landroid/view/View;]
+  + Utf8 [(Landroid/content/Context;)V]
+  + Utf8 [(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;]
+  + Utf8 [(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;]
+  + Utf8 [(Landroid/content/Intent;)V]
+  + Utf8 [(Landroid/os/Bundle;)V]
+  + Utf8 [(Landroid/view/View$OnClickListener;)V]
+  + Utf8 [(Landroid/view/View;)V]
+  + Utf8 [(Lcom/soundvoice/james/helpContent;)V]
+  + Utf8 [(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+  + Utf8 [(Ljava/lang/CharSequence;)V]
+  + Utf8 [(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+  + Utf8 [(Ljava/lang/String;I)Landroid/content/SharedPreferences;]
+  + Utf8 [(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;]
+  + Utf8 [(Ljava/lang/String;Z)Z]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [INFO]
+  + Utf8 [Landroid/view/ViewGroup;]
+  + Utf8 [Landroid/widget/Button;]
+  + Utf8 [Landroid/widget/RelativeLayout;]
+  + Utf8 [Landroid/widget/TextView;]
+  + Utf8 [StackMapTable]
+  + Utf8 [Z]
+  + Utf8 [a]
+  + Utf8 [android/app/Activity]
+  + Utf8 [android/app/AlertDialog]
+  + Utf8 [android/app/AlertDialog$Builder]
+  + Utf8 [android/content/DialogInterface]
+  + Utf8 [android/content/DialogInterface$OnClickListener]
+  + Utf8 [android/content/Intent]
+  + Utf8 [android/content/SharedPreferences]
+  + Utf8 [android/content/SharedPreferences$Editor]
+  + Utf8 [android/view/View]
+  + Utf8 [android/view/View$OnClickListener]
+  + Utf8 [android/widget/Button]
+  + Utf8 [android/widget/RelativeLayout]
+  + Utf8 [android/widget/TextView]
+  + Utf8 [b]
+  + Utf8 [c]
+  + Utf8 [com/soundvoice/james/g]
+  + Utf8 [com/soundvoice/james/h]
+  + Utf8 [com/soundvoice/james/helpContent]
+  + Utf8 [com/soundvoice/james/soundVoice]
+  + Utf8 [commit]
+  + Utf8 [create]
+  + Utf8 [d]
+  + Utf8 [e]
+  + Utf8 [edit]
+  + Utf8 [findViewById]
+  + Utf8 [finish]
+  + Utf8 [getBoolean]
+  + Utf8 [getId]
+  + Utf8 [getSharedPreferences]
+  + Utf8 [help_info]
+  + Utf8 [inflate]
+  + Utf8 [onClick]
+  + Utf8 [onCreate]
+  + Utf8 [putBoolean]
+  + Utf8 [setClass]
+  + Utf8 [setContentView]
+  + Utf8 [setMessage]
+  + Utf8 [setNegativeButton]
+  + Utf8 [setOnClickListener]
+  + Utf8 [setPositiveButton]
+  + Utf8 [setText]
+  + Utf8 [setTitle]
+  + Utf8 [show]
+  + Utf8 [startActivity]
+  + Utf8 [不再提示]
+  + Utf8 [取消]
+  + Utf8 [帮助信息]
+  + Utf8 [本软件利用google自带语音识别进行控制:
+
+‘打开’或‘开启’+‘软件名称’
+'删除'或'卸载'+‘软件名称’
+   
+
+软件所有者归作者本人，严禁在作者不知情的情况下用于其他用途，具体参见《计算机软件保护条例》。]
+  + Utf8 [需要每次进入提示吗？]
+
+Fields (count = 5):
+  + Field:        b Landroid/widget/RelativeLayout;
+    Access flags: 0x2
+      = private android.widget.RelativeLayout b
+  + Field:        c Landroid/view/ViewGroup;
+    Access flags: 0x2
+      = private android.view.ViewGroup c
+  + Field:        d Landroid/widget/TextView;
+    Access flags: 0x2
+      = private android.widget.TextView d
+  + Field:        e Landroid/widget/Button;
+    Access flags: 0x2
+      = private android.widget.Button e
+  + Field:        a Z
+    Access flags: 0x4
+      = protected boolean a
+
+Methods (count = 4):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public helpContent()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 1, stack = 2):
+      [0] aload_0 v0
+      [1] invokespecial #33
+        - Methodref [android/app/Activity.<init> ()V]
+      [4] aload_0 v0
+      [5] iconst_1
+      [6] putfield #28
+        - Fieldref [com/soundvoice/james/helpContent.a Z]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onCreate(Landroid/os/Bundle;)V
+    Access flags: 0x1
+      = public void onCreate(android.os.Bundle)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 125, locals = 2, stack = 4):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] invokespecial #34
+        - Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
+      [5] aload_0 v0
+      [6] aload_0 v0
+      [7] ldc #5
+        - String [help_info]
+      [9] iconst_0
+      [10] invokevirtual #52
+        - Methodref [com/soundvoice/james/helpContent.getSharedPreferences (Ljava/lang/String;I)Landroid/content/SharedPreferences;]
+      [13] ldc #4
+        - String [INFO]
+      [15] iconst_1
+      [16] invokeinterface #56
+        - InterfaceMethodref [android/content/SharedPreferences.getBoolean (Ljava/lang/String;Z)Z]
+      [21] putfield #28
+        - Fieldref [com/soundvoice/james/helpContent.a Z]
+      [24] aload_0 v0
+      [25] getfield #28
+        - Fieldref [com/soundvoice/james/helpContent.a Z]
+      [28] ifne +28 (target=56)
+      [31] new #16
+        - Class [android/content/Intent]
+      [34] dup
+      [35] invokespecial #42
+        - Methodref [android/content/Intent.<init> ()V]
+      [38] dup
+      [39] astore_1 v1
+      [40] aload_0 v0
+      [41] ldc #27
+        - Class [com/soundvoice/james/soundVoice]
+      [43] invokevirtual #43
+        - Methodref [android/content/Intent.setClass (Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;]
+      [46] pop
+      [47] aload_0 v0
+      [48] aload_1 v1
+      [49] invokevirtual #54
+        - Methodref [com/soundvoice/james/helpContent.startActivity (Landroid/content/Intent;)V]
+      [52] aload_0 v0
+      [53] invokevirtual #51
+        - Methodref [com/soundvoice/james/helpContent.finish ()V]
+      [56] aload_0 v0
+      [57] aload_0 v0
+      [58] ldc #1
+        - Integer [2130903040]
+      [60] aload_0 v0
+      [61] getfield #30
+        - Fieldref [com/soundvoice/james/helpContent.c Landroid/view/ViewGroup;]
+      [64] invokestatic #45
+        - Methodref [android/view/View.inflate (Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;]
+      [67] checkcast #22
+        - Class [android/widget/RelativeLayout]
+      [70] putfield #29
+        - Fieldref [com/soundvoice/james/helpContent.b Landroid/widget/RelativeLayout;]
+      [73] aload_0 v0
+      [74] aload_0 v0
+      [75] getfield #29
+        - Fieldref [com/soundvoice/james/helpContent.b Landroid/widget/RelativeLayout;]
+      [78] invokevirtual #53
+        - Methodref [com/soundvoice/james/helpContent.setContentView (Landroid/view/View;)V]
+      [81] aload_0 v0
+      [82] aload_0 v0
+      [83] ldc #2
+        - Integer [2131230720]
+      [85] invokevirtual #50
+        - Methodref [com/soundvoice/james/helpContent.findViewById (I)Landroid/view/View;]
+      [88] checkcast #23
+        - Class [android/widget/TextView]
+      [91] putfield #31
+        - Fieldref [com/soundvoice/james/helpContent.d Landroid/widget/TextView;]
+      [94] aload_0 v0
+      [95] getfield #31
+        - Fieldref [com/soundvoice/james/helpContent.d Landroid/widget/TextView;]
+      [98] ldc #9
+        - String [本软件利用google自带语音识别进行控制:
+
+‘打开’或‘开启’+‘软件名称’
+'删除'或'卸载'+‘软件名称’
+   
+
+软件所有者归作者本人，严禁在作者不知情的情况下用于其他用途，具体参见《计算机软件保护条例》。]
+      [100] invokevirtual #47
+        - Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
+      [103] aload_0 v0
+      [104] aload_0 v0
+      [105] ldc #3
+        - Integer [2131230721]
+      [107] invokevirtual #50
+        - Methodref [com/soundvoice/james/helpContent.findViewById (I)Landroid/view/View;]
+      [110] checkcast #21
+        - Class [android/widget/Button]
+      [113] putfield #32
+        - Fieldref [com/soundvoice/james/helpContent.e Landroid/widget/Button;]
+      [116] aload_0 v0
+      [117] getfield #32
+        - Fieldref [com/soundvoice/james/helpContent.e Landroid/widget/Button;]
+      [120] aload_0 v0
+      [121] invokevirtual #46
+        - Methodref [android/widget/Button.setOnClickListener (Landroid/view/View$OnClickListener;)V]
+      [124] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 1):
+        - [56] Var: ..., Stack: (empty)
+  + Method:       a()V
+    Access flags: 0x10
+      = final void a()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 34, locals = 2, stack = 3):
+      [0] aload_0 v0
+      [1] ldc #5
+        - String [help_info]
+      [3] iconst_0
+      [4] invokevirtual #52
+        - Methodref [com/soundvoice/james/helpContent.getSharedPreferences (Ljava/lang/String;I)Landroid/content/SharedPreferences;]
+      [7] invokeinterface #55
+        - InterfaceMethodref [android/content/SharedPreferences.edit ()Landroid/content/SharedPreferences$Editor;]
+      [12] dup
+      [13] astore_1 v1
+      [14] ldc #4
+        - String [INFO]
+      [16] aload_0 v0
+      [17] getfield #28
+        - Fieldref [com/soundvoice/james/helpContent.a Z]
+      [20] invokeinterface #58
+        - InterfaceMethodref [android/content/SharedPreferences$Editor.putBoolean (Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;]
+      [25] pop
+      [26] aload_1 v1
+      [27] invokeinterface #57
+        - InterfaceMethodref [android/content/SharedPreferences$Editor.commit ()Z]
+      [32] pop
+      [33] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onClick(Landroid/view/View;)V
+    Access flags: 0x1
+      = public void onClick(android.view.View)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 72, locals = 3, stack = 5):
+      [0] aload_1 v1
+      [1] invokevirtual #44
+        - Methodref [android/view/View.getId ()I]
+      [4] ldc #3
+        - Integer [2131230721]
+      [6] ificmpne +65 (target=71)
+      [9] aload_0 v0
+      [10] astore_1 v1
+      [11] new #13
+        - Class [android/app/AlertDialog$Builder]
+      [14] dup
+      [15] aload_1 v1
+      [16] invokespecial #36
+        - Methodref [android/app/AlertDialog$Builder.<init> (Landroid/content/Context;)V]
+      [19] dup
+      [20] astore_2 v2
+      [21] ldc #10
+        - String [需要每次进入提示吗？]
+      [23] invokevirtual #38
+        - Methodref [android/app/AlertDialog$Builder.setMessage (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+      [26] pop
+      [27] aload_2 v2
+      [28] ldc #8
+        - String [帮助信息]
+      [30] invokevirtual #41
+        - Methodref [android/app/AlertDialog$Builder.setTitle (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+      [33] pop
+      [34] aload_2 v2
+      [35] ldc #6
+        - String [不再提示]
+      [37] new #24
+        - Class [com/soundvoice/james/g]
+      [40] dup
+      [41] aload_1 v1
+      [42] invokespecial #48
+        - Methodref [com/soundvoice/james/g.<init> (Lcom/soundvoice/james/helpContent;)V]
+      [45] invokevirtual #40
+        - Methodref [android/app/AlertDialog$Builder.setPositiveButton (Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+      [48] pop
+      [49] aload_2 v2
+      [50] ldc #7
+        - String [取消]
+      [52] new #25
+        - Class [com/soundvoice/james/h]
+      [55] dup
+      [56] aload_1 v1
+      [57] invokespecial #49
+        - Methodref [com/soundvoice/james/h.<init> (Lcom/soundvoice/james/helpContent;)V]
+      [60] invokevirtual #39
+        - Methodref [android/app/AlertDialog$Builder.setNegativeButton (Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+      [63] pop
+      [64] aload_2 v2
+      [65] invokevirtual #37
+        - Methodref [android/app/AlertDialog$Builder.create ()Landroid/app/AlertDialog;]
+      [68] invokevirtual #35
+        - Methodref [android/app/AlertDialog.show ()V]
+      [71] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 1):
+        - [71] Var: ..., Stack: (empty)
+
+Class file attributes (count = 0):
+

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/link"
+    android:orientation="vertical" >
+
+    <!-- title 部分 -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40sp"
+        android:background="@drawable/bar" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fkjava_logo" >
+        </ImageView>
+
+        <ImageButton
+            android:id="@+id/returnBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/homeBtn"
+            android:background="@drawable/left" >
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/homeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="12px"
+            android:layout_marginRight="2px"
+            android:layout_marginTop="2px"
+            android:background="@drawable/home" >
+        </ImageButton>
+    </RelativeLayout>
+    <!-- title 部分 end -->
+
+
+    <!-- 用户头像 信息部分 -->
+
+    <RelativeLayout
+        android:id="@+id/user_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="60sp"
+        android:background="@drawable/search_bg"
+        android:paddingLeft="15px"
+        android:paddingTop="8px" >
+
+        <ImageView
+            android:id="@+id/user_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/angel" >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_toRightOf="@+id/user_icon"
+            android:gravity="center_vertical"
+            android:textColor="#000000" >
+        </TextView>
+    </RelativeLayout>
+    <!-- 用户头像 信息部分 end -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/menu_layout"
+            android:paddingBottom="5px"
+            android:paddingLeft="17px"
+            android:paddingRight="17px" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textSize="15px" >
+                </TextView>
+
+                <ImageView
+                    android:id="@+id/pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                </ImageView>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/loadingLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ProgressBar
+                android:id="@+id/loading"
+                
+                android:layout_width="31px"
+                android:layout_height="31px"
+                android:layout_gravity="center" >
+            </ProgressBar>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/loading"
+                android:layout_gravity="center"
+                android:text="正在载入"
+                android:textColor="#9c9c9c"
+                android:textSize="12px" >
+            </TextView>
+        </LinearLayout>
+
+        <!-- 菜单部分 -->
+
+        <GridView
+            android:id="@+id/gv_buttom_menu"
+            android:layout_width="fill_parent"
+            android:layout_height="50sp"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone" />
+        <!-- 菜单部分 end -->
+
+    </RelativeLayout>
+
+</LinearLayout>

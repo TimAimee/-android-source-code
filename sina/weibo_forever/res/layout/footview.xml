@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/footview_bg"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+    <ImageButton
+        android:id="@+id/share_imagechoose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dip"
+        android:background="@drawable/imagechoosebutton_bg"
+        android:contentDescription="@string/app_name" >
+    </ImageButton>
+
+    <ImageView
+        android:id="@+id/share_image"
+        android:layout_width="30dip"
+        android:layout_height="30dip"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dip"
+        android:layout_toRightOf="@id/share_imagechoose"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/weibo_pic"
+        android:visibility="gone" >
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/share_image_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/share_image"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/del_pic"
+        android:visibility="gone" >
+    </ImageView>
+
+    <Button
+        android:id="@+id/share_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/titlebutton_bg"
+        android:text="@string/weibo_share"
+        android:textColor="#8FB200"
+        android:textSize="14.0sp" >
+    </Button>
+
+    <TextView
+        android:id="@+id/share_word_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dip"
+        android:layout_toLeftOf="@id/share_submit"
+        android:text="@string/weibo_counter"
+        android:textColor="@color/black"
+        android:textSize="14.0sp" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/share_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="30dip"
+        android:layout_toLeftOf="@id/share_word_counter"
+        android:textColor="#8FB200"
+        android:textSize="14.0sp" >
+    </TextView>
+
+    <ImageView
+        android:id="@+id/share_userimage"
+        android:layout_width="20dip"
+        android:layout_height="20dip"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dip"
+        android:layout_toLeftOf="@id/share_username" >
+    </ImageView>
+
+</RelativeLayout>

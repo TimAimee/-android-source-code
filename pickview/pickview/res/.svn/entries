@@ -1,0 +1,43 @@
+10
+
+dir
+13
+http://android-wheel.googlecode.com/svn/trunk/wheel/res
+http://android-wheel.googlecode.com/svn
+
+
+
+2010-11-25T20:10:38.993927Z
+13
+yuri.kanivets
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+c364614a-9a97-51b3-f556-90fca60df64e
+
+drawable
+dir
+
+drawable-hdpi
+dir
+
+drawable-ldpi
+dir
+
+drawable-mdpi
+dir
+
+layout
+dir
+

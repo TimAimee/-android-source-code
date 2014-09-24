@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:background="@color/whitecolor" >
+
+        <ImageView
+            android:id="@+id/ivcomments_usericon"
+            android:layout_width="61dp"
+            android:layout_height="61dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dp"
+            android:src="@drawable/new_regist_poppic_default" />
+
+        <ImageView
+            android:layout_width="61dp"
+            android:layout_height="61dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dp"
+            android:src="@drawable/portrait_round_nor" />
+
+        <TextView
+            android:id="@+id/tvname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/tvcommnets_info"
+            android:maxLength="14"
+            android:singleLine="true"
+            android:layout_marginBottom="5dp"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/blackcolor" />
+
+        <TextView
+            android:id="@+id/tvcommnets_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvname"
+            android:layout_toRightOf="@+id/ivcomments_usericon"
+            android:text="评论内容"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/blackcolor" />
+
+    </RelativeLayout>
+
+</LinearLayout>

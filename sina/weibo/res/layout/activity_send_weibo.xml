@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:weightSum="1"
+    android:orientation="vertical"
+    android:background="@drawable/send_weibo">
+    
+ <EditText
+     android:id="@+id/sendedit"
+     android:background="@drawable/input"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_weight="0.45"
+     android:hint="        记住你的快乐。。。" >
+
+        <requestFocus>
+        </requestFocus>
+    </EditText>
+   
+
+     <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_gravity="right"
+        android:orientation="horizontal" >
+    
+          <Button
+        android:id="@+id/photoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"       
+        android:text="拍   照"
+        android:background="@drawable/apple" />  
+       <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"       
+        android:text="添加图片"
+        android:background="@drawable/apple" />  
+         
+    <Button
+        android:id="@+id/send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5px"
+        android:text="发送" 
+        android:background="@drawable/apple"/>
+   
+
+    
+     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_text_limit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5px"
+            android:text="140"
+            android:textColor="#333" />
+    </LinearLayout>
+    
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/add_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      
+       
+        
+        />
+
+</LinearLayout>

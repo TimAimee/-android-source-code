@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/whitecolor"
+    android:orientation="vertical" >
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/contact_search_edit"
+        android:drawableLeft="@drawable/letter_search_icon"
+        android:hint="在全部关注中搜索 ..." />
+
+    <RelativeLayout
+        android:id="@+id/findfrdmap"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="#f0f0f0" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="13dp"
+            android:src="@drawable/contacts_find_icon" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/findfriends_thumbnail" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/imageView1"
+            android:text="找朋友"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/blackcolor" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:background="@drawable/contacts_follow_text_bg"
+        android:gravity="center_vertical"
+        android:text="我的资料"
+        android:textColor="#586068"
+        android:textSize="16dp" />
+
+    <RelativeLayout
+        android:id="@+id/showuserinfo"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="#f0f0f0" >
+
+        <ImageView
+            android:id="@+id/ivicon"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/new_regist_poppic_default" />
+
+        <TextView
+            android:id="@+id/tvusername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ivicon"
+            android:maxLength="6"
+            android:text="name"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/blackcolor" />
+
+        <TextView
+            android:id="@+id/tvlikenum"
+            android:layout_width="56dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/market_btn_white_normal"
+            android:gravity="center_horizontal"
+            android:lines="2"
+            android:maxEms="4"
+            android:padding="5dp"
+            android:text="626        粉丝"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#505860" />
+
+        <TextView
+            android:id="@+id/tvfav"
+            android:layout_width="56dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/tvlikenum"
+            android:background="@drawable/market_btn_white_normal"
+            android:gravity="center_horizontal"
+            android:lines="2"
+            android:maxEms="4"
+            android:padding="5dp"
+            android:text="62        收藏"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#505860" />
+
+        <TextView
+            android:id="@+id/tvstatus"
+            android:layout_width="56dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/tvfav"
+            android:background="@drawable/market_btn_white_normal"
+            android:gravity="center_horizontal"
+            android:lines="2"
+            android:maxEms="4"
+            android:padding="5dp"
+            android:text="432        微博"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#505860" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:background="@drawable/contacts_follow_text_bg"
+        android:gravity="center_vertical"
+        android:text="最近联系人"
+        android:textColor="#586068"
+        android:textSize="16dp" />
+
+</LinearLayout>

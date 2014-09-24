@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/footview_bg"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <!-- android:background="@drawable/titlebutton_bg" -->
+
+        <Button
+            android:id="@+id/pop_bt_r"
+            android:layout_width="50dip"
+            android:layout_height="40dip"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/pop_bg_r"
+            android:textColor="#8FB200"
+            android:textSize="14.0sp" >
+        </Button>
+
+        <Button
+            android:id="@+id/pop_bt_c"
+            android:layout_width="50dip"
+            android:layout_height="40dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/pop_bg_c"
+            android:textColor="#8FB200"
+            android:textSize="14.0sp" >
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/13/trunk/wheel/res/layout
+END
+passw_layout.xml
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/13/trunk/wheel/res/layout/passw_layout.xml
+END
+time_layout.xml
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/7/trunk/wheel/res/layout/time_layout.xml
+END
+empty_layout.xml
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/7/trunk/wheel/res/layout/empty_layout.xml
+END
+cities_layout.xml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/10/trunk/wheel/res/layout/cities_layout.xml
+END

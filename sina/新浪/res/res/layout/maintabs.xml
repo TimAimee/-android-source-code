@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TabWidget
+        android:id="@android:id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+    </TabWidget>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/maintab_toolbar_bg" >
+
+            <RadioGroup
+                android:id="@+id/radiogroupbutton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="5" >
+
+                <RadioButton
+                    android:id="@+id/home"
+                    style="@style/maintabt"
+                    android:drawableTop="@drawable/icon_home"
+                    android:text="主页" />
+
+                <RadioButton
+                      android:id="@+id/msg"
+                    style="@style/maintabt"
+                    android:drawableTop="@drawable/icon_meassage"
+                    android:text="消息" />
+
+                <RadioButton
+                      android:id="@+id/friend"
+                    style="@style/maintabt"
+                    android:drawableTop="@drawable/icon_selfinfo"
+                    android:text="好友" />
+
+                <RadioButton
+                      android:id="@+id/squar"
+                    style="@style/maintabt"
+                    android:drawableTop="@drawable/icon_square"
+                    android:text="广场" />
+
+                <RadioButton
+                      android:id="@+id/more"
+                    style="@style/maintabt"
+                    android:drawableTop="@drawable/icon_more"
+                    android:text="更多" />
+            </RadioGroup>
+        </LinearLayout>
+    </RelativeLayout>
+
+</TabHost>

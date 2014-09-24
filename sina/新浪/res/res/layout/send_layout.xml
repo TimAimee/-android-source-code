@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitecolor"
+    android:orientation="vertical" >
+
+    <!-- 顶部标题 -->
+
+    <RelativeLayout
+        android:id="@+id/title_relat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/titlebar_bg_nor" >
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="发送一条新微薄"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/blackcolor" />
+
+        <Button
+            android:id="@+id/btsendweibo"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_big_blue"
+            android:text="发送" />
+
+        <Button
+            android:id="@+id/btcancle"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/button_big_grey"
+            android:text="取消" />
+    </RelativeLayout>
+
+    <!-- 底部用来显示 表情及@部分内容 -->
+
+    <RelativeLayout
+        android:id="@+id/bottom_relative"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:visibility="gone" >
+        <GridView 
+            android:horizontalSpacing="10dp"
+            android:verticalSpacing="5dp"
+            android:id="@+id/emotions_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:numColumns="10"
+        ></GridView>
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/center_relat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_relative"
+        android:layout_below="@+id/title_relat" >
+
+        <EditText
+            android:id="@+id/etweibocontent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:focusableInTouchMode="true"
+            android:hint="微薄内容" >
+            <requestFocus />
+        </EditText>
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/compose_toolbar_background"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="5" >
+
+            <ImageView
+                android:id="@+id/send_cose_camera"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="doclick"
+                android:scaleType="center"
+                android:src="@drawable/compose_camerabutton_background" />
+
+            <ImageView
+                android:id="@+id/send_cose_photo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="doclick"
+                android:scaleType="center"
+                android:src="@drawable/compose_picsbutton_background" />
+
+            <ImageView
+                android:id="@+id/send_cose_mention"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="doclick"
+                android:scaleType="center"
+                android:src="@drawable/compose_mentionbutton_background" />
+
+            <ImageView
+                android:id="@+id/send_cose_emotion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="doclick"
+                android:scaleType="center"
+                android:src="@drawable/compose_emoticonbutton_background" />
+
+            <ImageView
+                android:id="@+id/send_cose_more"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="doclick"
+                android:scaleType="center"
+                android:src="@drawable/compose_toolbar_more" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/send_tvlocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/linearLayout1"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/compose_locatebutton_background_succeeded"
+            android:gravity="center_vertical"
+            android:text="位置信息"
+            android:textColor="@color/blackcolor"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/send_tvclear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/linearLayout1"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/compose_clearbutton_background_press"
+            android:text="140"
+            android:textColor="@color/blackcolor" />
+
+        <ImageView
+            android:id="@+id/send_shoseimgview"
+            android:layout_width="66dp"
+            android:layout_height="66dp"
+            android:scaleType="fitCenter"
+            android:layout_above="@+id/send_tvclear"
+            android:layout_alignParentLeft="true"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

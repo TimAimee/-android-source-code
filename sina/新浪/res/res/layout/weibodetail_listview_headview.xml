@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitecolor" >
+
+    <RelativeLayout
+        android:id="@+id/namerelative"
+        android:layout_width="match_parent"
+        android:layout_height="84dp" >
+
+        <ImageView
+            android:id="@+id/user_icon"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/new_regist_poppic_default" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/user_icon"
+            android:drawablePadding="3dp"
+            android:drawableRight="@drawable/crown"
+            android:gravity="bottom"
+            android:text="人名称"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/blackcolor"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/messages_card_arrow" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/namerelative"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/messages_time_separator" />
+
+    <TextView
+        android:id="@+id/tvstatusecontent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView3"
+        android:layout_below="@+id/imageView3"
+        android:text="微博内容"
+        android:textColor="@color/blackcolor"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/tvstatusesimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvstatusecontent"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/skin_loading_icon"
+        android:visibility="gone" 
+        />
+
+    <RelativeLayout
+        android:id="@+id/redrelativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvstatusesimg"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/popup" >
+
+        <TextView
+            android:id="@+id/tvrewstatusecontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageView3"
+            android:layout_below="@+id/imageView3"
+            android:text="被转发微博内容"
+            android:textColor="@color/blackcolor"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:layout_margin="5dp"
+            android:id="@+id/tvrewstatusesimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvrewstatusecontent"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/skin_loading_icon"
+            />
+
+        <TextView
+            android:id="@+id/tvrewlikecount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvrewstatusesimg"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@drawable/like_icon"
+            android:gravity="center_vertical"
+            android:text="62"
+            android:textColor="@color/bluecolor" />
+
+        <TextView
+            android:id="@+id/tvrewcommentcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tvrewlikecount"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@+id/tvrewlikecount"
+            android:drawableLeft="@drawable/comment_icon"
+            android:gravity="center_vertical"
+            android:text="62"
+            android:textColor="@color/bluecolor" />
+
+        <TextView
+            android:id="@+id/tvrewrewcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tvrewlikecount"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@+id/tvrewcommentcount"
+            android:drawableLeft="@drawable/redirect_icon"
+            android:gravity="center_vertical"
+            android:text="62"
+            android:textColor="@color/bluecolor" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/redrelativelayout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="05-22 06:18"
+        android:textColor="#a3a6a9" />
+
+    <TextView
+        android:id="@+id/tvsource"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvtime"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/tvtime"
+        android:text="来自:新浪微博"
+        android:textColor="#a3a6a9" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvtime" 
+        
+        >
+        <TextView
+            android:id="@+id/btrewcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="转发:205"
+            android:textSize="18dp"
+            android:textColor="#a3a6a9" />
+        <TextView 
+            android:id="@+id/line"
+            android:layout_toRightOf="@+id/btrewcount"
+            android:layout_width="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="22dp"
+            android:background="#a3a6a9"
+            android:layout_alignBaseline="@+id/btrewcount"
+            />
+         <TextView 
+            android:layout_toRightOf="@+id/line"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_height="22dp"
+            android:text="评论:205"
+              android:textSize="18dp"
+              android:textColor="#4e647e"
+            android:layout_alignBaseline="@+id/btrewcount"
+            />
+         
+         <TextView 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="10"
+             android:drawableLeft="@drawable/icon_like_detail"
+             android:gravity="center"
+             android:padding="8dp"
+             android:layout_alignParentRight="true"
+             android:background="@drawable/page_like_button_background"
+             />
+         
+    </RelativeLayout>
+
+</RelativeLayout>

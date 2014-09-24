@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.weibo.forever"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="17" />
+
+    <!-- 网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Black.NoTitleBar" >
+        
+        <activity
+            android:name="com.forever.weibo.LoadActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.forever.weibo.OAuthActivity"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="OAuthActivity"
+                    android:scheme="forever" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.forever.weibo.LoginActivity"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name="com.forever.weibo.HomeActivity"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name="com.forever.weibo.DetailActivity"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name="com.forever.weibo.WeiboActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
+        <activity
+            android:name="com.forever.weibo.WriteWeiboActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustResize" />
+        
+    </application>
+
+</manifest>
