@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/kaixin_background"
+        android:orientation="vertical"
+        android:clickable="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48dip"
+            android:background="@drawable/global_top_background" >
+
+            <Button
+                android:id="@+id/friends_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="8dip"
+                android:background="@drawable/title_home_button" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dip"
+                    android:text="好友"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/friends_add"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="8dip"
+                android:background="@drawable/button_title_addfriends" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:id="@+id/friends_search_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/friendsearchbarbg"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/friends_search"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="8dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_input_bg"
+                    android:drawableLeft="@drawable/globle_search_icon"
+                    android:drawablePadding="8dip"
+                    android:hint="输入拼音首字母查找"
+                    android:singleLine="true"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/friends_birthday"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="最近0名好友过生日"
+                android:textColor="#999999"
+                android:textSize="14sp"
+                android:textStyle="bold" 
+                android:padding="8dip"
+                android:layout_below="@+id/friends_search_layout"/>
+
+            <ListView
+                android:id="@+id/friends_display"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/friends_birthday"
+                android:layout_weight="1"
+                android:cacheColorHint="#00000000"
+                android:divider="@drawable/list_line"
+                android:listSelector="#00000000" >
+            </ListView>
+
+            <com.kaixin.android.ui.base.MyLetterListView
+                android:id="@+id/friends_letter"
+                android:layout_width="30dip"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="8dip" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bottombg"
+            android:orientation="horizontal"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip" >
+
+            <Button
+                android:id="@+id/friends_all"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dip"
+                android:layout_marginTop="8dip"
+                android:layout_weight="1"
+                android:background="@drawable/bottomtabbutton_leftred"
+                android:gravity="center"
+                android:text="全部"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="1px"
+                android:layout_height="fill_parent"
+                android:src="@drawable/bottomtabbutton_separation" />
+
+            <Button
+                android:id="@+id/friends_page"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dip"
+                android:layout_marginTop="8dip"
+                android:layout_weight="1"
+                android:background="@drawable/bottomtabbutton_rightwhite"
+                android:drawableLeft="@drawable/star"
+                android:paddingLeft="20dip"
+                android:text="公共主页"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

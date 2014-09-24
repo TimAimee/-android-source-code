@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical"
+        android:paddingBottom="6.0dip"
+        android:paddingTop="6.0dip" >
+
+        <LinearLayout
+            android:id="@+id/moment_left_of_comment_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="47.0dip"
+            android:layout_marginRight="68.0dip"
+            android:orientation="vertical" >
+ 
+
+            <TextView
+                android:id="@+id/people_body"
+                style="@style/feed_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:id="@+id/photo_wrapper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/photo_wrapper" >
+                <ImageView
+                    android:id="@+id/friendphoto"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/gray"
+                    android:scaleType="centerCrop" 
+                    android:src="@drawable/gauss1"/> 
+            </RelativeLayout>
+        </LinearLayout>
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="38.0dip"
+            android:layout_marginRight="9.0dip"
+            android:layout_marginTop="1.0dip"
+            layout="@layout/feed_comments" />
+    </LinearLayout>
+
+    <include
+        android:layout_width="68.0dip"
+        android:layout_height="60.0dip"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        layout="@layout/feed_comment_button" />
+
+</RelativeLayout>

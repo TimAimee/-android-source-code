@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/feed_activity_item_comment"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/comments_ellipsis"
+        android:layout_width="50.0dip"
+        android:layout_height="30.0dip" >
+
+        <ImageView
+            android:layout_width="12.666992dip"
+            android:layout_height="3.3329773dip"
+            android:layout_centerInParent="true"
+            android:src="@drawable/comments_ellipsis" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/comments_ellipsis_text"
+        style="@style/feed_text"
+        android:layout_width="wrap_content"
+        android:layout_height="30.0dip"
+        android:layout_toRightOf="@id/comments_ellipsis"
+        android:gravity="center_vertical"
+        android:paddingRight="6.0dip"
+        android:textStyle="bold" 
+        android:text="查看全部评论(7)"
+        />
+
+    <include
+        android:id="@+id/comment_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_below="@id/comments_ellipsis_text"
+        layout="@layout/bubble_item_divider" />
+
+</RelativeLayout>

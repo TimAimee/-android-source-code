@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/kaixin_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:background="@drawable/global_top_background" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/title_bar_center_button_bg"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/photo_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="middle"
+                android:maxWidth="150dip"
+                android:padding="8dip"
+                android:singleLine="true"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/photo_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="8dip"
+            android:layout_marginLeft="8dip"
+            android:layout_marginTop="8dip"
+            android:background="@drawable/title_text_button_left_arrow"
+            android:ellipsize="end"
+            android:maxWidth="80dip"
+            android:minWidth="48dip"
+            android:singleLine="true"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="48dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="8dip"
+            android:layout_marginRight="8dip"
+            android:layout_marginTop="8dip"
+            android:background="@drawable/title_text_button"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/photo_display"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:cacheColorHint="#00000000"
+        android:gravity="center"
+        android:horizontalSpacing="8dip"
+        android:listSelector="#00000000"
+        android:numColumns="3"
+        android:padding="8dip"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="8dip" >
+    </GridView>
+
+    <TextView
+        android:id="@+id/photo_nodisplay"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="他还没有上传照片"
+        android:textColor="#808080"
+        android:visibility="gone" />
+
+</LinearLayout>

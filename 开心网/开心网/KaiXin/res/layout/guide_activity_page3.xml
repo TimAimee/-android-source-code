@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/globalguide_photo3"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:gravity="center" 
+        android:orientation="vertical"
+        android:paddingBottom="50dip">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/guide_checkbox_backguard"
+            android:checked="true"
+            android:paddingLeft="25dip"
+            android:shadowColor="#ffffffff"
+            android:shadowDx="0.0"
+            android:shadowDy="1.0"
+            android:shadowRadius="1.0"
+            android:text="通知好友我在开心"
+            android:textColor="#ffb4b4b4"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/guide_activity_btn"
+            android:layout_width="216dip"
+            android:layout_height="45dip"
+            android:background="@drawable/guide_go_button"
+            android:shadowColor="#7f000000"
+            android:shadowDx="0.0"
+            android:shadowDy="1.0"
+            android:shadowRadius="1.0"
+            android:text="开启"
+            android:textColor="#ffffffff"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

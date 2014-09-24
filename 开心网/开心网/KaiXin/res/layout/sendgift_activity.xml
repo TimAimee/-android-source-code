@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/kaixin_background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:background="@drawable/global_top_background"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <Button
+            android:id="@+id/sendgift_cancel"
+            android:layout_width="48dip"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="8dip"
+            android:layout_marginLeft="8dip"
+            android:layout_marginTop="8dip"
+            android:background="@drawable/title_text_button"
+            android:text="取消"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_weight="1"
+            android:background="@drawable/title_bar_center_button_bg"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dip"
+                android:text="送礼物"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/sendgift_handsel"
+            android:layout_width="48dip"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="8dip"
+            android:layout_marginRight="8dip"
+            android:layout_marginTop="8dip"
+            android:background="@drawable/title_text_button"
+            android:text="赠送"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gift_add_bg"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:padding="8dip"
+                    android:text="赠送给"
+                    android:textColor="#999999"
+                    android:textSize="14sp" />
+
+                <HorizontalScrollView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:fadingEdge="horizontal"
+                    android:fadingEdgeLength="30dip"
+                    android:fillViewport="true"
+                    android:orientation="horizontal"
+                    android:scrollbars="none" >
+
+                    <LinearLayout
+                        android:id="@+id/sendgift_friends_list"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center"
+                        android:fadingEdge="none"
+                        android:fadingEdgeLength="0dip"
+                        android:orientation="horizontal"
+                        android:paddingLeft="8dip"
+                        android:paddingRight="8dip" >
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/sendgift_image_background"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dip"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/gifts_letter" />
+
+                <TextView
+                    android:id="@+id/sendgift_tell"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dip"
+                    android:layout_alignTop="@+id/sendgift_image_background"
+                    android:layout_marginLeft="38dip"
+                    android:layout_marginTop="8dip"
+                    android:shadowColor="#ffffffff"
+                    android:shadowDx="0.0"
+                    android:shadowDy="1.0"
+                    android:shadowRadius="1.0"
+                    android:text="赠言"
+                    android:textColor="#ffb4b4b4"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/sendgift_message"
+                    android:layout_width="220dip"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/sendgift_tell"
+                    android:layout_marginLeft="10dip"
+                    android:layout_toRightOf="@+id/sendgift_tell"
+                    android:background="@null"
+                    android:gravity="top"
+                    android:hint="快来写下你的祝福吧~"
+                    android:inputType="textMultiLine"
+                    android:lineSpacingExtra="18dip"
+                    android:lines="2"
+                    android:maxLength="36"
+                    android:minHeight="100dip"
+                    android:paddingRight="10dip"
+                    android:textColor="#ff98bede"
+                    android:textColorHint="#ff98bede"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/sendgift_message_line1"
+                    android:layout_width="250dip"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sendgift_tell"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-17dip"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/gifts_letter_line" />
+
+                <ImageView
+                    android:id="@+id/sendgift_message_line2"
+                    android:layout_width="250dip"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sendgift_message_line1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dip"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/gifts_letter_line" />
+
+                <ImageView
+                    android:id="@+id/sendgift_add_gift"
+                    android:layout_width="130dip"
+                    android:layout_height="130dip"
+                    android:layout_below="@+id/sendgift_message_line2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dip"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/gifts_add_gift" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <CheckBox
+                    android:id="@+id/sendgift_send_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:button="@drawable/gift_checkbox_backguard"
+                    android:paddingBottom="1dip"
+                    android:paddingLeft="20dip"
+                    android:shadowColor="#ffffffff"
+                    android:shadowDx="0.0"
+                    android:shadowDy="1.0"
+                    android:shadowRadius="1.0"
+                    android:text="悄悄地送"
+                    android:textColor="#ffb4b4b4" />
+
+                <CheckBox
+                    android:id="@+id/sendgift_send_sms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dip"
+                    android:button="@drawable/gift_checkbox_backguard"
+                    android:paddingBottom="1dip"
+                    android:paddingLeft="20dip"
+                    android:shadowColor="#ffffffff"
+                    android:shadowDx="0.0"
+                    android:shadowDy="1.0"
+                    android:shadowRadius="1.0"
+                    android:text="短信通知好友"
+                    android:textColor="#ffb4b4b4" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

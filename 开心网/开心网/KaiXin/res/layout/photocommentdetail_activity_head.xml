@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dip"
+            android:src="@drawable/icon_praise" />
+
+        <TextView
+            android:id="@+id/photocommentdetail_head_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dip"
+            android:textColor="#999999" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/photocommentdetail_head_line"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#80333333" />
+
+</LinearLayout>

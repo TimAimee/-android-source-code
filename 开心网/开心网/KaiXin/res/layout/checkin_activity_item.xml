@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/listview_item_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/checkin_item_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/checkin_activity_item_top" />
+
+    <include
+        android:id="@+id/checkin_item_mid"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/checkin_activity_item_mid" />
+
+    <include
+        android:id="@+id/checkin_item_more"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/checkin_activity_item_more" />
+
+    <include
+        android:id="@+id/checkin_item_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/checkin_activity_item_bottom" />
+
+</LinearLayout>

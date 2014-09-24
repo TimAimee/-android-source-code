@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/phonealbum_item_photo"
+        android:layout_width="70dip"
+        android:layout_height="70dip"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/phonealbum_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dip"
+        android:textColor="#333333"
+        android:textSize="18sp"
+        android:textStyle="bold" 
+        android:maxWidth="150dip"
+        android:ellipsize="end"
+        android:singleLine="true"/>
+
+    <TextView
+        android:id="@+id/phonealbum_item_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dip"
+        android:textColor="#999999"
+        android:textSize="18sp"
+        android:textStyle="bold" 
+        android:layout_weight="1"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dip"
+        android:paddingRight="20dip"
+        android:src="@drawable/login_icon_go" />
+
+</LinearLayout>

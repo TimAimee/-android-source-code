@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/popup_window_bg"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/home_popupwindow_display"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:listSelector="#00000000"
+        android:scrollbars="none" >
+    </ListView>
+
+</LinearLayout>

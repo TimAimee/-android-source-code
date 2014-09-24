@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical" >
+
+	<com.ckt.vas.miles.ui.views.ScrollLayout
+		android:id="@+id/myViewGroup"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent" >
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:background="@drawable/fb_menu" >
+		</LinearLayout>
+
+		 <include layout="@layout/feed_activity2" />
+		 
+		 <LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:background="@drawable/cover" >
+		</LinearLayout>
+		
+	</com.ckt.vas.miles.ui.views.ScrollLayout>
+
+</LinearLayout>

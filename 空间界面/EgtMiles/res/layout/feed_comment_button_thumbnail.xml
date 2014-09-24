@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/comment_button"
+    android:layout_width="72.0dip"
+    android:layout_height="52.0dip"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"
+    android:layout_gravity="top" >
+
+    <ImageView
+        android:id="@id/comment_button_image"
+        android:layout_width="58.0dip"
+        android:layout_height="32.0dip"
+        android:layout_centerInParent="true"
+        android:src="@drawable/photo_pill" />
+
+    <ImageView
+        android:id="@id/comment_button_icon"
+        android:layout_width="18.0dip"
+        android:layout_height="18.0dip"
+        android:layout_alignLeft="@id/comment_button_image"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8.0dip"
+        android:src="@drawable/photo_icn_emo" />
+
+    <TextView
+        android:id="@id/comment_button_text"
+        android:layout_width="25.0dip"
+        android:layout_height="32.0dip"
+        android:layout_alignLeft="@id/comment_button_image"
+        android:layout_alignTop="@id/comment_button_image"
+        android:layout_marginLeft="26.0dip"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="12.0dip"
+        android:textStyle="bold" />
+
+</RelativeLayout>

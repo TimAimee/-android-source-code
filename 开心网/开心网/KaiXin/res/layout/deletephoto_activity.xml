@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/deletephoto_display"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+
+    <RelativeLayout
+        android:id="@+id/deletephoto_title"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:background="@drawable/blackbg">
+
+        <Button
+            android:id="@+id/deletephoto_back"
+            android:layout_width="wrap_content"
+            android:layout_height="48dip"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="8dip"
+            android:layout_marginLeft="8dip"
+            android:layout_marginTop="8dip"
+            android:background="@drawable/title_text_blackbtn_left_arrow"
+            android:text="返回"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/deletephoto_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="8dip"
+            android:layout_marginRight="8dip"
+            android:layout_marginTop="8dip"
+            android:background="@drawable/title_text_blackbtn"
+            android:text="移出照片"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</FrameLayout>

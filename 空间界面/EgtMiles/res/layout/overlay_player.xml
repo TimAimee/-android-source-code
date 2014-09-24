@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/overlay"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/overlay_bg"
+    android:visibility="gone" >
+
+    <RelativeLayout
+        android:id="@+id/overlay_player"
+        android:layout_width="266.0dip"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/music_popup"
+        android:paddingBottom="8.0dip"
+        android:paddingLeft="5.0dip"
+        android:paddingRight="5.0dip"
+        android:paddingTop="2.0dip" >
+
+        <ImageView
+            android:id="@+id/overlay_player_artwork"
+            android:layout_width="72.0dip"
+            android:layout_height="72.0dip"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20.0dip"
+            android:background="@color/black" />
+
+        <ImageView
+            android:layout_width="72.0dip"
+            android:layout_height="72.0dip"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20.0dip"
+            android:src="@drawable/music_albumart" />
+
+        <ProgressBar
+            android:id="@+id/overlay_player_progressbar"
+            style="@android:style/Widget.ProgressBar.Large"
+            android:layout_width="26.0dip"
+            android:layout_height="26.0dip"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="43.0dip" />
+
+        <TextView
+            android:id="@+id/overlay_player_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/overlay_player_artwork"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5.0dip"
+            android:gravity="center"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:textColor="@color/path_black"
+            android:textSize="22.0dip"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/overlay_player_sub1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/overlay_player_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2.0dip"
+            android:gravity="center"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:textColor="@color/med_gray"
+            android:textSize="12.0dip" />
+
+        <TextView
+            android:id="@+id/overlay_player_sub2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/overlay_player_sub1"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:textColor="@color/med_gray"
+            android:textSize="12.0dip" />
+
+        <View
+            android:id="@+id/overlay_player_artist_spacer"
+            android:layout_width="wrap_content"
+            android:layout_height="15.0dip"
+            android:layout_below="@id/overlay_player_sub2" />
+
+        <View
+            android:id="@+id/overlay_player_artist_divider"
+            android:layout_width="fill_parent"
+            android:layout_height="2.0dip"
+            android:layout_below="@id/overlay_player_artist_spacer"
+            android:background="@drawable/moment_divider" />
+
+        <LinearLayout
+            android:id="@+id/overlay_player_artist"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/overlay_player_artist_divider"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="40.0dip"
+                android:layout_height="46.0dip"
+                android:padding="10.0dip"
+                android:src="@drawable/music_icn_music" />
+
+            <TextView
+                android:id="@+id/overlay_player_artist_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="3.0dip"
+                android:paddingRight="15.0dip"
+                android:paddingTop="3.0dip"
+                android:textColor="@color/path_black"
+                android:textSize="16.0dip"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

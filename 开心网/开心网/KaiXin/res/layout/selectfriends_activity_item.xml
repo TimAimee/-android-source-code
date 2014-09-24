@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/kaixin_list_item_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/selectfriends_item_alpha"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/alphabet_bg"
+        android:paddingLeft="8dip"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="#000000" />
+
+    <ImageView
+        android:id="@+id/selectfriends_item_alpha_line"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/global_dividing_line_grain_bg" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingRight="30dip" >
+
+        <ImageView
+            android:id="@+id/selectfriends_item_avatar"
+            android:layout_width="45dip"
+            android:layout_height="45dip"
+            android:layout_margin="8dip"/>
+
+        <TextView
+             android:id="@+id/selectfriends_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="#3fffffff"
+            android:shadowDx="0.0"
+            android:shadowDy="1.0"
+            android:shadowRadius="1.0"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ImageView
+             android:id="@+id/selectfriends_item_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:src="@drawable/online" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </LinearLayout>
+
+        <CheckBox
+             android:id="@+id/selectfriends_item_style"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_marginRight="8dip"
+            android:button="@drawable/contacts_item_box_style"
+            android:checked="false"
+            android:focusable="false" />
+    </LinearLayout>
+
+</LinearLayout>

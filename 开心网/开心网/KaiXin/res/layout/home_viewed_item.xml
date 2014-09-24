@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/home_viewed_item_avatar"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_margin="8dip" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dip"
+        android:layout_marginRight="8dip"
+        android:layout_marginTop="8dip"
+        android:background="@drawable/news_item_background"
+        android:orientation="vertical"
+        android:paddingLeft="8dip"
+        android:paddingRight="8dip"
+        android:paddingTop="8dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/home_viewed_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ff397cbf"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:paddingRight="4dip"
+                android:singleLine="true"
+                android:textColor="#333333"
+                android:textSize="14sp" 
+                android:text="转帖给大家"
+                android:drawableLeft="@drawable/star"/>
+
+            <TextView
+                android:id="@+id/home_viewed_item_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffaaaaaa"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/home_viewed_item_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dip"
+            android:paddingRight="8dip"
+            android:paddingTop="8dip"
+            android:textColor="#ff397cbf"
+            android:textStyle="bold"
+            android:singleLine="true"
+			android:ellipsize="end"
+            android:textSize="14sp" 
+            android:drawableLeft="@drawable/repastedefault"
+            android:drawablePadding="8dip"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#fffafafa" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dip" >
+
+            <TextView
+                android:id="@+id/home_viewed_item_all"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="#ffbbbbbb"
+                android:textSize="12sp" 
+                android:drawableLeft="@drawable/globle_icon_omission"
+                android:drawablePadding="4dip"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

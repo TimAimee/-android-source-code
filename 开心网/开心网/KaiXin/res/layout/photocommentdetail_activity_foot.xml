@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="目前没有评论或者都是悄悄话评论"
+        android:textColor="#999999"
+        android:paddingTop="20dip"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView 
+        android:id="@+id/diary_item_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:padding="8dip"/>
+    <TextView 
+        android:id="@+id/diary_item_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#222222"
+        android:textSize="12sp"
+        android:paddingLeft="8dip"
+        android:paddingRight="8dip"
+        android:maxLength="30"
+        android:ellipsize="end"/>
+    <TextView 
+        android:id="@+id/diary_item_time"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#80333333"
+        android:textSize="12sp"
+        android:padding="8dip"/>
+</LinearLayout>

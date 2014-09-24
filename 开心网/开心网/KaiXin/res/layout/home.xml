@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/kaixin_background"
+        android:clickable="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48dip"
+            android:background="@drawable/global_top_background" >
+
+            <Button
+                android:id="@+id/home_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="8dip"
+                android:background="@drawable/title_home_button" />
+
+            <LinearLayout
+                android:id="@+id/home_top_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_weight="1"
+                android:background="@drawable/title_bar_center_button_bg"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/home_top_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dip"
+                    android:text="好友动态"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:duplicateParentState="true"
+                    android:src="@drawable/title_bar_arrow_down_bg" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/home_refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="8dip"
+                android:background="@drawable/title_refresh_button" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ListView
+                android:id="@+id/home_display"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="#00000000"
+                android:divider="@null"
+                android:listSelector="#00000000" >
+            </ListView>
+
+            <include
+                android:id="@+id/home_ugc"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                layout="@layout/ugc_menu_layout" />
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

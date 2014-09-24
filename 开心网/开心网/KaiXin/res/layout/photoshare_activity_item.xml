@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/photoshare_item_image"
+        android:layout_width="180dip"
+        android:layout_height="220dip"
+        android:background="@drawable/picture_frame"
+        android:scaleType="centerCrop"/>
+	<Button 
+	    android:id="@+id/photoshare_item_delete"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/delete"
+	    android:layout_alignRight="@+id/photoshare_item_image"/>
+</RelativeLayout>

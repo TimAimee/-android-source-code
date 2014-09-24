@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/comment_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/comment_button_image"
+        android:layout_width="52.0dip"
+        android:layout_height="28.0dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/thought_emotion_button" />
+    <ImageView
+        android:id="@+id/comment_button_icon"
+        android:layout_width="18.0dip"
+        android:layout_height="18.0dip"
+        android:layout_alignLeft="@id/comment_button_image"
+        android:layout_alignTop="@id/comment_button_image"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginTop="5.0dip"
+        android:src="@drawable/thought_moment_icn_emotion" />
+
+    <TextView
+        android:id="@+id/comment_button_text"
+        android:layout_width="23.0dip"
+        android:layout_height="28.0dip"
+        android:layout_alignLeft="@id/comment_button_image"
+        android:layout_alignTop="@id/comment_button_image"
+        android:layout_marginLeft="23.0dip"
+        android:gravity="center"
+        android:shadowColor="@color/white"
+        android:shadowDx="0.0"
+        android:shadowDy="2.0"
+        android:shadowRadius="0.1"
+        android:textColor="@color/lighter_gray"
+        android:textSize="12.0dip"
+        android:textStyle="bold" />
+
+</RelativeLayout>

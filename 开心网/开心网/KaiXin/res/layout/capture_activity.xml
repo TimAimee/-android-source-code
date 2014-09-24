@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <FrameLayout
+        android:id="@+id/capture_scanning_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <SurfaceView
+            android:id="@+id/capture_preview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center" />
+
+        <com.kaixin.android.ui.base.ViewfinderView
+            android:id="@+id/capture_viewfinder_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="@color/transparent" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:text="请将二维码放置到取景框内,开心网能自动扫描到对应的位置"
+            android:textColor="#ffffff" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/capture_information_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/capture_image"
+            android:layout_width="150dip"
+            android:layout_height="120dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="20dip"
+            android:src="@drawable/photo" />
+
+        <LinearLayout
+            android:id="@+id/capture_infomation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/capture_image"
+            android:layout_below="@+id/capture_image"
+            android:gravity="right"
+            android:orientation="vertical" 
+            android:layout_marginTop="8dip">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="格式 QR_CODE"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="类型 未知"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/capture_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="时间 13-1-04-12 下午3:21"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="元数据 H"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/capture_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/capture_infomation"
+            android:layout_alignTop="@+id/capture_image"
+            android:layout_toRightOf="@+id/capture_image"
+            android:gravity="center"
+            android:padding="20dip"
+            android:text="www.baidu.com"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/capture_infomation"
+            android:orientation="horizontal"
+            android:padding="8dip"
+            android:gravity="bottom" >
+
+            <Button
+                android:id="@+id/capture_again"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="重新扫描"
+                android:textColor="#000000" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="确定"
+                android:textColor="#000000" 
+                android:enabled="false"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

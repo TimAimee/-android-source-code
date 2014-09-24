@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:miles="http://schemas.android.com/apk/res/com.ckt.vas.miles"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/cover"
+        android:layout_width="fill_parent"
+        android:layout_height="160dip"
+        android:background="@drawable/linen_background_tile" >
+
+        <ImageView
+            android:id="@+id/cover_image"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY" 
+            android:src="@drawable/cover_overlay"
+            />
+
+        <ImageView
+            android:id="@+id/cover_track"
+            android:layout_width="4.0dip"
+            android:layout_height="26.0dip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="72.0dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/cover_track" />
+
+        <ImageView
+            android:id="@+id/cover_refresh"
+            android:layout_width="61.0dip"
+            android:layout_height="61.0dip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:scaleType="center"
+            android:src="@drawable/cover_refresh" />
+
+        <ImageView
+            android:id="@+id/cover_nowdot"
+            android:layout_width="16.0dip"
+            android:layout_height="16.0dip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="23.0dip"
+            android:layout_marginLeft="66.0dip"
+            android:src="@drawable/cover_nowdot" />
+
+        <com.ckt.vas.miles.ui.views.CircularImage
+            android:id="@+id/cover_user_photo"
+            android:layout_width="54.0dip"
+            android:layout_height="54.0dip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="61.0dip"
+            android:layout_marginLeft="47.0dip" />
+
+        <ImageView
+            android:layout_width="62.0dip"
+            android:layout_height="62.0dip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="56.0dip"
+            android:layout_marginLeft="43.0dip"
+            android:src="@drawable/cover_avatar" />
+
+        <TextView
+            android:id="@+id/cover_clock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="20.0dip"
+            android:layout_marginLeft="100.0dip"
+            android:shadowColor="@color/cover_time_shadow"
+            android:shadowDx="0.0"
+            android:shadowDy="2.0"
+            android:shadowRadius="0.1"
+            android:textColor="@color/white"
+            android:textSize="16.0dip"
+             android:text="成都市高新区天府软件园C区"
+            android:textStyle="bold" />
+
+        <!-- friend apply request -->
+
+        <RelativeLayout
+            android:id="@+id/cover_requests"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/cover_user_photo"
+            android:layout_marginLeft="130.0dip"
+            android:layout_marginTop="4.0dip"
+            android:background="@drawable/cover_requests_base"
+            android:padding="6.0dip" >
+
+            <com.ckt.vas.miles.ui.views.RoundedCornersImage
+                android:id="@+id/cover_requests_photo"
+                android:layout_width="34.0dip"
+                android:layout_height="34.0dip"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="1.0dip"
+                android:layout_marginTop="1.0dip"
+                miles:cornerRadius="5.0dip" />
+
+            <ImageView
+                android:layout_width="36.0dip"
+                android:layout_height="36.0dip"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/cover_requests_avatar" />
+
+            <TextView
+                android:id="@+id/cover_requests_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6.0dip"
+                android:layout_toRightOf="@id/cover_requests_photo"
+                android:textColor="@color/white"
+                android:textSize="12.0dip"
+                android:text="你有一个好友申请待处理"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

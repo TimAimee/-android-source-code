@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/kaixin_background"
+        android:clickable="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48dip"
+            android:background="@drawable/global_top_background" >
+
+            <Button
+                android:id="@+id/gifts_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="8dip"
+                android:background="@drawable/title_home_button" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dip"
+                    android:text="礼物"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/gifts_gift"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="8dip"
+                android:background="@drawable/gifts_normal" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="8dip" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="热门推荐"
+                        android:textColor="#333333"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/gifts_more"
+                        android:layout_width="20dip"
+                        android:layout_height="20dip"
+                        android:src="@drawable/login_icon_enter" />
+                </LinearLayout>
+
+                <com.kaixin.android.ui.base.MyGridView
+                    android:id="@+id/gifts_display"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:columnWidth="80dip"
+                    android:horizontalSpacing="0dip"
+                    android:listSelector="@android:color/transparent"
+                    android:numColumns="4"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="10dip" 
+                    android:layout_marginBottom="8dip"/>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/global_dividing_line_grain_bg" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gifts_title_bottom"
+                    android:padding="8dip"
+                    android:text="最近过生日的好友"
+                    android:textColor="#999999"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/global_dividing_line_grain_bg" />
+
+                <com.kaixin.android.ui.base.MyListView
+                    android:id="@+id/gifts_friends_list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:cacheColorHint="#00000000"
+                    android:divider="@drawable/list_line"
+                    android:listSelector="#00000000"
+                    android:orientation="vertical" >
+                </com.kaixin.android.ui.base.MyListView>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/global_dividing_line_grain_bg" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gifts_title_bottom"
+                    android:padding="8dip"
+                    android:text="特别好友"
+                    android:textColor="#999999"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/global_dividing_line_grain_bg" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

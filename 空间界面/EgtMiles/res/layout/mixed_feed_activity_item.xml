@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/mixed_feed_track"
+        android:layout_width="52.0dip"
+        android:layout_height="65.0dip" >
+
+        <ImageView
+            android:id="@+id/mixed_feed_author_photo"
+            android:layout_width="44.0dip"
+            android:layout_height="44.0dip"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginTop="6.0dip" />
+
+        <ImageView
+            android:id="@+id/mixed_feed_author_photo_overlay"
+            android:layout_width="44.0dip"
+            android:layout_height="44.0dip"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginTop="6.0dip"
+            android:src="@drawable/moment_avatar" />
+
+        <TextView
+            android:id="@+id/mixed_feed_authorname"
+            style="@style/author_name"
+            android:layout_width="44.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginTop="51.0dip"
+            android:gravity="center" />
+    </RelativeLayout>
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/mixed_feed_track"
+        layout="@layout/feed_activity2_item" />
+
+</RelativeLayout>

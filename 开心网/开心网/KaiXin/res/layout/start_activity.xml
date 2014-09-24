@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <ImageView 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/starlogo_newyear"
+        android:scaleType="centerCrop"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="20dip"
+        android:layout_alignParentBottom="true" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All rights reserved.Ver.2.8"
+            android:textColor="#ff888888"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Copyright © 2007-2013 kaixin001.com"
+            android:textColor="#ff888888"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</RelativeLayout>

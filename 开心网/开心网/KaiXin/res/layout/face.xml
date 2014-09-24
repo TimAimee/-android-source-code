@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bump_dialog_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="8dip"
+        android:background="@drawable/bump_dialog_card_bg"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/face_close"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:src="@drawable/close" />
+
+        <GridView
+            android:id="@+id/face_gridview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:horizontalSpacing="8dip"
+            android:numColumns="4"
+            android:paddingBottom="8dip"
+            android:paddingRight="8dip"
+            android:paddingTop="8dip"
+            android:verticalSpacing="8dip" >
+        </GridView>
+    </LinearLayout>
+
+</LinearLayout>

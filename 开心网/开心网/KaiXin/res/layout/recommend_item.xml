@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/kaixin_list_item_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/recommend_item_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/alphabet_bg"
+        android:padding="8dip"
+        android:text="热门游戏"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="#999999" />
+
+    <ImageView
+        android:id="@+id/recommend_item_title_line"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_line" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/recommend_item_icon"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_margin="8dip"
+            android:src="@drawable/head_default" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/recommend_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:shadowColor="#3fffffff"
+                android:shadowDx="0.0"
+                android:shadowDy="1.0"
+                android:shadowRadius="1.0"
+                android:text="开心餐厅"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:padding="8dip" />
+
+            <TextView
+                android:id="@+id/recommend_item_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:shadowColor="#3fffffff"
+                android:shadowDx="0.0"
+                android:shadowDy="1.0"
+                android:shadowRadius="1.0"
+                android:text="开心餐厅大第三方随碟附送的丰盛的"
+                android:textColor="#999999"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:paddingLeft="8dip"
+                android:maxWidth="150dip"
+                android:singleLine="true"
+                android:ellipsize="end" 
+                android:visibility="gone"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

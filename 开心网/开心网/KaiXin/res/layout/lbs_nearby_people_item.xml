@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/lbs_nearby_people_item_avatar"
+        android:layout_width="70dip"
+        android:layout_height="70dip"
+        android:layout_margin="8dip"
+        android:background="@drawable/widget_big_head_bg"
+        android:padding="3dip"/>
+
+    <TextView
+        android:id="@+id/lbs_nearby_people_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/lbs_nearby_people_item_avatar"
+        android:layout_marginTop="4dip"
+        android:layout_toLeftOf="@+id/lbs_nearby_people_item_picture"
+        android:layout_toRightOf="@+id/lbs_nearby_people_item_avatar"
+        android:textColor="#576B95"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lbs_nearby_people_item_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lbs_nearby_people_item_name"
+        android:layout_alignRight="@+id/lbs_nearby_people_item_name"
+        android:layout_below="@+id/lbs_nearby_people_item_name"
+        android:layout_marginTop="4dip"
+        android:drawableLeft="@drawable/lbs_locationicon"
+        android:drawablePadding="8dip"
+        android:textColor="#3D7EC0"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/lbs_nearby_people_item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lbs_nearby_people_item_location"
+        android:layout_alignRight="@+id/lbs_nearby_people_item_location"
+        android:layout_below="@+id/lbs_nearby_people_item_location"
+        android:layout_marginTop="4dip"
+        android:paddingBottom="10dip"
+        android:textColor="#999999"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/lbs_nearby_people_item_picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dip"
+        android:layout_toLeftOf="@+id/lbs_nearby_people_item_arrow"
+        android:src="@drawable/lbs_pictureicon" />
+
+    <ImageView
+        android:id="@+id/lbs_nearby_people_item_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dip"
+        android:src="@drawable/right_arrow_style" />
+
+</RelativeLayout>

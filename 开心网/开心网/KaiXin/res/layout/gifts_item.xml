@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/gifts_item_image"
+        android:layout_width="72dip"
+        android:layout_height="72dip"
+        android:layout_gravity="center"
+        android:background="@drawable/gifts_background"
+        android:padding="10dip"
+        android:scaleType="centerInside"
+        android:src="@drawable/gifts_default_01" />
+
+
+    <TextView
+        android:id="@+id/gifts_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:shadowColor="#ffffffff"
+        android:shadowDx="0.0"
+        android:shadowDy="1.0"
+        android:shadowRadius="1.0"
+        android:textColor="#ffb4b4b4"
+        android:textSize="14sp" />
+
+</LinearLayout>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:miles="http://schemas.android.com/apk/res/com.ckt.vas.miles"
+    android:id="@+id/mainView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/feed_item_bg" >
+
+    <!-- timeline on left -->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent" >
+
+        <ImageView
+            android:id="@+id/timeline_track"
+            android:layout_width="4dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="72.0dip"
+            android:background="@color/red"
+            android:scaleType="fitXY"
+            android:src="@drawable/feed_item_track" />
+    </RelativeLayout>
+
+    <!--
+         <com.ckt.vas.miles.ui.views.ObservableListView
+        android:id="@+id/list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="@color/clear"
+        android:divider="@drawable/moment_divider"
+        android:dividerHeight="4.0px"
+        android:listSelector="@color/clear"
+        android:paddingTop="44.0dip" 
+        android:scrollbars="vertical"
+        android:scrollingCache="false" />
+    -->
+
+    <com.ckt.vas.miles.ui.views.ExtendedListView
+        xmlns:miles="http://schemas.android.com/apk/res/com.ckt.vas.miles"
+        android:id="@+id/list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="@color/clear"
+        android:divider="@drawable/moment_divider"
+        android:dividerHeight="4.0px"
+        android:listSelector="@color/clear"
+        android:paddingTop="44.0dip"
+        android:scrollbars="vertical"
+        android:scrollingCache="false"
+        miles:scrollBarPanel="@layout/clock"
+        miles:scrollBarPanelInAnimation="@anim/in"
+        miles:scrollBarPanelOutAnimation="@anim/out" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <include
+            android:id="@+id/clock"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="40dp"
+            layout="@layout/clock" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <View
+            android:id="@+id/activity_overlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:id="@+id/composer_buttons_wrapper"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:clipChildren="false"
+            android:clipToPadding="false" >
+
+            <ImageButton
+                android:id="@+id/composer_button_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="142dp"
+                android:layout_marginRight="10.667dp"
+                android:background="@drawable/composer_camera"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/composer_button_people"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="122.975607dp"
+                android:layout_marginRight="81.607dp"
+                android:background="@drawable/composer_with"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/composer_button_place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="80.666666666666667dp"
+                android:layout_marginRight="124.70765814495902dp"
+                android:background="@drawable/composer_place"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/composer_button_thought"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="8.666666666666667dp"
+                android:layout_marginRight="144dp"
+                android:background="@drawable/composer_thought"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/composer_buttons_show_hide_button"
+            android:layout_width="60dp"
+            android:layout_height="57.33333333333333dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/blue_cricle" >
+
+            <ImageView
+                android:id="@+id/composer_buttons_show_hide_button_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/composer_icn_plus" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!-- logo banner -->
+
+    <RelativeLayout
+        android:id="@+id/qa_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="44.0dip"
+        android:background="@drawable/m_bar" >
+
+        <ImageView
+            android:id="@+id/path_logo"
+            style="@style/qa_logo"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:id="@+id/qa_bar_menu"
+            style="@style/qa_bar_button_left"
+            android:src="@drawable/m_bar_left" />
+
+        <ImageButton
+            android:id="@+id/qa_bar_friends"
+            style="@style/qa_bar_button_right"
+            android:src="@drawable/m_bar_right" />
+
+        <TextView
+            android:id="@+id/page_title_text"
+            style="@style/qa_bar_text"
+            android:layout_width="0.0dip"
+            android:layout_toLeftOf="@id/qa_bar_friends"
+            android:layout_toRightOf="@id/qa_bar_menu"
+            android:text="" />
+    </RelativeLayout>
+
+    <!-- <include layout="@layout/splash" /> -->
+
+</FrameLayout>

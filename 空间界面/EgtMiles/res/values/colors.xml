@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="red">#ffff0000</color>
+    <color name="orange">#ffe3432c</color>
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="path_black">#ff333333</color>
+    <color name="lighter_gray">#ffcccccc</color>
+    <color name="light_gray">#ffbbbbbb</color>
+    <color name="med_gray">#ff999999</color>
+    <color name="gray">#ff666666</color>
+    <color name="dark_gray">#ff4d4d4d</color>
+    <color name="beige">#fff1eee9</color>
+    <color name="light_light_gray">#ffdddddd</color>
+    <color name="overlay_bg">#7f000000</color>
+    <color name="menu_settings_header_text">#ffc9beaa</color>
+    <color name="activity_bg">#fffafafa</color>
+    <color name="feed_item_bg">#fff2eee8</color>
+    <color name="feed_item_track">#ffe8e4dd</color>
+    <color name="cover_track">#7fffffff</color>
+    <color name="feed_subtext">#ffaea9a1</color>
+    
+    <color name="bubble_item_divider">#fff7f6f5</color> 
+    <!-- <color name="bubble_item_divider">#DB7093</color>-->
+    
+    
+    <color name="cover_text_shadow">#7f000000</color>
+    <color name="cover_time_shadow">#7f000000</color>
+    <color name="qa_bar_text_shadow">#ff7f1a13</color>
+    <color name="page_subtext">#ffada9a0</color>
+    <color name="page_tab_text_pressed">#ffffffff</color>
+    <color name="page_tab_shadow_pressed">#ff827f79</color>
+    <color name="page_tab_text_released">#ffaea9a1</color>
+    <color name="page_tab_shadow_released">#ffffffff</color>
+    <color name="permalink_item_bg">#fff2f2f2</color>
+    <color name="permalink_comment_location_text">#ffa2afbd</color>
+    <color name="permalink_comment_send_text">#ff9fa2a6</color>
+    <color name="emotion_picker_deluxe_avatar_blank">#7f666666</color>
+    <color name="emotion_picker_deluxe_text">#ff757575</color>
+    <color name="nux_blue_shadow">#ff0b36b7</color>
+    <color name="line_on_paper">#ffe6e6e6</color>
+    <color name="clear">#00000000</color>
+    <color name="feed_comment_button_text">#ffaea9a1</color>
+    <color name="feed_comment_button_text_shadow">#fffcfbfa</color>
+    <color name="feed_comment_button_text_pressed">#fff3f1ed</color>
+    <color name="feed_comment_button_text_shadow_pressed">#ffbfb8b1</color>
+    <color name="moment_dot_default">#ffcbc5bc</color>
+    <color name="moment_dot_thought">#ffcbc5bc</color>
+    <color name="moment_dot_music">#ffee9920</color>
+    <color name="moment_dot_place">#ff2772ce</color>
+    <color name="moment_dot_people">#ffffffff</color>
+    <color name="moment_ambient_dot_joined">#ffdb3825</color>
+    <color name="moment_ambient_dot_distance">#ff756c60</color>
+    <color name="moment_ambient_dot_asleep">#ff49098a</color>
+    <color name="moment_ambient_dot_awake">#fff5d318</color>
+    <color name="moment_ambient_dot_friend">#ffcbc5bc</color>
+    <color name="moment_ambient_dot_cover">#ffcbc5bc</color>
+    <color name="sleep_dialog_background">#ff0f041b</color>
+    <color name="sleep_dialog_time">#ff675475</color>
+    <color name="sleep_duration_message">#ff462e59</color>
+</resources>

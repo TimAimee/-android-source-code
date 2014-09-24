@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/feed_comments"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:visibility="visible" >
+
+    <LinearLayout
+        android:id="@+id/feed_comments_thread"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/comment_bubble"
+        android:clickable="true"
+        android:orientation="vertical" >
+		
+        <!-- emotions icons -->
+        <include
+            android:id="@+id/feed_comments_emotions"
+            layout="@layout/feed_emotions_item" android:visibility="gone"/>
+
+        <include
+            android:id="@+id/feed_comments_1"
+            layout="@layout/feed_comments_item" />
+    </LinearLayout>
+
+</RelativeLayout>

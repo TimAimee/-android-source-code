@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="menu_cell_divider_height">4.0px</dimen>
+    <dimen name="paper_line_height">2.0px</dimen>
+    <dimen name="clock_scroller_digital_time_top_margin">3.0px</dimen>
+    <dimen name="clock_scroller_digital_date_top_margin">18.0px</dimen>
+    <dimen name="divider_on_beige_height">4.0px</dimen>
+    <dimen name="qa_logo_width">99.0px</dimen>
+    <dimen name="qa_logo_height">42.0px</dimen>
+    <dimen name="qa_logo_margin_top">11.0px</dimen>
+</resources>

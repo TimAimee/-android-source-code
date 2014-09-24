@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:background="@drawable/global_top_background" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/title_bar_center_button_bg"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dip"
+                android:text="相册"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/album_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="8dip"
+            android:layout_marginLeft="8dip"
+            android:layout_marginTop="8dip"
+            android:background="@drawable/title_text_button_left_arrow"
+            android:ellipsize="end"
+            android:maxWidth="80dip"
+            android:minWidth="48dip"
+            android:singleLine="true"
+            android:text="返回"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/album_all"
+            android:layout_width="48dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="8dip"
+            android:layout_marginRight="8dip"
+            android:layout_marginTop="8dip"
+            android:background="@drawable/title_text_button"
+            android:text="全选"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/album_display"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:cacheColorHint="#00000000"
+        android:gravity="center"
+        android:horizontalSpacing="8dip"
+        android:listSelector="#00000000"
+        android:numColumns="4"
+        android:padding="8dip"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="8dip" >
+    </GridView>
+	<RelativeLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="48dip"
+	    android:orientation="horizontal"
+	    android:background="@drawable/bottom_bar_bg">
+	    <TextView 
+	        android:id="@+id/album_count"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:text="已选择0张"
+	        android:textSize="18sp"
+	        android:textColor="#999999"
+	        android:gravity="center"/>
+	    <Button 
+	        android:id="@+id/album_determine"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentRight="true"
+	        android:paddingLeft="15dip"
+	        android:paddingRight="15dip"
+	        android:text="确定"
+	        android:layout_marginRight="8dip"
+	        android:background="@drawable/image_filter_title_text_btn_bg"
+	        android:textColor="#999999"/>
+	</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/friendinfo_head_wallpager"
+            android:layout_width="fill_parent"
+            android:layout_height="220dip"
+            android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/friendinfo_head_wallpager"
+            android:background="@drawable/profile_avatar_frame_bg"
+            android:paddingLeft="8dip"
+            android:paddingTop="47dip" >
+
+            <ImageView
+                android:id="@+id/friendinfo_head_avatar"
+                android:layout_width="74dip"
+                android:layout_height="74dip"
+                android:layout_marginLeft="4dip"
+                android:layout_marginTop="4dip"
+                android:background="@drawable/avatar_background" />
+
+            <TextView
+                android:id="@+id/friendinfo_head_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/friendinfo_head_avatar"
+                android:layout_marginLeft="8dip"
+                android:layout_marginTop="4dip"
+                android:layout_toRightOf="@+id/friendinfo_head_avatar"
+                android:shadowColor="#ff000000"
+                android:shadowDx="0.0"
+                android:shadowDy="1.0"
+                android:shadowRadius="1.0"
+                android:singleLine="true"
+                android:textColor="#FFFFFF"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/friendinfo_head_gender_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/friendinfo_head_name"
+                android:layout_below="@+id/friendinfo_head_name"
+                android:layout_marginBottom="4dip"
+                android:layout_marginTop="4dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/friendinfo_head_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/friendinfo_head_constellation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:shadowColor="#ff000000"
+                    android:shadowDx="0.0"
+                    android:shadowDy="1.0"
+                    android:shadowRadius="1.0"
+                    android:singleLine="true"
+                    android:textColor="#FFFFFF"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/friendinfo_head_chat"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_above="@+id/friendinfo_head_sig_layout"
+                android:layout_toLeftOf="@+id/friendinfo_head_gifts"
+                android:src="@drawable/profile_chat_btn_bg_selector" 
+                android:clickable="true"/>
+
+            <ImageView
+                android:id="@+id/friendinfo_head_gifts"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_above="@+id/friendinfo_head_sig_layout"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/profile_gifts_btn_bg_selector"
+                android:clickable="true" />
+
+            <LinearLayout
+                android:id="@+id/friendinfo_head_sig_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/friendinfo_head_gender_layout"
+                android:layout_below="@+id/friendinfo_head_gender_layout" >
+
+                <TextView
+                    android:id="@+id/friendinfo_head_sig"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingRight="8dip"
+                    android:singleLine="true"
+                    android:textColor="#ffb4b4b4"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fffafafa"
+        android:orientation="horizontal"
+        android:padding="8dip" >
+
+        <TextView
+            android:id="@+id/friendinfo_head_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/profile_btn_about"
+            android:gravity="center"
+            android:textColor="#ff999999"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/friendinfo_head_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/profile_btn_photos"
+            android:gravity="center"
+            android:textColor="#ff999999"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/friendinfo_head_diary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/profile_btn_diary"
+            android:gravity="center"
+            android:textColor="#ff999999"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/friendinfo_head_friends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/profile_btn_friends"
+            android:gravity="center"
+            android:textColor="#ff999999"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#ffefefef" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fffafafa"
+        android:orientation="horizontal" >
+
+        <HorizontalScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:fadingEdge="horizontal"
+            android:fadingEdgeLength="30dip"
+            android:fillViewport="true"
+            android:orientation="horizontal"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/friendinfo_head_friends_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:fadingEdge="none"
+                android:fadingEdgeLength="0dip"
+                android:orientation="horizontal"
+                android:paddingLeft="8dip"
+                android:paddingRight="8dip" >
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <Button
+            android:id="@+id/friendinfo_head_friends_list_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dip"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:layout_marginTop="15dip"
+            android:background="@drawable/profile_number_visitors_bg"
+            android:gravity="center"
+            android:textSize="9sp" />
+    </LinearLayout>
+
+</LinearLayout>

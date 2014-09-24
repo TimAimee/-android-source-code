@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dip" >
+
+        <TextView
+            android:id="@+id/lbs_nearby_photo_item_location"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/lbs_locationicon"
+            android:drawablePadding="8dip"
+            android:textColor="#3D7EC0"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/lbs_nearby_photo_item_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dip"
+            android:textColor="#999999"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:fadingEdge="none">
+
+        <LinearLayout
+            android:id="@+id/lbs_nearby_photo_item_display"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="8dip"
+            android:paddingRight="8dip" >
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>

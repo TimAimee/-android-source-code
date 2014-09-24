@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/photo_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingBottom="5.0dip"
+    android:paddingLeft="3.0dip"
+    android:paddingRight="9.0dip"
+    android:paddingTop="5.0dip" >
+
+    <LinearLayout
+        android:id="@+id/moment_left_of_comment_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="44.0dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/comment"
+            style="@style/feed_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:minHeight="40.0dip"
+            android:paddingBottom="4.0dip"
+            android:paddingTop="4.0dip"
+            android:text="Andrew 推荐了  澳门豆捞 (一品天下店)" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/photo_wrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/photo_wrapper" >
+
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/gray"
+            android:scaleType="fitXY" />
+
+        <include layout="@layout/feed_comment_button_thumbnail" />
+    </RelativeLayout>
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3.0dip"
+        layout="@layout/feed_comments" />
+
+</LinearLayout>

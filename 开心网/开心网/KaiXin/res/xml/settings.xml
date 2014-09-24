@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="桌面小部件(widget)设置" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="message_refresh"
+        android:summaryOff="关闭"
+        android:summaryOn="开启"
+        android:title="桌面动态自动刷新" />
+
+    <Preference
+        android:dependency="message_refresh"
+        android:key="message_refresh_interval"
+        android:summary="半小时"
+        android:title="刷新间隔" />
+
+    <PreferenceCategory android:title="新消息通知设置" />
+
+    <Preference
+        android:key="new_message_detect_interval"
+        android:summary="10分钟"
+        android:title="新消息检测时间间隔" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="keep_notice"
+        android:summary="程序退出后仍然保持新消息通知"
+        android:title="保持通知" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:dependency="keep_notice"
+        android:key="desktop_push"
+        android:summaryOff="关闭"
+        android:summaryOn="开启"
+        android:title="桌面消息推送" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:dependency="keep_notice"
+        android:key="anti_disturb"
+        android:summary="在22:00-09:00关闭新消息通知功能"
+        android:title="夜间防打扰" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="vibration"
+        android:summary="收到新消息通知时振动"
+        android:title="振动" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="ring"
+        android:summary="收到新消息通知时播放铃声"
+        android:title="铃声" />
+
+    <PreferenceCategory android:title="软件版本" />
+
+    <Preference
+        android:key="current_version"
+        android:summary="Kaixin_Android_2.8"
+        android:title="当前版本" />
+
+    <Preference
+        android:key="detect_the_new_version"
+        android:summary="轻触屏幕手动检查新版本"
+        android:title="检查新版本" />
+
+</PreferenceScreen>

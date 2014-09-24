@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/feed_activity_item_emotions"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="4.0dip" >
+
+    <include
+        android:id="@+id/feed_activity_item_emotions_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_marginTop="4.0dip"
+        layout="@layout/bubble_item_divider" />
+
+</RelativeLayout>

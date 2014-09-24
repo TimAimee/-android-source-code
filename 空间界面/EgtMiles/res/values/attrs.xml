@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="RoundedCornersImage">
+        <attr name="cornerRadius" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="ExtendedListView">
+        <attr name="scrollBarPanel" format="reference" />
+        <attr name="scrollBarPanelInAnimation" format="reference" />
+        <attr name="scrollBarPanelOutAnimation" format="reference" />
+    </declare-styleable>
+
+</resources>

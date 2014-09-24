@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="60dip"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="8dip" >
+
+    <ImageView
+        android:layout_width="30dip"
+        android:layout_height="30dip"
+        android:src="@drawable/lbs_addlocation_icon"
+        android:layout_margin="8dip" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dip"
+        android:text="不在列表中?点击添加位置"
+        android:textColor="#576B95"
+        android:textSize="16sp" />
+
+</LinearLayout>

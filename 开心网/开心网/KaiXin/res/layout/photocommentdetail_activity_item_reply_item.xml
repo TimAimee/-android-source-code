@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/photocommentdetail_item_reply_item_avatar"
+        android:layout_width="35dip"
+        android:layout_height="35dip"
+        android:layout_margin="8dip"
+        android:background="@drawable/avatar_background" />
+
+    <LinearLayout
+        android:id="@+id/photocommentdetail_item_reply_item_top_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/photocommentdetail_item_reply_item_avatar"
+        android:layout_toRightOf="@+id/photocommentdetail_item_reply_item_avatar"
+        android:orientation="horizontal"
+        android:paddingBottom="8dip"
+        android:paddingLeft="8dip"
+        android:paddingRight="8dip"
+        android:paddingTop="4dip" >
+
+        <TextView
+            android:id="@+id/photocommentdetail_item_reply_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff397cbf"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/photocommentdetail_item_reply_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dip"
+            android:textColor="#ffaaaaaa"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/photocommentdetail_item_reply_item_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/photocommentdetail_item_reply_item_top_layout"
+        android:layout_below="@+id/photocommentdetail_item_reply_item_top_layout"
+        android:paddingLeft="8dip"
+        android:paddingRight="8dip"
+        android:textColor="#ff414346"
+        android:textSize="14sp" />
+
+</RelativeLayout>

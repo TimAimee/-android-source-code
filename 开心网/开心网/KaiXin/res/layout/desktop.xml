@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/desktop_wallpager"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/cover"
+    android:orientation="vertical"
+    android:paddingRight="54dip" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/sidebar_bg_black"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/desktop_top_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/desktop_avatar"
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_margin="8dip"
+                    android:src="@drawable/head_default" />
+
+                <TextView
+                    android:id="@+id/desktop_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/desktop_avatar"
+                    android:layout_margin="3dip"
+                    android:layout_toRightOf="@+id/desktop_avatar"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/desktop_sig"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/desktop_name"
+                    android:layout_alignRight="@+id/desktop_name"
+                    android:layout_below="@+id/desktop_name"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="#7fffffff"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/desktop_avatar"
+                    android:background="@drawable/sidebar_dividing_line" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <ListView
+                    android:id="@+id/desktop_display"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:cacheColorHint="#00000000"
+                    android:divider="@drawable/sidebar_dividing_line_middle"
+                    android:listSelector="#00000000"
+                    android:paddingLeft="15dip"
+                    android:paddingRight="15dip"
+                    android:scrollbars="none" >
+                </ListView>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/desktop_avatar"
+                    android:background="@drawable/sidebar_dividing_line" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/desktop_set_up"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|bottom"
+                        android:layout_marginRight="8dip"
+                        android:src="@drawable/menulist_settings_background" 
+                        android:clickable="true"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <include
+            android:id="@+id/desktop_ugc"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            layout="@layout/ugc_menu_layout" />
+    </FrameLayout>
+
+</LinearLayout>

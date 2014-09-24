@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>    
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">    
+<!--  设置背景色图像资源  -->    
+<item android:id="@android:id/background" android:drawable="@drawable/globle_player_progress_trough" />    
+<!--  设置第一级进度条颜色图像资源  -->    
+<item android:id="@android:id/progress" android:drawable="@drawable/globle_player_progress_bar" />    
+</layer-list> 

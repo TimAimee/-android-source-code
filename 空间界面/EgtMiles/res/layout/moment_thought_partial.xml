@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="8.0dip"
+    android:paddingRight="9.0dip"
+    android:paddingTop="10.0dip" >
+
+    <RelativeLayout
+        android:id="@+id/moment_left_of_comment_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="29.0dip"
+        android:background="@drawable/thought_bubble" >
+
+        <include
+            android:id="@+id/comment_button"
+            android:layout_width="60.0dip"
+            android:layout_height="40.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            layout="@layout/feed_comment_button_thought" />
+
+        <TextView
+            android:id="@+id/thought_main"
+            style="@style/feed_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@id/comment_button"
+            android:gravity="center_vertical"
+            android:minHeight="40.0dip"
+            android:paddingBottom="4.0dip"
+            android:paddingLeft="8.0dip"
+            android:paddingRight="6.0dip"
+            android:paddingTop="4.0dip" />
+
+        <LinearLayout
+            android:id="@+id/feed_comments"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/thought_main"
+            android:orientation="vertical"
+            android:visibility="visible" >
+			<!-- line -->
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@color/bubble_item_divider"/>
+
+            <LinearLayout
+                android:id="@+id/feed_comments_thread"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:orientation="vertical" >
+
+                <include
+                    android:id="@+id/feed_comments_emotions"
+                    layout="@layout/feed_emotions_item" android:visibility="gone" />
+
+                <include
+                    android:id="@+id/feed_comments_1"
+                    layout="@layout/feed_comments_item" />
+
+                <include
+                    android:id="@+id/feed_comments_ellipsis"
+                    layout="@layout/feed_comments_item_ellipsis"/>
+
+                <include
+                    android:id="@+id/feed_comments_2"
+                    layout="@layout/feed_comments_item" />
+
+                <include
+                    android:id="@+id/feed_comments_3"
+                    layout="@layout/feed_comments_item"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

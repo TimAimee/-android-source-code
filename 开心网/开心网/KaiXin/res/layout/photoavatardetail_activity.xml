@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000">
+
+    <com.kaixin.android.ui.base.PhotoGallery
+        android:id="@+id/photoavatardetail_gallery"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingBottom="24dip"
+        android:paddingTop="24dip"
+        android:spacing="8dip" />
+
+    <RelativeLayout
+        android:id="@+id/photoavatardetail_top"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:background="@drawable/blackbg" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/photoavatardetail_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="100dip"
+                android:padding="8dip"
+                android:singleLine="true"
+                android:text="1/1"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/photoavatardetail_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="8dip"
+            android:layout_marginLeft="8dip"
+            android:layout_marginTop="8dip"
+            android:background="@drawable/title_text_blackbtn_left_arrow"
+            android:maxWidth="80dip"
+            android:minWidth="48dip"
+            android:singleLine="true"
+            android:text="返回"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/photoavatardetail_time"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#AA000000"
+            android:gravity="center"
+            android:padding="4dip"
+            android:text="2012年12月12日"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:id="@+id/photoavatardetail_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="48dip"
+            android:background="@drawable/blackbg"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/photoavatardetail_saveas"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:src="@drawable/photoview_saveas_button" />
+
+            <ImageButton
+                android:id="@+id/photoavatardetail_pre"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:src="@drawable/photoview_pre_button" />
+
+            <ImageButton
+                android:id="@+id/photoavatardetail_next"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:src="@drawable/photoview_next_button" />
+
+            <ImageButton
+                android:id="@+id/photoavatardetail_comment"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:src="@drawable/photoview_comment_button" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

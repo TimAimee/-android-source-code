@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <ImageView 
+        android:id="@+id/album_item_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"/>
+	<ImageView 
+	    android:id="@+id/album_item_select"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:src="@drawable/multi_select_flag"
+	    android:scaleType="centerInside"
+	    android:background="#600000A0"
+	    android:visibility="gone"/>
+</RelativeLayout>

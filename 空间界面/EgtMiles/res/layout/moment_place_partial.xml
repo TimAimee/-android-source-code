@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical"
+        android:paddingBottom="6.0dip"
+        android:paddingTop="6.0dip" >
+
+        <LinearLayout
+            android:id="@+id/moment_left_of_comment_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="47.0dip"
+            android:layout_marginRight="68.0dip"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/place_main"
+                style="@style/feed_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/place_sub"
+                style="@style/feed_subtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="38.0dip"
+            android:layout_marginRight="9.0dip"
+            android:layout_marginTop="3.0dip"
+            layout="@layout/feed_comments" />
+    </LinearLayout>
+
+    <include
+        android:layout_width="68.0dip"
+        android:layout_height="60.0dip"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        layout="@layout/feed_comment_button" />
+
+</RelativeLayout>

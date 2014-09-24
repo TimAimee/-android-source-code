@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/feed_activity_item_comment"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/comment_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="6.0dip"
+        android:paddingLeft="6.0dip"
+        android:paddingRight="6.0dip"
+        android:paddingTop="6.0dip" >
+
+        <ImageView
+            android:id="@+id/comment_profile_photo"
+            android:layout_width="38.0dip"
+            android:layout_height="38.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="6.0dip"
+            android:src="@drawable/gauss0" />
+
+        <ImageView
+            android:layout_width="0.0dip"
+            android:layout_height="0.0dip"
+            android:layout_alignBottom="@id/comment_profile_photo"
+            android:layout_alignLeft="@id/comment_profile_photo"
+            android:layout_alignRight="@id/comment_profile_photo"
+            android:layout_alignTop="@id/comment_profile_photo"
+            android:background="@drawable/comment_avatar" />
+
+        <TextView
+            android:id="@+id/comment_body"
+            style="@style/feed_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/comment_profile_photo"
+            android:text="Gauss:这是什么非哦哦" />
+
+        <TextView
+            android:id="@+id/comment_sub"
+            style="@style/feed_subtext_on_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/comment_body"
+            android:layout_toRightOf="@id/comment_profile_photo"
+            android:text="2012-3-29" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/comment_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_below="@id/comment_content"
+        layout="@layout/bubble_item_divider"  android:visibility="gone"/>
+
+</RelativeLayout>

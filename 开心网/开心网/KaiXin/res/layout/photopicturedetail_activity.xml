@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000" >
+
+    <com.kaixin.android.ui.base.PhotoGallery
+        android:id="@+id/photopicturedetail_gallery"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingBottom="24dip"
+        android:paddingTop="24dip"
+        android:spacing="8dip" />
+
+    <RelativeLayout
+        android:id="@+id/photopicturedetail_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:layout_gravity="bottom"
+        android:background="@drawable/blackbg" >
+
+        <ImageButton
+            android:id="@+id/photopicturedetail_saveas"
+            android:layout_width="60dip"
+            android:layout_height="fill_parent"
+            android:background="#00000000"
+            android:src="@drawable/photoview_saveas_button" />
+
+        <Button
+            android:id="@+id/photopicturedetail_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/photoview_comment_button_with_num"
+            android:padding="8dip"
+            android:text="0"
+            android:textColor="#333333"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/photopicturedetail_like"
+            android:layout_width="60dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="#00000000"
+            android:src="@drawable/photoview_like_button" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/photopicturedetail_top_parent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/photopicturedetail_top"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="48dip"
+                android:background="@drawable/blackbg" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/photopicturedetail_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxWidth="100dip"
+                        android:padding="8dip"
+                        android:singleLine="true"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/photopicturedetail_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:duplicateParentState="true"
+                        android:src="@drawable/title_bar_arrow_down_bg" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/photopicturedetail_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="8dip"
+                    android:layout_marginLeft="8dip"
+                    android:layout_marginTop="8dip"
+                    android:background="@drawable/title_text_blackbtn_left_arrow"
+                    android:maxWidth="80dip"
+                    android:minWidth="48dip"
+                    android:singleLine="true"
+                    android:text="返回"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/photopicturedetail_topeople"
+                    android:layout_width="48dip"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="8dip"
+                    android:layout_marginRight="8dip"
+                    android:layout_marginTop="8dip"
+                    android:layout_toLeftOf="@+id/photopicturedetail_togallery"
+                    android:background="@drawable/photo_people" />
+
+                <Button
+                    android:id="@+id/photopicturedetail_togallery"
+                    android:layout_width="48dip"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="8dip"
+                    android:layout_marginRight="8dip"
+                    android:layout_marginTop="8dip"
+                    android:background="@drawable/photoview_gallery" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/photopicturedetail_description"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#AA000000"
+                android:gravity="center"
+                android:padding="4dip"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/photopicturedetail_more"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#bb000000"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/photopicturedetail_more_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="8dip"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+            <GridView
+                android:id="@+id/photopicturedetail_more_display"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:cacheColorHint="#00000000"
+                android:gravity="center"
+                android:horizontalSpacing="8dip"
+                android:listSelector="#00000000"
+                android:numColumns="3"
+                android:paddingBottom="48dip"
+                android:paddingLeft="8dip"
+                android:paddingRight="8dip"
+                android:paddingTop="8dip"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="8dip" >
+            </GridView>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

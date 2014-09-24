@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dip" />
+
+    <RelativeLayout
+        android:id="@+id/moment_timeline"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/moment_bigdot"
+            style="@style/moment_big_dot"
+            android:layout_width="34.0dip"
+            android:layout_height="34.0dip"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginTop="14.0dip"
+            android:background="@drawable/moment_bigdot"
+            android:src="@drawable/moment_dot_colored" />
+
+        <ImageView
+            android:id="@+id/feed_post_type"
+            android:layout_width="16.0dip"
+            android:layout_height="16.0dip"
+            android:layout_alignLeft="@id/moment_bigdot"
+            android:layout_alignTop="@id/moment_bigdot"
+            android:layout_marginLeft="9.0dip"
+            android:layout_marginTop="8.0dip" />
+
+        <ImageView
+            android:id="@+id/moment_smalldot"
+            style="@style/moment_small_dot"
+            android:layout_width="16.0dip"
+            android:layout_height="16.0dip"
+            android:layout_marginLeft="14.0dip"
+            android:layout_marginTop="23.0dip"
+            android:background="@drawable/moment_smalldot"
+            android:src="@drawable/moment_dot_colored" />
+
+        <com.ckt.vas.miles.ui.views.CircularImage
+            android:id="@+id/moment_people_photo"
+            style="@style/moment_people_photo"
+            android:layout_alignLeft="@id/moment_bigdot"
+            android:layout_alignTop="@id/moment_bigdot" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/feed_post_body"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
