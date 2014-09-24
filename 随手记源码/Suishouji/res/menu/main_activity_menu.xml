@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/common_menu_add_payout" android:id="@+id/add_expense_menu" android:title="记支出" />
+    <item android:icon="@drawable/common_menu_add_income" android:id="@+id/add_income_menu" android:title="记收入" />
+    <item android:icon="@drawable/common_menu_transfer" android:id="@+id/transfer_menu" android:title="转账" />
+    <item android:icon="@drawable/common_menu_account" android:id="@+id/go_account_menu" android:title="账户" />
+    <item android:icon="@drawable/common_menu_exit" android:id="@+id/go_exit_menu" android:title="退出" />
+    <item android:icon="@drawable/common_menu_report" android:id="@+id/go_report_menu" android:title="报表" />
+    <item android:icon="@drawable/common_menu_budget" android:id="@+id/go_budget_menu" android:title="预算" />
+    <item android:icon="@drawable/common_menu_sync" android:id="@+id/go_sync_menu" android:title="同步" />
+    <item android:icon="@drawable/common_menu_setting" android:id="@+id/go_setting_menu" android:title="设置" />
+</menu>

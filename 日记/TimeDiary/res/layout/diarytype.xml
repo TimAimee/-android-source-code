@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"  android:background="@drawable/background"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_margin="3dp">
+       <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_gravity="center">
+         <Button android:id="@+id/savebtn"
+            android:text="@string/type_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_marginTop="5dp"/>
+          <Button android:id="@+id/delbtn"
+            android:text="@string/type_del"  android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+          <Button android:id="@+id/cancelbtn"
+            android:text="@string/cancel"  android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+          </LinearLayout>
+        
+    
+        <EditText android:id="@+id/editType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+            
+       <ListView 
+		  android:id="@+id/typeListView" 
+		  android:layout_width="fill_parent" 
+		  android:layout_height="400dp"
+		  android:background="@color/drakgreen"
+		  >
+  </ListView>   
+  
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout style="@style/common_save_toolbar"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@+id/save_btn" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/save" android:layout_alignParentLeft="true" style="@style/common_toolbar_btn" />
+    <Button android:id="@+id/cancel_btn" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/cancel" android:layout_alignParentRight="true" style="@style/common_toolbar_btn" />
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:background="@drawable/background"
+	android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="5dp"  >
+    <LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<TextView android:layout_width="wrap_content"
+			android:textSize="20dp" android:layout_height="wrap_content"
+			android:text="@string/eventtype_title" android:textColor="@color/black"/>
+        <Spinner android:id="@+id/event_type_spinner"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:drawSelectorOnTop="true" android:prompt="@string/event_type_prompt" />
+    </LinearLayout>
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<TextView android:layout_width="wrap_content"
+			android:textSize="20dp" android:layout_height="wrap_content"
+			android:text="@string/timeitem_title" android:textColor="@color/black" />
+		<EditText android:id="@+id/content" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:scrollbars="vertical" />
+	</LinearLayout>
+
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<TextView android:layout_width="wrap_content"
+			android:textSize="20dp" android:layout_height="wrap_content"
+			android:text="@string/timecount_title" android:textColor="@color/black"/>
+		<EditText android:id="@+id/hour" android:layout_width="wrap_content"
+			android:numeric="integer" android:width="60dp"
+			android:layout_height="wrap_content" android:scrollbars="vertical" />
+		<TextView android:layout_width="wrap_content"
+			android:textSize="20dp" android:layout_height="wrap_content"
+			android:text="@string/hour" android:textColor="@color/black"/>
+		<EditText android:id="@+id/minute" android:layout_width="wrap_content"
+			android:numeric="integer" android:width="60dp"
+			android:layout_height="wrap_content" android:scrollbars="vertical" />
+		<TextView android:layout_width="wrap_content"
+			android:textSize="20dp" android:layout_height="wrap_content"
+			android:text="@string/minute" android:textColor="@color/black"/>
+	</LinearLayout>
+
+    <LinearLayout android:orientation="horizontal"
+		android:layout_width="wrap_content" android:layout_height="wrap_content">
+		<TextView android:layout_width="fill_parent"
+				android:layout_gravity="center_vertical" android:gravity="center"
+				android:textSize="20dp" android:layout_height="wrap_content"
+				android:text="@string/rating_title"  android:textColor="@color/black"/>
+	
+		<RatingBar android:id="@+id/ratingbar" android:layout_width="wrap_content" 
+				android:stepSize="1.0" android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical" style="@style/diaryRatingBar"
+				 android:numStars="5" />
+    </LinearLayout>
+   
+	<Button android:id="@+id/confirm" android:text="@string/confirm" android:layout_gravity="center"
+		android:width="100dip" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+
+</LinearLayout>

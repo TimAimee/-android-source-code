@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" 
+   android:background="@drawable/btn_fenlei_all"
+    >
+   
+    <LinearLayout
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:layout_marginLeft="5dp"
+        >
+   
+     <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageview"/>
+    
+     <LinearLayout
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:layout_marginLeft="5dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        >
+     <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview_title"
+       android:textColor="#1C1C1C"
+       android:textSize="17sp"
+        
+        />
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview_price"
+         android:textColor="#1C1C1C"
+       android:textSize="15sp"
+      
+       />
+   
+</LinearLayout>
+</LinearLayout>
+</LinearLayout>

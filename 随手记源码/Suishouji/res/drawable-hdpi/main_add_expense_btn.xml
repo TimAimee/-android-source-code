@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_window_focused="false" android:drawable="@drawable/main_add_expense_btn_normal" />
+    <item android:state_pressed="true" android:drawable="@drawable/main_add_expense_btn_pressed" />
+    <item android:state_focused="true" android:state_pressed="false" android:drawable="@drawable/main_add_expense_btn_focused" />
+    <item android:drawable="@drawable/main_add_expense_btn_normal" />
+</selector>

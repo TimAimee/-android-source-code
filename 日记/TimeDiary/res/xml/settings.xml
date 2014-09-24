@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+  
+  	 <PreferenceCategory android:title="同步设置">
+        <CheckBoxPreference
+            android:key="sync_config_checkbox"
+            android:title="是否同步"
+            android:summaryOn="同步: 开启"
+            android:summaryOff="同步: 关闭"
+            android:defaultValue="false"
+            
+        />
+        
+       <EditTextPreference
+        android:key="sync_url_edit"
+        android:title="同步地址设置"
+        android:summary="比如：http://www.zhikebao.com/service/sync"
+        android:dialogTitle="同步地址设置"
+        android:defaultValue="http://"
+        android:dependency="sync_config_checkbox"
+    	/>
+    	
+    <ListPreference
+        android:key="sync_interval_list"
+        android:title="同步间隔"
+        android:summary="设置多久时间同步一次"
+        android:dialogTitle="请选择同步间隔时间"
+        android:entries="@array/entries_list_preference"
+        android:entryValues="@array/entriesvalue_list_preference"
+        android:defaultValue="60"
+        android:dependency="sync_config_checkbox"
+    />
+    
+    </PreferenceCategory>
+    
+    
+</PreferenceScreen>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/common_menu_add_payout" android:id="@+id/add_payout_menu" android:title="记支出" />
+    <item android:icon="@drawable/common_menu_add_income" android:id="@+id/add_income_menu" android:title="记收入" />
+    <item android:icon="@drawable/common_menu_transfer" android:id="@+id/transfer_menu" android:title="转账" />
+    <item android:icon="@drawable/common_menu_main" android:id="@+id/go_main_menu" android:title="首页" />
+</menu>

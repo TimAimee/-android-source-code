@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout style="@style/budget_lv_item"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:lineBarView="http://schemas.android.com/apk/res/com.mymoney">
+	<ImageView android:layout_gravity="center_vertical"
+		android:id="@+id/category_icon_iv" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+	<RelativeLayout android:layout_gravity="center_vertical"
+		android:layout_width="120.0dip" android:layout_height="wrap_content">
+		<TextView android:id="@+id/category_name_tv"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_marginLeft="5.0dip" android:layout_alignParentTop="true"
+			style="@style/budget_lv_item_category_name" />
+		<TextView android:id="@+id/budget_label_tv"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:text="预算:" android:layout_below="@id/category_name_tv"
+			android:layout_alignLeft="@id/category_name_tv"
+			android:layout_alignParentBottom="true" style="@style/budget_lv_item_text" />
+		<TextView android:id="@+id/budget_amount_tv"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/budget_label_tv"
+			android:layout_alignBottom="@id/budget_label_tv" style="@style/budget_lv_item_text" />
+	</RelativeLayout>
+	<RelativeLayout android:layout_gravity="center_vertical"
+		android:layout_width="130.0dip" android:layout_height="wrap_content">
+		<LinearLayout android:orientation="horizontal" android:layout_alignParentTop="true"
+			android:layout_width="fill_parent" android:layout_height="wrap_content">
+			<ImageView android:id="@+id/line_bar_left" android:layout_width="wrap_content" android:layout_alignParentTop="true"
+				android:layout_height="17dip" android:background="@drawable/widget_progress_bg_left"/>
+			<ImageView android:id="@+id/line_bar_middle" android:layout_width="105dip" android:layout_alignParentTop="true"
+				android:layout_height="17dip" android:background="@drawable/widget_progress_bg_middle"/>
+			<ImageView android:id="@+id/line_bar_right" android:layout_width="wrap_content" android:layout_alignParentTop="true"
+				android:layout_height="17dip" android:background="@drawable/widget_progress_bg_right"/>
+		</LinearLayout>
+			<TextView android:gravity="right" android:id="@+id/balance_amount_tv"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_below="@id/budget_status_lbv"
+			android:layout_marginTop="16.0dip"
+			android:layout_alignParentRight="true"
+			android:layout_alignParentBottom="true" style="@style/budget_lv_item_text" />
+		
+	</RelativeLayout>
+</LinearLayout>

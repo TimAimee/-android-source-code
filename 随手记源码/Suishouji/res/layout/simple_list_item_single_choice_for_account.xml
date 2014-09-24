@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.uangel.suishouji.CheckedListItem android:textSize="16.0dip" android:textColor="#fff8dacf" android:gravity="center_vertical" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="?android:listPreferredItemHeight" android:checkMark="@drawable/widget_btn_radio" android:checkable="true" style="@style/setting_meta_lv_item"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0dip" android:textColor="@color/white" android:id="@+id/account_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <TextView android:textSize="14.0dip" android:textColor="@color/white" android:id="@+id/second_level_account_group_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_below="@+id/account_name_tv" />
+    <TextView android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@+id/account_balance_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginRight="27.0dip" android:layout_alignParentRight="true" />
+</com.uangel.suishouji.CheckedListItem>

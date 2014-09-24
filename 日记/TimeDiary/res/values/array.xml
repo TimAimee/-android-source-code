@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="entries_list_preference">
+		<item>1分钟</item>
+		<item>半小时</item>
+		<item>1小时</item>
+		<item>2小时</item>
+		<item>3小时</item>
+		<item>4小时</item>
+		<item>8小时</item>
+		<item>12小时</item>
+		<item>每天一次</item>
+	</string-array>
+	<string-array name="entriesvalue_list_preference">
+		<item>1</item>
+		<item>30</item>
+		<item>60</item>
+		<item>120</item>
+		<item>180</item>
+		<item>240</item>
+		<item>480</item>
+		<item>720</item>
+		<item>1440</item>
+	</string-array>
+</resources>

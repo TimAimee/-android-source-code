@@ -1,0 +1,184 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+        
+      <TextView
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:text="今日推荐特色菜"
+          android:textSize="18sp"
+          android:textColor="#FFFFFF"
+          android:gravity="center_vertical|center_horizontal"
+          android:background="@drawable/main_top"/>
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/btnback"
+            android:text="您好"
+            android:textColor="#FFFFFF" 
+            android:id="@+id/qingkong"/>
+     </RelativeLayout>
+     
+     <ScrollView 
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:scrollbars="none"
+         
+          >
+     <LinearLayout
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:orientation="vertical" >
+
+    <cn.iimob.waiters.view.MyGallery
+        android:id="@+id/mygallery"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:unselectedAlpha="1" 
+        android:layout_marginTop="10dp"/>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:background="@drawable/middle"
+        android:id="@+id/linear"
+        
+        >
+        <TextView 
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:text="今日推荐特色菜"
+          android:textSize="18sp"
+          android:gravity="center_vertical|center_horizontal"
+          android:id="@+id/tujiantextview"/>
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:background="@drawable/unselectedflag"
+                  android:layout_marginLeft="120dp"
+                  android:id="@+id/tuijian_tv0"/>
+           <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                   android:layout_marginLeft="10dp"
+                  android:background="@drawable/unselectedflag"
+                  android:id="@+id/tuijian_tv1"/>
+          <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                   android:layout_marginLeft="10dp"
+                  android:background="@drawable/unselectedflag"
+                  android:id="@+id/tuijian_tv2"/>
+               <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                   android:layout_marginLeft="10dp"
+                  android:background="@drawable/unselectedflag"
+                  android:id="@+id/tuijian_tv3"/>
+        </LinearLayout>
+        <TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/middle"/>
+        
+    </LinearLayout>
+
+        <LinearLayout 
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical">
+      <Button 
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:background="@drawable/ganbianyouyu"
+         android:layout_marginLeft="30dp"
+         android:layout_marginRight="30dp"
+         android:layout_marginTop="10dp"
+         android:id="@+id/btn_youyu"
+        />
+      <TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="幹煸魷魚"
+            android:textSize="18sp"
+            android:gravity="center_vertical|center_horizontal"
+             android:layout_marginTop="10dp"
+            />
+    
+     <TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/middle"
+           />
+     
+    <Button 
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+        android:background="@drawable/qingchaoxiaren"
+         android:layout_marginLeft="30dp"
+         android:layout_marginRight="30dp"
+         android:layout_marginTop="10dp"
+          android:id="@+id/btn_xiaren"/>
+    
+    <TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="清炒蝦仁"
+            android:textSize="18sp"
+            android:gravity="center_vertical|center_horizontal"
+             android:layout_marginTop="10dp"
+            />
+    
+    
+     <TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/middle"/>
+     
+    <Button 
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+        android:background="@drawable/zherou"
+          android:layout_marginLeft="30dp"
+         android:layout_marginRight="30dp"
+         android:layout_marginTop="10dp"
+          android:id="@+id/btn_zhetou"/>
+     <TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="清蒸哲头"
+            android:textSize="18sp"
+            android:gravity="center_vertical|center_horizontal"
+             android:layout_marginTop="10dp"
+            />
+     <TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/middle"/>
+      <Button 
+         android:layout_width="fill_parent"
+         android:layout_height="100dp"
+         android:background="#FFFFFF"
+         />
+     
+   </LinearLayout>
+
+</LinearLayout>
+</ScrollView>
+</LinearLayout>

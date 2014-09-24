@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/main_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/common_bg"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:batteryView="http://schemas.android.com/apk/res/com.mymoney">
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="12.0px" android:paddingTop="27.0px" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/month_expense_ly" android:focusable="true" android:clickable="true" android:layout_width="307.0px" android:layout_height="240.0px">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="60.0px" android:layout_marginTop="6.0px">
+                <TextView android:textSize="25.0dip" android:textStyle="bold" android:id="@+id/month_tv" android:layout_marginLeft="35.0px" style="@style/main_budget_lable_hdpi" />
+                <TextView android:paddingBottom="5.0px" android:layout_marginLeft="4.0px" android:text="月:" style="@style/main_budget_lable_hdpi" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0px">
+                <TextView android:text="收入总额:" style="@style/main_money_label_hdpi" android:textColor = "@color/white" />
+                <TextView android:id="@+id/income_amount_tv" style="@style/main_money_hdpi" android:textColor="@color/white"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="55.0px">
+                <TextView android:text="支出总额:" style="@style/main_money_label_hdpi" android:textColor = "@color/white"/>
+                <TextView android:id="@+id/expense_amount_tv" style="@style/main_money_hdpi" android:textColor="@color/white"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="55.0px">
+                <TextView android:text="预算余额:" style="@style/main_money_label_hdpi" android:textColor = "@color/white"/>
+                <TextView android:id="@+id/budget_balance_amount_tv" style="@style/main_money_hdpi" android:textColor="@color/white"/>
+            </LinearLayout>
+        </LinearLayout>
+        <com.uangel.suishouji.utility.MyProcessBar
+			android:id="@+id/budget_pb" android:layout_width="87.0px" android:paddingTop="34.0px" android:layout_gravity="center_horizontal" android:gravity="bottom"
+        	android:layout_height="212.0px" android:layout_marginLeft="18.0px">
+				</com.uangel.suishouji.utility.MyProcessBar> 
+<!--         <com.mymoney.ui.widget.BatteryView android:id="@+id/budget_status_bv" android:background="@drawable/widget_battery_bg" 
+				android:focusable="true" android:clickable="true" android:layout_width="115.0px" android:layout_height="205.0px" 
+				android:layout_marginLeft="2.0px" android:layout_marginTop="20.0px" batteryView:frameRate="1" batteryView:animationDurationTime="3000" 
+				batteryView:contentWidth="92" batteryView:contentHeight="183" batteryView:contentPaddingLeft="11" batteryView:contentPaddingRight="11" 
+				batteryView:contentPaddingTop="11" batteryView:contentPaddingBottom="11" batteryView:batteryContentTopImage="@drawable/widget_battery_top"
+ 				batteryView:batteryContentMiddleImage="@drawable/widget_battery_middle" batteryView:batteryContentBottomImage="@drawable/widget_battery_bottom" 
+ 				batteryView:batteryContentLowImage="@drawable/widget_battery_low" batteryView:overlayerImage="@drawable/widget_battery_overlayer" />-->
+    </LinearLayout>
+    <Button android:background="@drawable/common_transparence" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <Button android:layout_gravity="center_horizontal" android:id="@+id/add_expense_quickly_btn" android:background="@drawable/main_add_expense_quickly" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0px" />
+    <Button android:background="@drawable/common_transparence" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="350.0px" android:layout_marginTop="18.0px">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:orientation="horizontal" android:id="@+id/today_row_rl" style="@style/row_stat_hdpi">
+                <FrameLayout android:id="@+id/today_icon_fl" style="@style/main_row_stat_icon_hdpi">
+                    <ImageView android:layout_gravity="center_vertical" android:id="@+id/today_icon_iv" android:background="@drawable/main_today" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textColor="@color/black" android:layout_gravity="center_horizontal" android:id="@+id/date_of_month_tv" android:paddingTop="15.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </FrameLayout>
+                <LinearLayout android:layout_toRightOf="@+id/today_icon_fl" style="@style/main_row_stat_time_ly_hdpi">
+                    <TextView android:id="@+id/today_tv" android:text="今天" style="@style/main_row_stat_time_tips_hdpi" />
+                    <TextView android:id="@+id/today_datestr_tv" style="@style/main_row_stat_time_str_hdpi" />
+                </LinearLayout>
+                <TextView android:id="@+id/today_expense_amount_tv" style="@style/main_row_expense_amount_hdpi" />
+                <TextView android:id="@+id/today_income_amount_tv" style="@style/main_row_income_amount_hdpi" />
+                <ImageView style="@style/main_row_go_detail_hdpi" />
+            </RelativeLayout>
+            <RelativeLayout android:orientation="horizontal" android:id="@+id/week_row_rl" style="@style/row_stat_hdpi">
+                <ImageView android:id="@+id/week_icon_iv" android:background="@drawable/main_week" style="@style/main_row_stat_icon_hdpi" />
+                <LinearLayout android:layout_toRightOf="@+id/week_icon_iv" style="@style/main_row_stat_time_ly_hdpi">
+                    <TextView android:text="本周" style="@style/main_row_stat_time_tips_hdpi" />
+                    <TextView android:id="@+id/week_datestr_tv" style="@style/main_row_stat_time_str_hdpi" />
+                </LinearLayout>
+                <TextView android:id="@+id/week_expense_amount_tv" style="@style/main_row_expense_amount_hdpi" />
+                <TextView android:id="@+id/week_income_amount_tv" style="@style/main_row_income_amount_hdpi" />
+                <ImageView style="@style/main_row_go_detail_hdpi" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/month_row_rl" android:nextFocusDown="@+id/nav_add_expense_btn" style="@style/row_stat_hdpi">
+                <ImageView android:id="@+id/month_icon_iv" android:background="@drawable/main_month" style="@style/main_row_stat_icon_hdpi" />
+                <LinearLayout android:layout_toRightOf="@+id/month_icon_iv" style="@style/main_row_stat_time_ly_hdpi">
+                    <TextView android:text="本月" style="@style/main_row_stat_time_tips_hdpi" />
+                    <TextView android:id="@+id/month_datestr_tv" style="@style/main_row_stat_time_str_hdpi" />
+                </LinearLayout>
+                <TextView android:id="@+id/month_expense_amount_tv" style="@style/main_row_expense_amount_hdpi" />
+                <TextView android:id="@+id/month_income_amount_tv" style="@style/main_row_income_amount_hdpi" />
+                <ImageView style="@style/main_row_go_detail_hdpi" />
+            </RelativeLayout>
+        </LinearLayout>
+        <RelativeLayout android:id="@+id/nav_ly" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView style="@style/nav_bar_bg_hdpi" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <Button android:id="@+id/add_expense_btn" android:background="@drawable/main_add_expense_btn" android:visibility="gone" style="@style/nav_btn_hdpi" />
+            <Button android:id="@+id/nav_report_btn" android:background="@drawable/main_report_btn" android:visibility="gone" style="@style/nav_btn_hdpi" />
+            <Button android:id="@+id/nav_account_btn" android:background="@drawable/main_account_btn" style="@style/nav_btn_hdpi" android:layout_marginLeft="60px"/>
+            <Button android:id="@+id/nav_budget_btn" android:background="@drawable/main_budget_btn"  style="@style/nav_btn_hdpi"  android:layout_marginLeft="115px"/>
+            <Button android:id="@+id/nav_setting_btn" android:background="@drawable/main_setting_btn" style="@style/nav_btn_hdpi" android:visibility="gone"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:id="@+id/add_expense_tv" android:visibility="gone" android:text="@string/nav_add_expense" style="@style/nav_text_hdpi" />
+            <TextView android:id="@+id/nav_report_tv" android:text="@string/nav_report" android:visibility="gone" style="@style/nav_text_hdpi" />
+            <TextView android:id="@+id/nav_account_tv" android:text="@string/nav_account" style="@style/nav_text_hdpi" />
+            <TextView android:id="@+id/nav_budget_tv" android:text="@string/nav_budget" style="@style/nav_text_hdpi" />
+            <TextView android:id="@+id/nav_setting_tv" android:text="@string/nav_setting" android:visibility="gone" style="@style/nav_text_hdpi" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

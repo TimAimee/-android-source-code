@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/common_menu_register" android:id="@+id/register_menu" android:title="注册" />
+    <item android:icon="@drawable/common_menu_sync" android:id="@+id/go_sync_menu" android:title="同步" />
+</menu>

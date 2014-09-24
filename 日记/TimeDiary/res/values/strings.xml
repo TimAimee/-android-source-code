@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">时光日志</string>
+    <string name="today_account">今日活动</string>
+    <string name="view_diary">日志浏览</string>
+    <string name="menu_config">设置</string>
+    <string name="menu_type">类型</string>
+    <string name="menu_about">关于</string>
+    <string name="type_save">保存</string>
+    <string name="type_del">删除</string>
+    <string name="cancel">返回</string>
+    <string name="confirm">确定</string>
+    
+    <string name="about">关 于</string>
+	<string name="main_title">时光日志</string>
+	<string name="about_text">\
+		只有时间是平等的，更好地利用时间就能更好地创造生活、追求想要的幸福，记录下每天的点滴经历，方能留下
+		似水年华的印记。\n
+	</string>
+    
+    <string name="eventtype_title">类型：</string>
+    <string name="event_type_prompt">请选择事件类型</string>
+    <string name="timeitem_title">内容：</string>
+    <string name="timecount_title">耗时：</string>
+    <string name="hour">小时</string>
+    <string name="minute">分钟</string>
+    <string name="rating_title">评分：</string>
+    
+    <string name="no_diary">还没有记录，来写点什么吧</string>
+    
+    <string name="menu_diary">日 志</string>
+    <string name="menu_thoughts">感  想</string>
+    <string name="menu_exit">退  出</string>
+    
+    <string name="notice_title">同步地址错误</string>
+	<string name="notice_message">同步地址设置错误，请重新设置！</string>
+</resources>
+
+

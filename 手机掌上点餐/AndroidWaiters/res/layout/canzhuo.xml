@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/black"
+     >
+     
+     <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+        
+      <TextView
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:text="餐桌序号"
+          android:textSize="18sp"
+          android:textColor="#FFFFFF"
+          android:gravity="center_vertical|center_horizontal"
+          android:background="@drawable/main_top"/>
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/title_back_normal"
+            android:text="返回"
+            android:textColor="#FFFFFF" 
+            android:id="@+id/btn_canzhuo_return"/>
+        
+     </RelativeLayout> 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+         >
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp" 
+            android:layout_marginRight="10dp">
+
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/btn_101"
+                android:background="@drawable/tab" 
+                android:tag="aaa"/>
+
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/btn_102"
+              android:background="@drawable/tab"   />
+
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+               android:id="@+id/btn_103"
+                android:background="@drawable/tab"  />
+              <Button
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+               android:id="@+id/btn_104"
+                android:background="@drawable/tab"  />
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp" 
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="001"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:id="@+id/tv_101"
+                />
+
+             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="002"
+                 android:id="@+id/tv_102"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="003"
+                android:textColor="#FFFFFF"
+                 android:id="@+id/tv_103"
+                android:textSize="20sp"
+                />
+             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="004"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                 android:id="@+id/tv_104"
+                />
+               
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp" 
+            android:layout_marginRight="10dp">
+
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                 android:id="@+id/btn_201"
+                android:background="@drawable/tab" 
+                android:tag="aaa"/>
+
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                   android:id="@+id/btn_202"
+               android:background="@drawable/tab" />
+
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                  android:id="@+id/btn_203"
+               android:background="@drawable/tab" />
+              <Button
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                  android:id="@+id/btn_204"
+                android:background="@drawable/tab" />
+        </TableRow>
+        
+          <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp" 
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="005"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                 android:id="@+id/tv_201"
+                />
+
+             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="006"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                  android:id="@+id/tv_202"
+                />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="007"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                  android:id="@+id/tv_203"
+                />
+             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="008"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                  android:id="@+id/tv_204"
+                />
+               
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp" 
+            android:layout_marginRight="10dp">
+
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                    android:id="@+id/btn_301"
+                android:background="@drawable/tab" 
+                android:tag="aaa"/>
+
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                   android:id="@+id/btn_302"
+               android:background="@drawable/tab"  />
+
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/btn_303"
+                android:background="@drawable/tab"  />
+              <Button
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/btn_304"
+                android:background="@drawable/tab"  />
+        </TableRow>
+          <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp" 
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="009"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                  android:id="@+id/tv_301"
+                />
+
+             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="010"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                 android:id="@+id/tv_302"
+                />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="011"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                 android:id="@+id/tv_303"
+                />
+             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="012"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                 android:id="@+id/tv_304"
+                />
+               
+        </TableRow>
+       
+     
+        </TableLayout>
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#000000"/>
+
+</LinearLayout>

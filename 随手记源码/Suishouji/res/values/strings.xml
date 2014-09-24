@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	
+	<string name="hello">Hello World, Main!</string>
+	
+	<string name="my_dialog_loading">Loading</string>
+	<string name="point">温馨提示</string>
+	<string name="exit_message">你确定要退出吗？</string>
+	<string name="exit_ok">确定</string>
+	<string name="exit_cancle">取消</string>
+	<string name="error_system_message">系统错误</string>
+	
+    <string name="haha">mymoney</string>
+    <string name="app_name">随手记</string>
+    <string name="done">完成</string>
+    <string name="clear">清除</string>
+    <string name="listview_data_loading">正在加载数据...</string>
+    <string name="listview_empty">没有数据</string>
+    <string name="back_btn">返回</string>
+    <string name="edit_btn">编辑</string>
+    <string name="save">保存</string>
+    <string name="cancel">取消</string>
+    <string name="alert_dialog_ok">确定</string>
+    <string name="alert_dialog_cancel">取消</string>
+    <string name="spn_prompt_category">类别</string>
+    <string name="spn_prompt_subcategory">子类别</string>
+    <string name="spn_prompt_account">账户</string>
+    <string name="spn_prompt_corporation">商家</string>
+    <string name="spn_prompt_project">项目</string>
+    <string name="add_user">添加用户</string>
+    <string name="add_expense_quickly">随手记一笔</string>
+    <string name="list_expense">流水</string>
+    <string name="nav_add_expense">记账</string>
+    <string name="nav_report">报表</string>
+    <string name="nav_planning">计划</string>
+    <string name="nav_budget">预算</string>
+    <string name="nav_account">账户</string>
+    <string name="nav_setting">设置</string>
+    <string name="search">搜索</string>
+    <string name="take_pic">拍照</string>
+    <string name="sync_or_not">是否同步</string>
+    <string name="username">用户名</string>
+    <string name="password">密码</string>
+    <string name="add">添加</string>
+    <string name="password_setting">密码保护</string>
+    <string name="delete_title">删除提示</string>
+    <string name="delete_message">是否删除该记录?</string>
+    <string name="delete">删除</string>
+    <string name="delete_cancel">取消</string>
+    <string name="account_canot_delete">账户不允许删除,请先清空该账户有关的所有消费记录</string>
+    <string name="category_canot_delete">分类不允许删除,请先清空该分类有关的子分类和消费记录</string>
+    <string name="corporation_canot_delete">商家不允许删除,请先清空该商家有关的所有消费记录</string>
+    <string name="magic_code">0</string>
+    <string name="budget_max_expense_tips">本月总预算金额</string>
+    <string name="budget_category_expense_tips">设置月分类预算金额</string>
+
+	<!-- memo——MyDialog -->
+	<string name="dialog_memo_title">备注</string>
+	<string name="dialog_memo_ok">保存</string>
+	<string name="dialog_memo_cancle">取消</string>
+	
+	<!-- MainActivity -->
+    <string name="text_title_today">流水清单-按天</string>
+    <string name="text_title_week">流水清单-按周</string>
+    <string name="text_title_month">流水清单-按月</string>
+	
+    <!-- TransactionTabActivity -->
+    <string name="input_message">请填写金额</string>
+    <string name="edit_message">编辑成功</string>
+    <string name="save_message">保存成功</string>
+    <string name="edit_in">编辑收入</string>
+    <string name="edit_out">编辑支出</string>
+    
+    <!-- NavExpenseActivity -->
+    <string name="message_error_system">系统错误</string>
+    <string name="message_delete_ok">删除成功.</string>
+    <string name="message_error_edit">抱歉,只有收入和支出记录可以编辑</string>
+    
+    <!-- SettingAddOrEditAccountActivity -->
+    <string name="edit_point">自动计算,无需设定</string>
+    <string name="error_user_empty">账户名不能为空</string>
+    <string name="error_user_there">对不起,该账户已经存在!</string>
+    <string name="error_balance_empty">余额不能为空</string>
+    <string name="error_balance_number">余额数据填写不正确,只能为数字</string>
+    <string name="error_system">抱歉,软件故障,操作失败.</string>
+    
+    <!-- TransferActivity -->
+    <string name="transfer_amount_empty">金额不能为空</string>
+    <string name="transfer_amount_0">金额不能为0</string>
+    <string name="transfer_amount_number">金额数据填写不正确,只能为数字</string>
+    <string name="transfer_ok">转账成功</string>
+    
+    <!-- Budget -->
+    <string name="balance_amount_title">余额：</string>
+    <string name="budget_ok">预算设置成功</string>
+</resources>

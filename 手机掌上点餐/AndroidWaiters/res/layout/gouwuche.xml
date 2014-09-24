@@ -1,0 +1,126 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:id="@+id/liearlayout"
+    android:background="#FFFFFF">
+   <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+        
+      <TextView
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:text="我的购物车"
+          android:textSize="18sp"
+          android:textColor="#FFFFFF"
+          android:gravity="center_vertical|center_horizontal"
+          android:background="@drawable/main_top"/>
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/btnback"
+            android:text="清空"
+            android:textColor="#FFFFFF" 
+            android:id="@+id/btn_gouwuche_return"/>
+        
+     </RelativeLayout>
+     
+   
+ <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gouwucheralative"
+        >
+
+          <EditText
+              android:id="@+id/edit_kaizhuo"
+              android:layout_width="90dp"
+              android:layout_height="40dp"
+              android:layout_alignParentLeft="true"
+              android:layout_alignParentTop="true"
+              android:layout_marginLeft="30dp"
+              android:layout_marginTop="14dp"
+              android:background="@drawable/edit"
+              android:ellipsize="end"
+              android:ems="10"
+              android:hint="输入桌号"
+              android:inputType="number"
+              android:paddingLeft="5dp"
+              android:singleLine="true" >
+
+              <requestFocus />
+          </EditText>
+
+          <Button
+              android:id="@+id/btn_kaizhuo"
+              android:layout_width="90dp"
+              android:layout_height="40dp"
+              android:layout_alignLeft="@+id/edit_kaizhuo"
+              android:layout_below="@+id/edit_kaizhuo"
+              android:layout_marginTop="15dp"
+              android:background="@drawable/btnback"
+              android:text="开桌"
+              android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btn_chakancanzuo"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:layout_alignBaseline="@+id/edit_kaizhuo"
+                android:layout_alignBottom="@+id/edit_kaizhuo"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="48dp"
+                android:background="@drawable/btnback"
+                android:text="餐桌"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btn_diancan"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:layout_alignBaseline="@+id/btn_kaizhuo"
+                android:layout_alignBottom="@+id/btn_kaizhuo"
+                android:layout_alignLeft="@+id/btn_chakancanzuo"
+                android:background="@drawable/btnback"
+                android:text="点餐"
+                android:textColor="#FFFFFF" />
+
+         <TextView
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:layout_below="@+id/btn_kaizhuo"
+             android:layout_marginTop="20dp"
+             android:background="@drawable/middle"
+             android:gravity="center_vertical|center_horizontal"
+             android:text="我的菜单"
+             android:id="@+id/tv_zongjia"
+             android:textSize="18sp"
+             android:textColor="#000000" />
+
+   </RelativeLayout>
+  
+    <ListView
+        android:id="@+id/list1"
+        android:layout_width="fill_parent"
+        android:layout_height="220dp"
+        android:background="#FFFFFF"
+        android:fadingEdge="none" 
+        />
+     <TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/middle"
+            android:textSize="18sp" />
+   
+
+   
+
+</LinearLayout>

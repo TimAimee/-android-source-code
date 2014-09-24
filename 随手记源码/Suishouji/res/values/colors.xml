@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <color name="red">#ffff0000</color>
+    <color name="black">#ff000000</color>
+    <color name="black_25">#40000000</color>
+    <color name="black_50">#80000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="white_25">#40ffffff</color>
+    <color name="white_50">#80ffffff</color>
+    <color name="grey">#fff0f0f0</color>
+    <color name="month_day_number">#ff6d5630</color>
+    <color name="month_today_number">#ffffffff</color>
+    <color name="month_other_month">#ff595959</color>
+    <color name="month_other_month_day_number">#ffb4a283</color>
+    <color name="month_other_month_name">#ff84868c</color>
+    <color name="month_other_month_banner">#ffd3d2d7</color>
+    <color name="month_day_grid_line_color">#ffc0a884</color>
+    <color name="month_week_banner">#ffd3d2d7</color>
+    <color name="transparent">#00000000</color>
+    <color name="calendar_daybox_all_pay">#ff1ba400</color>
+    <color name="calendar_daybox_has_expired">#ffa40017</color>
+    <color name="calendar_daybox_other">#ff919191</color>
+    <color name="calendar_lv_item_text_color">#ffd1b890</color>
+    <color name="budget_balance_tips_for_addexpense_normal">#ff63594a</color>
+    <color name="budget_balance_tips_for_addexpense_red">#ffff0000</color>
+    <color name="transaction_payout_amount">#ff54b45d</color>
+    <color name="transaction_income_amount">#ffff0000</color>
+    <color name="buy_sync_service_seleted_color">#ffff9900</color>
+</resources>

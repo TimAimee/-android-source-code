@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>   
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"   
+    android:orientation="vertical"   
+    android:layout_width="fill_parent"   
+    android:layout_height="fill_parent"
+     android:background="@android:color/darker_gray">   
+   <TextView 
+        android:layout_width="fill_parent"   
+        android:layout_height="wrap_content"
+        android:text="粤菜"
+        android:textColor="#FFFFFF"
+        android:gravity="center_vertical|center_horizontal"
+         android:textSize="23sp"
+         android:background="@android:color/darker_gray"/>
+    
+    <Button android:id="@+id/btn_yuecai_qingchaoyoucai"
+    android:layout_width="fill_parent"   
+    android:layout_height="wrap_content"
+  android:background="@android:color/darker_gray"
+    android:text="清炒油菜"
+    android:textSize="20sp"
+    android:layout_marginTop="10dp"
+     />
+   
+    
+    <Button android:id="@+id/btn_yuecai_danhuangniangao"
+    android:layout_width="fill_parent"   
+    android:layout_height="wrap_content"
+   android:background="@android:color/darker_gray"
+    android:textSize="20sp"
+    android:text="蛋黄年糕"
+    android:layout_marginTop="20dp"/>  
+    
+   
+</LinearLayout>  

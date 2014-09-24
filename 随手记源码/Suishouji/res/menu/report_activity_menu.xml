@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/common_menu_piechart" android:id="@+id/report_stat_type_menu" android:title="列表" />
+    <item android:icon="@drawable/common_menu_main" android:id="@+id/go_main_menu" android:title="首页" />
+    <item android:icon="@drawable/common_menu_report_setting" android:id="@+id/report_setting_change_time_peroid_menu" android:title="报表日期" />
+    <item android:icon="@drawable/common_menu_report_setting" android:id="@+id/report_setting_change_group_type_menu" android:title="报表类型" />
+</menu>

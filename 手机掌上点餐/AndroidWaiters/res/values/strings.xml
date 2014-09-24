@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AndroidWaiters</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="tuijian">推荐</string>
+    <string name="fenlei">分类</string>
+    <string name="gouwuche">购物车</string>
+    <string name="gengduo">更多</string>
+    <string name="songshuyu">松鼠魚</string>
+    <string name="huangjinroujuan">黃金肉卷</string>
+     <string name="dongguaxie">冬瓜蟹</string>
+      <string name="xiandanguahuan">鹹蛋瓜環</string>
+        <string name="pop_left">弹出左侧菜单</string>
+    <string name="open">打开</string>
+    <string name="save">保存</string>
+    <string name="close">关闭</string>
+        
+</resources>

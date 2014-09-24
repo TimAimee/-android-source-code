@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/common_menu_save" android:id="@+id/save_menu" android:title="保存" />
+    <item android:icon="@drawable/common_menu_cancel" android:id="@+id/cancel_menu" android:title="取消" />
+    <item android:icon="@drawable/common_menu_delete" android:id="@+id/delete_menu" android:title="删除" />
+    <item android:icon="@drawable/common_menu_add_photo" android:id="@+id/photo_menu" android:title="添加照片" />
+    <item android:icon="@drawable/common_menu_main" android:id="@+id/go_main_menu" android:title="首页" />
+</menu>

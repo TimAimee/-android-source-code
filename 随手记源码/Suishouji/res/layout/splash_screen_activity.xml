@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:background="@drawable/splash_screen_bg"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<TextView android:textStyle="bold" android:textColor="#ff701c0c" android:text=""
+		android:id="@+id/product_name_for_display_tv" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_marginLeft="145.0px"
+		android:layout_marginTop="295.0px" />
+</LinearLayout>

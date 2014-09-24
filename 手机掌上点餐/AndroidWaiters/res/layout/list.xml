@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:padding="5dip"
+    android:paddingBottom="5dip"
+    android:paddingLeft="5dip"
+    android:paddingTop="5dip"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/btn_fenlei_all"  >
+    <TextView 
+        android:id="@+id/TextView1"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:textColor="#000000"
+        />
+     <TextView 
+         android:id="@+id/TextView2"
+         android:layout_width="0dp"
+         android:layout_weight="1"
+         android:layout_height="wrap_content"
+         android:text=""
+         android:textSize="18sp"
+         android:layout_marginLeft="10dp"
+          android:textColor="#000000"/>
+    <TextView 
+        android:id="@+id/TextView3"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+         android:textColor="#000000"/>
+     <TextView 
+        android:id="@+id/TextView4"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+         android:textColor="#000000"/>
+</LinearLayout>

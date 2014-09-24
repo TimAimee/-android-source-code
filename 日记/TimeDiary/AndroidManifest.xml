@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.zhike"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:name=".Main"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <provider android:name=".provider.DiaryProvider" android:authorities="com.zhike.provider" />
+        <activity android:name=".activity.DiaryList"></activity>
+        <activity android:name=".activity.DiaryNew"></activity>
+        <activity android:name=".activity.CalendarActivity"></activity>
+        <activity android:name=".activity.TypeActivity"></activity>
+        <activity android:name=".activity.ThoughtsActivity"></activity>
+        <activity android:name=".activity.About"></activity>
+        <activity android:name=".activity.Settings"></activity>
+        
+        <service android:name=".sync.SyncService">
+			<intent-filter>
+				<action android:name="com.zhike.timediary.sync.SYNC_SERVICE" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</service>
+
+		<receiver android:name=".sync.IntentReceiver">
+			<intent-filter>
+				<action android:name="android.intent.action.BOOT_COMPLETED" />
+				<category android:name="android.intent.category.HOME" />
+			</intent-filter>
+		</receiver>
+		
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-sdk android:minSdkVersion="3" />
+
+</manifest> 

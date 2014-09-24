@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/common_bg"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/main_ly" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:text="分类预算" style="@style/common_title" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        	<ImageView android:id="@+id/lv_empty_iv" android:visibility="gone" style="@style/common_lv_empty" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <include android:id="@+id/header_empty_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/budget_lv_header" />
+                <ListView android:id="@+id/budget_category_lv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:headerDividersEnabled="true" style="@style/Widget.ListView" />
+            </LinearLayout>
+            <TextView android:id="@+id/listview_loading_tv" android:background="@drawable/mymoney_bg" style="@style/common_lv_loading_tv" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

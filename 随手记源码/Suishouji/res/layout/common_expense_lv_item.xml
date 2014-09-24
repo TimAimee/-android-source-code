@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:layout_height="45.0dip" style="@style/lv_item"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@+id/category_icon_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="8.0dip" />
+    <TextView android:id="@+id/category_name_tv" android:layout_width="130.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" style="@style/lv_item_text" />
+    <TextView android:textSize="18.0dip" android:gravity="right" android:id="@+id/cost_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/lv_item_text" />
+    <ImageView android:layout_gravity="right|center" android:id="@+id/go_detail_iv" android:background="@drawable/go_detail_arrow" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="8.0dip" />
+</LinearLayout>

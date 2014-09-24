@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+     >
+     
+     <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+        
+      <TextView
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:text="佳味汇总"
+          android:textSize="18sp"
+          android:textColor="#FFFFFF"
+          android:gravity="center_vertical|center_horizontal"
+          android:background="@drawable/main_top"/>
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/title_back_normal"
+            android:text="返回"
+            android:textColor="#FFFFFF" 
+            android:id="@+id/btn_fenlei_return"/>
+        
+     </RelativeLayout> 
+     <Button 
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/btn_fenlei_all"
+          android:textSize="16sp"
+          android:text="选菜点我"
+          android:background="@drawable/xuancaidianwo"
+          android:layout_marginTop="5dp"
+          android:layout_marginLeft="5dp"
+          android:layout_marginRight="5dp"/>
+    
+     <ListView 
+        android:layout_width="fill_parent"
+        android:layout_height="340dp"
+        android:id="@+id/fenlei_listview"
+       android:fadingEdge="none" 
+         android:background="#FFFFFF"
+          android:layout_marginTop="5dp"></ListView>
+    
+    
+    
+    
+    
+</LinearLayout>

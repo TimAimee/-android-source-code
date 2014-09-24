@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout android:layout_width="fill_parent"
+	android:layout_height="fill_parent" style="@style/common_bg"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:lineBarView="http://schemas.android.com/apk/res/com.mymoney">
+	<LinearLayout android:orientation="vertical" android:id="@+id/main_ly"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<TextView android:id="@+id/title_tv" android:text="记账"
+			style="@style/common_title" android:visibility="gone" />
+		<RadioGroup android:orientation="horizontal" android:id="@+id/trans_type_tab_rg"
+			android:layout_width="fill_parent" android:layout_height="wrap_content">
+			<RadioButton android:id="@+id/payout_tab_rb"
+				android:background="@drawable/widget_btn_radio_label_background"
+				android:layout_width="160.0dip" android:layout_height="46.0dip"
+				android:button="@drawable/payout_tab_btn_radio" android:text="支出" />
+			<RadioButton android:id="@+id/income_tab_rb"
+				android:background="@drawable/widget_btn_radio_label_background"
+				android:layout_width="160.0dip" android:layout_height="46.0dip"
+				android:button="@drawable/income_tab_btn_radio" android:text="收入" />
+		</RadioGroup>
+		<ScrollView android:scrollbars="none" android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			<LinearLayout android:orientation="vertical"
+				android:layout_width="fill_parent" android:layout_height="wrap_content">
+				<LinearLayout android:orientation="horizontal"
+					android:background="@drawable/expense_cameral_money_display_bg"
+					android:layout_width="307.0dip" android:layout_height="85.0dip"
+					android:layout_marginLeft="6.0dip">
+					<Button android:textSize="25.0dip" android:textStyle="bold"
+						android:textColor="@color/cost_text" android:textColorHint="@color/white"
+						android:gravity="right|center" android:id="@+id/cost_btn"
+						android:background="@drawable/expense_cost_btn" android:paddingRight="10.0dip"
+						android:focusable="true" android:focusableInTouchMode="true" android:layout_width="275.0dip"
+						android:layout_height="52.0dip" android:layout_marginLeft="15.0dip"
+						android:layout_marginTop="15.0dip" android:hint="输入金额" />
+				</LinearLayout>
+				<LinearLayout android:orientation="vertical"
+					android:layout_width="fill_parent" android:layout_height="wrap_content">
+					<FrameLayout android:layout_width="fill_parent"
+						android:layout_height="50.0dip">
+						<Spinner android:id="@+id/first_level_category_spn"
+							android:paddingRight="150.0dip" android:prompt="@string/spn_prompt_category"
+							style="@style/form_row_input_top" />
+						<TextView android:text="类别" style="@style/form_row_label" android:textColor="@color/white" />
+						<RelativeLayout android:orientation="horizontal"
+							android:id="@+id/budget_balance_rl" android:layout_width="wrap_content"
+							android:layout_height="fill_parent">
+							<TextView android:id="@+id/budget_balance_tv"
+								android:visibility="gone" android:layout_marginTop="5.0dip"
+								android:layout_marginRight="60.0dip"
+								android:layout_marginBottom="1.0dip" android:layout_below="@+id/budget_status_lbv"
+								android:layout_alignParentRight="true"
+								android:layout_alignParentBottom="true"
+								style="@style/budget_balance_tips_for_addexpense" />
+						</RelativeLayout>
+						<ImageView style="@style/form_row_go_detail" />
+					</FrameLayout>
+					<FrameLayout android:layout_width="fill_parent"
+						android:layout_height="wrap_content">
+						<Spinner android:id="@+id/sub_category_spn" android:textColorHint="@color/white"
+							android:prompt="@string/spn_prompt_subcategory" style="@style/form_row_input_middle" />
+						<TextView android:text="子类别" style="@style/form_row_label" android:textColor="@color/white" />
+						<ImageView style="@style/form_row_go_detail" />
+					</FrameLayout>
+					<FrameLayout android:layout_width="fill_parent"
+						android:layout_height="wrap_content">
+						<Spinner android:id="@+id/account_spn" android:prompt="@string/spn_prompt_account"
+							style="@style/form_row_input_middle" android:textColorHint="@color/white"/>
+						<TextView android:text="账户" style="@style/form_row_label" android:textColor="@color/white" />
+						<ImageView style="@style/form_row_go_detail" />
+					</FrameLayout>
+					<FrameLayout android:id="@+id/corporation_fl"
+						android:layout_width="fill_parent" android:layout_height="wrap_content">
+						<Spinner android:id="@+id/corporation_spn" android:prompt="@string/spn_prompt_corporation"
+							style="@style/form_row_input_middle" android:textColorHint="@color/white"/>
+						<TextView android:text="商家" style="@style/form_row_label" android:textColor="@color/white" />
+						<ImageView style="@style/form_row_go_detail" />
+					</FrameLayout>
+					
+					
+					<LinearLayout android:orientation="horizontal"
+						android:paddingLeft="0.0dip" android:paddingRight="0.0dip"
+						style="@style/form_row_input_middle">
+						<FrameLayout android:id="@+id/trade_time_fl"
+							android:layout_width="159.0dip" android:layout_height="fill_parent">
+							<Button android:textColor="@color/white" android:gravity="center"
+								android:id="@+id/trade_time_btn" android:background="@drawable/form_row_input_middle_short_left"
+								android:layout_width="fill_parent" android:layout_height="fill_parent" />
+							<ImageView android:layout_gravity="center_vertical"
+								android:background="@drawable/go_detail" android:layout_width="wrap_content"
+								android:layout_height="wrap_content" android:layout_marginLeft="133.0dip" />
+						</FrameLayout>
+						<ImageView android:layout_gravity="center"
+							android:background="@drawable/form_row_input_divider"
+							android:layout_width="1.0dip" android:layout_height="38.0dip" />
+						<FrameLayout android:id="@+id/project_spn_fl"
+							android:layout_width="159.0dip" android:layout_height="fill_parent">
+							<Spinner android:textColor="@color/white" android:gravity="right|center" android:id="@+id/project_spn" 
+								android:background="@drawable/form_row_input_middle_short_right" android:paddingLeft="20.0dip"
+								android:layout_width="fill_parent" android:layout_height="fill_parent"
+								android:prompt="@string/spn_prompt_project" android:textColorHint="@color/white"/>
+							<ImageView android:layout_gravity="center_vertical"
+								android:background="@drawable/go_detail" android:layout_width="wrap_content"
+								android:layout_height="wrap_content" android:layout_marginLeft="110.0dip" />
+						</FrameLayout>
+					</LinearLayout>
+					<FrameLayout android:layout_width="fill_parent"
+						android:layout_height="wrap_content">
+						<Button android:id="@+id/memo_btn" android:paddingLeft="90.0dip"
+							android:paddingRight="45.0dip" android:singleLine="true"
+							style="@style/form_row_input_middle" />
+						<TextView android:text="备注" style="@style/form_row_label" android:textColor="@color/white" />
+						<ImageView style="@style/form_row_go_detail" />
+					</FrameLayout>
+					<FrameLayout android:id="@+id/empty_fl"
+						android:visibility="gone" style="@style/form_row_input_middle" />
+					<RelativeLayout android:background="@drawable/form_row_layout_bottom"
+						android:layout_height="wrap_content" style="@style/form_row_layout_middle">
+						<Button android:id="@+id/save_btn" android:layout_width="115.0dip"
+							android:layout_marginLeft="39.0dip" android:text="@string/save"
+							android:layout_alignParentLeft="true"
+							style="@style/common_toolbar_btn_for_addexpense" />
+						<Button android:id="@+id/cancel_btn"
+							android:layout_marginRight="30.0dip" android:text="@string/cancel"
+							android:layout_alignParentRight="true"
+							style="@style/common_toolbar_btn_for_addexpense" />
+					</RelativeLayout>
+				</LinearLayout>
+			</LinearLayout>
+		</ScrollView>
+	</LinearLayout>
+
+</FrameLayout>

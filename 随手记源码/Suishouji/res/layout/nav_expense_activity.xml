@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/common_bg"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@+id/title_tv" android:background="@drawable/common_title_bg_no_shadow" android:text="流水清单" style="@style/common_title" />
+    <LinearLayout android:orientation="vertical" android:id="@+id/switch_time_ly" android:background="@drawable/switch_time_bar_bg" android:layout_width="fill_parent" android:layout_height="64.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:layout_gravity="top|left|center" android:id="@+id/pre_btn" android:background="@drawable/pre_month_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginTop="1.0dip" />
+            <TextView android:textSize="14.0dip" android:textColor="@color/white" android:gravity="center" android:id="@+id/time_interval_tv" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="月份" android:layout_weight="1.0" />
+            <Button android:layout_gravity="top|right|center" android:id="@+id/next_btn" android:background="@drawable/next_month_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:layout_marginRight="2.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:text="收入" style="@style/list_all_income_title_tv" />
+                <TextView android:id="@+id/income_amount_tv" android:text="计算中..." style="@style/list_all_income" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:text="支出" style="@style/list_all_exp_title_tv" />
+                <TextView android:id="@+id/payout_amount_tv" android:text="计算中..." style="@style/list_all_exp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageView android:id="@+id/lv_empty_iv" android:visibility="gone" style="@style/common_lv_empty_for_expense" />
+        <ListView android:id="@+id/expense_lv" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/Widget.ListView" />
+        <TextView android:id="@+id/listview_loading_tv" style="@style/common_lv_loading_tv" />
+    </FrameLayout>
+</LinearLayout>
