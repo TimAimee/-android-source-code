@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	<!-- 指定按钮按下时的图片 -->
+	<item android:state_pressed="true"
+		android:drawable="@drawable/start_down"
+	/>
+	<!-- 指定按钮松开时的图片 -->	
+	<item android:state_pressed="false"
+		android:drawable="@drawable/start"
+	/>
+</selector>

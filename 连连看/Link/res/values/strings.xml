@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, Link!</string>
+    <string name="app_name">疯狂连连看</string>
+    <string name="game_time">剩余时间：</string>
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:background="#80FF80" >
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/friends_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:listSelector="#00000000"
+        android:background="#0000FF" >
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<? xml version='1.0' encoding='utf-8'?>
+<Manifest xmlns:android="http://schemas.android.com/apk/res/android"
+				android:versionCode="1"
+				android:versionName="1.0"
+				package="com.bluetooth">
+<!--SDK的版本至少要高于5-->
+<Uses-sdk android:minSdkVersion="5"/>
+<!--声明要使用蓝牙的权限-->
+<Uses-permission android:name="android.permission.BLUETOOTH"/>
+<Uses-permission android:name="android.permisson.BLUETOOHTH_ADMIN"/>
+
+</Manifest>

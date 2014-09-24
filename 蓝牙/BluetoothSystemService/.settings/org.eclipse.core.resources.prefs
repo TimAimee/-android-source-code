@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+encoding//src/bss/sql/operation/DAOFactory.java=UTF-8
+encoding//src/bss/sql/operation/DataBaseConnection.java=UTF-8
+encoding//src/bss/sql/operation/MacContent.java=UTF-8
+encoding//src/bss/sql/operation/UserDAO.java=UTF-8
+encoding//src/bss/sql/operation/UserDAOImpl.java=UTF-8

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="BluetoothSystemService"
+  id="myeclipse.1390786996659"
+  context-root="/BluetoothSystemService"
+  j2ee-spec="6.0"
+  archive="BluetoothSystemService.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+
