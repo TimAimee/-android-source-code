@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@drawable/gongyingshang">
+  <TextView 
+  android:id="@+id/lxr"
+  android:text=" 联  系 人："
+  android:textColor="@android:color/black"
+  android:textAppearance="?android:attr/textAppearanceLarge"
+  android:layout_marginLeft="90sp"
+  
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_centerVertical="true"/> 
+  <EditText 
+  android:layout_centerVertical="true"
+  android:id="@+id/lxre"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_toRightOf="@id/lxr"
+  android:hint="请填写联系人    "/>
+    <TextView 
+  android:id="@+id/gsmc"
+  android:text="公司名称："
+  android:textColor="@android:color/black"
+  android:textAppearance="?android:attr/textAppearanceLarge"
+  android:layout_alignLeft="@id/lxr"
+  android:layout_marginBottom="8sp"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_above="@id/lxre"/> 
+  <EditText 
+   android:layout_above="@id/lxre"
+  android:layout_centerVertical="true"
+  android:id="@+id/gsmce"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_toRightOf="@id/lxr"
+  android:hint="请填写公司名称"/>
+     <TextView 
+  android:id="@+id/szcs"
+  android:text="所在城市："
+  android:textColor="@android:color/black"
+  android:textAppearance="?android:attr/textAppearanceLarge"
+  android:layout_alignLeft="@id/lxr"
+  
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_below="@id/lxre"/> 
+  <EditText 
+   android:layout_below="@id/lxre"
+  android:layout_centerVertical="true"
+  android:id="@+id/szcse"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_toRightOf="@id/lxr"
+  android:hint="请填写所在城市"/>
+  <Button 
+  android:id="@+id/ok"
+  android:layout_width="100sp"
+  android:layout_height="wrap_content"
+  android:layout_below="@id/szcse"
+  android:text="确认"
+  android:layout_centerHorizontal="true"/>
+  <TextView 
+  android:id="@+id/text"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:textColor="@android:color/black"
+  android:text="（以下信息可以选择填写任意项，不填写直接查询默认显示全部信息）"
+  android:layout_above="@id/gsmce"
+  android:layout_centerHorizontal="true"/>
+</RelativeLayout>

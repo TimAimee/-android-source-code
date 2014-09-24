@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/cang1"
+     
+    android:layout_height="wrap_content" android:layout_width="match_parent">
+<EditText 
+    android:layout_height="wrap_content"
+    android:layout_width="200sp"
+    android:id="@+id/edi1"
+    android:hint="请输入用户名"
+        android:textColor="@drawable/gaoliang"
+        android:singleLine="true"
+        android:layout_alignParentRight="true"
+    android:layout_marginTop="180sp"/>
+   
+<TextView 
+    android:id="@+id/text2"
+    
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="用户名:"
+    android:textColor="@android:color/black"
+    android:textSize="20dip"
+   android:layout_alignTop="@id/edi1"
+    android:paddingTop="7sp"
+    android:layout_toLeftOf="@id/edi1"
+/>
+ <EditText 
+    android:textColor="@drawable/gaoliang"
+    android:layout_height="wrap_content"
+    android:layout_width="200sp"
+    android:id="@+id/edi2"
+    android:singleLine="true"
+    android:hint="请输入密码"
+    android:password="true"
+    android:layout_below="@id/edi1"
+    android:layout_alignParentRight="true"
+   />
+     <TextView 
+    android:id="@+id/text3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="密    码:"
+    android:textColor="@android:color/black"
+    android:textSize="20dip"
+  android:layout_alignTop="@id/edi2"
+    android:paddingTop="6dip"
+    android:layout_toLeftOf="@id/edi2"/>
+   
+    <Button 
+    android:id="@+id/btn1"
+    android:layout_width="100sp"
+    android:layout_height="wrap_content"
+    android:text="登陆"
+    android:layout_alignLeft="@id/edi2"
+    android:layout_below="@id/edi2"
+    android:onClick="onload"
+    />
+        <Button 
+    android:id="@+id/btn2"
+    android:layout_width="100sp"
+    android:layout_height="wrap_content"
+    android:text="注册"
+    android:layout_below="@id/edi2"
+    android:layout_toRightOf="@id/btn1"
+    android:onClick="onres"
+    />
+    
+   
+
+</RelativeLayout>

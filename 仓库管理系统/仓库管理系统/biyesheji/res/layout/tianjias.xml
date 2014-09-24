@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@drawable/shangp">
+  <TextView 
+ android:id="@+id/shangpmt"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:text="商品名称："
+ android:layout_marginLeft="70sp"
+ android:layout_marginTop="30sp"
+ android:paddingTop="5sp"
+ android:textColor="@android:color/black"
+ android:textAppearance="?android:attr/textAppearanceLarge"/>
+ <EditText 
+ android:id="@+id/tianjiashangme"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:hint="请输入商品名称"
+ android:layout_toRightOf="@id/shangpmt"
+ android:layout_alignTop="@id/shangpmt"/>
+  <TextView 
+ android:id="@+id/shangpgt"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:text="商品规格："
+ android:layout_marginLeft="70sp"
+ 
+ android:paddingTop="5sp"
+ android:textColor="@android:color/black"
+ android:layout_below="@id/tianjiashangme"
+ android:textAppearance="?android:attr/textAppearanceLarge"/>
+ <EditText 
+ android:id="@+id/tianjiashangge"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:hint="请输入商品规格"
+ android:layout_toRightOf="@id/shangpgt"
+android:layout_below="@id/tianjiashangme"/>
+   <TextView 
+ android:id="@+id/shangpjt"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:text="计量单位："
+ android:layout_marginLeft="70sp"
+ 
+ android:paddingTop="5sp"
+ android:textColor="@android:color/black"
+ android:layout_below="@id/tianjiashangge"
+ android:textAppearance="?android:attr/textAppearanceLarge"/>
+ <EditText 
+ android:id="@+id/tianjiashangje"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:hint="请输入计量单位"
+ android:layout_toRightOf="@id/shangpjt"
+android:layout_below="@id/tianjiashangge"/>
+<Button 
+android:id="@+id/baocun"
+android:layout_width="110sp"
+android:layout_height="wrap_content"
+android:text="保存"
+android:layout_below="@id/tianjiashangje"
+android:layout_marginLeft="90sp"
+android:onClick="save"/>
+ <Button 
+android:id="@+id/back"
+android:layout_width="110sp"
+android:layout_height="wrap_content"
+android:text="返回"
+android:layout_below="@id/tianjiashangje"
+android:layout_toRightOf="@id/baocun"
+android:layout_marginLeft="20sp"
+android:onClick="back"/>   
+</RelativeLayout>

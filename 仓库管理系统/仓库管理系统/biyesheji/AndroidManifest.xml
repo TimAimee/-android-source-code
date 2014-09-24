@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="tian.biye"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="8" />
+
+    <application android:icon="@drawable/logo" android:label="@string/app_name">
+        <activity android:name=".StoreManagementActivity"
+                  android:configChanges="orientation|keyboardHidden"
+                  android:label="@string/app_name"
+                  android:screenOrientation="landscape"
+                  android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+                  >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+         <activity android:name="UserRegister"
+                    android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+                    android:screenOrientation="landscape"></activity>
+          <activity android:name="MenuDemo"
+                    android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+                    android:screenOrientation="landscape"></activity>
+           <activity android:name="Tianjiag"
+                     android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+                    android:screenOrientation="landscape"></activity>
+             <activity android:name="Tianjiak"
+                     android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+                    android:screenOrientation="landscape"></activity>
+           <activity android:name="Chaxung"
+                  
+                    android:screenOrientation="landscape"></activity>
+           <activity android:name="Chaxunk"
+                    
+                    android:screenOrientation="landscape"></activity>
+            <activity android:name="Chaxunr"
+                 
+                    android:screenOrientation="landscape"></activity>
+                     <activity android:name="Xiugair"
+                 
+                    android:screenOrientation="landscape"></activity>
+                     <activity android:name="Xiugaic"
+                 
+                    android:screenOrientation="landscape"></activity>
+                    <activity android:name="Xiugair1"
+                 android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+                    android:screenOrientation="landscape"></activity>
+                     <activity android:name="Xiugaic1"
+                  android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+                    android:screenOrientation="landscape"></activity>
+                        <activity android:name="Shanchur"
+                 
+                    android:screenOrientation="landscape"></activity>
+              <activity android:name="Chaxunc"
+                   
+                    android:screenOrientation="landscape"></activity>
+               <activity android:name="Xiugai"
+                     android:theme="@android:style/Theme.Dialog"
+                    android:screenOrientation="landscape"></activity>
+                    <activity android:name="Yonghu"
+                    
+                    android:screenOrientation="landscape"></activity>
+                     <activity android:name="Shanchus"
+                    
+                    android:screenOrientation="landscape"></activity>
+                     <activity android:name="Kucun"
+                    
+                    android:screenOrientation="landscape"></activity>
+                      <activity android:name="Xiugais"
+                    
+                    android:screenOrientation="landscape"></activity>
+                        <activity android:name="Xiugais1"
+                    
+                    android:screenOrientation="landscape"></activity>
+                         <activity android:name="Xiugaik"
+                    
+                    android:screenOrientation="landscape"></activity>
+                      <activity android:name="Xiugaig"
+                    
+                    android:screenOrientation="landscape"></activity>
+                    <activity android:name="Xiugaik1"
+                    android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+                    android:screenOrientation="landscape"></activity>
+                       <activity android:name="Xiugaig1"
+                    android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+                    android:screenOrientation="landscape"></activity>
+                      <activity android:name="Chaxuns"
+                    
+                    android:screenOrientation="landscape"></activity>
+                      <activity android:name="Shanchug"
+                    
+                    android:screenOrientation="landscape"></activity>
+                      <activity android:name="Chaxung"
+                    
+                    android:screenOrientation="landscape"></activity>
+                      <activity android:name="Shanchuk"
+                    
+                    android:screenOrientation="landscape"></activity>
+                        <activity android:name="Shanchuc"
+                    
+                    android:screenOrientation="landscape"></activity>
+          <activity android:name="Tianjiar"
+                     android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+                    android:screenOrientation="landscape"></activity>
+           <activity android:name="Tianjiac"
+                     android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+                    android:screenOrientation="landscape"></activity>
+              <activity android:name="Tianjias"
+                     android:theme="@android:style/Theme.Dialog"
+ 
+                    android:screenOrientation="landscape"></activity>
+    </application>
+</manifest>
