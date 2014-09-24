@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">声控助手</string>
+
+    <!-- sweep UI -->
+    <string name="volumesetting">旋转调节</string>
+    <string name="lightsetting">调节</string>
+    <string name="setting">选择设置</string>
+    <string name="saveAndQuit">保存_返回</string>
+    <string name="isAuto">自动旋转</string>
+    <string name="setAuto">设置自动模式</string>
+    <string name="setRate">设置速度（0-5）</string>
+
+</resources>

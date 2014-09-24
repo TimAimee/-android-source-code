@@ -1,0 +1,64 @@
+com.soundvoice.james.MyReceiver:
+    private static final java.lang.String TAG
+com.soundvoice.james.R
+com.soundvoice.james.R$anim
+com.soundvoice.james.R$attr
+com.soundvoice.james.R$color
+com.soundvoice.james.R$drawable
+com.soundvoice.james.R$id
+com.soundvoice.james.R$layout
+com.soundvoice.james.R$string
+com.soundvoice.james.R$style
+com.soundvoice.james.soundVoice:
+    private static final int VOICE_RECOGNITION_REQUEST_CODE
+    private static final int SHOW_TIME_OUT
+    private static final int END_SEARCHING_MSG
+    private static final int SHOW_SEARCHING_MSG
+    private static final int SHOW_CLOSE_BUTTON
+    private static final int SHOW_SHUTDOWN_CONFIRM
+    protected static final int INSTALL_FAIL
+    private static final java.lang.String TAG
+    private static final int KEY_CMD_UNINSTALL
+    private static final int KEY_CMD_OPENING
+    private static final int KEY_CMD_LOCATION
+    private static final int KEY_CMD_LIGHT_OR_VOL
+    private static final int KEY_CMD_SHUTDOWN
+    private static final int KEY_CMD_LED
+    public static final int KEY_CMD_VIBRATE
+    private static final int HELP_MENU_ID
+    private static final int QUIT_ID
+    343:351:public java.lang.String GetDir(java.lang.String,boolean)
+com.soundvoice.util.IOCtlBycmd:
+    private static final java.lang.String TAG
+    private static java.lang.Process process
+    90:114:public static boolean writeSucc(java.lang.String,java.lang.String)
+com.soundvoice.util.TouchCircleView:
+    public static final int STATE_CHANGED
+    private static final int WHITE
+    private static final int GREEN
+    private static final int BULE
+    private static final int RED
+    protected float mXoffset
+    private long downtime
+    private long uptime
+    private float startRotate
+    private float endRotate
+    public static final java.lang.String ACTION_VolumeControl_UI
+    281:281:public boolean isPress()
+    285:285:public float getMidPointX()
+    289:289:public float getMidPointY()
+    293:293:public float getOutterRadius()
+    297:297:public float getInnerRadius()
+com.soundvoice.util.VolumeControl:
+    public static final int STATE_INCREASE
+    public static final int STATE_DECREASE
+    protected static final int STATE_CHECKING
+    protected static final int STATE_LOOP
+    protected static final int STATE_FINISH
+    public static final java.lang.String ACTION_UPDATE_UI
+    public static final int SEND_NOFIFY_MSG
+    private static final float CIRCLE_RIDUS
+    public static int Mid_INCx
+    public static int Mid_INCy
+    243:246:public void startAutoBrightness()
+com.soundvoice.util.androidInterface

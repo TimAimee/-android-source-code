@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:gravity="center"
+    >
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="易通行"
+        android:textSize="30dip"
+        android:textColor="#665533"
+        />
+    <Button 
+        android:id="@+id/lys"
+        android:layout_width="200dip"
+        android:layout_height="50dip"
+        android:text="录音"
+        android:background="#884477"
+        />
+    <ProgressBar 
+	android:id="@+id/loadProgressBar" 
+	android:background="@drawable/background1"
+    android:indeterminateDrawable="@anim/rotate" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content"/> 
+</LinearLayout>

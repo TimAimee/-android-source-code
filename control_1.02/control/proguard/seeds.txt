@@ -1,0 +1,9 @@
+com.soundvoice.util.TouchCircleView
+com.soundvoice.util.TouchCircleView: TouchCircleView(android.content.Context,android.util.AttributeSet)
+com.soundvoice.james.soundVoice
+com.soundvoice.util.VolumeControl
+com.soundvoice.james.helpContent
+com.soundvoice.james.MyReceiver
+com.soundvoice.james.soundVoice: void onClick(android.view.View)
+com.soundvoice.util.VolumeControl: void onClick(android.view.View)
+com.soundvoice.james.helpContent: void onClick(android.view.View)

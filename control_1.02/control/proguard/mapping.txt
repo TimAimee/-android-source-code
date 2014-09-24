@@ -1,0 +1,177 @@
+com.soundvoice.james.MyReceiver -> com.soundvoice.james.MyReceiver:
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.soundvoice.james.helpContent -> com.soundvoice.james.helpContent:
+    android.widget.RelativeLayout totalLayout -> b
+    android.view.ViewGroup mViewGroup -> c
+    android.widget.TextView mHelpView -> d
+    android.widget.Button mButton -> e
+    boolean isRemindAgain -> a
+    void onCreate(android.os.Bundle) -> onCreate
+    void WriteSharedPreferences() -> a
+    void onClick(android.view.View) -> onClick
+com.soundvoice.james.helpContent$1 -> com.soundvoice.james.i:
+    com.soundvoice.james.helpContent this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.soundvoice.james.helpContent$2 -> com.soundvoice.james.j:
+    com.soundvoice.james.helpContent this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.soundvoice.james.soundVoice -> com.soundvoice.james.soundVoice:
+    android.widget.Button btn_speak -> a
+    android.widget.ListView lv_mylist -> f
+    android.widget.Button mCloseButton -> g
+    java.lang.String[] array -> h
+    int search_out_time -> i
+    android.speech.tts.TextToSpeech mSpeech -> j
+    android.content.Intent intent -> k
+    int KEY_WORDS -> l
+    boolean isFindKeyWord -> m
+    boolean isNeedDown -> n
+    java.lang.String PATH_VOICE -> o
+    android.content.SharedPreferences metafer -> p
+    int TYPE_CMD -> q
+    android.hardware.Camera camera -> r
+    com.soundvoice.james.soundVoice$searchMatchThread msearchMatchThread -> s
+    java.util.ArrayList matches -> b
+    boolean isSound -> c
+    android.os.Handler mHandler -> t
+    android.os.Vibrator mVibrator -> d
+    boolean isShutDown -> e
+    void onCreate(android.os.Bundle) -> onCreate
+    void onClick(android.view.View) -> onClick
+    boolean closeStatus(int) -> a
+    void onResume() -> onResume
+    boolean isAPKinstalled(android.content.Context) -> a
+    void copyAPKToDir(android.content.Context) -> b
+    boolean dispatchKeyEvent(android.view.KeyEvent) -> dispatchKeyEvent
+    void ShutDownDialog(java.lang.CharSequence,java.lang.CharSequence,java.lang.String[]) -> a
+    void ExitDialog() -> a
+    void setCmdType(int,int) -> a
+    void onActivityResult(int,int,android.content.Intent) -> onActivityResult
+    void onDestroy() -> onDestroy
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onPrepareOptionsMenu(android.view.Menu) -> onPrepareOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    android.widget.Button access$0(com.soundvoice.james.soundVoice) -> a
+    android.os.Handler access$1(com.soundvoice.james.soundVoice) -> b
+    android.widget.ListView access$2(com.soundvoice.james.soundVoice) -> c
+    java.lang.String[] access$3() -> b
+    void access$4(java.lang.String[]) -> a
+    void access$5(com.soundvoice.james.soundVoice,int) -> a
+    int access$6(com.soundvoice.james.soundVoice) -> d
+    void access$7(com.soundvoice.james.soundVoice,boolean) -> a
+    void access$8(com.soundvoice.james.soundVoice,android.content.Intent) -> a
+    android.content.Intent access$9(com.soundvoice.james.soundVoice) -> e
+    android.hardware.Camera access$10() -> c
+    void access$11(android.hardware.Camera) -> a
+    boolean access$12(com.soundvoice.james.soundVoice) -> f
+    android.speech.tts.TextToSpeech access$13(com.soundvoice.james.soundVoice) -> g
+com.soundvoice.james.soundVoice$1 -> com.soundvoice.james.d:
+    com.soundvoice.james.soundVoice this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.soundvoice.james.soundVoice$1$1 -> com.soundvoice.james.h:
+    com.soundvoice.james.soundVoice$1 this$1 -> a
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+com.soundvoice.james.soundVoice$2 -> com.soundvoice.james.f:
+    com.soundvoice.james.soundVoice this$0 -> a
+    void onInit(int) -> onInit
+com.soundvoice.james.soundVoice$3 -> com.soundvoice.james.e:
+    com.soundvoice.james.soundVoice this$0 -> a
+    java.lang.String[] val$cmds -> b
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.soundvoice.james.soundVoice$4 -> com.soundvoice.james.b:
+    com.soundvoice.james.soundVoice this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.soundvoice.james.soundVoice$5 -> com.soundvoice.james.a:
+    com.soundvoice.james.soundVoice this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.soundvoice.james.soundVoice$6 -> com.soundvoice.james.c:
+    com.soundvoice.james.soundVoice this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.soundvoice.james.soundVoice$searchMatchThread -> com.soundvoice.james.g:
+    int keyWord -> a
+    android.content.Intent data -> b
+    com.soundvoice.james.soundVoice this$0 -> c
+    void run() -> run
+com.soundvoice.util.IOCtlBycmd -> com.soundvoice.util.h:
+    void doCmds(java.lang.String[]) -> a
+    java.lang.String readContent(java.lang.String) -> b
+    java.lang.String readContentFilter(java.lang.String) -> a
+com.soundvoice.util.LEDControl -> com.soundvoice.util.b:
+    java.lang.String tag -> a
+    void processLEDOffClick(android.hardware.Camera) -> a
+    void processLEDOnClick(android.hardware.Camera) -> b
+com.soundvoice.util.LEDControl$1 -> com.soundvoice.util.a:
+    void onAutoFocus(boolean,android.hardware.Camera) -> onAutoFocus
+com.soundvoice.util.TouchCircleView -> com.soundvoice.util.TouchCircleView:
+    float SPEED -> b
+    float mMidPointX -> c
+    float mMidPointY -> d
+    float mRadius -> e
+    android.graphics.Paint mPaint -> f
+    float mRotate -> g
+    android.graphics.Matrix mMatrix -> h
+    android.graphics.Shader mShader -> i
+    float mInnerRadius -> j
+    float mOutterRadius -> k
+    boolean mPress -> l
+    android.content.Context context -> m
+    int[] colorArray -> n
+    int CIRCLE -> o
+    int colorLength -> p
+    int COLOR_ZONE -> q
+    boolean isAuto -> a
+    android.content.IntentFilter filter -> r
+    android.content.Intent mIntent -> s
+    float mPreviousRotate -> t
+    float Ox -> u
+    float TOUCH_SCALE_FACTOR -> v
+    float TRACKBALL_SCALE_FACTOR -> w
+    float Oy -> x
+    boolean onTrackballEvent(android.view.MotionEvent) -> onTrackballEvent
+    boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
+    void onDraw(android.graphics.Canvas) -> onDraw
+    int BGColor() -> a
+com.soundvoice.util.UninstallControl -> com.soundvoice.util.g:
+    java.util.List getAllApps(android.content.Context) -> a
+    boolean dumpApk(android.content.Context,java.lang.String[]) -> a
+com.soundvoice.util.VolumeControl -> com.soundvoice.util.VolumeControl:
+    int Mid_X -> k
+    int Mid_Y -> l
+    int PROGRESS -> a
+    int curValue -> b
+    android.widget.ProgressBar mProgressBar -> c
+    android.widget.TextView mTextView -> d
+    android.widget.Button setButton -> e
+    android.widget.Button saveButton -> m
+    int mOldBrightness -> n
+    android.content.IntentFilter filter -> o
+    float mXDpi -> p
+    float mYDpi -> q
+    float mMetersToPixelsX -> r
+    float mMetersToPixelsY -> s
+    int dstWidth -> f
+    int dstHeight -> g
+    android.content.Intent mIntent -> h
+    android.content.BroadcastReceiver updateStatus -> t
+    int volueBarVisible -> i
+    android.os.Handler mHandler -> j
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    void onClick(android.view.View) -> onClick
+    boolean isAutoBrightness(android.content.ContentResolver) -> a
+    void setBrightness(int) -> a
+    void saveBrightness(android.content.ContentResolver,int) -> a
+    void onDestroy() -> onDestroy
+    void access$0(com.soundvoice.util.VolumeControl,int) -> a
+    int access$1(com.soundvoice.util.VolumeControl) -> a
+com.soundvoice.util.VolumeControl$1 -> com.soundvoice.util.e:
+    com.soundvoice.util.VolumeControl this$0 -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.soundvoice.util.VolumeControl$2 -> com.soundvoice.util.f:
+    com.soundvoice.util.VolumeControl this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.soundvoice.util.commonCtrlCmd -> com.soundvoice.util.d:
+    boolean containKeyWords(java.lang.String,java.lang.String,java.lang.String,java.lang.String) -> a
+    java.lang.String rmKeyWords(java.lang.String,java.lang.String,java.lang.String,java.lang.String) -> b
+com.soundvoice.util.startAppControl -> com.soundvoice.util.c:
+    android.content.Intent getPackage(android.content.Context,java.lang.String[]) -> a

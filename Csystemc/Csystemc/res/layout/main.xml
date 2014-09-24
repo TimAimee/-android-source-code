@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bkg_img_default"
+    android:gravity="center"
+    android:orientation="vertical" >
+	<LinearLayout android:id="@+id/adLayout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_horizontal">
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+	
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <com.example.systemc.MyImageView
+                    android:id="@+id/reboot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:scaleType="matrix"
+                    android:src="@drawable/left_top" />
+
+                <com.example.systemc.MyImageView
+                    android:id="@+id/shutIntime "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:scaleType="matrix"
+                    android:src="@drawable/left_bottom" />
+            </LinearLayout>
+
+            <com.example.systemc.MyImageView
+                android:id="@+id/fly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:scaleType="matrix"
+                android:src="@drawable/right" />
+        </LinearLayout>
+
+        <com.example.systemc.MyImageView
+            android:id="@+id/tuijian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:scaleType="matrix"
+            android:src="@drawable/bottom" />
+    </LinearLayout>
+
+</LinearLayout>
