@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical"
+    >
+    
+    <include layout="@layout/head"/>
+    
+    <com.ty.winchat.widget.PullToRefreshExpandableListView 
+        android:id="@+id/main_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+       	android:layout_weight="1"
+        android:cacheColorHint="@color/transparent"
+        >
+        
+    </com.ty.winchat.widget.PullToRefreshExpandableListView>
+
+    <LinearLayout
+        android:id="@+id/adLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+    </LinearLayout>
+
+</LinearLayout>

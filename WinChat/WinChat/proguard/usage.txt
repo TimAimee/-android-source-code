@@ -1,0 +1,110 @@
+android.annotation.SuppressLint
+android.annotation.TargetApi
+com.ty.winchat.BuildConfig
+com.ty.winchat.CrashHandler:
+    public static final java.lang.String TAG
+com.ty.winchat.R
+com.ty.winchat.R$attr
+com.ty.winchat.R$color
+com.ty.winchat.R$dimen
+com.ty.winchat.R$drawable
+com.ty.winchat.R$id
+com.ty.winchat.R$layout
+com.ty.winchat.R$menu
+com.ty.winchat.R$string
+com.ty.winchat.R$style
+com.ty.winchat.WinChatApplication:
+    159:160:public void setLocalIp(java.lang.String)
+    166:167:public void setDeviceCode(java.lang.String)
+    178:179:public void setFilePath(java.lang.String)
+com.ty.winchat.adapter.RoomChatIconAdapter
+com.ty.winchat.listener.Listener:
+    public static final int NONE
+    public static final int ADD_USER
+    public static final int LOGIN_SUCC
+    public static final int REMOVE_USER
+    public static final int RECEIVE_MSG
+    public static final int RECEIVE_FILE
+    public static final int HEART_BEAT
+    public static final int HEART_BEAT_REPLY
+    public static final int ASK_SEND_FILE
+    public static final int REPLAY_SEND_FILE
+    public static final int REQUIRE_ICON
+    public static final int ASK_VIDEO
+    public static final int REPLAY_VIDEO_ALLOW
+    public static final int REPLAY_VIDEO_NOT_ALLOW
+    public static final int TO_ALL_MESSAGE
+    abstract void open()
+    abstract void close()
+com.ty.winchat.listener.TCPFileListener:
+    230:230:public com.ty.winchat.listener.inter.OnProgressUpdate getOnProgressUpdate()
+    250:250:public com.ty.winchat.listener.inter.IconReceived getIconReceived()
+com.ty.winchat.listener.TCPListener:
+    public abstract void noticeSendFileError(java.io.IOException)
+    88:88:public int getPort()
+com.ty.winchat.listener.TCPVideoReceiveListener:
+    public static final int THREAD_COUNT
+    62:62:public com.ty.winchat.listener.inter.OnBitmapLoaded getBitmapLoaded()
+    78:78:public void noticeSendFileError(java.io.IOException)
+com.ty.winchat.listener.UDPMessageListener:
+    187:187:public com.ty.winchat.listener.inter.OnUDPReceiveMessage getOnReceiveMessage()
+com.ty.winchat.listener.UDPVoiceListener:
+    static final int frequency
+com.ty.winchat.listener.inter.OnProgressUpdate:
+    public abstract void onReceiveFailure(java.io.IOException)
+    public abstract void onSendFailure(java.io.IOException)
+com.ty.winchat.listener.inter.OnTCPReceive
+com.ty.winchat.model.FileMessage:
+    public static final java.lang.String NONE
+    public static final java.lang.String ALLOW_SEND_FILE
+    public static final java.lang.String NOT_ALLOW_SEND_FILE
+    public static final int SEND
+    public static final int RECEIVE
+    64:65:public void setName(java.lang.String)
+    70:71:public void setLength(long)
+com.ty.winchat.model.UDPMessage:
+    25:28:public UDPMessage(java.lang.String,boolean)
+com.ty.winchat.model.User:
+    private static final long serialVersionUID
+    private java.lang.String mac
+    public static final int INTERVAL
+    public static final int TIMEOUT
+    40:40:public java.lang.String getMac()
+    43:44:public void setMac(java.lang.String)
+com.ty.winchat.ui.FaceDialog:
+    37:37:public FaceDialog()
+    92:94:public static void close()
+com.ty.winchat.ui.Main:
+    public static final java.lang.String ACTION_ADD_USER
+com.ty.winchat.ui.MessageChat:
+    private boolean sendFile
+    820:821:public void onReceiveFailure(java.io.IOException)
+    825:826:public void onSendFailure(java.io.IOException)
+com.ty.winchat.ui.MessageChat$MessageUpdateBroadcastReceiver:
+    public static final java.lang.String ACTION_HEARTBEAT
+    public static final java.lang.String ACTION_NOTIFY_DATA
+com.ty.winchat.ui.RoomChat$RoomChatBroadcastReceiver:
+    public static final java.lang.String ACTION_NOTIFY_DATA
+com.ty.winchat.ui.VideoChat$SocketPool
+com.ty.winchat.util.Constant
+com.ty.winchat.util.FileLog
+com.ty.winchat.util.FileUtil:
+    5:5:public FileUtil()
+com.ty.winchat.util.LocalMemoryCache:
+    50:51:public void remove(java.lang.String)
+    54:59:public void removeAll()
+com.ty.winchat.util.Util:
+    20:20:public Util()
+    41:55:public static int calculateInSampleSize(android.graphics.BitmapFactory$Options,float,float)
+    67:77:public static android.graphics.Bitmap decodeSampledBitmapFromFile(byte[],int,int)
+    148:179:public static void decodeYUV420SP(int[],byte[],int,int)
+com.ty.winchat.util.WinChatUtil:
+    20:20:public WinChatUtil()
+com.ty.winchat.widget.PullToRefreshExpandableListView:
+    private static final int RELEASE_TO_REFRESH
+    private static final int PULL_TO_REFRESH
+    private static final int REFRESHING
+    private static final int DONE
+    private static final int RATIO
+com.ty.winchat.widget.VideoView:
+    52:52:public android.graphics.Bitmap getBitmap()

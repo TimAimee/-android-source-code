@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/black"
+    >
+    
+    <TextView 
+        android:id="@+id/file_choose_path"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:focusable="true" 
+        android:focusableInTouchMode="true" 
+        android:scrollHorizontally="true"
+        android:textSize="@dimen/file_name_size"
+        android:padding="5dip"
+        />
+	
+    <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <ListView 
+        android:id="@+id/file_choose_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@drawable/line3"
+        android:cacheColorHint="#00000000"
+        >
+    </ListView>
+    
+    <RelativeLayout 
+        android:id="@+id/file_choose_no_file_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        >
+        
+        <ImageView 
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/file_directory"
+            />
+        
+        <TextView 
+            android:layout_below="@id/img"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/white"
+	        android:textSize="@dimen/file_name_size"
+	        android:layout_centerHorizontal="true"
+	        android:text="无文件"
+        	/>
+        
+    </RelativeLayout>
+    
+    </FrameLayout>
+
+</LinearLayout>

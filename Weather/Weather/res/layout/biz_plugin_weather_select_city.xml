@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/select_city_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/base_main_bg_color" >
+
+    <!--
+         <com.way.actionbar.ActionBar
+        android:id="@+id/actionbar"
+        style="@style/ActionBar" />
+    -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45.0dip"
+        android:background="@drawable/actionbar_background" >
+
+        <TextView
+            android:id="@+id/title_name"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="深圳天气"
+            android:textColor="#ffffffff"
+            android:textSize="20.0dip" />
+
+        <ImageView
+            android:id="@+id/title_back"
+            android:layout_width="45.0dip"
+            android:layout_height="45.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/actionbar_btn"
+            android:src="@drawable/base_action_bar_back_normal" />
+
+        <ImageView
+            android:layout_width="1.0dip"
+            android:layout_height="40dip"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@id/title_back"
+            android:background="@color/actionbar_separator"
+            android:gravity="center" />
+
+        <ProgressBar
+            android:id="@+id/title_update_progress"
+            style="@style/ActionBarProgressBar"
+            android:layout_width="45.0dip"
+            android:layout_height="45.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:indeterminateOnly="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingTop="45.0dip" >
+
+        <!--
+             <EditText
+            android:id="@+id/search_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="5.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="5.0dip"
+            android:background="@drawable/base_search_edittext_selector"
+            android:drawableLeft="@drawable/biz_news_column_subscribe_search_icon"
+            android:drawablePadding="10.0dip"
+            android:gravity="left|center"
+            android:hint="@string/biz_plugin_weather_search_city_hint"
+            android:imeOptions="actionDone"
+            android:lines="1"
+            android:maxLength="50"
+            android:maxLines="1"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="5.0dip"
+            android:singleLine="true"
+            android:textCursorDrawable="@null"
+            android:textSize="16.0sp" />
+        -->
+
+        <include
+            android:id="@+id/search_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/search_box" />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/search_container"
+            android:background="@android:color/white" >
+
+            <RelativeLayout
+                android:id="@+id/city_content_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <com.way.plistview.PinnedHeaderListView
+                    android:id="@+id/citys_list"
+                    style="@style/base_listview_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:cacheColorHint="#00000000"
+                    android:focusableInTouchMode="true" />
+
+                <include
+                    android:id="@+id/citys_list_empty"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    layout="@layout/base_load_empty_layout" />
+
+                <com.way.plistview.BladeView
+                    android:id="@+id/citys_bladeview"
+                    android:layout_width="40dip"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="#00000000"
+                    android:paddingBottom="10.0dip"
+                    android:paddingLeft="5.0dip"
+                    android:paddingRight="5.0dip"
+                    android:paddingTop="10.0dip" />
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/search_content_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ListView
+                    android:id="@+id/search_list"
+                    style="@style/base_listview_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:cacheColorHint="#00000000"
+                    android:focusableInTouchMode="true"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/search_empty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10.0dip"
+                    android:src="@drawable/biz_plugin_weather_selectcity_empty"
+                    android:visibility="gone" />
+            </FrameLayout>
+        </FrameLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

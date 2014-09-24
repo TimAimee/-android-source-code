@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="5dip"
+    android:paddingBottom="5dip"
+     >
+    
+     <ImageView 
+        android:id="@+id/chat_other_listview_item_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dip"
+        />
+    
+    <RelativeLayout 
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingTop="10dip"
+        >
+    
+    <TextView 
+        android:id="@+id/chat_other_listview_item_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/chat_other_bg"
+        android:layout_marginLeft="@dimen/chat_bg_margin_img"
+        android:layout_alignParentLeft="true"
+        android:gravity="center|left"
+        android:textSize="@dimen/chat_txt_size"
+        android:padding="10dip"
+        android:paddingRight="15dip"
+        android:paddingLeft="15dip"
+        android:maxWidth="250dip"
+        />
+    
+    <TextView 
+        android:id="@+id/chat_other_listview_item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/chat_other_listview_item_txt"
+        android:textColor="@color/gray"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dip"
+        />
+    
+    </RelativeLayout>
+    
+   
+
+</LinearLayout>

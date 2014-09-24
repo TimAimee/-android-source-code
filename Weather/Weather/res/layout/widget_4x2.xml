@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widgetLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clickable="true"
+    android:descendantFocusability="beforeDescendants" >
+
+    <FrameLayout
+        android:id="@+id/widgetABSLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" >
+
+        <ImageView
+            android:id="@+id/widgetBkgLayer"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/widget_4x2_grey" />
+            android:src="@drawable/loading_bg2" 
+
+        <!--
+             <ImageView
+            android:id="@+id/widgetCustomLayer"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="fitCenter" />
+
+        <ImageView
+            android:id="@+id/widgetOtherLayer"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="fitCenter" />
+
+        <ImageView
+            android:id="@+id/widgetTimeLayer"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="fitCenter" />
+        -->
+
+        <LinearLayout
+            android:id="@+id/mLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:baselineAligned="false"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <FrameLayout
+                android:id="@+id/hour_framelayout"
+                android:layout_width="@dimen/time_mask_width"
+                android:layout_height="@dimen/time_mask_height"
+                android:layout_marginBottom="@dimen/time_marginBottom"
+                android:layout_marginRight="@dimen/time_interval"
+                android:layout_weight="1.0" >
+
+                <!--
+                     <ImageView
+                    android:id="@+id/hour_background"
+                    android:layout_width="@dimen/time_mask_width"
+                    android:layout_height="@dimen/time_mask_height"
+                    android:layout_gravity="right"
+                    android:scaleType="fitXY" />
+                -->
+
+                <include
+                    android:id="@+id/widget_hour"
+                    android:layout_width="@dimen/time_mask_width"
+                    android:layout_height="@dimen/time_mask_height"
+                    android:layout_gravity="right"
+                    layout="@layout/pageturning_h" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/minute_framelayout"
+                android:layout_width="@dimen/time_mask_width"
+                android:layout_height="@dimen/time_mask_height"
+                android:layout_marginBottom="@dimen/time_marginBottom"
+                android:layout_marginLeft="@dimen/time_interval"
+                android:layout_weight="1.0" >
+
+                <!--
+                     <ImageView
+                    android:id="@+id/minute_background"
+                    android:layout_width="@dimen/time_mask_width"
+                    android:layout_height="@dimen/time_mask_height"
+                    android:layout_gravity="left"
+                    android:scaleType="fitXY" />
+                -->
+
+                <include
+                    android:id="@+id/widget_minute"
+                    android:layout_width="@dimen/time_mask_width"
+                    android:layout_height="@dimen/time_mask_height"
+                    android:layout_gravity="left"
+                    layout="@layout/pageturning_m" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingTop="80.0dip" >
+
+            <ImageView
+                android:id="@+id/weather_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/na" />
+
+            <TextView
+                android:id="@+id/weather_icon_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|left"
+                android:layout_marginLeft="25.0dip"
+                android:layout_marginTop="5dip"
+                android:gravity="left|center_vertical"
+                android:text="@string/app_widget_no_weather"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/weather_icon_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="25.0dip"
+                android:layout_marginTop="5dip"
+                android:gravity="right|center_vertical"
+                android:text="@string/app_widget_no_weather"
+                android:textSize="15sp" />
+        </FrameLayout>
+        <!--
+             <ImageView
+            android:id="@+id/widgetTextInfoLayerForOrg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="fitCenter" />
+        -->
+
+        <LinearLayout
+            android:id="@+id/HotAreaLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/HotAreaUpLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.43"
+                android:clickable="true"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/TimeLeftHotArea"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/hot_area_press"
+                    android:clickable="true"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:id="@+id/TimeRightHotArea"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/hot_area_press"
+                    android:clickable="true"
+                    android:scaleType="fitXY" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/HotAreaDownLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.57"
+                android:clickable="true"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/TextInfoLeftHotArea"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.34"
+                    android:background="@drawable/hot_area_press"
+                    android:clickable="true"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:id="@+id/WeatherIconHotArea"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.33"
+                    android:background="@drawable/hot_area_press"
+                    android:clickable="true"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:id="@+id/TextInfoRightHotArea"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.34"
+                    android:background="@drawable/hot_area_press"
+                    android:clickable="true"
+                    android:scaleType="fitXY" />
+            </LinearLayout>
+        </LinearLayout>
+       <!--  <TextView
+            android:id="@+id/TextViewMessage"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/loading_bg2"
+            android:text="载入皮肤中,请稍候..."
+            android:textColor="@color/white"
+            android:textSize="19.0sp" /> -->
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/head"/>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        
+        <ListView 
+            android:id="@+id/room_chat_content_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:listSelector="@color/transparent"
+       		android:cacheColorHint="@color/transparent"
+       		android:layout_above="@+id/room_chat_bottom_layout"
+       		android:layout_marginBottom="5dip"
+       		android:background="@drawable/chat_bg"
+            >
+            
+        </ListView>
+        
+        <RelativeLayout 
+	        android:id="@+id/room_chat_bottom_layout"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+        	>
+        <Button
+            android:id="@+id/room_chat_face"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/face_selector"
+            android:layout_marginRight="@dimen/chat_bg_margin_img"
+            android:layout_marginLeft="10dip"
+            />
+        
+         <Button 
+	        android:id="@+id/room_chat_send"
+	        android:layout_width="80dip"
+	       	android:layout_height="40dip"
+	       	android:text="发送" 
+	       	android:layout_gravity="center"
+	       	android:layout_alignParentRight="true"
+	       	android:layout_centerVertical="true"
+       	 />
+         
+         <EditText 
+            android:id="@+id/room_chat_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="3"
+            android:background="@drawable/chat_edt_bg"
+            android:layout_toRightOf="@id/room_chat_face"
+            android:layout_toLeftOf="@id/room_chat_send"
+            android:maxLength="500"
+            android:paddingLeft="5dip"
+            />
+    </RelativeLayout>
+        
+    </RelativeLayout>
+    
+
+</LinearLayout>

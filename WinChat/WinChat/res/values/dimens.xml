@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<dimen name="chat_bg_margin_frame">60dip</dimen>
+	<dimen name="chat_bg_margin_img">5dip</dimen>
+	<dimen name="chat_txt_size">18sp</dimen>
+	
+	<dimen name="file_img_margin">10dp</dimen>
+	<dimen name="file_name_size">18sp</dimen>
+	<dimen name="file_img_width">45dp</dimen>
+	
+	
+	<dimen name="chat_file_img_width">60dp</dimen>
+</resources>

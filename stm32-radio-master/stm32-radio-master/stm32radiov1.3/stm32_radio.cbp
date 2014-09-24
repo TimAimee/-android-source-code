@@ -1,0 +1,2534 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="stm32_radio" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin\Debug\stm32_radio" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Debug\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin\Release\stm32_radio" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Release\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="JSON_parser.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="JSON_parser.h" />
+		<Unit filename="Libraries\CMSIS\CM3\CoreSupport\core_cm3.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\CMSIS\CM3\CoreSupport\core_cm3.h" />
+		<Unit filename="Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\TrueSTUDIO\startup_stm32f10x_cl.s" />
+		<Unit filename="Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\TrueSTUDIO\startup_stm32f10x_hd.s" />
+		<Unit filename="Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\TrueSTUDIO\startup_stm32f10x_hd_vl.s" />
+		<Unit filename="Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\TrueSTUDIO\startup_stm32f10x_ld.s" />
+		<Unit filename="Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\TrueSTUDIO\startup_stm32f10x_ld_vl.s" />
+		<Unit filename="Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\TrueSTUDIO\startup_stm32f10x_md.s" />
+		<Unit filename="Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\TrueSTUDIO\startup_stm32f10x_md_vl.s" />
+		<Unit filename="Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\TrueSTUDIO\startup_stm32f10x_xl.s" />
+		<Unit filename="Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm\startup_stm32f10x_cl.s" />
+		<Unit filename="Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm\startup_stm32f10x_hd.s" />
+		<Unit filename="Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm\startup_stm32f10x_hd_vl.s" />
+		<Unit filename="Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm\startup_stm32f10x_ld.s" />
+		<Unit filename="Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm\startup_stm32f10x_ld_vl.s" />
+		<Unit filename="Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm\startup_stm32f10x_md.s" />
+		<Unit filename="Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm\startup_stm32f10x_md_vl.s" />
+		<Unit filename="Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm\startup_stm32f10x_xl.s" />
+		<Unit filename="Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\gcc_ride7\startup_stm32f10x_cl.s" />
+		<Unit filename="Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\gcc_ride7\startup_stm32f10x_hd.s" />
+		<Unit filename="Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\gcc_ride7\startup_stm32f10x_hd_vl.s" />
+		<Unit filename="Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\gcc_ride7\startup_stm32f10x_ld.s" />
+		<Unit filename="Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\gcc_ride7\startup_stm32f10x_ld_vl.s" />
+		<Unit filename="Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\gcc_ride7\startup_stm32f10x_md.s" />
+		<Unit filename="Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\gcc_ride7\startup_stm32f10x_md_vl.s" />
+		<Unit filename="Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\gcc_ride7\startup_stm32f10x_xl.s" />
+		<Unit filename="Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_cl.s" />
+		<Unit filename="Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_hd.s" />
+		<Unit filename="Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_hd_vl.s" />
+		<Unit filename="Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_ld.s" />
+		<Unit filename="Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_ld_vl.s" />
+		<Unit filename="Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s" />
+		<Unit filename="Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md_vl.s" />
+		<Unit filename="Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_xl.s" />
+		<Unit filename="Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h" />
+		<Unit filename="Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h" />
+		<Unit filename="Libraries\Mass_Storage\inc\fsmc_nand.h" />
+		<Unit filename="Libraries\Mass_Storage\inc\hw_config.h" />
+		<Unit filename="Libraries\Mass_Storage\inc\mass_mal.h" />
+		<Unit filename="Libraries\Mass_Storage\inc\memory.h" />
+		<Unit filename="Libraries\Mass_Storage\inc\nand_if.h" />
+		<Unit filename="Libraries\Mass_Storage\inc\platform_config.h" />
+		<Unit filename="Libraries\Mass_Storage\inc\stm32f10x_conf.h" />
+		<Unit filename="Libraries\Mass_Storage\inc\usb_bot.h" />
+		<Unit filename="Libraries\Mass_Storage\inc\usb_conf.h" />
+		<Unit filename="Libraries\Mass_Storage\inc\usb_desc.h" />
+		<Unit filename="Libraries\Mass_Storage\inc\usb_istr.h" />
+		<Unit filename="Libraries\Mass_Storage\inc\usb_prop.h" />
+		<Unit filename="Libraries\Mass_Storage\inc\usb_pwr.h" />
+		<Unit filename="Libraries\Mass_Storage\inc\usb_scsi.h" />
+		<Unit filename="Libraries\Mass_Storage\src\fsmc_nand.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\Mass_Storage\src\hw_config.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\Mass_Storage\src\mass_mal.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\Mass_Storage\src\memory.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\Mass_Storage\src\nand_if.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\Mass_Storage\src\scsi_data.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\Mass_Storage\src\usb_bot.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\Mass_Storage\src\usb_desc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\Mass_Storage\src\usb_endp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\Mass_Storage\src\usb_istr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\Mass_Storage\src\usb_main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\Mass_Storage\src\usb_prop.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\Mass_Storage\src\usb_pwr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\Mass_Storage\src\usb_scsi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h" />
+		<Unit filename="Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h" />
+		<Unit filename="Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h" />
+		<Unit filename="Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_can.h" />
+		<Unit filename="Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_cec.h" />
+		<Unit filename="Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_crc.h" />
+		<Unit filename="Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dac.h" />
+		<Unit filename="Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dbgmcu.h" />
+		<Unit filename="Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h" />
+		<Unit filename="Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h" />
+		<Unit filename="Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h" />
+		<Unit filename="Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_fsmc.h" />
+		<Unit filename="Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h" />
+		<Unit filename="Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_i2c.h" />
+		<Unit filename="Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h" />
+		<Unit filename="Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h" />
+		<Unit filename="Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h" />
+		<Unit filename="Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rtc.h" />
+		<Unit filename="Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_sdio.h" />
+		<Unit filename="Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h" />
+		<Unit filename="Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h" />
+		<Unit filename="Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h" />
+		<Unit filename="Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h" />
+		<Unit filename="Libraries\STM32F10x_StdPeriph_Driver\src\misc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_bkp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_can.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_cec.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_crc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_dac.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_dbgmcu.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_dma.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_exti.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_flash.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_fsmc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_i2c.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_iwdg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_pwr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rtc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_sdio.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_spi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_wwdg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\STM32_USB-FS-Device_Driver\inc\otgd_fs_cal.h" />
+		<Unit filename="Libraries\STM32_USB-FS-Device_Driver\inc\otgd_fs_dev.h" />
+		<Unit filename="Libraries\STM32_USB-FS-Device_Driver\inc\otgd_fs_int.h" />
+		<Unit filename="Libraries\STM32_USB-FS-Device_Driver\inc\otgd_fs_pcd.h" />
+		<Unit filename="Libraries\STM32_USB-FS-Device_Driver\inc\otgd_fs_regs.h" />
+		<Unit filename="Libraries\STM32_USB-FS-Device_Driver\inc\usb_core.h" />
+		<Unit filename="Libraries\STM32_USB-FS-Device_Driver\inc\usb_def.h" />
+		<Unit filename="Libraries\STM32_USB-FS-Device_Driver\inc\usb_init.h" />
+		<Unit filename="Libraries\STM32_USB-FS-Device_Driver\inc\usb_int.h" />
+		<Unit filename="Libraries\STM32_USB-FS-Device_Driver\inc\usb_lib.h" />
+		<Unit filename="Libraries\STM32_USB-FS-Device_Driver\inc\usb_mem.h" />
+		<Unit filename="Libraries\STM32_USB-FS-Device_Driver\inc\usb_regs.h" />
+		<Unit filename="Libraries\STM32_USB-FS-Device_Driver\inc\usb_sil.h" />
+		<Unit filename="Libraries\STM32_USB-FS-Device_Driver\inc\usb_type.h" />
+		<Unit filename="Libraries\STM32_USB-FS-Device_Driver\src\otgd_fs_cal.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\STM32_USB-FS-Device_Driver\src\otgd_fs_dev.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\STM32_USB-FS-Device_Driver\src\otgd_fs_int.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\STM32_USB-FS-Device_Driver\src\otgd_fs_pcd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\STM32_USB-FS-Device_Driver\src\usb_core.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\STM32_USB-FS-Device_Driver\src\usb_init.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\STM32_USB-FS-Device_Driver\src\usb_int.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\STM32_USB-FS-Device_Driver\src\usb_mem.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\STM32_USB-FS-Device_Driver\src\usb_regs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\STM32_USB-FS-Device_Driver\src\usb_sil.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="application.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="at45dbxx.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="at45dbxx.h" />
+		<Unit filename="board.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="board.h" />
+		<Unit filename="calibration.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="codec.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="codec.h" />
+		<Unit filename="device_info.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="dm9000a.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="dm9000a.h" />
+		<Unit filename="douban_channel.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="douban_channel.h" />
+		<Unit filename="douban_radio.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="douban_radio.h" />
+		<Unit filename="drawpad.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="drawpad.h" />
+		<Unit filename="fmt0371\fmt0371.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="fmt0371\fmt0371.h" />
+		<Unit filename="fsmc_nand.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="fsmc_nand.h" />
+		<Unit filename="fsmc_sram.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="http.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="http.h" />
+		<Unit filename="ili_lcd_general.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ili_lcd_general.h" />
+		<Unit filename="info.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="key.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lcd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lcd.h" />
+		<Unit filename="libwma\asf.h" />
+		<Unit filename="libwma\asm_arm.h" />
+		<Unit filename="libwma\bswap.h" />
+		<Unit filename="libwma\codeclib.h" />
+		<Unit filename="libwma\ffmpeg_config.h" />
+		<Unit filename="libwma\mdct2.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libwma\mdct2.h" />
+		<Unit filename="libwma\mdct_arm.S" />
+		<Unit filename="libwma\mdct_lookup.h" />
+		<Unit filename="libwma\types.h" />
+		<Unit filename="libwma\wma_arm.S" />
+		<Unit filename="libwma\wmabitstream.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libwma\wmabitstream.h" />
+		<Unit filename="libwma\wmadata.h" />
+		<Unit filename="libwma\wmadec.h" />
+		<Unit filename="libwma\wmadeci.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libwma\wmafixed.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libwma\wmafixed.h" />
+		<Unit filename="mp3.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="mp3.h" />
+		<Unit filename="mp3\mp3dec.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="mp3\mp3tabs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="mp3\pub\mp3common.h" />
+		<Unit filename="mp3\pub\mp3dec.h" />
+		<Unit filename="mp3\pub\mpadecobjfixpt.h" />
+		<Unit filename="mp3\pub\statname.h" />
+		<Unit filename="mp3\real\arm\asmmisc.s" />
+		<Unit filename="mp3\real\arm\asmpoly.s" />
+		<Unit filename="mp3\real\arm\asmpoly_thumb2.s" />
+		<Unit filename="mp3\real\assembly.h" />
+		<Unit filename="mp3\real\bitstream.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="mp3\real\buffers.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="mp3\real\coder.h" />
+		<Unit filename="mp3\real\dct32.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="mp3\real\dequant.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="mp3\real\dqchan.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="mp3\real\huffman.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="mp3\real\hufftabs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="mp3\real\imdct.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="mp3\real\polyphase.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="mp3\real\scalfact.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="mp3\real\stproc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="mp3\real\subband.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="mp3\real\trigtabs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="netbuffer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="netbuffer.h" />
+		<Unit filename="picture.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="picture.h" />
+		<Unit filename="play_list.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="play_list.h" />
+		<Unit filename="player_bg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="player_bg.h" />
+		<Unit filename="player_ui.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="player_ui.h" />
+		<Unit filename="radio_list_update.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="remote.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\dfs\dfs_config.h" />
+		<Unit filename="rt-thread\components\dfs\filesystems\elmfat\dfs_elm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\dfs\filesystems\elmfat\diskio.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\dfs\filesystems\elmfat\diskio.h" />
+		<Unit filename="rt-thread\components\dfs\filesystems\elmfat\ff.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\dfs\filesystems\elmfat\ff.h" />
+		<Unit filename="rt-thread\components\dfs\filesystems\elmfat\ffconf.h" />
+		<Unit filename="rt-thread\components\dfs\filesystems\elmfat\integer.h" />
+		<Unit filename="rt-thread\components\dfs\filesystems\elmfat\option\cc932.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\dfs\filesystems\elmfat\option\cc936.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\dfs\filesystems\elmfat\option\cc949.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\dfs\filesystems\elmfat\option\cc950.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\dfs\filesystems\elmfat\option\ccsbcs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\dfs\filesystems\elmfat\option\syncobj.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\dfs\include\dfs.h" />
+		<Unit filename="rt-thread\components\dfs\include\dfs_def.h" />
+		<Unit filename="rt-thread\components\dfs\include\dfs_elm.h" />
+		<Unit filename="rt-thread\components\dfs\include\dfs_file.h" />
+		<Unit filename="rt-thread\components\dfs\include\dfs_fs.h" />
+		<Unit filename="rt-thread\components\dfs\include\dfs_init.h" />
+		<Unit filename="rt-thread\components\dfs\include\dfs_posix.h" />
+		<Unit filename="rt-thread\components\dfs\src\dfs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\dfs\src\dfs_file.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\dfs\src\dfs_fs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\dfs\src\dfs_posix.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\finsh\cmd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\finsh\finsh.h" />
+		<Unit filename="rt-thread\components\finsh\finsh_compiler.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\finsh\finsh_error.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\finsh\finsh_error.h" />
+		<Unit filename="rt-thread\components\finsh\finsh_heap.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\finsh\finsh_heap.h" />
+		<Unit filename="rt-thread\components\finsh\finsh_init.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\finsh\finsh_node.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\finsh\finsh_node.h" />
+		<Unit filename="rt-thread\components\finsh\finsh_ops.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\finsh\finsh_ops.h" />
+		<Unit filename="rt-thread\components\finsh\finsh_parser.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\finsh\finsh_parser.h" />
+		<Unit filename="rt-thread\components\finsh\finsh_token.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\finsh\finsh_token.h" />
+		<Unit filename="rt-thread\components\finsh\finsh_var.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\finsh\finsh_var.h" />
+		<Unit filename="rt-thread\components\finsh\finsh_vm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\finsh\finsh_vm.h" />
+		<Unit filename="rt-thread\components\finsh\shell.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\finsh\shell.h" />
+		<Unit filename="rt-thread\components\finsh\symbol.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\net\lwip\src\api\api_lib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\net\lwip\src\api\api_msg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\net\lwip\src\api\err.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\net\lwip\src\api\netbuf.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\net\lwip\src\api\netdb.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\net\lwip\src\api\netifapi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\net\lwip\src\api\sockets.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\net\lwip\src\api\tcpip.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\net\lwip\src\arch\include\arch\bpstruct.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\arch\include\arch\cc.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\arch\include\arch\cpu.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\arch\include\arch\epstruct.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\arch\include\arch\init.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\arch\include\arch\lib.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\arch\include\arch\perf.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\arch\include\arch\sys_arch.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\arch\include\arch\sys_arch_init.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\arch\sys_arch.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\net\lwip\src\arch\sys_arch_init.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\net\lwip\src\core\dhcp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\net\lwip\src\core\dns.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\net\lwip\src\core\init.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\net\lwip\src\core\ipv4\autoip.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\net\lwip\src\core\ipv4\icmp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\net\lwip\src\core\ipv4\igmp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\net\lwip\src\core\ipv4\inet.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\net\lwip\src\core\ipv4\inet_chksum.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\net\lwip\src\core\ipv4\ip.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\net\lwip\src\core\ipv4\ip_addr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\net\lwip\src\core\ipv4\ip_frag.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\net\lwip\src\core\ipv6\icmp6.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\net\lwip\src\core\ipv6\inet6.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\net\lwip\src\core\ipv6\ip6.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\net\lwip\src\core\ipv6\ip6_addr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\net\lwip\src\core\mem.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\net\lwip\src\core\memp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\net\lwip\src\core\netif.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\net\lwip\src\core\pbuf.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\net\lwip\src\core\raw.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\net\lwip\src\core\snmp\asn1_dec.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\net\lwip\src\core\snmp\asn1_enc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\net\lwip\src\core\snmp\mib2.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\net\lwip\src\core\snmp\mib_structs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\net\lwip\src\core\snmp\msg_in.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\net\lwip\src\core\snmp\msg_out.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\net\lwip\src\core\stats.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\net\lwip\src\core\sys.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\net\lwip\src\core\tcp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\net\lwip\src\core\tcp_in.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\net\lwip\src\core\tcp_out.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\net\lwip\src\core\udp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\net\lwip\src\include\ipv4\lwip\autoip.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\include\ipv4\lwip\icmp.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\include\ipv4\lwip\igmp.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\include\ipv4\lwip\inet.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\include\ipv4\lwip\inet_chksum.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\include\ipv4\lwip\ip.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\include\ipv4\lwip\ip_addr.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\include\ipv4\lwip\ip_frag.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\include\ipv6\lwip\icmp.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\include\ipv6\lwip\inet.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\include\ipv6\lwip\ip.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\include\ipv6\lwip\ip_addr.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\include\lwip\api.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\include\lwip\api_msg.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\include\lwip\arch.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\include\lwip\debug.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\include\lwip\def.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\include\lwip\dhcp.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\include\lwip\dns.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\include\lwip\err.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\include\lwip\init.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\include\lwip\mem.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\include\lwip\memp.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\include\lwip\memp_std.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\include\lwip\netbuf.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\include\lwip\netdb.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\include\lwip\netif.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\include\lwip\netifapi.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\include\lwip\opt.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\include\lwip\pbuf.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\include\lwip\raw.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\include\lwip\sio.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\include\lwip\snmp.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\include\lwip\snmp_asn1.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\include\lwip\snmp_msg.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\include\lwip\snmp_structs.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\include\lwip\sockets.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\include\lwip\stats.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\include\lwip\sys.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\include\lwip\tcp.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\include\lwip\tcpip.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\include\lwip\udp.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\include\netif\etharp.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\include\netif\ethernetif.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\include\netif\loopif.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\include\netif\ppp_oe.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\include\netif\slipif.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\lwipopts.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\netif\etharp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\net\lwip\src\netif\ethernetif.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\net\lwip\src\netif\loopif.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\net\lwip\src\netif\ppp\auth.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\net\lwip\src\netif\ppp\auth.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\netif\ppp\chap.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\net\lwip\src\netif\ppp\chap.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\netif\ppp\chpms.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\net\lwip\src\netif\ppp\chpms.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\netif\ppp\fsm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\net\lwip\src\netif\ppp\fsm.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\netif\ppp\ipcp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\net\lwip\src\netif\ppp\ipcp.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\netif\ppp\lcp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\net\lwip\src\netif\ppp\lcp.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\netif\ppp\magic.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\net\lwip\src\netif\ppp\magic.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\netif\ppp\md5.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\net\lwip\src\netif\ppp\md5.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\netif\ppp\pap.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\net\lwip\src\netif\ppp\pap.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\netif\ppp\ppp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\net\lwip\src\netif\ppp\ppp.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\netif\ppp\ppp_oe.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\net\lwip\src\netif\ppp\pppdebug.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\netif\ppp\randm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\net\lwip\src\netif\ppp\randm.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\netif\ppp\vj.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\net\lwip\src\netif\ppp\vj.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\netif\ppp\vjbsdhdr.h" />
+		<Unit filename="rt-thread\components\net\lwip\src\netif\slipif.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\net\lwip\test\unit\lwip_check.h" />
+		<Unit filename="rt-thread\components\net\lwip\test\unit\lwip_unittests.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\net\lwip\test\unit\tcp\tcp_helper.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\net\lwip\test\unit\tcp\tcp_helper.h" />
+		<Unit filename="rt-thread\components\net\lwip\test\unit\tcp\test_tcp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\net\lwip\test\unit\tcp\test_tcp.h" />
+		<Unit filename="rt-thread\components\net\lwip\test\unit\tcp\test_tcp_oos.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\net\lwip\test\unit\tcp\test_tcp_oos.h" />
+		<Unit filename="rt-thread\components\net\lwip\test\unit\udp\test_udp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\net\lwip\test\unit\udp\test_udp.h" />
+		<Unit filename="rt-thread\components\rtgui\common\asc12font.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\asc16font.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\blit.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\color.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\dc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\dc_buffer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\dc_client.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\dc_hw.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\filerw.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\font.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\font_bmp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\font_freetype.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\font_hz_bmp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\font_hz_file.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\builds\amiga\include\freetype\config\ftconfig.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\builds\amiga\include\freetype\config\ftmodule.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\builds\amiga\src\base\ftdebug.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\builds\amiga\src\base\ftsystem.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\builds\atari\ATARI.H" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\builds\mac\ftmac.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\builds\unix\ft2unix.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\builds\unix\ftsystem.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\builds\vms\ftconfig.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\builds\vms\ftsystem.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\builds\win32\ftdebug.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\builds\wince\ftdebug.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\devel\ft2build.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\devel\ftoption.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\config\ftconfig.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\config\ftheader.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\config\ftmodule.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\config\ftoption.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\config\ftstdlib.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\freetype.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\ftadvanc.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\ftbbox.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\ftbdf.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\ftbitmap.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\ftcache.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\ftchapters.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\ftcid.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\fterrdef.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\fterrors.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\ftgasp.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\ftglyph.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\ftgxval.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\ftgzip.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\ftimage.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\ftincrem.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\ftlcdfil.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\ftlist.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\ftlzw.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\ftmac.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\ftmm.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\ftmodapi.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\ftmoderr.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\ftotval.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\ftoutln.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\ftpfr.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\ftrender.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\ftsizes.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\ftsnames.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\ftstroke.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\ftsynth.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\ftsystem.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\fttrigon.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\fttypes.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\ftwinfnt.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\ftxf86.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\internal\autohint.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\internal\ftcalc.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\internal\ftdebug.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\internal\ftdriver.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\internal\ftgloadr.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\internal\ftmemory.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\internal\ftobjs.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\internal\ftpic.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\internal\ftrfork.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\internal\ftserv.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\internal\ftstream.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\internal\fttrace.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\internal\ftvalid.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\internal\internal.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\internal\pcftypes.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\internal\psaux.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\internal\pshints.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\internal\services\svbdf.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\internal\services\svcid.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\internal\services\svgldict.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\internal\services\svgxval.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\internal\services\svkern.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\internal\services\svmm.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\internal\services\svotval.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\internal\services\svpfr.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\internal\services\svpostnm.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\internal\services\svpscmap.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\internal\services\svpsinfo.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\internal\services\svsfnt.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\internal\services\svttcmap.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\internal\services\svtteng.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\internal\services\svttglyf.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\internal\services\svwinfnt.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\internal\services\svxf86nm.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\internal\sfnt.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\internal\t1types.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\internal\tttypes.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\t1tables.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\ttnameid.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\tttables.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\tttags.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\freetype\ttunpat.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\include\ft2build.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\autofit\afangles.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\autofit\afangles.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\autofit\afcjk.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\autofit\afcjk.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\autofit\afdummy.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\autofit\afdummy.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\autofit\aferrors.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\autofit\afglobal.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\autofit\afglobal.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\autofit\afhints.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\autofit\afhints.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\autofit\afindic.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\autofit\afindic.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\autofit\aflatin.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\autofit\aflatin.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\autofit\aflatin2.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\autofit\aflatin2.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\autofit\afloader.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\autofit\afloader.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\autofit\afmodule.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\autofit\afmodule.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\autofit\afpic.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\autofit\afpic.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\autofit\aftypes.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\autofit\afwarp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\autofit\afwarp.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\autofit\autofit.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\base\basepic.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\base\basepic.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\base\ftadvanc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\base\ftapi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\base\ftbase.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\base\ftbase.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\base\ftbbox.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\base\ftbdf.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\base\ftbitmap.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\base\ftcalc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\base\ftcid.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\base\ftdbgmem.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\base\ftdebug.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\base\ftfstype.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\base\ftgasp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\base\ftgloadr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\base\ftglyph.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\base\ftgxval.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\base\ftinit.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\base\ftlcdfil.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\base\ftmac.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\base\ftmm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\base\ftobjs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\base\ftotval.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\base\ftoutln.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\base\ftpatent.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\base\ftpfr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\base\ftpic.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\base\ftrfork.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\base\ftsnames.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\base\ftstream.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\base\ftstroke.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\base\ftsynth.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\base\ftsystem.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\base\fttrigon.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\base\fttype1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\base\ftutil.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\base\ftwinfnt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\base\ftxf86.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\bdf\bdf.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\bdf\bdf.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\bdf\bdfdrivr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\bdf\bdfdrivr.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\bdf\bdferror.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\bdf\bdflib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\cache\ftcache.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\cache\ftcbasic.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\cache\ftccache.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\cache\ftccache.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\cache\ftccback.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\cache\ftccmap.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\cache\ftcerror.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\cache\ftcglyph.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\cache\ftcglyph.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\cache\ftcimage.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\cache\ftcimage.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\cache\ftcmanag.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\cache\ftcmanag.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\cache\ftcmru.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\cache\ftcmru.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\cache\ftcsbits.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\cache\ftcsbits.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\cff\cff.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\cff\cffcmap.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\cff\cffcmap.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\cff\cffdrivr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\cff\cffdrivr.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\cff\cfferrs.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\cff\cffgload.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\cff\cffgload.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\cff\cffload.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\cff\cffload.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\cff\cffobjs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\cff\cffobjs.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\cff\cffparse.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\cff\cffparse.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\cff\cffpic.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\cff\cffpic.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\cff\cfftoken.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\cff\cfftypes.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\cid\ciderrs.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\cid\cidgload.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\cid\cidgload.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\cid\cidload.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\cid\cidload.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\cid\cidobjs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\cid\cidobjs.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\cid\cidparse.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\cid\cidparse.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\cid\cidriver.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\cid\cidriver.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\cid\cidtoken.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\cid\type1cid.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\gxvalid\gxvalid.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\gxvalid\gxvalid.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\gxvalid\gxvbsln.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\gxvalid\gxvcommn.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\gxvalid\gxvcommn.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\gxvalid\gxverror.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\gxvalid\gxvfeat.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\gxvalid\gxvfeat.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\gxvalid\gxvfgen.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\gxvalid\gxvjust.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\gxvalid\gxvkern.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\gxvalid\gxvlcar.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\gxvalid\gxvmod.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\gxvalid\gxvmod.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\gxvalid\gxvmort.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\gxvalid\gxvmort.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\gxvalid\gxvmort0.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\gxvalid\gxvmort1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\gxvalid\gxvmort2.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\gxvalid\gxvmort4.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\gxvalid\gxvmort5.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\gxvalid\gxvmorx.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\gxvalid\gxvmorx.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\gxvalid\gxvmorx0.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\gxvalid\gxvmorx1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\gxvalid\gxvmorx2.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\gxvalid\gxvmorx4.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\gxvalid\gxvmorx5.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\gxvalid\gxvopbd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\gxvalid\gxvprop.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\gxvalid\gxvtrak.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\gzip\adler32.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\gzip\ftgzip.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\gzip\infblock.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\gzip\infblock.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\gzip\infcodes.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\gzip\infcodes.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\gzip\inffixed.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\gzip\inflate.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\gzip\inftrees.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\gzip\inftrees.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\gzip\infutil.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\gzip\infutil.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\gzip\zconf.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\gzip\zlib.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\gzip\zutil.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\gzip\zutil.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\lzw\ftlzw.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\lzw\ftzopen.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\lzw\ftzopen.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\otvalid\otvalid.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\otvalid\otvalid.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\otvalid\otvbase.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\otvalid\otvcommn.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\otvalid\otvcommn.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\otvalid\otverror.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\otvalid\otvgdef.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\otvalid\otvgpos.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\otvalid\otvgpos.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\otvalid\otvgsub.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\otvalid\otvjstf.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\otvalid\otvmath.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\otvalid\otvmod.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\otvalid\otvmod.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\pcf\pcf.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\pcf\pcf.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\pcf\pcfdrivr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\pcf\pcfdrivr.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\pcf\pcferror.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\pcf\pcfread.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\pcf\pcfread.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\pcf\pcfutil.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\pcf\pcfutil.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\pfr\pfr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\pfr\pfrcmap.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\pfr\pfrcmap.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\pfr\pfrdrivr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\pfr\pfrdrivr.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\pfr\pfrerror.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\pfr\pfrgload.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\pfr\pfrgload.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\pfr\pfrload.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\pfr\pfrload.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\pfr\pfrobjs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\pfr\pfrobjs.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\pfr\pfrsbit.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\pfr\pfrsbit.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\pfr\pfrtypes.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\psaux\afmparse.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\psaux\afmparse.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\psaux\psaux.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\psaux\psauxerr.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\psaux\psauxmod.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\psaux\psauxmod.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\psaux\psconv.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\psaux\psconv.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\psaux\psobjs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\psaux\psobjs.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\psaux\t1cmap.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\psaux\t1cmap.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\psaux\t1decode.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\psaux\t1decode.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\pshinter\pshalgo.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\pshinter\pshalgo.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\pshinter\pshglob.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\pshinter\pshglob.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\pshinter\pshinter.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\pshinter\pshmod.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\pshinter\pshmod.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\pshinter\pshnterr.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\pshinter\pshpic.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\pshinter\pshpic.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\pshinter\pshrec.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\pshinter\pshrec.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\psnames\psmodule.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\psnames\psmodule.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\psnames\psnamerr.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\psnames\psnames.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\psnames\pspic.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\psnames\pspic.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\psnames\pstables.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\raster\ftmisc.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\raster\ftraster.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\raster\ftraster.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\raster\ftrend1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\raster\ftrend1.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\raster\raster.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\raster\rasterrs.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\raster\rastpic.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\raster\rastpic.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\sfnt\sfdriver.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\sfnt\sfdriver.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\sfnt\sferrors.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\sfnt\sfnt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\sfnt\sfntpic.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\sfnt\sfntpic.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\sfnt\sfobjs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\sfnt\sfobjs.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\sfnt\ttbdf.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\sfnt\ttbdf.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\sfnt\ttcmap.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\sfnt\ttcmap.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\sfnt\ttcmapc.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\sfnt\ttkern.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\sfnt\ttkern.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\sfnt\ttload.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\sfnt\ttload.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\sfnt\ttmtx.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\sfnt\ttmtx.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\sfnt\ttpost.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\sfnt\ttpost.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\sfnt\ttsbit.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\sfnt\ttsbit.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\sfnt\ttsbit0.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\smooth\ftgrays.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\smooth\ftgrays.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\smooth\ftsmerrs.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\smooth\ftsmooth.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\smooth\ftsmooth.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\smooth\ftspic.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\smooth\ftspic.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\smooth\smooth.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\tools\apinames.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\tools\ftrandom\ftrandom.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\tools\test_afm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\tools\test_bbox.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\tools\test_trig.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\truetype\truetype.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\truetype\ttdriver.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\truetype\ttdriver.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\truetype\tterrors.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\truetype\ttgload.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\truetype\ttgload.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\truetype\ttgxvar.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\truetype\ttgxvar.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\truetype\ttinterp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\truetype\ttinterp.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\truetype\ttobjs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\truetype\ttobjs.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\truetype\ttpic.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\truetype\ttpic.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\truetype\ttpload.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\truetype\ttpload.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\type1\t1afm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\type1\t1afm.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\type1\t1driver.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\type1\t1driver.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\type1\t1errors.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\type1\t1gload.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\type1\t1gload.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\type1\t1load.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\type1\t1load.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\type1\t1objs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\type1\t1objs.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\type1\t1parse.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\type1\t1parse.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\type1\t1tokens.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\type1\type1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\type42\t42drivr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\type42\t42drivr.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\type42\t42error.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\type42\t42objs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\type42\t42objs.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\type42\t42parse.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\type42\t42parse.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\type42\t42types.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\type42\type42.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\winfonts\fnterrs.h" />
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\winfonts\winfnt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\freetype\src\winfonts\winfnt.h" />
+		<Unit filename="rt-thread\components\rtgui\common\hz12font.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\hz16font.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\image.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\image_bmp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\image_hdc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\image_jpg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\image_png.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\image_xpm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\ansi2knr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\cderror.h" />
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\cdjpeg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\cdjpeg.h" />
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\cjpeg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\ckconfig.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\djpeg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\example.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\jaricom.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\jcapimin.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\jcapistd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\jcarith.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\jccoefct.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\jccolor.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\jcdctmgr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\jchuff.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\jcinit.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\jcmainct.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\jcmarker.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\jcmaster.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\jcomapi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\jconfig.h" />
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\jcparam.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\jcprepct.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\jcsample.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\jctrans.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\jdapimin.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\jdapistd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\jdarith.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\jdatadst.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\jdatasrc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\jdcoefct.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\jdcolor.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\jdct.h" />
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\jddctmgr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\jdhuff.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\jdinput.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\jdmainct.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\jdmarker.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\jdmaster.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\jdmerge.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\jdpostct.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\jdsample.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\jdtrans.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\jerror.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\jerror.h" />
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\jfdctflt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\jfdctfst.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\jfdctint.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\jidctflt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\jidctfst.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\jidctint.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\jinclude.h" />
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\jmemansi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\jmemdos.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\jmemdosa.asm" />
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\jmemmac.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\jmemmgr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\jmemname.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\jmemnobs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\jmemsys.h" />
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\jmorecfg.h" />
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\jpegint.h" />
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\jpeglib.h" />
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\jpegtran.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\jquant1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\jquant2.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\jutils.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\jversion.h" />
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\rdbmp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\rdcolmap.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\rdgif.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\rdjpgcom.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\rdppm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\rdrle.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\rdswitch.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\rdtarga.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\transupp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\transupp.h" />
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\wrbmp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\wrgif.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\wrjpgcom.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\wrppm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\wrrle.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\jpeg\wrtarga.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\libpng\png.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\libpng\png.h" />
+		<Unit filename="rt-thread\components\rtgui\common\libpng\pngconf.h" />
+		<Unit filename="rt-thread\components\rtgui\common\libpng\pngerror.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\libpng\pnggccrd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\libpng\pngget.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\libpng\pngmem.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\libpng\pngpread.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\libpng\pngread.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\libpng\pngrio.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\libpng\pngrtran.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\libpng\pngrutil.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\libpng\pngset.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\libpng\pngtrans.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\libpng\pngvcrd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\libpng\pngwio.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\libpng\pngwrite.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\libpng\pngwtran.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\libpng\pngwutil.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\libz\adler32.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\libz\compress.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\libz\crc32.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\libz\crc32.h" />
+		<Unit filename="rt-thread\components\rtgui\common\libz\deflate.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\libz\deflate.h" />
+		<Unit filename="rt-thread\components\rtgui\common\libz\gzio.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\libz\infback.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\libz\inffast.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\libz\inffast.h" />
+		<Unit filename="rt-thread\components\rtgui\common\libz\inffixed.h" />
+		<Unit filename="rt-thread\components\rtgui\common\libz\inflate.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\libz\inflate.h" />
+		<Unit filename="rt-thread\components\rtgui\common\libz\inftrees.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\libz\inftrees.h" />
+		<Unit filename="rt-thread\components\rtgui\common\libz\trees.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\libz\trees.h" />
+		<Unit filename="rt-thread\components\rtgui\common\libz\uncompr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\libz\zconf.h" />
+		<Unit filename="rt-thread\components\rtgui\common\libz\zlib.h" />
+		<Unit filename="rt-thread\components\rtgui\common\libz\zutil.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\libz\zutil.h" />
+		<Unit filename="rt-thread\components\rtgui\common\region.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\rtgui_object.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\rtgui_system.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\rtgui_theme.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\common\rtgui_xml.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\include\rtgui\blit.h" />
+		<Unit filename="rt-thread\components\rtgui\include\rtgui\color.h" />
+		<Unit filename="rt-thread\components\rtgui\include\rtgui\dc.h" />
+		<Unit filename="rt-thread\components\rtgui\include\rtgui\dc_client.h" />
+		<Unit filename="rt-thread\components\rtgui\include\rtgui\dc_hw.h" />
+		<Unit filename="rt-thread\components\rtgui\include\rtgui\driver.h" />
+		<Unit filename="rt-thread\components\rtgui\include\rtgui\event.h" />
+		<Unit filename="rt-thread\components\rtgui\include\rtgui\filerw.h" />
+		<Unit filename="rt-thread\components\rtgui\include\rtgui\font.h" />
+		<Unit filename="rt-thread\components\rtgui\include\rtgui\font_freetype.h" />
+		<Unit filename="rt-thread\components\rtgui\include\rtgui\image.h" />
+		<Unit filename="rt-thread\components\rtgui\include\rtgui\image_bmp.h" />
+		<Unit filename="rt-thread\components\rtgui\include\rtgui\image_hdc.h" />
+		<Unit filename="rt-thread\components\rtgui\include\rtgui\image_jpeg.h" />
+		<Unit filename="rt-thread\components\rtgui\include\rtgui\image_png.h" />
+		<Unit filename="rt-thread\components\rtgui\include\rtgui\image_xpm.h" />
+		<Unit filename="rt-thread\components\rtgui\include\rtgui\kbddef.h" />
+		<Unit filename="rt-thread\components\rtgui\include\rtgui\list.h" />
+		<Unit filename="rt-thread\components\rtgui\include\rtgui\region.h" />
+		<Unit filename="rt-thread\components\rtgui\include\rtgui\rtgui.h" />
+		<Unit filename="rt-thread\components\rtgui\include\rtgui\rtgui_config.h" />
+		<Unit filename="rt-thread\components\rtgui\include\rtgui\rtgui_object.h" />
+		<Unit filename="rt-thread\components\rtgui\include\rtgui\rtgui_server.h" />
+		<Unit filename="rt-thread\components\rtgui\include\rtgui\rtgui_system.h" />
+		<Unit filename="rt-thread\components\rtgui\include\rtgui\rtgui_theme.h" />
+		<Unit filename="rt-thread\components\rtgui\include\rtgui\rtgui_xml.h" />
+		<Unit filename="rt-thread\components\rtgui\include\rtgui\tree.h" />
+		<Unit filename="rt-thread\components\rtgui\include\rtgui\widgets\about_view.h" />
+		<Unit filename="rt-thread\components\rtgui\include\rtgui\widgets\box.h" />
+		<Unit filename="rt-thread\components\rtgui\include\rtgui\widgets\button.h" />
+		<Unit filename="rt-thread\components\rtgui\include\rtgui\widgets\checkbox.h" />
+		<Unit filename="rt-thread\components\rtgui\include\rtgui\widgets\container.h" />
+		<Unit filename="rt-thread\components\rtgui\include\rtgui\widgets\filelist_view.h" />
+		<Unit filename="rt-thread\components\rtgui\include\rtgui\widgets\iconbox.h" />
+		<Unit filename="rt-thread\components\rtgui\include\rtgui\widgets\label.h" />
+		<Unit filename="rt-thread\components\rtgui\include\rtgui\widgets\list_view.h" />
+		<Unit filename="rt-thread\components\rtgui\include\rtgui\widgets\listbox.h" />
+		<Unit filename="rt-thread\components\rtgui\include\rtgui\widgets\progressbar.h" />
+		<Unit filename="rt-thread\components\rtgui\include\rtgui\widgets\radiobox.h" />
+		<Unit filename="rt-thread\components\rtgui\include\rtgui\widgets\scrollbar.h" />
+		<Unit filename="rt-thread\components\rtgui\include\rtgui\widgets\slider.h" />
+		<Unit filename="rt-thread\components\rtgui\include\rtgui\widgets\staticline.h" />
+		<Unit filename="rt-thread\components\rtgui\include\rtgui\widgets\textbox.h" />
+		<Unit filename="rt-thread\components\rtgui\include\rtgui\widgets\title.h" />
+		<Unit filename="rt-thread\components\rtgui\include\rtgui\widgets\toplevel.h" />
+		<Unit filename="rt-thread\components\rtgui\include\rtgui\widgets\view.h" />
+		<Unit filename="rt-thread\components\rtgui\include\rtgui\widgets\widget.h" />
+		<Unit filename="rt-thread\components\rtgui\include\rtgui\widgets\window.h" />
+		<Unit filename="rt-thread\components\rtgui\include\rtgui\widgets\workbench.h" />
+		<Unit filename="rt-thread\components\rtgui\server\driver.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\server\mouse.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\server\mouse.h" />
+		<Unit filename="rt-thread\components\rtgui\server\panel.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\server\panel.h" />
+		<Unit filename="rt-thread\components\rtgui\server\server.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\server\topwin.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\server\topwin.h" />
+		<Unit filename="rt-thread\components\rtgui\widgets\about_view.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\widgets\box.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\widgets\button.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\widgets\checkbox.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\widgets\container.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\widgets\filelist_view.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\widgets\iconbox.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\widgets\label.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\widgets\list_view.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\widgets\listbox.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\widgets\progressbar.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\widgets\radiobox.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\widgets\scrollbar.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\widgets\slider.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\widgets\staticline.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\widgets\textbox.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\widgets\title.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\widgets\toplevel.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\widgets\view.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\widgets\widget.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\widgets\window.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\components\rtgui\widgets\workbench.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\include\rtdef.h" />
+		<Unit filename="rt-thread\include\rthw.h" />
+		<Unit filename="rt-thread\include\rtm.h" />
+		<Unit filename="rt-thread\include\rtthread.h" />
+		<Unit filename="rt-thread\libcpu\arm\AT91SAM7S\AT91SAM7S.h" />
+		<Unit filename="rt-thread\libcpu\arm\AT91SAM7S\context_gcc.S" />
+		<Unit filename="rt-thread\libcpu\arm\AT91SAM7S\context_rvds.S" />
+		<Unit filename="rt-thread\libcpu\arm\AT91SAM7S\cpu.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\libcpu\arm\AT91SAM7S\interrupt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\libcpu\arm\AT91SAM7S\serial.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\libcpu\arm\AT91SAM7S\serial.h" />
+		<Unit filename="rt-thread\libcpu\arm\AT91SAM7S\stack.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\libcpu\arm\AT91SAM7S\start_gcc.S" />
+		<Unit filename="rt-thread\libcpu\arm\AT91SAM7S\start_rvds.S" />
+		<Unit filename="rt-thread\libcpu\arm\AT91SAM7S\trap.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\libcpu\arm\AT91SAM7X\context_gcc.S" />
+		<Unit filename="rt-thread\libcpu\arm\AT91SAM7X\context_rvds.S" />
+		<Unit filename="rt-thread\libcpu\arm\AT91SAM7X\cpu.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\libcpu\arm\AT91SAM7X\interrupt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\libcpu\arm\AT91SAM7X\stack.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\libcpu\arm\AT91SAM7X\start_gcc.S" />
+		<Unit filename="rt-thread\libcpu\arm\AT91SAM7X\start_rvds.S" />
+		<Unit filename="rt-thread\libcpu\arm\AT91SAM7X\trap.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\libcpu\arm\common\backtrace.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\libcpu\arm\common\div0.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\libcpu\arm\common\divsi3.S" />
+		<Unit filename="rt-thread\libcpu\arm\common\showmem.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\libcpu\arm\lm3s\context_gcc.S" />
+		<Unit filename="rt-thread\libcpu\arm\lm3s\context_rvds.S" />
+		<Unit filename="rt-thread\libcpu\arm\lm3s\cpu.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\libcpu\arm\lm3s\fault.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\libcpu\arm\lm3s\fault_gcc.S" />
+		<Unit filename="rt-thread\libcpu\arm\lm3s\fault_rvds.S" />
+		<Unit filename="rt-thread\libcpu\arm\lm3s\interrupt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\libcpu\arm\lm3s\serial.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\libcpu\arm\lm3s\stack.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\libcpu\arm\lm3s\start_gcc.S" />
+		<Unit filename="rt-thread\libcpu\arm\lm3s\start_rvds.S" />
+		<Unit filename="rt-thread\libcpu\arm\lpc17xx\context_rvds.S" />
+		<Unit filename="rt-thread\libcpu\arm\lpc17xx\cpu.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\libcpu\arm\lpc17xx\fault.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\libcpu\arm\lpc17xx\fault_rvds.S" />
+		<Unit filename="rt-thread\libcpu\arm\lpc17xx\interrupt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\libcpu\arm\lpc17xx\stack.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\libcpu\arm\lpc17xx\start_rvds.S" />
+		<Unit filename="rt-thread\libcpu\arm\lpc214x\LPC214x.h" />
+		<Unit filename="rt-thread\libcpu\arm\lpc214x\context_gcc.S" />
+		<Unit filename="rt-thread\libcpu\arm\lpc214x\context_rvds.S" />
+		<Unit filename="rt-thread\libcpu\arm\lpc214x\cpu.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\libcpu\arm\lpc214x\interrupt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\libcpu\arm\lpc214x\serial.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\libcpu\arm\lpc214x\stack.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\libcpu\arm\lpc214x\start_rvds.S" />
+		<Unit filename="rt-thread\libcpu\arm\lpc214x\startup_gcc.S" />
+		<Unit filename="rt-thread\libcpu\arm\lpc214x\trap.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\libcpu\arm\lpc24xx\LPC24xx.h" />
+		<Unit filename="rt-thread\libcpu\arm\lpc24xx\context_gcc.S" />
+		<Unit filename="rt-thread\libcpu\arm\lpc24xx\context_rvds.S" />
+		<Unit filename="rt-thread\libcpu\arm\lpc24xx\cpu.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\libcpu\arm\lpc24xx\interrupt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\libcpu\arm\lpc24xx\serial.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\libcpu\arm\lpc24xx\stack.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\libcpu\arm\lpc24xx\start_gcc.S" />
+		<Unit filename="rt-thread\libcpu\arm\lpc24xx\start_rvds.S" />
+		<Unit filename="rt-thread\libcpu\arm\lpc24xx\trap.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\libcpu\arm\s3c24x0\clock.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\libcpu\arm\s3c24x0\context_gcc.S" />
+		<Unit filename="rt-thread\libcpu\arm\s3c24x0\context_rvds.S" />
+		<Unit filename="rt-thread\libcpu\arm\s3c24x0\cpu.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\libcpu\arm\s3c24x0\interrupt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\libcpu\arm\s3c24x0\mmu.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\libcpu\arm\s3c24x0\rtc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\libcpu\arm\s3c24x0\rtc.h" />
+		<Unit filename="rt-thread\libcpu\arm\s3c24x0\s3c24x0.h" />
+		<Unit filename="rt-thread\libcpu\arm\s3c24x0\serial.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\libcpu\arm\s3c24x0\serial.h" />
+		<Unit filename="rt-thread\libcpu\arm\s3c24x0\stack.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\libcpu\arm\s3c24x0\start_gcc.S" />
+		<Unit filename="rt-thread\libcpu\arm\s3c24x0\start_rvds.S" />
+		<Unit filename="rt-thread\libcpu\arm\s3c24x0\trap.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\libcpu\arm\s3c44b0\context_gcc.S" />
+		<Unit filename="rt-thread\libcpu\arm\s3c44b0\context_rvds.S" />
+		<Unit filename="rt-thread\libcpu\arm\s3c44b0\cpu.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\libcpu\arm\s3c44b0\interrupt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\libcpu\arm\s3c44b0\s3c44b0.h" />
+		<Unit filename="rt-thread\libcpu\arm\s3c44b0\serial.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\libcpu\arm\s3c44b0\stack.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\libcpu\arm\s3c44b0\start_gcc.S" />
+		<Unit filename="rt-thread\libcpu\arm\s3c44b0\start_rvds.S" />
+		<Unit filename="rt-thread\libcpu\arm\s3c44b0\trap.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\libcpu\arm\stm32\context_gcc.S" />
+		<Unit filename="rt-thread\libcpu\arm\stm32\context_iar.S" />
+		<Unit filename="rt-thread\libcpu\arm\stm32\context_rvds.S" />
+		<Unit filename="rt-thread\libcpu\arm\stm32\cpu.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\libcpu\arm\stm32\fault.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\libcpu\arm\stm32\fault_gcc.S" />
+		<Unit filename="rt-thread\libcpu\arm\stm32\fault_iar.S" />
+		<Unit filename="rt-thread\libcpu\arm\stm32\fault_rvds.S" />
+		<Unit filename="rt-thread\libcpu\arm\stm32\interrupt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\libcpu\arm\stm32\serial.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\libcpu\arm\stm32\serial.h" />
+		<Unit filename="rt-thread\libcpu\arm\stm32\stack.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\libcpu\arm\stm32\start_gcc.S" />
+		<Unit filename="rt-thread\libcpu\arm\stm32\start_iar.S" />
+		<Unit filename="rt-thread\libcpu\arm\stm32\start_rvds.S" />
+		<Unit filename="rt-thread\libcpu\ia32\__udivsi3.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\libcpu\ia32\__umodsi3.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\libcpu\ia32\backtrace.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\libcpu\ia32\context.S" />
+		<Unit filename="rt-thread\libcpu\ia32\hdisr.S" />
+		<Unit filename="rt-thread\libcpu\ia32\include\bsp.h" />
+		<Unit filename="rt-thread\libcpu\ia32\include\grub.h" />
+		<Unit filename="rt-thread\libcpu\ia32\include\i386.h" />
+		<Unit filename="rt-thread\libcpu\ia32\interrupt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\libcpu\ia32\showmem.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\libcpu\ia32\stack.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\libcpu\ia32\start.S" />
+		<Unit filename="rt-thread\libcpu\ia32\trap.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\libcpu\ia32\trapisr.S" />
+		<Unit filename="rt-thread\src\clock.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\src\device.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\src\idle.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\src\ipc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\src\irq.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\src\kservice.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\src\kservice.h" />
+		<Unit filename="rt-thread\src\mem.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\src\mempool.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\src\module.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\src\module.h" />
+		<Unit filename="rt-thread\src\object.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\src\rtm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\src\scheduler.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\src\slab.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\src\thread.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rt-thread\src\timer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rtc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rtc.h" />
+		<Unit filename="rtconfig.h" />
+		<Unit filename="sdcard.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="sdcard.h" />
+		<Unit filename="setup.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="setup.h" />
+		<Unit filename="spi_flash.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="spi_flash.h" />
+		<Unit filename="ssd1289.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ssd1289.h" />
+		<Unit filename="sst25vfxx.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="sst25vfxx.h" />
+		<Unit filename="startup.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="station_list.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="station_list.h" />
+		<Unit filename="stm32f10x_conf.h" />
+		<Unit filename="stm32f10x_it.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="stm32f10x_it.h" />
+		<Unit filename="system_stm32f10x.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="today.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="touch.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="touch.h" />
+		<Unit filename="usart.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="usart.h" />
+		<Unit filename="utils.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="utils.h" />
+		<Unit filename="wav.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="wav.h" />
+		<Unit filename="wma.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+			<DoxyBlocks>
+				<comment_style block="0" line="0" />
+				<doxyfile_project />
+				<doxyfile_build />
+				<doxyfile_warnings />
+				<doxyfile_output />
+				<doxyfile_dot />
+				<general />
+			</DoxyBlocks>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

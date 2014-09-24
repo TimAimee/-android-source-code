@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    >
+
+    <include layout="@layout/head" />
+    
+     <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:layout_marginLeft="10dip"
+        >
+    	<TextView 
+    	    android:id="@+id/v2"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:text="头像:"
+    	    android:textColor="@color/gray"
+    	    android:layout_centerVertical="true"
+    	    />
+    	<FrameLayout 
+    	    android:id="@+id/set_icon_parent"
+    	    android:layout_width="180dip"
+    	    android:layout_height="wrap_content"
+    	    android:layout_toRightOf="@id/v2"
+    	    >
+    	<ImageView 
+    	    android:id="@+id/set_icon"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_gravity="center_horizontal"
+    	    />
+    	</FrameLayout>
+    	<Button
+	        android:id="@+id/set_icon_btn"
+	        android:layout_width="60dip"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/dialog_pressed_bg"
+	        android:padding="5dip"
+	        android:layout_toRightOf="@id/set_icon_parent"
+	        android:layout_centerVertical="true"
+	        android:text="选择"
+	        android:layout_marginLeft="10dip"
+	        />
+	</RelativeLayout>
+	
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:layout_marginLeft="10dip"
+        >
+        <TextView 
+    	    android:id="@+id/v1"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:text="昵称:"
+    	    android:textColor="@color/gray"
+    	    android:layout_centerVertical="true"
+    	    />
+    <EditText 
+        android:id="@+id/set_nick_name_edt"
+        android:layout_width="180dip"
+        android:layout_height="40dip"
+        android:singleLine="true"
+        android:maxLength="10"
+        android:hint="请输入昵称"
+        android:layout_toRightOf="@id/v1"
+        />
+    
+    	<Button
+	        android:id="@+id/set_nick_name_btn"
+	        android:layout_width="60dip"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/dialog_pressed_bg"
+	        android:padding="5dip"
+	        android:layout_toRightOf="@id/set_nick_name_edt"
+	        android:layout_centerVertical="true"
+	        android:text="保存"
+	        android:layout_marginLeft="10dip"
+	        />
+	</RelativeLayout>
+	
+    
+    
+   
+    
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:layout_marginLeft="10dip"
+        >
+    	<TextView 
+    	    android:id="@+id/v3"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:text="意见:"
+    	    android:textColor="@color/gray"
+    	    android:layout_centerVertical="true"
+    	    />
+    <EditText 
+        android:id="@+id/set_option_edt"
+        android:layout_width="180dip"
+        android:layout_height="100dip"
+        android:hint="请输入您的意见(没有可不必填写)…"
+        android:layout_toRightOf="@id/v3"
+        />
+    
+    	<Button
+	        android:id="@+id/set_option_btn"
+	        android:layout_width="60dip"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/dialog_pressed_bg"
+	        android:padding="5dip"
+	        android:layout_toRightOf="@id/set_option_edt"
+	        android:layout_centerVertical="true"
+	        android:text="提交"
+	        android:layout_marginLeft="10dip"
+	        />
+	</RelativeLayout>
+	
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="应用说明："
+        android:layout_marginLeft="20dip"
+        android:layout_marginTop="10dip"
+        android:textSize="18sp"
+        android:textColor="@color/gray"
+        />
+    <ScrollView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+    	
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginTop="10dip"
+        android:text="本应用适用于局域网范围内聊天，只要同处一个局域网就能看到在线的人，然后发起聊天\n\n当前版本主要功能有：文本、表情、文件发送，视屏聊天(建议使用耳机).\n\n欢迎在使用期间提出意见，祝使用愉快\n\n联系邮箱：tianyutaizi@gmail.com"
+        android:textColor="@color/gray"
+        android:scrollbars="vertical"
+        />
+    </ScrollView>
+</LinearLayout>

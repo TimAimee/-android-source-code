@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!--点击状态-->
+    <item android:state_pressed="true" android:drawable="@drawable/chat_more_pressed">
+     </item>   
+    <!--选中状态-->
+    <item android:state_focused="true" android:drawable="@drawable/chat_more_pressed">
+     </item>
+     
+    <item android:state_focused="false" android:drawable="@drawable/chat_more"></item>
+    
+    <item android:state_pressed="false" android:drawable="@drawable/chat_more"></item>
+</selector>

@@ -1,0 +1,71 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ty.winchat"
+    android:versionCode="2"
+    android:versionName="1.0.2" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        />
+    
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO"></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.SEND_SMS"></uses-permission>
+    
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 有米广告需要 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	
+
+    <application
+        android:name=".WinChatApplication"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" 
+        android:allowBackup="true"
+        >
+        <activity android:name=".ui.Main">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        
+        <activity android:name=".ui.MessageChat" android:windowSoftInputMode="stateHidden"></activity>
+        <activity android:name=".ui.Set" android:windowSoftInputMode="stateHidden"></activity>
+        <activity android:name=".ui.VoiceChat"></activity>
+        <activity android:name=".ui.VideoChat"></activity>
+        <activity android:name=".ui.FileChoose"></activity>
+        <activity android:name=".ui.RoomChat" android:windowSoftInputMode="stateHidden"></activity>
+        
+        <service android:name=".service.ChatService"/>
+        
+        <receiver android:name="com.ty.winchat.service.HeartBeatBroaadcastReceiver"></receiver>
+        
+        
+        <!-- 有米广告 -->
+        <activity
+        android:name="net.youmi.android.AdBrowser"
+        android:configChanges="keyboard|keyboardHidden|orientation"            
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+    	</activity>
+	    <service
+	        android:name="net.youmi.android.AdService"
+	        android:exported="false" >
+	    </service>
+	    <receiver 
+	        android:name="net.youmi.android.AdReceiver" >
+	        <intent-filter>
+	            <action android:name="android.intent.action.PACKAGE_ADDED" />
+	            <data android:scheme="package" />
+	        </intent-filter>
+	    </receiver> 
+    </application>
+
+</manifest>

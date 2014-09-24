@@ -1,0 +1,14 @@
+Import('RTT_ROOT')
+Import('rtconfig')
+from building import *
+
+src	= Glob('*.c')
+CPPPATH = [RTT_ROOT + '/components/finsh']
+if rtconfig.CROSS_TOOL == 'keil':
+    LINKFLAGS = ' --keep __fsym_* --keep __vsym_*'
+else:
+    LINKFLAGS = ''
+
+group = DefineGroup('finsh', src, depend = ['RT_USING_FINSH'], CPPPATH = CPPPATH, LINKFLAGS = LINKFLAGS)
+
+Return('group')

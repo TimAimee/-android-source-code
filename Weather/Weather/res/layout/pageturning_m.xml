@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/pt_m_background"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingBottom="8.0dip"
+        android:paddingLeft="0.0dip"
+        android:paddingRight="8.0dip"
+        android:paddingTop="0.0dip"
+        android:scaleType="fitXY"
+        android:src="@drawable/time_mask_pt" />
+
+    <ImageView
+        android:id="@+id/pt_m_background1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingBottom="5.0dip"
+        android:paddingLeft="3.0dip"
+        android:paddingRight="5.0dip"
+        android:paddingTop="3.0dip"
+        android:scaleType="fitXY"
+        android:src="@drawable/time_mask_pt" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/m_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:src="@drawable/nw0"
+                android:scaleType="fitXY" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/m_right"
+                   android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|left"
+                android:src="@drawable/nw0"
+                android:scaleType="fitXY" />
+        </FrameLayout>
+        <!--
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="@integer/pageturning_layout_weight_top"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <LinearLayout
+                    android:id="@+id/topnewnum_m"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <ImageView
+                        android:id="@+id/topnewhalf_m"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:paddingLeft="8.0dip"
+                        android:paddingTop="8.0dip"
+                        android:scaleType="fitXY" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/topoldnum_m"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layoutAnimation="@anim/la_pageturning_top" >
+
+                    <ImageView
+                        android:id="@+id/topoldhalf_m"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:paddingLeft="8.0dip"
+                        android:paddingTop="8.0dip"
+                        android:scaleType="fitXY" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="@integer/pageturning_layout_weight_bottom"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <LinearLayout
+                    android:id="@+id/bottomoldnum_m"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <ImageView
+                        android:id="@+id/bottomoldhalf_m"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:paddingBottom="0.0dip"
+                        android:paddingLeft="8.0dip"
+                        android:scaleType="fitXY" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/bottomnewnum_m"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layoutAnimation="@anim/la_pageturning_bottom" >
+
+                    <ImageView
+                        android:id="@+id/bottomnewhalf_m"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:paddingBottom="0.0dip"
+                        android:paddingLeft="8.0dip"
+                        android:scaleType="fitXY" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+        -->
+    </LinearLayout>
+
+</FrameLayout>

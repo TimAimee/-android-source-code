@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:orientation="vertical" android:layout_width="fill_parent"  
+    android:layout_height="fill_parent">  
+  
+    <Button android:layout_height="wrap_content" android:id="@+id/btnRecord"  
+        android:layout_width="fill_parent" android:text="开始边录边放"></Button>  
+    <Button android:layout_height="wrap_content"  
+        android:layout_width="fill_parent" android:text="停止" android:id="@+id/btnStop"></Button>  
+    <Button android:layout_height="wrap_content" android:id="@+id/btnExit"  
+        android:layout_width="fill_parent" android:text="退出"></Button>  
+    <TextView android:id="@+id/TextView01" android:layout_height="wrap_content"  
+        android:text="程序音量调节" android:layout_width="fill_parent"></TextView>  
+    <SeekBar android:layout_height="wrap_content" android:id="@+id/skbVolume"  
+        android:layout_width="fill_parent"></SeekBar>  
+  
+</LinearLayout>  

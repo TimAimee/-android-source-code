@@ -1,0 +1,48 @@
+# view res/layout/face_dialog.xml #generated:7
+-keep class android.support.v4.view.ViewPager { <init>(...); }
+
+# view AndroidManifest.xml #generated:25
+-keep class com.ty.winchat.WinChatApplication { <init>(...); }
+
+# view AndroidManifest.xml #generated:47
+-keep class com.ty.winchat.service.ChatService { <init>(...); }
+
+# view AndroidManifest.xml #generated:49
+-keep class com.ty.winchat.service.HeartBeatBroaadcastReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:44
+-keep class com.ty.winchat.ui.FileChoose { <init>(...); }
+
+# view AndroidManifest.xml #generated:32
+-keep class com.ty.winchat.ui.Main { <init>(...); }
+
+# view AndroidManifest.xml #generated:40
+-keep class com.ty.winchat.ui.MessageChat { <init>(...); }
+
+# view AndroidManifest.xml #generated:45
+-keep class com.ty.winchat.ui.RoomChat { <init>(...); }
+
+# view AndroidManifest.xml #generated:41
+-keep class com.ty.winchat.ui.Set { <init>(...); }
+
+# view AndroidManifest.xml #generated:43
+-keep class com.ty.winchat.ui.VideoChat { <init>(...); }
+
+# view AndroidManifest.xml #generated:42
+-keep class com.ty.winchat.ui.VoiceChat { <init>(...); }
+
+# view res/layout/main.xml #generated:10
+-keep class com.ty.winchat.widget.PullToRefreshExpandableListView { <init>(...); }
+
+# view res/layout/video_chat1.xml #generated:11
+-keep class com.ty.winchat.widget.VideoView { <init>(...); }
+
+# view AndroidManifest.xml #generated:53
+-keep class net.youmi.android.AdBrowser { <init>(...); }
+
+# view AndroidManifest.xml #generated:62
+-keep class net.youmi.android.AdReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:58
+-keep class net.youmi.android.AdService { <init>(...); }
+

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/expression_bg"
+    >
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        >
+    <TextView 
+        android:id="@+id/message_chat_more_send_file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="文件发送"
+        android:textColor="@color/white"
+        android:drawableTop="@drawable/send_file"
+        android:layout_marginRight="10dip"
+        />
+    <TextView 
+        android:id="@+id/message_chat_more_video_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="视屏聊天"
+        android:drawableTop="@drawable/video_chat_bg"
+        android:textColor="@color/white"
+        />
+
+    </LinearLayout>
+</RelativeLayout>

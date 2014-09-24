@@ -1,0 +1,7 @@
+src                                https://rt-thread.googlecode.com/svn/trunk/src
+include                            https://rt-thread.googlecode.com/svn/trunk/include
+libcpu/arm/stm32                   https://rt-thread.googlecode.com/svn/trunk/libcpu/arm/stm32
+components/finsh                   https://rt-thread.googlecode.com/svn/trunk/components/finsh
+components/dfs/                    https://rt-thread.googlecode.com/svn/trunk/components/dfs
+components/net/lwip                https://rt-thread.googlecode.com/svn/trunk/components/net/lwip
+components/rtgui                   https://rt-thread.googlecode.com/svn/trunk/components/rtgui

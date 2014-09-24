@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/group_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/biz_plugin_weather_selectcity_index_bg"
+        android:gravity="left|center"
+        android:paddingBottom="5.0dip"
+        android:paddingLeft="@dimen/biz_plugin_weather_selectcity_group_item_padding"
+        android:paddingRight="@dimen/biz_plugin_weather_selectcity_group_item_padding"
+        android:paddingTop="5.0dip"
+        android:text="S"
+        android:textColor="@color/biz_plugin_weather_text1"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/friends_item_alpha_line"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/base_list_divider_drawable" />
+
+    <TextView
+        android:id="@+id/column_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/kaixin_list_item_bg"
+        android:gravity="center_vertical"
+        android:minHeight="40.0dip"
+        android:paddingLeft="20dip"
+        android:text="深圳"
+        android:textColor="@color/biz_plugin_weather_text1"
+        android:textSize="@dimen/biz_plugin_weather_selectcity_item_textsize" />
+        android:layout_marginLeft="12.0dip"
+
+</LinearLayout>
