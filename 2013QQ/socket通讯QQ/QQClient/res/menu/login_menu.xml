@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/login_menu_setting"
+        android:icon="@drawable/menu_setting"
+        android:title="设置"/>
+    <item
+        android:id="@+id/login_menu_exit"
+        android:icon="@drawable/menu_exit"
+        android:title="退出"/>
+
+</menu>
