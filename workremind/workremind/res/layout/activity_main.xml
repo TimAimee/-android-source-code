@@ -1,0 +1,241 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ >
+ 
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    
+     >  
+     
+<RelativeLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+    
+
+    
+      <RelativeLayout
+      android:id="@+id/rlCenterTitle"
+      android:layout_width="fill_parent"
+      android:layout_height="55dip"
+      android:background="#106184" >
+
+      <TextView
+          android:id="@+id/txtContactTool"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:text="工作提醒 "
+          android:textColor="#ffffff"
+          android:textSize="21sp" />
+    </RelativeLayout>
+
+      	<TableLayout 
+	    android:id="@+id/workContent"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/rlCenterTitle"
+ 
+	    >
+	<TableRow >
+	    <TextView 
+	        android:id="@+id/txtTitle"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="标题"
+	        android:textSize="20sp"
+	        android:textColor="#000000"
+	        android:layout_marginLeft="20dip"
+	        />
+    
+	</TableRow>	    
+	
+	<TableRow >
+    <EditText 
+        android:id="@+id/edTitle"
+        android:layout_width="400dip"
+        android:layout_height="wrap_content"
+      	android:textSize="20sp"
+        android:textColor="#000000"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        />
+   
+	</TableRow>	     
+	 <TableRow >
+	    <TextView 
+	        android:id="@+id/txtNote"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="备注内容"
+	        android:textSize="20sp"
+	        android:textColor="#000000"
+	        android:layout_marginLeft="20dip"
+	        />
+    
+	</TableRow>	    
+	<TableRow >
+    <EditText 
+        android:id="@+id/edNote"
+        android:layout_width="400dip"
+        android:layout_height="wrap_content"
+      	android:textSize="20sp"
+        android:textColor="#000000"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:maxLines="5"
+        
+        />
+   
+	</TableRow>	     
+	 <TableRow 
+	     
+	     >
+	 <Button 
+	     android:id="@+id/btnRemindTime"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:layout_marginRight="300dip"
+	      android:layout_marginLeft="20dip"
+	     android:text="提醒日期"/>
+    
+	 </TableRow>
+	 <TableRow 
+	     
+	     >    
+	     <EditText 
+        android:id="@+id/etRemindTime"
+        android:layout_width="400dip"
+        android:layout_height="wrap_content"
+      	android:textSize="20sp"
+        android:textColor="#000000"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+		android:editable="false"        
+        />
+   
+	</TableRow>	   
+	
+		 <TableRow 
+	     
+	     >
+	 <Button 
+	     android:id="@+id/btnRemindTimeSecond"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:layout_marginRight="300dip"
+	      android:layout_marginLeft="20dip"
+	     android:text="提醒时间"/>
+    
+	 </TableRow> 
+	 
+	 
+	  <TableRow 
+	     
+	     >    
+	     <EditText 
+        android:id="@+id/etRemindSecond"
+        android:layout_width="400dip"
+        android:layout_height="wrap_content"
+      	android:textSize="20sp"
+        android:textColor="#000000"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+		android:editable="false"        
+        />
+   
+	</TableRow>	   
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	<TableRow >
+	    <CheckBox 
+	        android:id="@+id/cbRemindOnly"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="提醒一次"
+	        android:layout_marginRight="100dip"
+	        android:layout_marginLeft="20dip"
+	        />
+	       
+	    
+	</TableRow>
+	<TableRow >
+	    <CheckBox 
+	        android:id="@+id/cbRemindRepeat"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="重复提醒"
+	        android:layout_marginLeft="20dip"
+	        />
+	</TableRow>
+	    
+	    
+	</TableLayout>
+
+    <RelativeLayout 
+        android:id="@+id/rlServices"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/workContent"        
+        >
+     <Button 
+         android:id="@+id/btnStart"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="20dip"
+         android:text="启动服务"
+         />   
+        <Button 
+         android:id="@+id/btnEnd"
+         
+         android:layout_toRightOf="@+id/btnStart"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="禁止服务"
+         />   
+        
+    </RelativeLayout>  
+
+    <Button
+        android:id="@+id/btn_new_save"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_below="@+id/rlServices"
+        android:layout_marginTop="300dip"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_style"
+        android:gravity="center"
+        android:text="保  存"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+    
+    
+    
+  </RelativeLayout>      
+    
+    
+    
+    
+    </ScrollView>  
+</RelativeLayout>

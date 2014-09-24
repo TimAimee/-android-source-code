@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ >
+ 
+
+     
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    
+      <RelativeLayout
+      android:id="@+id/rlCenterTitle"
+      android:layout_width="fill_parent"
+      android:layout_height="55dip"
+      android:background="#106184" >
+
+      <TextView
+          android:id="@+id/txtContactTool"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:text="工作提醒 "
+          android:textColor="#ffffff"
+          android:textSize="21sp" />
+    </RelativeLayout>
+	 
+	 
+	
+    <ListView
+        android:id="@+id/Lsv_remind"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/rlCenterTitle"
+        android:background="#fff1f1f1" >
+    </ListView>
+    
+
+ 
+  </RelativeLayout>      
+
+       <Button
+        android:id="@+id/btn_new_add"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_style"
+        android:gravity="center"
+        android:text="添  加"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />   
+  
+  
+  
+  
+  
+  
+  
+  
+     
+</RelativeLayout>	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+

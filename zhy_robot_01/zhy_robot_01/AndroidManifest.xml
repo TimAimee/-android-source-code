@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android_robot_01"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- 使用junit需要添加 -->
+        <uses-library android:name="android.test.runner" />
+        <!--  -->
+
+        <activity
+            android:name="com.example.android_robot_01.MainActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+    <!-- 使用junit需要添加 -->
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:label="Test for My app"
+        android:targetPackage="com.example.android_robot_01" >
+    </instrumentation>
+    <!--  -->
+
+</manifest>
