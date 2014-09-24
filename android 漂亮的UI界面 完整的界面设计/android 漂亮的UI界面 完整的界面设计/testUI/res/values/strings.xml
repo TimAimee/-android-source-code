@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, TestUIActivity!</string>
+    <string name="app_name">TestUI</string>
+    <string name="home_tv">我的家</string>
+    <string name="style_tv">搭配</string>
+    <string name="shopping_tv">逛街</string>
+    <string name="show_tv">晒货</string>
+    <string name="login_tv">登录</string>
+    <string name="regist_tv">注册</string>
+    <string name="index_looks_tv">搭配/LOOKS</string>
+    <string name="index_looks_info_tv">蘑菇们实拍每日搭配</string>
+    <string name="index_shopping_tv">逛街/SHOPPING</string>
+    <string name="index_shopping_info_tv">蘑菇们购物分享/最佳单品私藏</string>
+    <string name="index_show_tv">晒货/SHOW</string>
+    <string name="index_show_info_tv">蘑菇们实拍败家战果</string>
+    <string name="index_search_tv">搜索/SEARCH</string>
+    <string name="index_search_info_tv">发现最潮单品</string>
+    <string name="index_browse_tv">随便逛逛/BROWSER</string>
+    <string name="index_browse_info_tv">看大家都在说啥</string>
+
+</resources>
