@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">拼图游戏</string>
+     <string name="blank">空格</string>
+     
+     <!--180,255, 255, 190-->
+    <color name="background">#B4FFFFBE</color>   
+   	<!-- 255,255, 255, 190 --> 
+    <color name="highBackgroundColor">#FFFFFFBE</color>
+     <!--180,255, 255, 190-->
+    <color name="lowBackgroundColor">#B4FFFFBE</color>
+    <!-- 255,230, 0, 0 -->
+    <color name="highTextColor">#FFE60000</color>
+    <!-- 230,230, 0, 0 -->
+    <color name="lowTextColor">#E6E60000</color>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="bottom_menu_style">
+        <item name="android:textSize">10dip</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@drawable/bottom_select_bg</item>
+        <item name="android:paddingTop">5dip</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">2dip</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+</resources>

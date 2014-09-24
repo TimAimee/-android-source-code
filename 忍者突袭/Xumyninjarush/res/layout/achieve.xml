@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/listview"
+    >
+<TextView  
+    android:textColor="#F000"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="您已经取得的成就"
+    android:textSize="30sp"
+    android:textStyle="bold|italic"
+    android:gravity="center_vertical|center_horizontal"
+    />
+ <ListView 
+ 	android:id="@+id/listview"
+ 	android:layout_width="fill_parent"
+ 	android:layout_height="fill_parent"
+ 	android:cacheColorHint="#0000"
+ 	android:layout_marginTop="50dip"
+ 	></ListView>
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"   
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">     
+  
+   <TextView  
+        android:id="@+user_info_id/Query"  
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"  
+        android:text="排名"  
+        android:layout_weight="4"  
+        android:textSize="22px" 
+        android:gravity="center" />  
+      
+    <TextView  
+        android:id="@+user_info_id/Name"  
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"  
+        android:text="名字"  
+        android:layout_weight="6"
+        android:textSize="22px" 
+        android:gravity="center" />
+      
+    <TextView  
+        android:id="@+user_info_id/Time"        
+        android:layout_width="0dp"  
+        android:layout_height="wrap_content"  
+        android:text="时间"  
+        android:layout_weight="8"  
+        android:textSize="22px"
+        android:gravity="right"
+        />
+</LinearLayout> 

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      android:versionCode="1"
+      android:versionName="1.0" package="cn.edu.xtu.tilepuzzle">
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:name="ClassBoardModel">
+        <activity android:name="MainActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="GamePlayActivity" android:label="游戏面板"></activity>        
+        <activity android:name="ShowUserInfoActivity" android:label="游戏排名"></activity>
+        <activity android:name="GameSetActivity" android:label="游戏设置"></activity>
+        <activity android:name="ChoosePhotoActivity" android:label="按menu键获取更多图片"></activity> 
+        <activity android:name="ShowPhotoActivity" android:label="图片预览"></activity>
+        <activity android:name="HelpActivity" android:label="游戏帮助"></activity>
+               
+    </application>
+</manifest>

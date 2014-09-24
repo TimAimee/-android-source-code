@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+	
+		<TextView  	
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content" 
+		    android:text="选择图片类型："
+		    />
+		<Spinner
+		  android:id="@+id/PhostoSpinner"
+		  android:layout_width="wrap_content"
+		  android:layout_height="wrap_content"
+		  android:layout_centerHorizontal="true"
+		/>
+
+	
+	<GridView xmlns:android="http://schemas.android.com/apk/res/android" 
+	    android:id="@+id/gridview"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="fill_parent"
+	    android:numColumns="2"
+	    android:verticalSpacing="5dp"
+	    android:horizontalSpacing="5dp"
+	    android:columnWidth="150dp"
+	    android:stretchMode="columnWidth"
+	    android:gravity="center"
+	/>
+	
+</LinearLayout>

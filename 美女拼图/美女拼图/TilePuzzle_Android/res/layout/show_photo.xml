@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_centerHorizontal="true"
+		android:layout_alignParentBottom="true"
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent">	
+		
+	<ImageView android:id="@+show_photo/photoImageView"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:layout_centerInParent="true"
+			/>
+	<TextView
+		android:id="@+show_photo/textView"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:layout_centerHorizontal="true"
+		android:text="显示屏幕信息"
+	/>
+	
+		<TextView
+		android:id="@+show_photo/textView1"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:layout_below="@show_photo/textView"
+		android:layout_centerHorizontal="true"
+		android:text="显示图片信息"
+	/>
+	
+	<Button  
+		android:id="@+show_photo/sureButton"
+	    android:layout_width="120px" 
+	    android:layout_height="60px" 
+	    android:layout_alignParentRight="true"
+	    android:layout_alignParentBottom="true"
+	    android:layout_marginLeft="60px"
+	    android:layout_marginRight="10px"
+	    android:textSize="24px"
+	    android:text="确定" 
+	    android:onClick="myClickHandler"/>
+	<Button  
+	    android:id="@+show_photo/returnButton"
+	    android:layout_width="120px" 
+	    android:layout_height="60px" 
+	    android:layout_toLeftOf="@show_photo/sureButton"
+	    android:layout_alignTop="@show_photo/sureButton"
+	    android:textSize="24px"
+	    android:text="返回" />
+	</RelativeLayout>	   

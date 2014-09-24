@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent" android:layout_width="match_parent" android:orientation="vertical">
+	<TextView  
+	  	android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:text="基本设置"
+	    />
+	<CheckBox
+	  android:id="@+id/reversed"
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:text="反向"
+	>
+	</CheckBox>
+	<CheckBox
+	  android:id="@+id/funny"
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:text="趣味洗牌"
+	>
+	</CheckBox>
+	<CheckBox
+		android:id="@+id/addString"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="标记行/列"
+	>
+	</CheckBox>
+
+	<TextView  
+  	android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="难易程度"
+    />
+
+	<RadioGroup
+    	android:id="@+id/RadioGroup01"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+   	 	android:layout_x="3px"
+   	 	android:layout_y="54px">
+    <RadioButton
+      android:id="@+id/easy"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="简单"/>
+    <RadioButton
+      android:id="@+id/hard"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="困难"/>
+    </RadioGroup>
+
+    
+    <TextView  
+  	android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="行、列数据设置"/>
+
+	<RadioGroup
+    	android:id="@+id/RadioGroup01"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+   	 	android:layout_x="3px"
+   	 	android:layout_y="54px">
+		<RadioButton 
+			android:id="@+id/rowColumn4x3"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:text="4行、3列" />
+	    <RadioButton
+	      android:id="@+id/rowColumn5x4"
+	      android:layout_width="wrap_content"
+	      android:layout_height="wrap_content"
+	      android:text="5行、4列"/>
+    </RadioGroup>    
+</LinearLayout>

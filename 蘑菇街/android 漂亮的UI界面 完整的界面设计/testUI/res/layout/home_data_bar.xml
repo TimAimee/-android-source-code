@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" 
+    android:layout_marginTop="5dip">
+
+    <TextView 
+        android:id="@+id/home_date_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="10dip"
+        android:textColor="@android:color/black"
+        android:textSize="12dip"/>
+    <include layout="@layout/home_ratio_img"/>
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<item android:title="标记行和列" android:id="@+menu_play_id/flagItem"></item>
+
+	<item android:title="继续" android:id="@+menu_play_id/continueItem"></item>
+	
+	<item android:title="测试" android:id="@+menu_play_id/testItem"></item>
+	
+	<item android:title="暂停" android:id="@+menu_play_id/stopItem"></item>
+	
+	<item android:title="退出" android:id="@+menu_play_id/exitItem"></item>
+</menu>

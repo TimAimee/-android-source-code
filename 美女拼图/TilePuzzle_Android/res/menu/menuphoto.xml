@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<item android:title="美女" android:textSize="24px" android:id="@+menu_photo_id/mmItem"></item>
+
+	<item android:title="动漫" android:textSize="24px" android:id="@+menu_photo_id/dongmanItem"></item>
+	
+	<item android:title="创意" android:textSize="24px" android:id="@+menu_photo_id/chuangyiItem"></item>
+	
+	<item android:title="其它" android:textSize="24px" android:id="@+menu_photo_id/otherItem"></item>
+	
+	<item android:title="退出" android:textSize="24px" android:id="@+menu_photo_id/exitItem"></item>
+</menu>

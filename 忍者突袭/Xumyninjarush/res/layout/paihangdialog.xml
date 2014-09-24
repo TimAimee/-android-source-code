@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+  <EditText 
+  android:id="@+id/input_dialog_et"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:singleLine="true"
+  android:minWidth="200dip"/>
+  <LinearLayout 
+  android:orientation="horizontal"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content">
+  <Button 
+  android:id="@+id/sure_dialog_bt"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_weight="1"
+  android:text="确定"/>
+    <Button 
+  android:id="@+id/cancel_dialog_bt"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_weight="1"
+  android:text="取消"/>
+  </LinearLayout>
+    
+</LinearLayout>
