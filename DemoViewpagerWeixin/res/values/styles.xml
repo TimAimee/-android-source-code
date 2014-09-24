@@ -1,0 +1,40 @@
+<resources>
+
+    <style name="AppTheme" parent="android:Theme.Light" /> 
+    
+    <style name="AnimFade" parent="@android:style/Animation.Activity">  
+    	<item name="android:activityOpenEnterAnimation">@anim/fade_in</item>  
+    	<item name="android:activityOpenExitAnimation">@anim/hold</item>        
+    	<item name="android:activityCloseEnterAnimation">@anim/fade_in</item>  
+    	<item name="android:activityCloseExitAnimation">@anim/hold</item> 
+	</style>
+	
+   	<style name="Anim_style" parent="android:Theme.NoTitleBar.Fullscreen">         
+        <item name="android:windowAnimationStyle">@style/AnimFade</item>       
+	</style>  
+	
+	<style name="Anim_style2" parent="android:Theme.NoTitleBar">         
+        <item name="android:windowAnimationStyle">@style/AnimFade</item>       
+	</style> 
+	
+	<style name="Anim_style_title" parent="android:Theme">         
+        <item name="android:windowAnimationStyle">@style/AnimFade</item> 
+        <item name="android:windowTitleSize">50dp</item>  
+        <item name="android:windowTitleBackgroundStyle">@style/CustomWindowTitleBackground</item>      
+	</style>
+	
+	<style name="CustomWindowTitleBackground">  
+       <item name="android:background">@drawable/title_bar</item>  
+	</style>
+	
+	<style name="MyDialogStyle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+</resources>

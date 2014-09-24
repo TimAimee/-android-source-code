@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>    
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"        
+        android:orientation="vertical"       
+        android:gravity="center"
+        android:background="#fff" >
+        
+        <TextView
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"       
+        	android:gravity="center"       	
+        	android:text="微信功能指引 By:谜@BUAA"        	
+        	android:textSize="22dp"
+        	android:textColor="#000"/>
+        
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_width="260dp"
+            android:layout_height="260dp"                       
+            android:src="@drawable/my_wx" />
+        
+        <Button
+        	android:id="@+id/restartBtn"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"        
+            android:layout_marginTop="5dp"
+            
+        	android:text="重放功能指引"
+        	android:textSize="18sp"
+        	android:textColor="#fff"
+        	android:background="@drawable/button_bg"        
+			android:onClick="restartbutton"
+              />
+    </LinearLayout>
+    
+    
+    
+
+

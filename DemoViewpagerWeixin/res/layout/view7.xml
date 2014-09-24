@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/w07">
+        
+        <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentTop="true"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="96dp"
+              android:text="第六次，你可以用微信穿越地球，甚至宇宙"
+              android:textColor="#fff" 
+              android:gravity="center_horizontal"             
+              android:textSize="18sp" />
+    </RelativeLayout>
