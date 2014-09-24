@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, MainActivity!</string>
+    <string name="app_name">动态天气</string>
+    
+    <color name="Myblue">#848284</color>
+	<color name="Myblack">#000000</color>
+	<color name="MyWhite">#FFFFFD</color>
+	<color name="TitleWhite">#000000</color>
+	<color name="MyGreen">#64B7AD</color>
+</resources>

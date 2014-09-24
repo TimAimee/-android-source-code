@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+android:id="@+id/alllayout"
+    android:orientation="vertical"  
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent" 
+    android:background="#fffdf2"       
+    android:gravity="left"   
+    >
+<!-- 栏目标题 -->     
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/forecast_menu1_layout"
+	android:layout_width="fill_parent"
+	android:layout_height="40dip"
+	android:orientation="horizontal"
+	android:gravity="center"
+	android:background="@drawable/yjjc_b_01"
+	> 
+	<TextView
+	android:id="@+id/forecast_menu1"  
+	android:text="今日天气"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:gravity="center"
+	android:textSize="18sp"
+	android:textColor="#000000"
+	/> 
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/forecast_shili_area"  
+    android:orientation="horizontal"  
+    android:layout_width="fill_parent"  
+    android:layout_height="wrap_content"  
+    android:gravity="right"
+    >
+	</LinearLayout>	
+</LinearLayout>
+
+<!-- 内容 -->     
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:orientation="vertical"  
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent" 
+    android:background="@drawable/yjjc_b_02"  
+    android:gravity="left"   
+    > 
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+   android:orientation="horizontal"  
+   android:layout_width="fill_parent"  
+   android:layout_height="wrap_content" 
+   android:gravity="left"  
+   >
+<!-- 背景 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:id="@+id/today_yubao" 
+    android:orientation="vertical"  
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent"  
+    android:gravity="left"   
+    >    
+<!-- 动态效果 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:orientation="vertical"  
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent"
+    android:visibility="invisible"  
+    android:id="@+id/weather_qing"
+    android:gravity="left"> 
+</RelativeLayout>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:orientation="vertical"  
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent"
+    android:visibility="invisible"  
+    android:id="@+id/weather_day_duoyun"
+    android:gravity="left">		
+</RelativeLayout>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:orientation="vertical"  
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent"
+    android:visibility="invisible"  
+    android:id="@+id/weather_day_yin"
+    android:gravity="left"> 
+</RelativeLayout>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:orientation="vertical"  
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent"
+    android:visibility="invisible"  
+    android:id="@+id/weather_night_yin"
+    android:gravity="left"> 
+</RelativeLayout>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:orientation="vertical"  
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent"
+    android:visibility="invisible"  
+    android:id="@+id/weather_wu"
+    android:gravity="left"> 
+</RelativeLayout>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:orientation="vertical"  
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent"
+    android:visibility="invisible"  
+    android:id="@+id/weather_mai"
+    android:gravity="left"> 
+</RelativeLayout>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:orientation="vertical"  
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent"
+    android:visibility="invisible"  
+    android:id="@+id/weather_sha"
+    android:gravity="left"> 
+</RelativeLayout>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:visibility="visible"
+    android:gravity="left"
+    android:id="@+id/weather_move1">
+	    <ImageView 
+		android:id="@+id/m1" 
+	    android:layout_width="fill_parent"  
+	    android:layout_height="fill_parent" 
+	    /> 
+</RelativeLayout> 
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:visibility="invisible"
+    android:gravity="left"
+    android:id="@+id/weather_move2">
+    	<ImageView 
+		android:id="@+id/m2" 
+	    android:layout_width="fill_parent"  
+	    android:layout_height="fill_parent" 
+	    />
+</RelativeLayout> 
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:visibility="invisible"
+    android:gravity="left"
+    android:id="@+id/weather_move3">
+    	<ImageView 
+		android:id="@+id/m3" 
+	    android:layout_width="fill_parent"  
+	    android:layout_height="fill_parent" 
+	    />
+</RelativeLayout> 
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:visibility="invisible"
+    android:gravity="left"
+    android:id="@+id/weather_move4">
+    	<ImageView 
+		android:id="@+id/m4" 
+	    android:layout_width="fill_parent"  
+	    android:layout_height="fill_parent" 
+	    />    
+</RelativeLayout> 
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:visibility="invisible"
+    android:gravity="left"
+    android:id="@+id/weather_move5">
+    	<ImageView 
+		android:id="@+id/m5" 
+	    android:layout_width="fill_parent"  
+	    android:layout_height="fill_parent" 
+	    />    
+</RelativeLayout> 
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:visibility="invisible"
+    android:gravity="left"
+    android:id="@+id/weather_move6">
+        <ImageView 
+		android:id="@+id/m6" 
+	    android:layout_width="fill_parent"  
+	    android:layout_height="fill_parent" 
+	    />
+</RelativeLayout> 
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:visibility="invisible"
+    android:gravity="left"
+    android:id="@+id/weather_move7">
+        <ImageView 
+		android:id="@+id/m7" 
+	    android:layout_width="fill_parent"  
+	    android:layout_height="fill_parent" 
+	    />    
+</RelativeLayout> 
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:visibility="invisible"
+    android:id="@+id/weather_move8">
+        <ImageView 
+		android:id="@+id/m8" 
+	    android:layout_width="fill_parent"  
+	    android:layout_height="fill_parent" 
+	    />    
+</RelativeLayout> 
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:visibility="invisible"
+    android:gravity="left"
+    android:id="@+id/weather_move9">
+        <ImageView 
+		android:id="@+id/m9" 
+	    android:layout_width="fill_parent"  
+	    android:layout_height="fill_parent" 
+	    />    
+</RelativeLayout> 
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="left"
+    android:visibility="invisible"
+    android:id="@+id/weather_move10">
+        <ImageView 
+		android:id="@+id/m10" 
+	    android:layout_width="fill_parent"  
+	    android:layout_height="fill_parent" 
+	    />    
+</RelativeLayout>
+<!-- 数据内容 --> 
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:orientation="vertical"  
+    android:layout_width="fill_parent"  
+    android:layout_height="wrap_content"
+    android:paddingTop="60dip" 
+    android:gravity="center"   
+    > 
+	<TextView 
+		android:id="@+id/content"
+	    android:layout_width="fill_parent"  
+	    android:layout_height="wrap_content" 
+	    android:text="此处放置你要显示的天气数据内容！"
+	    android:textSize="18sp"
+	    android:textColor="#000000"
+	    android:gravity="center"
+	    />	  
+</LinearLayout>
+
+</RelativeLayout> 
+</LinearLayout>          
+</LinearLayout>
+</LinearLayout>

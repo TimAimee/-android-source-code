@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, TestActivity!</string>
+    <string name="app_name">Test</string>
+    
+    <!-- TabNewsActivity -->
+    <string name="title_news_category_tops">头条</string>
+    <string name="title_news_category_sport">体育</string>
+    <string name="title_news_category_play">娱乐</string>
+    <string name="title_news_category_finance">财经</string>
+    <string name="title_news_category_science">科技</string>
+    <string name="title_news_category_more">更多</string>
+    
+    <string name="news_top_left_text">新闻</string>
+    <string name="topic_top_left_text">话题</string>
+    <string name="picture_top_left_text">图片</string>
+    <string name="follow_top_left_text">跟帖</string>
+    <string name="vote_top_left_text">投票</string>
+
+</resources>
