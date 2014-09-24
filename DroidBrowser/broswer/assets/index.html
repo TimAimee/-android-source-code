@@ -1,0 +1,1201 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>My RSS</title>
+ <style>
+ 
+.contentskin1{
+	background-image:url(Images/skin/grey.png); 
+}
+.contentskin2{
+	background-image:url(Images/skin/chocolate.png); 
+}
+.contentskin3{
+	background-image:url(Images/skin/wall.png); 
+}
+/*.headerbatskin1{
+}
+.headerbatskin2{
+}
+.headerbatskin3{
+}*/
+ 
+
+ .weather {
+	position: absolute;
+}
+ .weather {
+	position: absolute;
+}
+ </style>
+<link href="jquery-mobile/jquery.mobile-1.0a3.min.css" rel="stylesheet" type="text/css"/>
+<script src="jquery-mobile/jquery-1.5.min.js" type="text/javascript"></script>
+<script src="jquery-mobile/jquery.mobile-1.0a3.min.js" type="text/javascript"></script>
+<!-- 只要将当前站点配置为移动应用程序，则对 phonegap.js 的该引用将允许代码提示。
+	 要将该站点配置为移动应用程序，请转至“站点”->“移动应用程序”->“配置应用程序框架...”-->
+<script src="/phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+ document.addEventListener("deviceready", onDeviceReady, false);      
+    
+    // PhoneGap加载完毕，可以安全调用PhoneGap方法    
+    function onDeviceReady() {     
+        checkConnection();     
+    }   
+	
+function getdevice(){
+	localStorage.setItem('width',screen.availWidth);
+	localStorage.setItem('height',screen.availHeight);
+}
+
+function subscribe(id){
+ 
+var add=""; 
+try{
+if(!localStorage.getItem(id)){
+localStorage.setItem(id,"false");
+}
+
+if(localStorage.getItem(id)=="false"){
+//如果是未定阅，则现在订阅
+localStorage.setItem(id,"true");
+document.getElementById("allnews-img"+id).style.backgroundImage="url(Images/remove.png)";
+  
+alert("订阅成功！");	
+}
+else if(localStorage.getItem(id)=="true"){
+//如果已订阅，取消订阅	
+	localStorage.setItem(id,"false");
+	 document.getElementById("allnews-img"+id).style.backgroundImage="url(Images/add.png)";
+	   
+    alert("取消订阅！");
+}}
+catch(exception){
+	alert("订阅器异常！");
+}
+ 
+}
+
+function loadsubscription(){       //读取本地订阅信息
+                  
+		var nameaddr=20;           //相应新闻的中文名字偏移存储空间
+		var imgaddr=40; 
+		var urladdr=60;
+		var targetaddr=80; 
+		var name="";      
+ 	for(i=1;i<=nameaddr;i++){
+	   
+	    if(!localStorage.getItem(nameaddr+i)&&!localStorage.getItem(imgaddr+i)){//初始化二级地址空间；设定偏移地址为100+后为二级地址存放空间
+			localStorage.setItem(nameaddr+i,"该订阅不存在！");}
+			
+			switch(nameaddr+i){              //初始化所有RSS地址及对应的名字
+				
+		case nameaddr+1:                 //社会新闻
+		name="社会新闻";	
+		localStorage.setItem(nameaddr+1,name);
+		localStorage.setItem(imgaddr+1,"Images/souhu/newspaper.png");
+	    localStorage.setItem(urladdr+1,'http://rss.news.sohu.com/rss/shehui.xml');
+		localStorage.setItem(targetaddr+1,"shehui");
+		break;
+		
+		case nameaddr+2:                 //娱乐新闻
+		name="娱乐新闻";		
+		localStorage.setItem(nameaddr+2,name);
+		localStorage.setItem(imgaddr+2,"Images/souhu/happy.png");
+		localStorage.setItem(urladdr+2,'http://rss.news.sohu.com/rss/yule.xml');
+		localStorage.setItem(targetaddr+2,"yule");
+		break;
+		 
+		case nameaddr+3:                 //体育新闻
+		name="体育新闻";		
+		localStorage.setItem(nameaddr+3,name);
+		localStorage.setItem(imgaddr+3,"Images/souhu/sports.png");
+		localStorage.setItem(urladdr+3,'http://rss.sports.sohu.com/rss/zhongguozuqiu.xml');
+		localStorage.setItem(targetaddr+3,"zhongguozuqiu");
+		break;
+		
+		case nameaddr+4:                 //财经新闻
+		name="财经新闻";		
+		localStorage.setItem(nameaddr+4,name);
+		localStorage.setItem(imgaddr+4,"Images/souhu/business.png");
+		localStorage.setItem(urladdr+4,'http://rss.news.sohu.com/rss/business.xml');
+		localStorage.setItem(targetaddr+4,"business");
+		break;
+		
+		case nameaddr+5:                 //科技新闻
+		name="科技新闻";		
+		localStorage.setItem(nameaddr+5,name);
+		localStorage.setItem(imgaddr+5,"Images/souhu/imac.png");
+		localStorage.setItem(urladdr+5,'http://rss.news.sohu.com/rss/it.xml');
+		localStorage.setItem(targetaddr+5,"it");
+		break;
+		
+		case nameaddr+6:                 //国内新闻
+		name="国内新闻";		
+		localStorage.setItem(nameaddr+6,name);
+		localStorage.setItem(imgaddr+6,"Images/souhu/national-news.png");
+		localStorage.setItem(urladdr+6,'http://rss.news.sohu.com/rss/guonei.xml');
+		localStorage.setItem(targetaddr+6,"guonei");
+		break;
+		
+		case nameaddr+7:                 //国际新闻
+		name="国际新闻";		
+		localStorage.setItem(nameaddr+7,name);
+		localStorage.setItem(imgaddr+7,"Images/souhu/world-news.png");
+		localStorage.setItem(urladdr+7,'http://rss.news.sohu.com/rss/guoji.xml');
+		localStorage.setItem(targetaddr+7,"guoji");
+		break;
+		
+		case nameaddr+8:                 //焦点新闻
+		name="焦点新闻";		
+		localStorage.setItem(nameaddr+8,name);
+		localStorage.setItem(imgaddr+8,"Images/souhu/focus-news.png");
+		localStorage.setItem(urladdr+8,'http://rss.news.sohu.com/rss/focus.xml');
+		localStorage.setItem(targetaddr+8,"focus");
+		break;
+		
+		case nameaddr+9:                 //数码资讯
+		name="数码资讯";		
+		localStorage.setItem(nameaddr+9,name);
+		localStorage.setItem(imgaddr+9,"Images/souhu/digital.png");
+		localStorage.setItem(urladdr+9,'http://digi.it.sohu.com/digital.xml');
+		localStorage.setItem(targetaddr+9,"digital");
+		break;
+		
+		case nameaddr+10:                 //汽车新闻
+		name="汽车新闻";		
+		localStorage.setItem(nameaddr+10,name);
+		localStorage.setItem(imgaddr+10,"Images/souhu/car-news.png");
+		localStorage.setItem(urladdr+10,'http://auto.sohu.com/rss/qichexinwen.xml');
+		localStorage.setItem(targetaddr+10,"qichexinwen");
+		break;
+		
+		case nameaddr+11:                 //汽车新闻
+		name="网易头条";		
+		localStorage.setItem(nameaddr+11,name);
+		localStorage.setItem(imgaddr+11,"Images/wangyi/top-news.png");
+		localStorage.setItem(urladdr+11,'http://news.163.com/special/00011K6L/rss_newstop.xml');
+		localStorage.setItem(targetaddr+11,"rss_newstop");
+		break;
+		
+		case nameaddr+12:                 //汽车新闻
+		name="电影世界";		
+		localStorage.setItem(nameaddr+12,name);
+		localStorage.setItem(imgaddr+12,"Images/wangyi/movies.png");
+		localStorage.setItem(urladdr+12,'http://ent.163.com/special/00031K7Q/rss_entmovie.xml');
+		localStorage.setItem(targetaddr+12,"rss_entmovie");
+		break;
+		
+		case nameaddr+13:                 //汽车新闻
+		name="手机资讯";		
+		localStorage.setItem(nameaddr+13,name);
+		localStorage.setItem(imgaddr+13,"Images/wangyi/cellphone.png");
+		localStorage.setItem(urladdr+13,'http://mobile.163.com/special/001144R8/mobile163.xml');
+		localStorage.setItem(targetaddr+13,"mobile163");
+		break;
+		
+		case nameaddr+14:                 //汽车新闻
+		name="文化书摘";		
+		localStorage.setItem(nameaddr+14,name);
+		localStorage.setItem(imgaddr+14,"Images/wangyi/book.png");
+		localStorage.setItem(urladdr+14,'http://book.163.com/special/0092451H/rss_whzx.xml');
+		localStorage.setItem(targetaddr+14,"rss_whzx");
+		break;
+		
+		case nameaddr+15:                 //汽车新闻
+		name="情感天空";		
+		localStorage.setItem(nameaddr+15,name);
+		localStorage.setItem(imgaddr+15,"Images/wangyi/love.png");
+		localStorage.setItem(urladdr+15,'http://lady.163.com/special/00261R8C/ladyrss3.xml');
+		localStorage.setItem(targetaddr+15,"ladyrss3");
+		break;
+	}
+			 
+ }
+		 
+	 
+	}
+
+function showshelf(){
+	 //localStorage.clear(); 
+	 var count=0;
+	 var temp='';
+	 var liststyle='style="background:url(Images/background.png);background-repeat:no-repeat;width:80px; height:80px;margin-right:10px; margin-left:10px; margin-top:10px; margin-bottom:10px"';
+	 
+	if(!localStorage.getItem(21)){
+		 loadsubscription();
+	}
+	var newslist='';
+	for(i=1;i<20;i++){                                                   //注意length的长度
+	//var divclick='onClick="getnews('+localStorage.getItem(60+i)+','+localStorage.getItem(80+i)+')"';   
+	//var divclick0='getnews("http://rss.news.sohu.com/rss/shehui.xml","shehui")'; 
+	var divclick1='getnews("'+localStorage.getItem(60+i)+'","'+localStorage.getItem(80+i)+'")';                     
+		if(localStorage.getItem(i)=="true"){
+			count+=1;
+			 switch(count%3){
+				 case 0:
+				 temp='c';
+				 break;
+				 case 1:
+				 temp='a';
+				 break;
+				 case 2:
+				 temp='b';
+				 break;
+				 
+			 }
+			newslist+='<div class="ui-block-'+temp+'" '+liststyle+'>'
+			+'<a href="#page'+i+'" '+'style="text-decoration:none" '+'>'
+			+'<div class="ui-grid-a" style="margin-left:8px; margin-top:5px;" onClick='+divclick1+'>'			
+			+'<div class="ui-block-a"  style="width:48px; height:48px;margin-left:5px">'+'<img src="'+localStorage.getItem(40+i)+'"/></div>'
+			+'<div class="ui-block-a" style="margin-top:-12px; margin-left:2px"><pre>'+localStorage.getItem(20+i)+'</pre></div></div></a></div>';
+			
+		}
+		
+		
+		
+		
+		
+	}
+	  
+    document.getElementById("newsshelf").innerHTML = newslist;
+	
+}
+
+function getnews(url,target){
+	            var html = "";
+				var xml="";
+				 
+			   //var url = "http://www.infzm.com/rss/home/rss2.0.xml";
+				if(window.XMLHttpRequest){
+					var xhr = new XMLHttpRequest();
+					xhr.open("GET",url,false);
+					xhr.send(null);
+					xml = xhr.responseXML.documentElement;
+				}else if(window.ActiveXObject){
+					xml = new ActiveXObject("Msxml2.DOMDocument");
+					xml.async = false;
+					xml.load(url);
+				}else{
+					xml = "";
+					alert("没有获取到xml数据");
+				}
+				//显示数据
+				var items = xml.getElementsByTagName("item");
+					for(var i=0; i<localStorage.getItem('newsnum'); i++){
+						html+='<li> <details><summary><p style="font:bold">'+items.item(i).getElementsByTagName("title")[0].childNodes[0].nodeValue+'</p></summary><p style="font-size:12px;color:grey">'+items.item(i).getElementsByTagName("pubDate")[0].childNodes[0].nodeValue+'</p><p style="margin-top:-10px">'+items.item(i).getElementsByTagName("description")[0].childNodes[0].nodeValue+'<a href="'+items.item(i).getElementsByTagName("link")[0].childNodes[0].nodeValue+'">阅读详情'+'>'+'</a></p></details></li><hr/>';
+					}
+					document.getElementById(target).innerHTML = html;
+				}/*else{
+					for(var i=0; i<items.length; i++){
+						html+='<li> <details><summary>'+items.item(i).getElementsByTagName("title")[0].childNodes[0].nodeValue+'</summary><p style="font-size:12px;color:grey">'+items.item(i).getElementsByTagName("pubDate")[0].childNodes[0].nodeValue+'</p><p style="margin-top:-10px">'+items.item(i).getElementsByTagName("description")[0].childNodes[0].nodeValue+'<a href="'+items.item(i).getElementsByTagName("link")[0].childNodes[0].nodeValue+'">阅读详情'+'>'+'</a></p></details></li>';
+					}
+				}*/
+function getWeather(){
+	if(!localStorage.getItem('weather_city')){
+		localStorage.setItem('weather_city','nanjing');
+	}
+	            var html = "";
+				var xml="";
+				 
+			    var url ="http://www.raychou.com/weather/rss.php?id="+localStorage.getItem("weather_city");//RSS天气信息
+				if(window.XMLHttpRequest){
+					var xhr = new XMLHttpRequest();
+					xhr.open("GET",url,false);
+					xhr.send(null);
+					xml = xhr.responseXML.documentElement;
+				}else if(window.ActiveXObject){
+					xml = new ActiveXObject("Msxml2.DOMDocument");
+					xml.async = false;
+					xml.load(url);
+				}else{
+					xml = "";
+					alert("没有获取到xml数据");
+				}
+				//显示数据
+				var city=xml.getElementsByTagName("channel");
+				var items = xml.getElementsByTagName("item");
+				var cityname=city.item(0).getElementsByTagName("title")[0].childNodes[0].nodeValue;	
+				var weathercondition=items.item(0).getElementsByTagName("title")[0].childNodes[0].nodeValue;
+				var date=new Date();
+				var month=date.getMonth()+1;
+				var day=date.getDate();
+				   html ='<p style="margin-top:-20px"><strong>'+cityname.substring(0,cityname.length-4)+'</strong>&nbsp;&nbsp'+weathercondition.substring(12,weathercondition.length)+'&nbsp;<br/>'+month+'月'+day+'日'+'<a  onclick="changeCity()" style="text-decoration:none;color:blue">&nbsp;&nbsp;[切换城市]</a>'+'</p>';
+					
+					
+					
+					document.getElementById('weather').innerHTML = html;
+}					
+   
+  function changeCity(){
+	  var city=prompt("切换城市","城市拼音");
+	 if(city){
+	   localStorage.setItem('weather_city',city);
+	   getWeather();
+	 }
+  }
+ 
+function format(){
+	if(window.confirm("此操作将删除您所有订阅信息？")){
+		localStorage.clear();
+		alert("用户数据已清除！");}
+		 
+}
+function newsnum(){
+	if(!localStorage.getItem('newsnum')){
+	localStorage.setItem('newsnum',6);}
+	localStorage.setItem('newsnum',$("#selectnewsnum option:selected").val());
+}
+function updateSkin(toSkin){
+	//var index_header=document.getElementById('page_index_header');
+	var index_content=document.getElementById('page_index_content');
+	//var subscriptions_header=document.getElementById('page_subscriptions_header');
+	var subscriptions_content=document.getElementById('page_subscriptions_content');
+	//var settings_header=document.getElementById('page_settings_header');
+	var settings_content=document.getElementById('page_settings_content');
+	 
+	//var contentskin1="url(Images/skin/grey.png)"; 
+
+   // var contentskin2="url(Images/skin/chocolate.png)"; 
+ 
+   // var contentskin3="url(Images/skin/wall.png)"; 
+ 
+	switch(toSkin){
+		case 0:      //默认皮肤
+		//index_header.className='';
+	   index_content.style.background="";
+		//subscriptions_header.className='';
+	   subscriptions_content.style.background="";
+	//	settings_header.className='';
+	 settings_content.style.background="";
+		break;
+		 
+		case 1:                         //grey皮肤
+		//index_header.style.background='headerbatskin1';
+	    index_content.style.background="url(Images/skin/grey.png) ";
+	//	subscriptions_header.style.background='headerbatskin1';
+	    subscriptions_content.style.background="url(Images/skin/grey.png) ";
+		//settings_header.style.background='headerbatskin1';
+	    settings_content.style.background="url(Images/skin/grey.png)";
+	    break;
+		 
+		case 2:                                //巧克力皮肤
+		//index_header.style.background="url(Images/skin/chocolate.png)";
+	    index_content.style.background="url(Images/skin/chocolate.png)";
+		//subscriptions_header.style.background="url(Images/skin/chocolate.png)";
+	    subscriptions_content.style.background="url(Images/skin/chocolate.png)";
+	//	settings_header.style.background="url(Images/skin/chocolate.png)";
+	    settings_content.style.background="url(Images/skin/chocolate.png)";
+		break;
+		
+		case 3:                               //wall皮肤
+	//	index_header.style.background="url(Images/skin/wall.png)";
+	    index_content.style.background="url(Images/skin/wall.png)";
+	//	subscriptions_header.style.background="url(Images/skin/wall.png)";
+	    subscriptions_content.style.background="url(Images/skin/wall.png)";
+	//	settings_header.style.background="url(Images/skin/wall.png)";
+	    settings_content.style.background="url(Images/skin/wall.png)";
+		break;
+	}
+}
+ 
+ 
+
+
+ function toskin(){
+	 if(!localStorage.getItem('skinID')){
+		 localStorage.setItem('skinID',0);}
+		 else{
+		localStorage.setItem('skinID',$("#selectSkin option:selected").val());
+       // updateSkin(localStorage.getItem('skinID'));
+      //   alert(localStorage.getItem('skinID'));
+		updateSkin(parseInt(localStorage.getItem('skinID')));
+		 }
+}
+   function changenet(){
+	   if(!localStorage.getItem('connection')){
+	localStorage.setItem('connection',3);}
+	localStorage.setItem('connection',$("#selectconnection option:selected").val());
+	
+	 var networkState = navigator.network.connection.type;      
+     var states = {};   
+ 
+ switch(parseInt(localStorage.getItem('connection'))){
+	 case 0:
+	 networkState=Connection.UNKNOWN;
+     states[Connection.UNKNOWN]  = 'Unknown connection'; 
+	 break;
+     case 1:
+	 networkState=Connection.ETHERNET;
+     states[Connection.ETHERNET]  = 'Unknown connection'; 
+	 break;
+    case 2:
+	 networkState=Connection.WIFI;
+     states[Connection.WIFI]  = 'WiFi connection'; 
+	 break;
+ 
+  case 3:
+	 networkState=Connection.CELL_2G;
+     states[Connection.CELL_2G]  = 'Cell 2G connection'; 
+	 break;
+ 
+  case 4:
+	 networkState=Connection.CELL_3G;
+     states[Connection.CELL_3G]  = 'Cell 3G connection'; 
+	 break;
+  case 5:
+	 networkState=Connection.CELL_4G;
+     states[Connection.CELL_4G]  = 'Cell 4G connection'; 
+	 break;
+ case 6:
+	 networkState=Connection.NONE;
+     states[Connection.NONE]  = 'No network connection'; 
+	 break;
+ }
+   alert('Connection type: ' + states[networkState]);   
+   
+   }
+</script>
+</head> 
+<body> 
+ <script language="javascript">                      //首页启动时便刷新显示已订阅项目
+  window.onfocus = function(){showshelf(),getWeather(),newsnum()}
+  </script>
+
+<div data-role="page" id="page_index" >
+
+	<div data-role="header" id='page_index_header'>
+        <a href="#subscriptions" data-theme="b" data-icon="plus">添加订阅</a>
+       <h1 align="center">RSS阅读器</h1>
+       <a href="#settings" data-icon="gear" data-theme="b">设置</a>
+    </div>
+
+  <div data-role="content" style="margin-top:-30px; margin-left:-10px;width:screen.width;height:600px;" id='page_index_content' >	
+      <h1 ><img src="Images/bookmarks.png"></h1>
+    <div id='weather'>
+         <!--<p style="margin-top:-20px"><strong>南京</strong>&nbsp;&nbsp;多云 23℃ ～ 30℃ 07月16日 <a href="http://www.baidu.com" style="text-decoration:none">&nbsp;&nbsp;[切换]</a></p>-->
+   	</div>
+   <!-- <div style="margin-top:-30px">   <img src="Images/weather1.png" style="position:absolute; left: 243px; top: 90px; height: 58px; width: 157px;"></img>  
+    <img src="Images/weather.png" width="47" style="position:absolute; width: 42px; height: 26px; left: 3px; top: 90px;"></img>
+    <iframe name="weather_inc" src="http://tianqi.xixik.com/cframe/9" width="500" height="60" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+    
+    </div>-->
+     
+  
+    
+   <div id="newsshelf" class="ui-grid-c">
+  
+   </div>
+   
+   
+    </div>
+    <div data-role="footer">
+		<h4></h4>
+	</div>
+	     
+</div>
+
+<div data-role="page" id="page1">
+	<div data-role="header">
+        <a href="#page_index" data-icon="back" >返回</a>
+		<h1>社会新闻</h1>
+        <a onClick="getnews('http://rss.news.sohu.com/rss/shehui.xml','shehui')"; data-icon="refresh">更新</a>
+	</div>
+	<div data-role="content">	
+    
+  
+	   <ul id="shehui"> 
+          </ul> 
+			  	
+	</div>
+	 
+</div>
+
+<div data-role="page" id="page2">
+	<div data-role="header">
+        <a href="#page_index" data-icon="back">返回</a>
+		<h1>娱乐新闻</h1>
+        <a onClick="getnews('http://rss.news.sohu.com/rss/yule.xml','yule')"; data-icon="refresh">更新</a>
+	</div>
+	<div data-role="content">	
+     
+	 
+           
+            <ul id="yule"> </ul>	 
+	</div>
+	 
+</div>
+
+<div data-role="page" id="page3">    
+	<div data-role="header">
+       <a href="#page_index" data-icon="back">返回</a>
+		<h1>体育新闻</h1>
+       <a onClick="getnews('http://rss.sports.sohu.com/rss/zhongguozuqiu.xml','zhongguozuqiu')"; data-icon="refresh">更新</a>
+
+	</div>
+	<div data-role="content">	
+		 
+             
+            <ul id="zhongguozuqiu"> </ul>	
+	</div>
+	 
+</div>
+
+<div data-role="page" id="page4">    
+	<div data-role="header">
+       <a href="#page_index" data-icon="back">返回</a>
+		<h1>财经新闻</h1>
+       <a onClick="getnews('http://rss.news.sohu.com/rss/business.xml','business')"; data-icon="refresh">更新</a>
+	</div>
+	<div data-role="content">	
+	      <ul id="business"> </ul>	
+	</div>
+</div>
+
+<div data-role="page" id="page5">    
+	<div data-role="header">
+           <a href="#page_index" data-icon="back">返回</a>
+       <h1>科技新闻</h1>
+          <a onClick="getnews('http://rss.news.sohu.com/rss/it.xml','it')"; data-icon="refresh">更新</a>
+    
+	</div>
+	<div data-role="content">	
+		 
+             
+            <ul id="it"> </ul>	
+	</div>
+</div>
+
+<div data-role="page" id="page6">    
+	<div data-role="header">
+               <a href="#page_index" data-icon="back">返回</a>
+        <h1>国内要闻</h1>
+    <a onClick="getnews('http://rss.news.sohu.com/rss/guonei.xml','guonei')"; data-icon="refresh">更新</a>
+
+	</div>
+	<div data-role="content">	
+		 
+            <ul id="guonei"> </ul>	
+	</div>
+</div>
+
+<div data-role="page" id="page7">    
+	<div data-role="header">
+                   <a href="#page_index" data-icon="back">返回</a>
+               <h1>国际新闻</h1>
+             <a onClick="getnews('http://rss.news.sohu.com/rss/guoji.xml','guoji')"; data-icon="refresh">更新</a>
+      
+	</div>
+	<div data-role="content">	
+		   <ul id="guoji"> </ul>	
+	</div>
+</div>
+
+<div data-role="page" id="page8">    
+	<div data-role="header">
+      <a href="#page_index" data-icon="back">返回</a>
+ 	<h1>焦点新闻</h1>
+     <a onClick="getnews('http://rss.news.sohu.com/rss/focus.xml','focus')"; data-icon="refresh">更新</a>
+	</div>
+	<div data-role="content">	
+	 
+            <ul id="focus"> </ul>	
+	</div>
+</div>
+
+<div data-role="page" id="page9">    
+	<div data-role="header">
+          <a href="#page_index" data-icon="back">返回</a>
+ 	   <h1>数码资讯</h1>
+         <a onClick="getnews('http://digi.it.sohu.com/rss/ruanjian.xml','ruanjian')"; data-icon="refresh">更新</a>
+	</div>
+	<div data-role="content">	
+	    <ul id="ruanjian"> </ul>	
+	</div>
+</div>
+
+<div data-role="page" id="page10">    
+	<div data-role="header">
+      <a href="#page_index" data-icon="back">返回</a>
+		<h1>汽车新闻</h1>
+         <a onClick="getnews('http://auto.sohu.com/rss/qichexinwen.xml','qichexinwen')"; data-icon="refresh">更新</a>
+	</div>
+	<div data-role="content">	
+		    
+            <ul id="qichexinwen"> </ul>	
+	</div>
+</div>
+
+<div data-role="page" id="page11">    
+	<div data-role="header">
+     <a href="#page_index" data-icon="back">返回</a>
+		<h1>网易头条</h1>
+     <a onClick="getnews('http://news.163.com/special/00011K6L/rss_newstop.xml','rss_newstop')"; data-icon="refresh">更新</a>
+	</div>
+	<div data-role="content">	
+		 
+            <ul id="rss_newstop"> </ul>	
+	</div>
+</div>
+
+<div data-role="page" id="page12">    
+	<div data-role="header">
+     <a href="#page_index" data-icon="back">返回</a>
+		<h1>电影世界</h1>
+      <a onClick="getnews('http://ent.163.com/special/00031K7Q/rss_entmovie.xml','rss_entmovie')"; data-icon="refresh">更新</a>  
+	</div>
+	<div data-role="content">	
+	 
+            <ul id="rss_entmovie"> </ul>	
+	</div>
+</div>
+
+<div data-role="page" id="page13">    
+	<div data-role="header">
+    <a href="#page_index" data-icon="back">返回</a>
+		<h1>手机资讯</h1>
+     <a onClick="getnews('http://mobile.163.com/special/001144R8/mobile163.xml','mobile163')"; data-icon="refresh">更新</a>
+	</div>
+	<div data-role="content">	
+		 
+            <ul id="mobile163"> </ul>	
+	</div>
+</div>
+
+<div data-role="page" id="page14">    
+	<div data-role="header">
+    <a href="#page_index" data-icon="back">返回</a>
+		<h1>文化书摘</h1>
+      <a onClick="getnews('http://book.163.com/special/0092451H/rss_whzx.xml','rss_whzx')"; data-icon="refresh">更新</a>
+	</div>
+	<div data-role="content">	
+		  <ul id="rss_whzx"> </ul>	
+	</div>
+</div>
+
+<div data-role="page" id="page15">    
+	<div data-role="header">
+    <a href="#page_index" data-icon="back">返回</a>
+		<h1>情感天空</h1>
+     <a onClick="getnews('http://lady.163.com/special/00261R8C/ladyrss3.xml','ladyrss3')"; data-icon="refresh">更新</a>
+	</div>
+	<div data-role="content">	
+	     <ul id="ladyrss3"> </ul>	
+	</div>
+</div>
+
+
+
+<div data-role="page" id="settings" >
+	<div data-role="header" id="page_settings_header">
+     <a href="#page_index" data-icon="back">返回</a>
+		<h1>设置</h1>
+	</div>
+	<div data-role="content" id="page_settings_content" style="width:480px;height:460px;" >	
+   
+		<div style="background:#CCC">基本设置</div>
+        <article data-role="content">
+    
+     <article> 
+       <div class="ui-grid-c">
+          
+          <div class="ui-block-a" style="margin-top:-10px">
+            <p style="font-weight:bold">换肤</p>&nbsp;
+            <p style="margin-top:-30px; width:200px;font-size:12px">将更改您的本地界面</p> </div>
+
+         
+          <div class="ui-block-b" style="margin-left:70px;width:100px;"  >
+           <select id="selectSkin" name="selectSkin" onChange="toskin()" > 
+                <option selected value="parseInt(localStorage.getItem("skinID"))">✎</option>
+                <option  value="0" >Ⅰ默认</option> 
+                <option value="1">Ⅱ灰色</option> 
+                <option value="2">Ⅲ羊皮纸</option> 
+                <option  value="3">Ⅳ墙面</option> 
+           </select> 
+       <!--  <script>
+    $("#selectSkin").change(function () {
+          var str;
+          $("select option:selected").each(function () {
+                str=$(this).val();
+              });
+          
+		   //alert(str);
+		 // updateSkin(parseInt(str));
+        }).change();
+</script>-->
+
+            </div>
+       </div>
+       
+    </article>
+       <hr/>  
+       
+       
+       <article> 
+       <div class="ui-grid-c">
+          
+          <div class="ui-block-a" style="margin-top:-10px">
+            <p style="font-weight:bold">数目</p>&nbsp;
+            <p style="margin-top:-30px; width:200px;font-size:12px">每栏目加载新闻数目</p> </div>
+
+         
+          <div class="ui-block-b" style="margin-left:70px;width:100px;"  >
+           <select id="selectnewsnum"   onChange="newsnum()" > 
+                <option selected value="6">☞</option>
+                <option  value="6" >Ⅰ6</option> 
+                <option value="8">Ⅱ8</option> 
+                <option value="10">Ⅲ10</option> 
+                <option  value="20">Ⅳall</option> 
+           </select> 
+       
+            </div>
+       </div>
+       
+    </article>
+      
+       <hr/>
+         <article> 
+       <div class="ui-grid-c">
+          
+          <div class="ui-block-a" style="margin-top:-10px">
+            <p style="font-weight:bold">更改连接</p>&nbsp;
+            <p style="margin-top:-30px; width:200px;font-size:12px">将更改您当前的网络连接方式</p> </div>
+         
+           <div class="ui-block-b" style="margin-left:70px;width:100px;"  >
+           <select id="selectconnection"   onChange="changenet()" > 
+                <option selected value="parseInt(localStorage.getItem("connection"))">Ю</option>
+                <option  value="0" >ⅠUnknown</option> 
+                <option value="1">ⅡEthernet</option> 
+                <option value="2">ⅢWiFi</option> 
+                <option  value="3">Ⅳ2G</option> 
+                 <option  value="4">Ⅴ3G</option> 
+                  <option  value="5">Ⅵ4G</option> 
+                   <option  value="6">ⅦNone</option> 
+           </select> 
+           </div>
+       </div>
+    </article>
+       <hr/> 
+       <article> 
+       <div class="ui-grid-c">
+          
+          <div class="ui-block-a" style="margin-top:-10px">
+            <p style="font-weight:bold">管理订阅</p>&nbsp;
+            <p style="margin-top:-30px; width:200px;font-size:12px">管理您的订阅项目</p> </div>
+         
+          <div class="ui-block-b" style="margin-left:70px;width:100px" >
+           <button value="管理" onClick="window.location='././index.html#subscriptions'"></button>
+           </div>
+       </div>
+    </article>
+       <hr/>  
+        
+    <article> 
+       <div class="ui-grid-c">
+          
+          <div class="ui-block-a" style="margin-top:-10px">
+            <p style="font-weight:bold">清空订阅</p>&nbsp;
+            <p style="margin-top:-30px; width:200px;font-size:12px">将删除您所有订阅记录</p> </div>
+         
+          <div class="ui-block-b" style="margin-left:70px;width:100px" >
+           <button value="清空" onClick="format()"></button>
+           </div>
+       </div>
+    </article>
+       <hr/> 
+       
+    
+         
+     <article> 
+       <div class="ui-grid-c">
+          
+          <div class="ui-block-a" style="margin-top:-10px">
+            <p style="font-weight:bold">关于我们</p>&nbsp;
+            <p style="margin-top:-30px;width:200px; font-size:12px">对我们参赛队伍的简介</p> </div>
+         
+          <div class="ui-block-b" style="margin-left:70px;width:100px" >
+           <button value="查看" onClick="alert('androidguy@NJUST&ZTE Email:1182849753@qq.com')"></button>
+           </div>
+       </div>
+    </article>
+       <hr/> 
+     
+    </div>
+    
+  <div data-role="footer">
+		<h4></h4>
+	</div>
+</div>
+
+ 
+<div data-role="page" id="subscriptions" >
+	<div data-role="header" style="background:red" id="page_subscriptions_header">
+    <a href="#page_index" data-icon="back">返回</a>
+		<h1>管理订阅</h1>
+    <a onClick="window.location.reload()"  data-icon="refresh">刷新</a>
+	</div>
+	<div data-role="content" id="page_subscriptions_content" style="width:480px; height:1200px">	
+	 
+      <div  data-role="collapsible">
+      <h3>搜狐推荐</h3>
+       <article data-role="content">
+      
+    <article> 
+       <div class="ui-grid-c">
+          <div class="ui-block-a" style="width:40px"> <img src="Images/souhu/newspaper.png"/> </div>
+          <div class="ui-block-b" style="margin-top:-10px; margin-left:30px">
+            <p style="font-weight:bold; width:120px; ">社会新闻</p>&nbsp;
+            <p style="margin-top:-30px;  width:120px; font-size:12px">每天8:00更新资讯</p> </div>
+          <div id="allnews1" class="ui-block-c" style="margin-left:50px ">
+          <script>
+		  if(localStorage.getItem(1)=="true"){
+			  // document.getElementsByClassName(
+			   
+			 allnews1.innerHTML='<a  data-role="button" id="allnews-img1" style="background:url(Images/remove.png); border-style:none;  width:30px; height:30px; background-repeat:no-repeat;"  onClick="subscribe(1);"></a>';
+			  //setTimeout(location.href="file:///C|/Users/riskycheng/Desktop/RSSreader/index.html#subscriptions",1);
+		  }else{
+			 allnews1.innerHTML='<a  data-role="button" id="allnews-img1" style="background:url(Images/add.png); border-style:none;  width:30px; height:30px; background-repeat:no-repeat;" onClick="subscribe(1);"></a>';
+			  //setTimeout(location.href="file:///C|/Users/riskycheng/Desktop/RSSreader/index.html#subscriptions",1);
+		  }
+		 
+		  </script></div>
+    </article>
+       <hr/> 
+       
+       
+       <article> 
+       <div class="ui-grid-c">
+          <div class="ui-block-a" style="width:40px"> <img src="Images/souhu/happy.png"/> </div>
+          <div class="ui-block-b" style="margin-top:-10px; margin-left:30px">
+            <p style="font-weight:bold;width:120px;">娱乐新闻</p>&nbsp;
+            <p style="margin-top:-30px; width:120px;font-size:12px">每天8:00更新资讯</p> </div>
+          <div id="allnews2" class="ui-block-c" style="margin-left:50px ; ">
+          <script>
+		  if(localStorage.getItem(2)=="true"){
+			  // document.getElementsByClassName(
+			   
+			 allnews2.innerHTML='<a   data-role="button" id="allnews-img2" style="background:url(Images/remove.png); border-style:none;  width:30px; height:30px; background-repeat:no-repeat;"  onClick="subscribe(2);"></a>';
+			  //setTimeout(location.href="file:///C|/Users/riskycheng/Desktop/RSSreader/index.html#subscriptions",1);
+		  }else{
+			 allnews2.innerHTML='<a  data-role="button" id="allnews-img2" style="background:url(Images/add.png); border-style:none;  width:30px; height:30px; background-repeat:no-repeat;" onClick="subscribe(2);"></a>';
+			  //setTimeout(location.href="file:///C|/Users/riskycheng/Desktop/RSSreader/index.html#subscriptions",1);
+		  }
+		 
+		  </script></div>
+    </article>
+    
+      <hr/> 
+	   
+        <article> 
+       <div class="ui-grid-c">
+          <div class="ui-block-a" style="width:40px"> <img src="Images/souhu/sports.png"/> </div>
+          <div class="ui-block-b" style="margin-top:-10px; margin-left:30px">
+            <p style="font-weight:bold;width:120px;">体育新闻</p>&nbsp;
+            <p style="margin-top:-30px; width:120px;font-size:12px">每天8:00更新资讯</p> </div>
+          <div id="allnews3" class="ui-block-c" style="margin-left:50px ; ">
+          <script>
+		  if(localStorage.getItem(3)=="true"){
+			  // document.getElementsByClassName(
+			   
+			 allnews3.innerHTML='<a   data-role="button" id="allnews-img3" style="background:url(Images/remove.png); border-style:none;   width:30px; height:30px; background-repeat:no-repeat;"  onClick="subscribe(3);"></a>';
+			  //setTimeout(location.href="file:///C|/Users/riskycheng/Desktop/RSSreader/index.html#subscriptions",1);
+		  }else{
+			 allnews3.innerHTML='<a  data-role="button" id="allnews-img3" style="background:url(Images/add.png); border-style:none;  width:30px; height:30px; background-repeat:no-repeat;" onClick="subscribe(3);"></a>';
+			  //setTimeout(location.href="file:///C|/Users/riskycheng/Desktop/RSSreader/index.html#subscriptions",1);
+		  }
+		 
+		  </script></div>
+    </article>
+    
+    
+    <hr/> 
+       <article> 
+       <div class="ui-grid-c">
+          <div class="ui-block-a" style="width:40px"> <img src="Images/souhu/business.png"/> </div>
+          <div class="ui-block-b" style="margin-top:-10px; margin-left:30px">
+            <p style="font-weight:bold;width:120px;">财经新闻</p>&nbsp;
+            <p style="margin-top:-30px;width:120px; font-size:12px">每天8:00更新资讯</p> </div>
+          <div id="allnews4" class="ui-block-c" style="margin-left:50px ; ">
+          <script>
+		  if(localStorage.getItem(4)=="true"){
+			  // document.getElementsByClassName(
+			   
+			 allnews4.innerHTML='<a   data-role="button" id="allnews-img4" style="background:url(Images/remove.png); border-style:none;  width:30px; height:30px; background-repeat:no-repeat;"  onClick="subscribe(4);"></a>';
+			  //setTimeout(location.href="file:///C|/Users/riskycheng/Desktop/RSSreader/index.html#subscriptions",1);
+		  }else{
+			 allnews4.innerHTML='<a  data-role="button" id="allnews-img4" style="background:url(Images/add.png); border-style:none;  width:30px; height:30px; background-repeat:no-repeat;" onClick="subscribe(4);"></a>';
+			  //setTimeout(location.href="file:///C|/Users/riskycheng/Desktop/RSSreader/index.html#subscriptions",1);
+		  }
+		 
+		  </script></div>
+    </article>
+      <hr/>  
+    
+     
+       <article> 
+       <div class="ui-grid-c">
+          <div class="ui-block-a" style="width:40px"> <img src="Images/souhu/imac.png"/> </div>
+          <div class="ui-block-b" style="margin-top:-10px; margin-left:30px">
+            <p style="font-weight:bold;width:120px;">科技新闻</p>&nbsp;
+            <p style="margin-top:-30px; width:120px;font-size:12px">每天8:00更新资讯</p> </div>
+          <div id="allnews5" class="ui-block-c" style="margin-left:50px ; ">
+          <script>
+		  if(localStorage.getItem(5)=="true"){
+			  // document.getElementsByClassName(
+			   
+			 allnews5.innerHTML='<a   data-role="button" id="allnews-img5" style="background:url(Images/remove.png); border-style:none;  width:30px; height:30px; background-repeat:no-repeat;"  onClick="subscribe(5);"></a>';
+			  //setTimeout(location.href="file:///C|/Users/riskycheng/Desktop/RSSreader/index.html#subscriptions",1);
+		  }else{
+			 allnews5.innerHTML='<a  data-role="button" id="allnews-img5" style="background:url(Images/add.png); border-style:none;  width:30px; height:30px; background-repeat:no-repeat;" onClick="subscribe(5);"></a>';
+			  //setTimeout(location.href="file:///C|/Users/riskycheng/Desktop/RSSreader/index.html#subscriptions",1);
+		  }
+		 
+		  </script></div>
+    </article>
+      <hr/>  
+     
+       
+       <article> 
+       <div class="ui-grid-c">
+          <div class="ui-block-a" style="width:40px"> <img src="Images/souhu/national-news.png"/> </div>
+          <div class="ui-block-b" style="margin-top:-10px; margin-left:30px">
+            <p style="font-weight:bold;width:120px;">国内要闻</p>&nbsp;
+            <p style="margin-top:-30px; width:120px;font-size:12px">每天8:00更新资讯</p> </div>
+          <div id="allnews6" class="ui-block-c" style="margin-left:50px ; ">
+          <script>
+		  if(localStorage.getItem(6)=="true"){
+			  // document.getElementsByClassName(
+			   
+			 allnews6.innerHTML='<a  data-role="button" id="allnews-img6" style="background:url(Images/remove.png); border-style:none;  width:30px; height:30px; background-repeat:no-repeat;"  onClick="subscribe(6);"></a>';
+			  //setTimeout(location.href="file:///C|/Users/riskycheng/Desktop/RSSreader/index.html#subscriptions",1);
+		  }else{
+			 allnews6.innerHTML='<a  data-role="button" id="allnews-img6" style="background:url(Images/add.png); border-style:none;  width:30px; height:30px; background-repeat:no-repeat;" onClick="subscribe(6);"></a>';
+			  //setTimeout(location.href="file:///C|/Users/riskycheng/Desktop/RSSreader/index.html#subscriptions",1);
+		  }
+		 
+		  </script></div>
+    </article>
+      <hr/>  
+    
+     
+       <article> 
+       <div class="ui-grid-c">
+          <div class="ui-block-a" style="width:40px"> <img src="Images/souhu/world-news.png"/> </div>
+          <div class="ui-block-b" style="margin-top:-10px; margin-left:30px">
+            <p style="font-weight:bold;width:120px;">国际新闻</p>&nbsp;
+            <p style="margin-top:-30px; width:120px;font-size:12px">每天8:00更新资讯</p> </div>
+          <div id="allnews7" class="ui-block-c" style="margin-left:50px ; ">
+          <script>
+		  if(localStorage.getItem(7)=="true"){
+			  // document.getElementsByClassName(
+			   
+			 allnews7.innerHTML='<a  data-role="button" id="allnews-img7" style="background:url(Images/remove.png); border-style:none;  width:30px; height:30px; background-repeat:no-repeat;"  onClick="subscribe(7);"></a>';
+			  //setTimeout(location.href="file:///C|/Users/riskycheng/Desktop/RSSreader/index.html#subscriptions",1);
+		  }else{
+			 allnews7.innerHTML='<a  data-role="button" id="allnews-img7" style="background:url(Images/add.png); border-style:none;  width:30px; height:30px; background-repeat:no-repeat;" onClick="subscribe(7);"></a>';
+			  //setTimeout(location.href="file:///C|/Users/riskycheng/Desktop/RSSreader/index.html#subscriptions",1);
+		  }
+		 
+		  </script></div>
+    </article>
+      <hr/>  
+    
+    
+       <article> 
+       <div class="ui-grid-c">
+          <div class="ui-block-a" style="width:40px"> <img src="Images/souhu/focus-news.png"/> </div>
+          <div class="ui-block-b" style="margin-top:-10px; margin-left:30px">
+            <p style="font-weight:bold;width:120px;">焦点新闻</p>&nbsp;
+            <p style="margin-top:-30px; width:120px;font-size:12px">每天8:00更新资讯</p> </div>
+          <div id="allnews8" class="ui-block-c" style="margin-left:50px ; ">
+          <script>
+		  if(localStorage.getItem(8)=="true"){
+			  // document.getElementsByClassName(
+			   
+			 allnews8.innerHTML='<a  data-role="button" id="allnews-img8" style="background:url(Images/remove.png); border-style:none;  width:30px; height:30px; background-repeat:no-repeat;"  onClick="subscribe(8);"></a>';
+			  //setTimeout(location.href="file:///C|/Users/riskycheng/Desktop/RSSreader/index.html#subscriptions",1);
+		  }else{
+			 allnews8.innerHTML='<a  data-role="button" id="allnews-img8" style="background:url(Images/add.png); border-style:none;  width:30px; height:30px; background-repeat:no-repeat;" onClick="subscribe(8);"></a>';
+			  //setTimeout(location.href="file:///C|/Users/riskycheng/Desktop/RSSreader/index.html#subscriptions",1);
+		  }
+		 
+		  </script></div>
+    </article>
+      <hr/>  
+    
+    
+       <article> 
+       <div class="ui-grid-c">
+          <div class="ui-block-a" style="width:40px"> <img src="Images/souhu/digital.png"/> </div>
+          <div class="ui-block-b" style="margin-top:-10px; margin-left:30px">
+            <p style="font-weight:bold;width:120px">数码资讯</p>&nbsp;
+            <p style="margin-top:-30px; width:120px;font-size:12px">每天8:00更新资讯</p> </div>
+          <div id="allnews9" class="ui-block-c" style="margin-left:50px ; ">
+          <script>
+		  if(localStorage.getItem(9)=="true"){
+			  // document.getElementsByClassName(
+			   
+			 allnews9.innerHTML='<a  data-role="button" id="allnews-img9" style="background:url(Images/remove.png); border-style:none;  width:30px; height:30px; background-repeat:no-repeat;"  onClick="subscribe(9);"></a>';
+			  //setTimeout(location.href="file:///C|/Users/riskycheng/Desktop/RSSreader/index.html#subscriptions",1);
+		  }else{
+			 allnews9.innerHTML='<a  data-role="button" id="allnews-img9" style="background:url(Images/add.png); border-style:none;  width:30px; height:30px; background-repeat:no-repeat;" onClick="subscribe(9);"></a>';
+			  //setTimeout(location.href="file:///C|/Users/riskycheng/Desktop/RSSreader/index.html#subscriptions",1);
+		  }
+		 
+		  </script></div>
+    </article>
+      <hr/>  
+    
+    
+    
+       <article> 
+       <div class="ui-grid-c">
+          <div class="ui-block-a" style="width:40px"> <img src="Images/souhu/car-news.png"/> </div>
+          <div class="ui-block-b" style="margin-top:-10px; margin-left:30px">
+            <p style="font-weight:bold;width:120px">汽车新闻</p>&nbsp;
+            <p style="margin-top:-30px;width:120px;font-size:12px">每天8:00更新资讯</p> </div>
+          <div id="allnews10" class="ui-block-c" style="margin-left:50px ; ">
+          <script>
+		  if(localStorage.getItem(10)=="true"){
+			  // document.getElementsByClassName(
+			   
+			 allnews10.innerHTML='<a  data-role="button" id="allnews-img10" style="background:url(Images/remove.png); border-style:none;  width:30px; height:30px; background-repeat:no-repeat;"  onClick="subscribe(10);"></a>';
+			  //setTimeout(location.href="file:///C|/Users/riskycheng/Desktop/RSSreader/index.html#subscriptions",1);
+		  }else{
+			 allnews10.innerHTML='<a  data-role="button" id="allnews-img10" style="background:url(Images/add.png); border-style:none;  width:30px; height:30px; background-repeat:no-repeat;" onClick="subscribe(10);"></a>';
+			  //setTimeout(location.href="file:///C|/Users/riskycheng/Desktop/RSSreader/index.html#subscriptions",1);
+		  }
+		 
+		  </script></div>
+    </article>
+      <hr/>  
+    
+    
+    
+    
+       </article>
+      </div>
+   
+    <div  data-role="collapsible">
+      <h3>网易推荐</h3>
+   
+      
+     <article data-role="content">
+      
+    <article> 
+       <div class="ui-grid-c">
+          <div class="ui-block-a" style="width:40px"> <img src="Images/wangyi/top-news.png"/> </div>
+          <div class="ui-block-b" style="margin-top:-10px; margin-left:30px">
+            <p style="font-weight:bold;  width:120px ">网易头条</p>&nbsp;
+            <p style="margin-top:-30px; width:120px;font-size:12px">每天8:00更新资讯</p> </div>
+          <div id="allnews11" class="ui-block-c" style="margin-left:50px ">
+          <script>
+		  if(localStorage.getItem(11)=="true"){
+			  // document.getElementsByClassName(
+			   
+			 allnews11.innerHTML='<a  data-role="button" id="allnews-img11" style="background:url(Images/remove.png); border-style:none;  width:30px; height:30px; background-repeat:no-repeat;"  onClick="subscribe(11);"></a>';
+			  //setTimeout(location.href="file:///C|/Users/riskycheng/Desktop/RSSreader/index.html#subscriptions",1);
+		  }else{
+			 allnews11.innerHTML='<a  data-role="button" id="allnews-img11" style="background:url(Images/add.png); border-style:none;  width:30px; height:30px; background-repeat:no-repeat;" onClick="subscribe(11);"></a>';
+			  //setTimeout(location.href="file:///C|/Users/riskycheng/Desktop/RSSreader/index.html#subscriptions",1);
+		  }
+		 
+		  </script></div>
+    </article>
+       <hr/> 
+       
+        <article> 
+       <div class="ui-grid-c">
+          <div class="ui-block-a" style="width:40px"> <img src="Images/wangyi/movies.png"/> </div>
+          <div class="ui-block-b" style="margin-top:-10px; margin-left:30px">
+            <p style="font-weight:bold;width:120px; ">电影世界</p>&nbsp;
+            <p style="margin-top:-30px;width:120px;font-size:12px">每天8:00更新资讯</p> </div>
+          <div id="allnews12" class="ui-block-c" style="margin-left:50px ">
+          <script>
+		  if(localStorage.getItem(12)=="true"){
+			  // document.getElementsByClassName(
+			   
+			 allnews12.innerHTML='<a  data-role="button" id="allnews-img12" style="background:url(Images/remove.png); border-style:none;  width:30px; height:30px; background-repeat:no-repeat;"  onClick="subscribe(12);"></a>';
+			  //setTimeout(location.href="file:///C|/Users/riskycheng/Desktop/RSSreader/index.html#subscriptions",1);
+		  }else{
+			 allnews12.innerHTML='<a  data-role="button" id="allnews-img12" style="background:url(Images/add.png); border-style:none;  width:30px; height:30px; background-repeat:no-repeat;" onClick="subscribe(12);"></a>';
+			  //setTimeout(location.href="file:///C|/Users/riskycheng/Desktop/RSSreader/index.html#subscriptions",1);
+		  }
+		 
+		  </script></div>
+    </article>
+       <hr/> 
+       <article> 
+       <div class="ui-grid-c">
+          <div class="ui-block-a" style="width:40px"> <img src="Images/wangyi/cellphone.png"/> </div>
+          <div class="ui-block-b" style="margin-top:-10px; margin-left:30px">
+            <p style="font-weight:bold;width:120px; ">手机资讯</p>&nbsp;
+            <p style="margin-top:-30px; width:120px;font-size:12px">每天8:00更新资讯</p> </div>
+          <div id="allnews13" class="ui-block-c" style="margin-left:50px ">
+          <script>
+		  if(localStorage.getItem(13)=="true"){
+			  // document.getElementsByClassName(
+			   
+			 allnews13.innerHTML='<a  data-role="button" id="allnews-img13" style="background:url(Images/remove.png); border-style:none;  width:30px; height:30px; background-repeat:no-repeat;"  onClick="subscribe(13);"></a>';
+			  //setTimeout(location.href="file:///C|/Users/riskycheng/Desktop/RSSreader/index.html#subscriptions",1);
+		  }else{
+			 allnews13.innerHTML='<a  data-role="button" id="allnews-img13" style="background:url(Images/add.png); border-style:none;  width:30px; height:30px; background-repeat:no-repeat;" onClick="subscribe(13);"></a>';
+			  //setTimeout(location.href="file:///C|/Users/riskycheng/Desktop/RSSreader/index.html#subscriptions",1);
+		  }
+		 
+		  </script></div>
+    </article>
+       <hr/> 
+       
+      <article> 
+       <div class="ui-grid-c">
+          <div class="ui-block-a" style="width:40px"> <img src="Images/wangyi/book.png"/> </div>
+          <div class="ui-block-b" style="margin-top:-10px; margin-left:30px">
+            <p style="font-weight:bold;width:120px; ">文化书摘</p>&nbsp;
+            <p style="margin-top:-30px; width:120px;font-size:12px">每天8:00更新资讯</p> </div>
+          <div id="allnews14" class="ui-block-c" style="margin-left:50px ">
+          <script>
+		  if(localStorage.getItem(14)=="true"){
+			  // document.getElementsByClassName(
+			   
+			 allnews14.innerHTML='<a  data-role="button" id="allnews-img14" style="background:url(Images/remove.png); border-style:none;  width:30px; height:30px; background-repeat:no-repeat;"  onClick="subscribe(14);"></a>';
+			  //setTimeout(location.href="file:///C|/Users/riskycheng/Desktop/RSSreader/index.html#subscriptions",1);
+		  }else{
+			 allnews14.innerHTML='<a  data-role="button" id="allnews-img14" style="background:url(Images/add.png); border-style:none;  width:30px; height:30px; background-repeat:no-repeat;" onClick="subscribe(14);"></a>';
+			  //setTimeout(location.href="file:///C|/Users/riskycheng/Desktop/RSSreader/index.html#subscriptions",1);
+		  }
+		 
+		  </script></div>
+    </article>
+       <hr/>   
+     <article> 
+       <div class="ui-grid-c">
+          <div class="ui-block-a" style="width:40px"> <img src="Images/wangyi/love.png"/> </div>
+          <div class="ui-block-b" style="margin-top:-10px; margin-left:30px">
+            <p style="font-weight:bold;width:120px; ">情感天空</p>&nbsp;
+            <p style="margin-top:-30px; width:120px;font-size:12px">每天8:00更新资讯</p> </div>
+          <div id="allnews15" class="ui-block-c" style="margin-left:50px ">
+          <script>
+		  if(localStorage.getItem(15)=="true"){
+			  // document.getElementsByClassName(
+			   
+			 allnews15.innerHTML='<a  data-role="button" id="allnews-img15" style="background:url(Images/remove.png); border-style:none;  width:30px; height:30px; background-repeat:no-repeat;"  onClick="subscribe(15);"></a>';
+			  //setTimeout(location.href="file:///C|/Users/riskycheng/Desktop/RSSreader/index.html#subscriptions",1);
+		  }else{
+			 allnews15.innerHTML='<a  data-role="button" id="allnews-img15" style="background:url(Images/add.png); border-style:none;  width:30px; height:30px; background-repeat:no-repeat;" onClick="subscribe(15);"></a>';
+			  //setTimeout(location.href="file:///C|/Users/riskycheng/Desktop/RSSreader/index.html#subscriptions",1);
+		  }
+		 
+		  </script></div>
+    </article>
+      
+        </article>
+       
+         </div>
+    </div>
+       </div>
+</body>
+</html>
+</div>
+</body>
+</html>

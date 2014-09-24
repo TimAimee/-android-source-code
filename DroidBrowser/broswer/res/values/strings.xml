@@ -1,0 +1,42 @@
+<resources>
+
+    <string name="app_name">Dnet</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main_view">DroidBrowser</string>
+    <string name="menu_back">返回</string>
+    <string name="menu_add_index">添加导航</string>
+    <string name="menu_refresh">刷新</string>
+    <string name="menu_history">历史</string>
+    <string name="menu_bookmark">书签</string>
+    <string name="url_input">输入网址或关键词</string>
+    <string name="visit_website">进入</string>
+    <string name="loading">数据加载中...</string>
+    <string name="settings">设置</string>
+    <string name="history">历史</string>
+    <string name="support_javascript">支持javascript</string>
+    <string name="support_picture">支持阻碍图片</string>
+    <string name="support_zoom">支持缩放</string>
+    <string name="support_cache">支持缓存</string>
+    <string name="support_cookie">支持表单保存</string>
+    <string name="clear_data">清空记录</string>
+    <string name="action_settings">设置</string>
+    <string name="without_history">无痕浏览</string>
+    <string name="download_style">下载样式</string>
+    <string name="change_saveDirectory">更改存储路径</string>
+    <string name="display_download_percentage">显示下载进度百分比</string>
+    <string name="choose_search_engine">选择搜索引擎</string>
+    <string name="change">更改</string>
+    <string name="wipe">清空</string>
+    <string name="baidu">百度</string>
+    <string name="soso">搜搜</string>
+    <string name="google">谷歌</string>
+    <string name="yahoo">雅虎</string>
+    <string name="qq">腾讯</string>
+    <string name="webName">网页名称</string>
+    <string name="webUrl">网址链接</string>
+    <string name="long_click_bookmark_title">书签操作</string>
+    <string name="long_click_history_title">历史操作</string>
+   <string name="delete">删除</string>
+   <string name="modify">修改</string>
+</resources>

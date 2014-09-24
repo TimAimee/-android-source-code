@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--样式只能定义组件控件  -->
+	<style name="number1">
+	    <item name="android:textColor">#FF0000</item>
+	    <item name="android:textSize">30sp</item>
+	</style>
+    <style name="number2" parent="number1">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#00FF00</item>
+    </style>
+    <style name="number3" parent="number2">
+         <item name="android:textColor">#0000FF</item>
+    </style>
+    
+    <!--Theme主题是定义整个应用或者Activity  在AndroidMainfest.xml中使用-->
+    <style name="myThemeStyle">
+        <item name="android:windowNoTitle">true</item>
+        <!-- <item name="android:windowFullscreen">true</item> -->
+        <item name="android:windowFullscreen">?android:windowNoTitle</item><!--如果android:windowNoTitle是true那么android:windowFullscreen也为true  -->
+        <item name="android:textColor">#000000</item>
+    </style>
+</resources>

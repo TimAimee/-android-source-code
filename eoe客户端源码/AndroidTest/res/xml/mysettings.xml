@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+	<PreferenceCategory
+	    android:title="我的category">
+	    <CheckBoxPreference 
+	        android:title="我的单选框"
+	        android:key="one"
+	        android:layout="@layout/title"
+	        android:widgetLayout="@layout/mycheck"
+	        android:summaryOn="打开设置"
+	        android:summaryOff="关闭设置"
+	        />
+	    <CheckBoxPreference 
+	        android:title="我的单选框2"
+	        android:key="two"
+	        android:summaryOn="打开设置2"
+	        android:summaryOff="关闭设置2"
+	        />
+	</PreferenceCategory>
+    
+
+</PreferenceScreen>

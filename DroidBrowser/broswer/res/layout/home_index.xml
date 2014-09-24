@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/adLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <EditText
+            android:id="@+id/home_url_input"
+            android:layout_width="260dip"
+            android:layout_height="45dip"
+            android:layout_centerVertical="true"
+            android:hint="@string/url_input"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/home_visit_button"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/home_url_input"
+            android:text="@string/visit_website" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/index_girdview"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@color/light_grey"
+        android:gravity="center"
+        android:horizontalSpacing="20dip"
+        android:numColumns="4"
+        android:verticalSpacing="15dip" >
+    </GridView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_weight="6"
+        android:background="@color/grey"
+        android:orientation="horizontal" >
+
+        <!-- button-back -->
+
+        <ImageButton
+            android:id="@+id/menu_imagebtn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/grey"
+            android:src="@drawable/arrow_left" />
+        <!-- button-refresh -->
+
+        <ImageButton
+            android:id="@+id/menu_imagebtn_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/grey"
+            android:src="@drawable/refresh" />
+        <!-- button-menu -->
+
+        <ImageButton
+            android:id="@+id/menu_imagebtn_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/grey"
+            android:src="@drawable/menu" />
+        <!-- button-multiwins -->
+
+        <ImageButton
+            android:id="@+id/menu_imagebtn_mlutiwins"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/grey"
+            android:src="@drawable/multiwins" />
+        <!-- button-home -->
+
+        <ImageButton
+            android:id="@+id/menu_imagebtn_home"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/grey"
+            android:src="@drawable/home" />
+    </LinearLayout>
+
+</LinearLayout>

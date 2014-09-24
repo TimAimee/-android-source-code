@@ -1,0 +1,129 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/add_bookmark"
+            android:layout_width="45dip"
+            android:layout_height="45dip"
+            android:background="@color/blue"
+            android:src="@drawable/bookmark" />
+
+        <EditText
+            android:id="@+id/url_input"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:layout_weight="1"
+            android:hint="@string/url_input"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/visit_button"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:layout_weight="2"
+            android:text="@string/visit_website" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+       
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <ProgressBar
+            android:id="@+id/download_progressbar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="10dip"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:max="100"
+            android:progress="0" />
+         
+        
+
+        <TextView
+            android:id="@+id/downloadProgress_percentage"
+            android:layout_width="wrap_content"
+            android:layout_height="10dip"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="false"
+            android:layout_toLeftOf="@id/download_progressbar"
+            android:gravity="center_vertical|fill_vertical"
+            android:text="percentage"
+            android:textColor="@color/red"
+            android:textSize="10sp" />
+      
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_weight="6"
+        android:background="@color/grey"
+        android:orientation="horizontal" >
+
+        <!-- button-back -->
+
+        <ImageButton
+            android:id="@+id/menu_imagebtn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/grey"
+            android:src="@drawable/arrow_left" />
+        <!-- button-refresh -->
+
+        <ImageButton
+            android:id="@+id/menu_imagebtn_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/grey"
+            android:src="@drawable/refresh" />
+        <!-- button-menu -->
+
+        <ImageButton
+            android:id="@+id/menu_imagebtn_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/grey"
+            android:src="@drawable/menu" />
+        <!-- button-multiwins -->
+
+        <ImageButton
+            android:id="@+id/menu_imagebtn_mlutiwins"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/grey"
+            android:src="@drawable/multiwins" />
+        <!-- button-home -->
+
+        <ImageButton
+            android:id="@+id/menu_imagebtn_home"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/grey"
+            android:src="@drawable/home" />
+    </LinearLayout>
+
+</LinearLayout>
