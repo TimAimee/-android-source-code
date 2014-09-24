@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_personal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/android_layout_bg" >
+
+    <RelativeLayout
+        android:id="@+id/personal_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/android_title_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:text="@string/personal_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/medium_text_size" />
+
+        <Button
+            android:id="@+id/personal_more_button"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/personal_more_button_selector"
+            android:gravity="center"
+            android:text="@string/personal_more"
+            android:textColor="@color/white"
+            android:textSize="@dimen/small_text_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/personal_top_layout" >
+
+        <ImageView
+            android:id="@+id/personal_background_image"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="-100dp"
+            android:background="@drawable/my_personal_not_login_bg" />
+
+        <com.itau.jingdong.widgets.CustomScrollView
+            android:id="@+id/personal_scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/personal_welcome"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/medium_text_size" />
+
+                    <Button
+                        android:id="@+id/personal_login_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/my_personal_click_login"
+                        android:gravity="center"
+                        android:text="@string/personal_login"
+                        android:textColor="@color/login_button"
+                        android:textSize="@dimen/small_text_size"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/android_layout_bg"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/PersonalCenterText"
+                        android:text="@string/personal_order_center" />
+
+                  <LinearLayout style="@style/PersonalMainLayoutStyle" >
+
+                        <RelativeLayout style="@style/PersonalTopStyle" >
+
+                            <ImageView
+                                android:id="@+id/personal_icon_01"
+                                style="@style/PersonalIconStyle"
+                                android:layout_width="36dp"
+                                android:layout_height="38dp"
+                                android:src="@drawable/android_personel_quickly_order" />
+
+                            <TextView
+                                style="@style/PersonalTextStyle"
+                                android:layout_toRightOf="@id/personal_icon_01"
+                                android:text="@string/personal_fast_search" />
+
+                            <ImageView
+                                style="@style/PersonalRightIconStyle"
+                                android:src="@drawable/android_list_idex" />
+                        </RelativeLayout>
+
+                        <View style="@style/PersonalLine" />
+
+                        <RelativeLayout style="@style/PersonalNormalStyle" >
+
+                            <ImageView
+                                android:id="@+id/personal_icon_02"
+                                style="@style/PersonalIconStyle"
+                                android:src="@drawable/android_personel_waitpay_order" />
+
+                            <TextView
+                                style="@style/PersonalTextStyle"
+                                android:layout_toRightOf="@id/personal_icon_02"
+                                android:text="@string/personal_wait_pay" />
+
+                            <ImageView
+                                style="@style/PersonalRightIconStyle"
+                                android:src="@drawable/android_list_idex" />
+                        </RelativeLayout>
+
+                        <View style="@style/PersonalLine" />
+
+                        <RelativeLayout style="@style/PersonalBottomStyle" >
+
+                            <ImageView
+                                android:id="@+id/personal_icon_03"
+                                style="@style/PersonalIconStyle"
+                                android:src="@drawable/android_personel_all_order" />
+
+                            <TextView
+                                style="@style/PersonalTextStyle"
+                                android:layout_toRightOf="@id/personal_icon_03"
+                                android:text="@string/personal_all_order" />
+
+                            <ImageView
+                                style="@style/PersonalRightIconStyle"
+                                android:src="@drawable/android_list_idex" />
+                        </RelativeLayout>
+                    </LinearLayout> 
+
+                    <TextView
+                        style="@style/PersonalCenterText"
+                        android:text="@string/personal_account_center" />
+
+                    <LinearLayout style="@style/PersonalMainLayoutStyle" >
+
+                        <RelativeLayout style="@style/PersonalTopStyle" >
+
+                            <ImageView
+                                android:id="@+id/personal_icon_04"
+                                style="@style/PersonalIconStyle"
+                                android:src="@drawable/android_my_jd_collects" />
+
+                            <TextView
+                                style="@style/PersonalTextStyle"
+                                android:layout_toRightOf="@id/personal_icon_04"
+                                android:text="@string/personal_my_focus" />
+
+                            <ImageView
+                                style="@style/PersonalRightIconStyle"
+                                android:src="@drawable/android_list_idex" />
+                        </RelativeLayout>
+
+                        <View style="@style/PersonalLine" />
+
+                        <RelativeLayout style="@style/PersonalNormalStyle" >
+
+                            <ImageView
+                                android:id="@+id/personal_icon_05"
+                                style="@style/PersonalIconStyle"
+                                android:src="@drawable/android_my_jd_discuss" />
+
+                            <TextView
+                                style="@style/PersonalTextStyle"
+                                android:layout_toRightOf="@id/personal_icon_05"
+                                android:text="@string/personal_comment" />
+
+                            <ImageView
+                                style="@style/PersonalRightIconStyle"
+                                android:src="@drawable/android_list_idex" />
+                        </RelativeLayout>
+
+                        <View style="@style/PersonalLine" />
+
+                        <RelativeLayout style="@style/PersonalBottomStyle" >
+
+                            <ImageView
+                                android:id="@+id/personal_icon_06"
+                                style="@style/PersonalIconStyle"
+                                android:src="@drawable/android_my_jd_messages" />
+
+                            <TextView
+                                style="@style/PersonalTextStyle"
+                                android:layout_toRightOf="@id/personal_icon_06"
+                                android:text="@string/personal_information" />
+
+                            <ImageView
+                                style="@style/PersonalRightIconStyle"
+                                android:src="@drawable/android_list_idex" />
+                        </RelativeLayout>
+
+                        <View style="@style/PersonalLine" />
+
+                        <RelativeLayout style="@style/PersonalBottomStyle" >
+
+                            <ImageView
+                                android:id="@+id/personal_icon_07"
+                                style="@style/PersonalIconStyle"
+                                android:src="@drawable/android_my_easy_buy" />
+
+                            <TextView
+                                style="@style/PersonalTextStyle"
+                                android:layout_toRightOf="@id/personal_icon_07"
+                                android:text="@string/personal_quick_buy" />
+
+                            <ImageView
+                                style="@style/PersonalRightIconStyle"
+                                android:src="@drawable/android_list_idex" />
+                        </RelativeLayout>
+
+                        <View style="@style/PersonalLine" />
+
+                        <RelativeLayout style="@style/PersonalBottomStyle" >
+
+                            <ImageView
+                                android:id="@+id/personal_icon_08"
+                                style="@style/PersonalIconStyle"
+                                android:src="@drawable/android_my_jd_account_safe" />
+
+                            <TextView
+                                style="@style/PersonalTextStyle"
+                                android:layout_toRightOf="@id/personal_icon_08"
+                                android:text="@string/personal_account" />
+
+                            <ImageView
+                                style="@style/PersonalRightIconStyle"
+                                android:src="@drawable/android_list_idex" />
+                        </RelativeLayout>
+                    </LinearLayout> 
+
+                    <TextView
+                        style="@style/PersonalCenterText"
+                        android:text="@string/personal_customer_service" />
+
+                    
+                 <!--  *********************  用户中心 *************************** -->
+                    <LinearLayout style="@style/PersonalMainLayoutStyle" >
+
+                        <RelativeLayout
+                            style="@style/PersonalTopStyle"
+                            android:layout_marginBottom="10dp" >
+
+                            <ImageView
+                                android:id="@+id/personal_icon_09"
+                                style="@style/PersonalIconStyle"
+                                android:src="@drawable/android_my_jd_return_repair" />
+
+                            <TextView
+                                style="@style/PersonalTextStyle"
+                                android:layout_toRightOf="@id/personal_icon_09"
+                                android:text="@string/personal_return_back" />
+
+                            <ImageView
+                                style="@style/PersonalRightIconStyle"
+                                android:src="@drawable/android_list_idex" />
+                        </RelativeLayout>
+                        
+                         <View style="@style/PersonalLine" />
+                         
+                        <RelativeLayout
+                            style="@style/PersonalBottomStyle"
+                            android:layout_marginBottom="10dp" >
+
+                            <ImageView
+                                android:id="@+id/personal_icon_10"
+                                style="@style/PersonalIconStyle"
+                                android:src="@drawable/android_my_jd_online_service" />
+
+                            <TextView
+                                android:id="@+id/personal_service"
+                                style="@style/PersonalTextStyle"
+                                android:layout_toRightOf="@id/personal_icon_10"
+                                android:text="@string/personal_infomation_service" />
+
+                             <ImageView
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                android:layout_toRightOf="@id/personal_service"
+                                android:src="@drawable/color_shopping_new" />
+                            
+                            <ImageView
+                                style="@style/PersonalRightIconStyle"
+                                android:src="@drawable/android_list_idex" />
+                        </RelativeLayout>
+                        
+                    </LinearLayout> 
+                    
+                <!-- ******************   猜你喜欢   ********************* -->
+                    
+                    <!-- <LinearLayout style="@style/PersonalMainLayoutStyle" >
+
+                        <TextView
+                       android:layout_height="wrap_content"
+                       android:layout_width="fill_parent"
+                      android:paddingTop="10dp"
+                      android:paddingLeft="5dp"
+                      android:background="@drawable/add_to_car_button_disabled"
+                      android:textSize="16sp"
+                        android:text="@string/personal_favour" />
+                        
+                         <View style="@style/PersonalLine" />
+                         
+                        <RelativeLayout
+                            style="@style/PersonalBottomStyle"
+                            android:layout_marginBottom="10dp" >
+
+                            <ImageView
+                                style="@style/PersonalLeftIconStyle"
+                                android:src="@drawable/android_list_idex_left" />
+                   <Gallery
+                    android:id="@+id/personal_favour_gallery"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/index_gallery_height"
+                    android:layout_marginBottom="15dp"
+                    android:spacing="10dp" />
+                            
+                            <ImageView
+                                style="@style/PersonalRightIconStyle"
+                                android:src="@drawable/android_list_idex" />
+                        </RelativeLayout>
+                        
+                        <TextView
+                       android:layout_height="wrap_content"
+                       android:layout_width="fill_parent"
+                      android:paddingTop="10dp"
+                      android:paddingLeft="5dp"
+                      android:background="@drawable/add_to_car_button_disabled"
+                      android:textSize="16sp"
+                        android:text="@string/personal_favour_introduce" />
+                        
+                    </LinearLayout> -->
+                    
+                    
+                    <!--   ***********************************************************************   -->
+      				
+      				<Button
+      				    android:id="@+id/personal_exit"
+      				    android:layout_width="fill_parent"
+      				    android:layout_height="match_parent"
+      				    android:layout_marginBottom="14dp"
+      				    android:layout_marginLeft="25dp"
+      				    android:layout_marginRight="25dp"
+      				    android:layout_marginTop="14dp"
+      				    android:background="@drawable/android_title_bg"
+      				    android:gravity="center"
+      				    android:padding="4dp"
+      				    android:text="@string/personal_quit"
+      				    android:textColor="#fff"
+      				    android:textSize="18sp" />
+                    
+                </LinearLayout>
+            </LinearLayout>
+        </com.itau.jingdong.widgets.CustomScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

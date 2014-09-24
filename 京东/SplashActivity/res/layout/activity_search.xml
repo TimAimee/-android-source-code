@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" 
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/search_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/android_title_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        
+        <com.itau.jingdong.widgets.AutoClearEditText
+            android:id="@+id/search_edit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/search_box"
+            android:drawableRight="@drawable/app_icon_voice"
+            android:focusable="true"
+            android:hint="@string/index_search_edit_hint"
+            android:padding="6dp"
+            android:singleLine="true"
+            android:textColor="@color/darkgray"
+            android:textSize="@dimen/micro_text_size" />
+
+        <ImageButton
+            android:id="@+id/search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/app_home_title_r_button_selector"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/android_search_icon" />
+    </LinearLayout>
+
+     <ListView
+        android:id="@+id/search_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/search_top_layout"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:listSelector="@null"
+        android:scrollbars="none"
+        android:visibility="gone" /> 
+
+<LinearLayout
+        android:id="@+id/layout_login"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+    
+    
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_gravity="center"
+        android:background="@drawable/joy_icon" />
+        
+          <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="20dp"
+           android:layout_gravity="center"
+            android:text="@string/search_info"
+            />
+        
+    </LinearLayout>
+        
+      
+
+        
+</LinearLayout>

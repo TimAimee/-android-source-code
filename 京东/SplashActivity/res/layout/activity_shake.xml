@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lottery_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+       android:layout_marginBottom="50dp"
+        android:layout_centerInParent="true" >
+
+        <ImageView
+            android:id="@+id/imgnoth"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgtit"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/lottery_nothing" />
+
+        <ImageView
+            android:id="@+id/imgtit"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/lottery_head_1" />
+
+        <ImageView
+            android:id="@+id/imgmiddle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/image_middle" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgmiddle"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/lottery_bottom" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/shakeback"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:background="@drawable/lottery_close" />
+
+</RelativeLayout>

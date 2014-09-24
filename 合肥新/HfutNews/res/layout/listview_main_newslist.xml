@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="80dp">
+
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/neslistimage"
+        />
+    
+    <TextView
+        android:id="@+id/listview_main_newslist_textview_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="3dp"
+        android:text="工大要闻工大要闻工大要闻工闻"
+        android:maxLines="2"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/listview_main_newslist_textview_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listview_main_newslist_textview_title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="asddasdfasdfsadfdsfasdfasd"
+        android:textSize="14sp" />
+
+    <TextView 
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2010-12-12"
+        android:textSize="14sp"
+        android:id="@+id/listview_main_newslist_textview_date"
+        />
+</RelativeLayout>

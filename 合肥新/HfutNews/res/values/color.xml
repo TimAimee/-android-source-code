@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="grid_title_color">#b2b2b2</color>
+
+    <item name="background1" type="drawable">#D2D2D2</item>
+    <item name="pressbackground" type="drawable">#686B74</item>
+
+    <color name="white">#ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="gold">#b89766</color>
+
+</resources>

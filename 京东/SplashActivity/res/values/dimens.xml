@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 四类字体大小 -->
+    <dimen name="micro_text_size">12sp</dimen>
+    <dimen name="small_text_size">14sp</dimen>
+    <dimen name="small_middle_text_size">16sp</dimen>
+    <dimen name="medium_text_size">18sp</dimen>
+    <dimen name="large_text_size">22sp</dimen>
+    <!-- 四类字体大小 -->
+
+
+    <!-- 首页Gallery高度 -->
+    <dimen name="index_gallery_height">120dp</dimen>
+    <!-- 首页Gallery高度 -->
+
+</resources>

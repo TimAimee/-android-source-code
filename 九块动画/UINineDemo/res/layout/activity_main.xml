@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000"
+    android:orientation="vertical" >
+
+    <!-- 第一层 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <!-- 第一层 横向 -->
+
+
+        <!-- 第一层 横向左 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <!-- 1 -->
+
+                <RelativeLayout
+                    android:id="@+id/nine_one"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="#FFFF00" >
+                </RelativeLayout>
+                <!-- 2 -->
+
+                <RelativeLayout
+                    android:id="@+id/nine_two"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="#FFC0CB" >
+                </RelativeLayout>
+            </LinearLayout>
+            <!-- 4 -->
+
+            <RelativeLayout
+                android:id="@+id/nine_four"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="#EE30A7" >
+            </RelativeLayout>
+            <!-- 5 -->
+
+            <RelativeLayout
+                android:id="@+id/nine_five"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="#EE4000" >
+            </RelativeLayout>
+        </LinearLayout>
+        <!-- 第一层 横向右 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:orientation="vertical" >
+
+            <!-- 3 -->
+
+            <RelativeLayout
+                android:id="@+id/nine_three"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:background="#FF8C69" >
+            </RelativeLayout>
+            <!-- 6 -->
+
+            <RelativeLayout
+                android:id="@+id/nine_six"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="#8C8C8C" >
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 第二层 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="3"
+        android:orientation="horizontal" >
+
+        <!-- 7 -->
+
+        <RelativeLayout
+            android:id="@+id/nine_seven"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#8B3E2F" >
+        </RelativeLayout>
+        <!-- 8 -->
+
+        <RelativeLayout
+            android:id="@+id/nine_eight"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#CAE1FF" >
+        </RelativeLayout>
+        <!-- 9 -->
+
+        <RelativeLayout
+            android:id="@+id/nine_nine"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#A52A2A" >
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

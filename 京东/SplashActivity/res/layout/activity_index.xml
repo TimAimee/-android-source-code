@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/index_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/android_title_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/index_top_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:src="@drawable/home_logo" />
+
+        <EditText
+            android:id="@+id/index_search_edit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/search_box"
+            android:drawableRight="@drawable/app_icon_voice"
+            android:hint="@string/index_search_edit_hint"
+            android:padding="6dp"
+            android:textColor="@color/darkgray"
+            android:textSize="@dimen/micro_text_size" />
+
+        <ImageButton
+            android:id="@+id/index_search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/app_home_title_r_button_selector"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/android_search_button_icon" />
+    </LinearLayout>
+
+    <com.itau.jingdong.widgets.AbScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/index_top_layout"
+        android:background="@drawable/home_panicbuying_background"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0dp"
+        android:overScrollMode="never"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:orientation="vertical" >
+
+            <com.itau.jingdong.widgets.jazzviewpager.JazzyViewPager
+                android:id="@+id/index_product_images_container"
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/index_product_images_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/home_panicbuying_background" >
+
+                <FrameLayout
+                    android:id="@+id/index_miaosha_image_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="5dp" >
+
+                    <ImageView
+                        android:id="@+id/index_miaosha_image"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp" />
+
+                    <ImageView
+                        android:id="@+id/index_miaosha_discount_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|left"
+                        android:background="@drawable/app_limit_buy_sale" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/index_miaosha_image_layout"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/index_limit"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/small_text_size"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/index_miaosha_hour"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/small_text_size"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/index_hour"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/small_text_size"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/index_miaosha_min"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/small_text_size"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/index_min"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/small_text_size"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/index_miaosha_seconds"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/small_text_size"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/index_seconds"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/small_text_size"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/index_price"
+                            android:textColor="@color/darkgray"
+                            android:textSize="@dimen/micro_text_size" />
+
+                        <TextView
+                            android:id="@+id/index_miaosha_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/small_text_size"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/index_raw_price"
+                            android:textColor="@color/darkgray"
+                            android:textSize="@dimen/micro_text_size" />
+
+                        <TextView
+                            android:id="@+id/index_miaosha_raw_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/darkgray"
+                            android:textSize="@dimen/micro_text_size" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/index_list_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/android_list_idex" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/index_list_arrow"
+                    android:text="@string/index_slogan"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/medium_text_size"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/filter_spider_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:baselineAligned="false"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageButton
+                            android:id="@+id/index_promotion_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/app_home_shortcuts_button_selector"
+                            android:src="@drawable/shortcuts_icon_promotion" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/index_promotion"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/micro_text_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageButton
+                            android:id="@+id/index_recharge_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/app_home_shortcuts_button_selector"
+                            android:src="@drawable/shortcuts_icon_recharge" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/index_recharge"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/micro_text_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageButton
+                            android:id="@+id/index_groupbuy_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/app_home_shortcuts_button_selector"
+                            android:src="@drawable/shortcuts_icon_groupbuy" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/index_group_buy"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/micro_text_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageButton
+                            android:id="@+id/index_lottery_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/app_home_shortcuts_button_selector"
+                            android:src="@drawable/shortcuts_icon_lottery" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/index_lottery"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/micro_text_size" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:baselineAligned="false"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageButton
+                            android:id="@+id/index_order_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/app_home_shortcuts_button_selector"
+                            android:src="@drawable/shortcuts_icon_order" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/index_order"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/micro_text_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageButton
+                            android:id="@+id/index_history_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/app_home_shortcuts_button_selector"
+                            android:src="@drawable/shortcuts_icon_history" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/index_history"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/micro_text_size" />
+                    </LinearLayout>
+
+                   
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageButton
+                            android:id="@+id/index_shake"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/app_home_shortcuts_button_selector"
+                            android:src="@drawable/shortcuts_icon_life_journey" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/index_shake"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/micro_text_size" />
+                    </LinearLayout>
+                    
+                     <LinearLayout
+                         
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageButton
+                            android:id="@+id/index_collect_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/app_home_shortcuts_button_selector"
+                            android:src="@drawable/shortcuts_icon_collect" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/index_collect"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/micro_text_size" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:drawableLeft="@drawable/home_slide_promotion"
+                    android:drawablePadding="10dp"
+                    android:text="@string/index_notify_info"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/small_text_size" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/filter_spider_line" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/home_shopping_guang_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:drawableLeft="@drawable/home_shopping_icon"
+                    android:drawablePadding="10dp"
+                    android:text="@string/index_shopping_jinqiufengbao"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/micro_text_size" />
+
+                <Gallery
+                    android:id="@+id/index_jingqiu_gallery"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/index_gallery_height"
+                    android:layout_marginBottom="15dp"
+                    android:spacing="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:drawableLeft="@drawable/home_shopping_icon"
+                    android:drawablePadding="10dp"
+                    android:text="@string/index_shopping_remenyouhui"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/micro_text_size" />
+
+                <Gallery
+                    android:id="@+id/index_tehui_gallery"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/index_gallery_height"
+                    android:layout_marginBottom="35dp"
+                    android:spacing="10dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.itau.jingdong.widgets.AbScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f0f0f0"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/id_title"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:gravity="center"
+        android:background="@drawable/android_title_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/clothingcity"
+            android:textColor="#ffffff"
+            android:textSize="20.0dip" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/id_more_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="7.0dip"
+            android:layout_marginRight="7.0dip"
+            android:orientation="vertical" >
+
+         <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/hotproduct"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/small_middle_text_size" />
+            
+            
+         <Gallery
+                    android:id="@+id/index_clothingcity_gallery"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/index_gallery_height"
+                    android:layout_marginBottom="15dp"
+                    android:spacing="10dp" />
+         
+         
+         <ListView 
+             android:id="@+id/list_clothingcity"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             
+             
+             ></ListView>
+         
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

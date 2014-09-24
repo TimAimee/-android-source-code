@@ -1,0 +1,6 @@
+<resources>
+
+    <color name="radiobg_press">#FF0000</color>
+    <color name="radiobg_normal">#0000FF</color>
+
+</resources>

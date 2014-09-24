@@ -1,0 +1,2 @@
+TODO in 1.2.0:
+- change android:targetSdkVersion to 8 and retest

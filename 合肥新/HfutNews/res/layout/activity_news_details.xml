@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/icon_common_title" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selectot_common_btn_back"
+            android:text="返回"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            android:onClick="back"
+            android:layout_marginLeft="4dp"
+            />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="合肥工业大学"
+            android:textColor="#ffffff"
+            android:textSize="21sp" />
+    </RelativeLayout>
+<!-- 
+    <TextView
+        android:id="@+id/news_details_textview_news_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#ff000000"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/news_details_textview_news_date"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#ff000000"
+        android:textSize="11sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:src="@drawable/line" /> -->
+
+    <ProgressBar 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/news_details_progressbar"
+        style="?android:attr/progressBarStyle"
+        />
+
+    <WebView
+        android:id="@+id/news_details_webview"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/exit_dialog"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+  >
+
+<LinearLayout 
+    android:id="@+id/pop_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_alignParentBottom="true"
+     android:background="@drawable/exit_dialog_bg"
+     >
+
+    
+    
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:text="退出后不会删除任何历史数据，下次\n登录依然可以使用本帐号" />           
+
+    <Button
+        android:id="@+id/btn_exit"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="5dip" 
+         android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="退出程序"
+         android:background="@drawable/btn_style_alert_dialog_special"
+         android:textStyle="bold"
+         />
+
+    <Button
+        android:id="@+id/btn_cancel"
+       android:layout_marginLeft="20dip"
+       android:layout_marginRight="20dip"
+       android:layout_marginTop="15dip" 
+	   android:layout_marginBottom="15dip"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:text="取消"
+       android:background="@drawable/btn_style_alert_dialog_cancel"
+       android:textColor="#ffffff"
+       android:textStyle="bold"
+       
+        />
+</LinearLayout>
+</RelativeLayout>

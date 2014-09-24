@@ -1,0 +1,142 @@
+<resources>
+
+    <string name="app_name">京东商城</string>
+    <string name="splash_version_info">京东商城客户端\n\nVersion 1.0.0</string>
+    <string name="index_search_edit_hint">搜索京东商品</string>
+
+    <!-- 菜单 -->
+    <string name="menu_setting">设置</string>
+    <string name="menu_history">浏览历史</string>
+    <string name="menu_feedback">意见反馈</string>
+    <string name="menu_help">帮助</string>
+    <string name="menu_about">关于</string>
+    <string name="menu_exit">退出</string>
+    <!-- 菜单 -->
+
+
+    <!-- 首页PopupWnidow -->
+    <string name="barcode_buy">条码购</string>
+    <string name="camera_buy">拍照购</string>
+    <string name="color_buy">颜色购</string>
+    <!-- 首页PopupWnidow -->
+
+
+    <!-- 首页 -->
+    <string name="index_limit">还剩</string>
+    <string name="index_hour">时</string>
+    <string name="index_min">分</string>
+    <string name="index_seconds">秒</string>
+    <string name="index_price">秒杀价:</string>
+    <string name="index_raw_price">原价:</string>
+    <string name="index_slogan">疯狂秒杀</string>
+    <string name="index_promotion">促销卖场</string>
+    <string name="index_recharge">充值</string>
+    <string name="index_group_buy">团购</string>
+    <string name="index_lottery">彩票</string>
+    <string name="index_shake">摇一摇</string>
+    <string name="index_order">订单状态</string>
+    <string name="index_history">浏览历史</string>
+    <string name="index_collect">我的关注</string>
+    <string name="index_life_journey">生活娱乐</string>
+    <string name="index_notify_info">向左滑，更多优惠等你抢</string>
+    <string name="index_shopping_jinqiufengbao">金秋风暴</string>
+    <string name="index_shopping_remenyouhui">热门特惠</string>
+    <!-- 首页 -->
+
+<!-- 商品分类 -->
+<string name="category">全部分类</string>
+
+    <!-- 个人中心 -->
+    <string name="personal_title">我的京东</string>
+    <string name="personal_more">更多</string>
+    <string name="personal_welcome">欢迎来到京东</string>
+    <string name="personal_login">登录</string>
+    <string name="personal_fast_search">订单状态速查</string>
+    <string name="personal_wait_pay">待付款订单</string>
+    <string name="personal_all_order">全部订单</string>
+    <string name="personal_my_focus">我的关注</string>
+    <string name="personal_comment">商品评价/晒单</string>
+    <string name="personal_information">消息中心</string>
+    <string name="personal_quick_buy">轻松购</string>
+    <string name="personal_account">账户安全</string>
+    <string name="personal_return_back">返修/退换货</string>
+    <string name="personal_order_center">订单中心</string>
+    <string name="personal_account_center">账户中心</string>
+    <string name="personal_customer_service">客户服务</string>
+    <string name="personal_infomation_service">预约电话服务</string>
+    
+    <string name="personal_favour">猜你喜欢</string>
+    <string name="personal_favour_introduce">三星Glaxy_S4是一款不错的手机，大屏，霸气。</string>
+    <string name="personal_quit">退出登录</string>
+    <!-- 个人中心 -->
+
+<!-- 登陆界面 -->
+    <string name="login">登录</string>
+    <string name="loginacount">账号名：</string>
+    <string name="loginpassword">密   码：</string>
+    <string name="inputpassword">请输入密码</string>
+    <string name="inputaccount">请输入账号</string>
+    <string name="register">快速注册</string>
+    <string name="search_info">暂无收索历史</string>
+    <string name="login_btn">登   录</string>
+    <string name="find_password">找回密码</string>
+    <string name="usecooperationaccount">用合作网站帐户登录</string>
+    <string name="registerfree">免费注册</string>
+<!--  购物车 -->
+    <string name="cart">购物车</string>
+    <string name="cartinfo_no">您的购物车是空的，快去选购吧！</string>
+    <string name="cartinfo_synchronous">购物车同步中</string>
+    <string name="cart_logininfo">您可以在登录后系统后同步电脑与手机购物 \n车中的商品</string>
+    <string name="cart_market">促销大卖场</string>
+    
+<!--   更多 -->
+<string name="more">更多</string>
+
+<string name="more_history">浏览记录</string>
+<string name="more_seting">设置</string>
+<string name="more_help">帮助 </string>
+<string name="more_opinion">意见反馈</string>
+<string name="more_aboutus">关于我们</string>
+<string name="more_update">检测更新</string>
+<string name="more_exit">退出</string>
+<string name="more_apps">应用推荐</string>
+
+
+<!-- 注册 -->
+<string name="registerinfo">输入手机号后，点击"获取密码"，系统会自动向你的手机发送一条短信</string>
+<string name="register_tip">【提示】\n 1.使用手机号注册免费 \n 2.此手机号用来登录京东\n 3.你还可以选择其他注册方式</string>
+<string name="register_in_normal">普通用户注册</string>
+<string name="register_normal_useraccount">帐户名：</string>
+<string name="register_normal_useraccount_hint">请输入你的手机号</string>
+<string name="register_normal_email">邮箱：</string>
+<string name="register_normal_email_hint">请输入邮箱帐号</string>
+<string name="register_normal_password">密码：</string>
+<string name="register_normal_password_hint">请输入密码</string>
+<string name="register_normal_repassword">确认密码：</string>
+<string name="register_normal_repassword_hint">请输入确认密码</string>
+
+<!-- 导航栏的其他的标题和其他 -->
+<string name="clothingcity">服装城</string>
+<string name="hotproduct">热卖商品</string>
+<string name="digital">数码家电馆</string>
+<string name="ebook">好书汇</string>
+<string name="daily">百货集</string>
+
+    <!-- JazzyViewPager -->
+    <string-array name="jazzy_effects">
+        <item>Standard</item>
+        <item>Tablet</item>
+        <item>CubeIn</item>
+        <item>CubeOut</item>
+        <item>FlipVertical</item>
+        <item>FlipHorizontal</item>
+        <item>Stack</item>
+        <item>ZoomIn</item>
+        <item>ZoomOut</item>
+        <item>RotateUp</item>
+        <item>RotateDown</item>
+        <item>Accordion</item>
+    </string-array>
+    <!-- JazzyViewPager -->
+
+</resources>

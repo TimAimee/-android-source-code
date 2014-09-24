@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_setting"
+        android:enabled="true"
+        android:icon="@drawable/main_menu_setup"
+        android:orderInCategory="1"
+        android:title="@string/menu_setting"/>
+    <item
+        android:id="@+id/menu_history"
+        android:enabled="true"
+        android:icon="@drawable/main_menu_history"
+        android:orderInCategory="2"
+        android:title="@string/menu_history"/>
+    <item
+        android:id="@+id/menu_feedback"
+        android:enabled="true"
+        android:icon="@drawable/main_menu_feedback"
+        android:orderInCategory="3"
+        android:title="@string/menu_feedback"/>
+    <item
+        android:id="@+id/menu_help"
+        android:enabled="true"
+        android:icon="@drawable/main_menu_help"
+        android:orderInCategory="4"
+        android:title="@string/menu_help"/>
+    <item
+        android:id="@+id/menu_about"
+        android:enabled="true"
+        android:icon="@drawable/main_menu_about"
+        android:orderInCategory="5"
+        android:title="@string/menu_about"/>
+    <item
+        android:id="@+id/menu_exit"
+        android:enabled="true"
+        android:icon="@drawable/main_menu_exit"
+        android:orderInCategory="6"
+        android:title="@string/menu_exit"/>
+
+</menu>
