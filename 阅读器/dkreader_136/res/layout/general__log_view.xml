@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/general__shared__color_eeeeee" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:gravity="top|left|center" android:id="@id/general__log_view__log" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/general__log_view__copy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/general__log_view__copy" android:layout_alignParentLeft="true" style="@style/dialog_button" />
+        <Button android:id="@id/general__log_view__send" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/general__log_view__send" android:layout_alignParentRight="true" style="@style/dialog_button" />
+    </RelativeLayout>
+</LinearLayout>

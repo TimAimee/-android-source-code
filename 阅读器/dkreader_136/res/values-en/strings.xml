@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="UMEmptyFbNotAllowed">Please input your feedback.</string>
+    <string name="UMContentTooLong">"Your content was over 140 characters. You'll have to be more clever."</string>
+    <string name="UMFbList_ListItem_State_ReSend">Fail,Press to resend</string>
+    <string name="UMFbList_ListItem_State_Sending">Sending...</string>
+    <string name="UMFbList_ListItem_State_Fail">Fail</string>
+    <string name="UMFb_Atom_State_Fail">Fail</string>
+    <string name="UMFb_Atom_State_Sending">Sending...</string>
+    <string name="UMFb_Atom_State_Resend">Fail,press to resend</string>
+    <string name="UMFbList_ListItem_State_Resending">Resending</string>
+    <string name="UMFeedbackUmengTitle">Feedback</string>
+    <string name="UMFeedbackListTitle">Feedback</string>
+    <string name="UMFeedbackConversationTitle">Feedback</string>
+    <string name="UMFeedbackTitle">Every word you write will benefit us.</string>
+    <string name="UMFeedbackContent">Input your suggestions here</string>
+    <string name="UMFeedbackSummit">Submit</string>
+    <string name="UMFeedbackGoBack">Return</string>
+    <string name="UMFeedbackGotIt">Got it</string>
+    <string name="UMFeedbackSeeDetail">See Detail</string>
+    <string name="UMViewThread">View Thread</string>
+    <string name="UMNewReplyAlertTitle">"You've got reply"</string>
+    <string name="UMDeleteThread">Delete Thread</string>
+    <string name="UMViewFeedback">View Feedback</string>
+    <string name="UMDeleteFeedback">Delete Feedback</string>
+    <string name="UMResendFeedback">Resend Feedback</string>
+    <string name="UMDeleteMsg">Delete message</string>
+    <string name="UMNewReplyFlick">Got new reply</string>
+    <string name="UMNewReplyTitle">Got new reply</string>
+    <string name="UMNewReplyHint">Click to view</string>
+    <string name="UMBreak_Network">Please make sure you are connected to internet,update failed</string>
+    <string name="UMUpdateTitle">New version found</string>
+    <string name="UMNewVersion">Latest version:</string>
+    <string name="UMGprsCondition">(Warning: Not WIFI Condition)</string>
+    <string name="UMUpdateNow">Update now</string>
+    <string name="UMAppUpdate">App updating</string>
+    <string name="UMNotNow">Not now</string>
+    <string name="UMToast_IsUpdating">Updating...</string>
+    <string name="UMDialog_InstallAPK">The lastest version has been downloaded, install now ?</string>
+    <string name="UMNoUpdate">This is already the latest version</string>
+    <string name="UMConnectServerError">Connect to a server error</string>
+</resources>

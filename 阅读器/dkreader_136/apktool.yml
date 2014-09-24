@@ -1,0 +1,6 @@
+version: 1.4.5.5e49d31
+apkFileName: dkreader_1369218051345.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1

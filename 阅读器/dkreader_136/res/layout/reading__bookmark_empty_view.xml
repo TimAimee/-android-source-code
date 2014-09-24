@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:contentDescription="@null" />
+    <ImageView android:id="@id/reading__bookmark_empty_view__icon" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/reading__bookmark_empty_view__icon" android:contentDescription="@null" />
+    <com.duokan.reader.ui.general.DkLabelView android:textSize="28.0dip" android:id="@id/reading__bookmark_empty_view__no_bookmark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/reading__bookmark_empty_view__no_bookmark" />
+    <com.duokan.reader.ui.general.DkLabelView android:textSize="@dimen/general__shared__font_size_px_28" android:id="@id/reading__bookmark_empty_view__hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/reading__bookmark_empty_view__hint" />
+    <ImageView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0" android:contentDescription="@null" />
+</LinearLayout>

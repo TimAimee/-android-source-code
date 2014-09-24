@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/general__shared__color_ebebeb" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/general__dk_header_view__background3" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/general__shared__dip_50">
+        <TextView android:textSize="@dimen/general__shared__font_size_px_40" android:textColor="@color/general__shared__color_ffffff" android:ellipsize="end" android:gravity="left|center" android:id="@id/umeng_fb_conversation_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/UMFeedbackListTitle" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageButton android:layout_gravity="center" android:id="@id/umeng_fb_imgBtn_submitFb" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/umeng__fb_send_feedback_view__send" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ListView android:id="@android:id/list" android:background="#ffe9e9e9" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/umeng_fb_blank_selector" android:cacheColorHint="#ffe9e9e9" android:divider="#ffe9e9e9" android:dividerHeight="0.0dip" />
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/general__web_window_view__title" android:background="@drawable/general__web_window_view__top_repeat" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/general__web_window_view__title" android:layout_alignParentLeft="true" style="@style/general__shared__title_text_with_dark_color_background" />
+        <ProgressBar android:id="@id/general__web_window_view__loadingbar" android:visibility="visible" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginRight="@dimen/general__shared__dip_15" android:layout_alignParentRight="true" style="@style/refresh_progressbar" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/general__web_window_view__bottom" android:background="@drawable/bg_main_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageButton android:id="@id/general__web_window_view__back" android:background="@drawable/button_left_icon" android:layout_width="49.0dip" android:layout_height="45.0dip" android:layout_marginLeft="@dimen/general__shared__dip_15" android:src="@drawable/general__web_window_view__back" android:layout_alignParentLeft="true" />
+        <ImageButton android:id="@id/general__web_window_view__foward" android:background="@drawable/button_right_icon" android:layout_width="49.0dip" android:layout_height="45.0dip" android:src="@drawable/general__web_window_view__foward" android:layout_toRightOf="@id/general__web_window_view__back" />
+        <ImageButton android:id="@id/general__web_window_view__refresh" android:background="@drawable/general__shared__button5" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginLeft="8.0dip" android:src="@drawable/general__web_window_view__refresh" android:layout_toRightOf="@id/general__web_window_view__foward" />
+        <ImageButton android:id="@id/general__web_window_view__menu" android:background="@drawable/general__shared__button5" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginRight="@dimen/general__shared__dip_15" android:src="@drawable/general__web_window_view__menu" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/general__web_window_view__bottom" android:layout_below="@id/general__web_window_view__title">
+        <WebView android:id="@id/general__network_view__web" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:background="@drawable/shadow_normal" android:layout_width="fill_parent" android:layout_height="4.0dip" android:layout_alignParentTop="true" />
+        <ImageView android:background="@drawable/shadow_normal_down" android:layout_width="fill_parent" android:layout_height="4.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

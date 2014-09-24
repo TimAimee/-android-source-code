@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/general__shared__dip_20"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.duokan.reader.ui.general.DkTextView android:textSize="@dimen/general__shared__font_size_px_30" android:textColor="@color/general__shared__color_888888" android:id="@id/store__discript_view__name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/store__discript_view__more_arrow" android:paddingBottom="@dimen/general__shared__dip_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/general__shared__more" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <com.duokan.reader.ui.general.DkTextView android:textSize="@dimen/general__shared__font_size_px_24" android:textColor="@color/general__shared__color_888888" android:id="@id/store__discript_view__more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/general__shared__dip_5" android:text="@string/store__shared__more" android:layout_toLeftOf="@id/store__discript_view__more_arrow" android:layout_centerVertical="true" />
+</RelativeLayout>

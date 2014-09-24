@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/personal__reading_statistics_header_bg_view" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.duokan.reader.ui.general.DkHeaderView android:id="@id/personal__statistics_bitmap_factory_view__title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <include layout="@layout/personal__reading_statistics_header_view" />
+        <include layout="@layout/personal__reading_statistics_bottom_veiw" />
+    </LinearLayout>
+</merge>

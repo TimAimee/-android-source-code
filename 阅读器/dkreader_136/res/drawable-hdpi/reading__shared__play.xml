@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <bitmap android:src="@drawable/reading__shared__play_pressed" />
+    </item>
+    <item android:state_pressed="false">
+        <bitmap android:src="@drawable/reading__shared__play_normal" />
+    </item>
+</selector>

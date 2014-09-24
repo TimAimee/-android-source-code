@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.duokan.reader.ui.general.DkHeaderView android:id="@id/account__oauth_web_view__title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <WebView android:id="@id/account__oauth_web_view__web" android:background="@color/general__shared__color_bcbcbc" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

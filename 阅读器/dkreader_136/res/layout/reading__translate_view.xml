@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.duokan.reader.ui.general.DkLabelView android:textSize="14.0dip" android:textColor="@color/general__shared__color_b2000000" android:gravity="right" android:id="@id/reading__translate_view__power_by" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="@string/reading__translate_view__power_by" />
+    <com.duokan.reader.ui.general.DkTextView android:textSize="22.0dip" android:textColor="@color/general__shared__color_ed6c00" android:id="@id/reading__translate_view__word" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" />
+    <LinearLayout android:id="@id/reading__translate_view__more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <ImageView android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/reading__translate__ciba" />
+        <com.duokan.reader.ui.general.DkLabelView android:textColor="@color/general__shared__color_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="@string/reading__translate_view__more" />
+    </LinearLayout>
+</LinearLayout>

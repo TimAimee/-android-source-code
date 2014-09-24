@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/reading__annotation_operator_view__bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.duokan.reader.ui.general.ToolBarView android:id="@id/reading__annotation_operator_view__toolbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_below="@id/reading__annotation_operator_view__colors" />
+    <LinearLayout android:id="@id/reading__annotation_operator_view__colors" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_alignLeft="@id/reading__annotation_operator_view__toolbar" android:layout_alignRight="@id/reading__annotation_operator_view__toolbar">
+        <ImageView android:id="@id/reading__annotation_operator_view__color1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:src="@drawable/reading__annotation_operator_view__color1" android:scaleType="fitXY" android:layout_weight="1.0" />
+        <ImageView android:id="@id/reading__annotation_operator_view__color2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:src="@drawable/reading__annotation_operator_view__color2" android:scaleType="fitXY" android:layout_weight="1.0" />
+        <ImageView android:id="@id/reading__annotation_operator_view__color3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:src="@drawable/reading__annotation_operator_view__color3" android:scaleType="fitXY" android:layout_weight="1.0" />
+        <ImageView android:id="@id/reading__annotation_operator_view__color4" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:src="@drawable/reading__annotation_operator_view__color4" android:scaleType="fitXY" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

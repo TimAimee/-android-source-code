@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/reading__toc_item_view__root" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <com.duokan.reader.ui.general.DkTextView android:textSize="@dimen/general__shared__font_size_px_28" android:id="@id/reading__toc_item_view__title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/reading__toc_item_view__right" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <FrameLayout android:textSize="@dimen/general__shared__font_size_px_28" android:id="@id/reading__toc_item_view__right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <com.duokan.reader.ui.general.DkLabelView android:textSize="@dimen/general__shared__font_size_px_28" android:textColor="@color/general__shared__color_666666" android:gravity="right" android:id="@id/reading__toc_item_view__page_num" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/reading__toc_item_view__lock" android:background="@android:color/transparent" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/reading__toc_item_view__divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:contentDescription="@null" />
+</LinearLayout>

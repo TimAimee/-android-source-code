@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/reading__reading_background_view__shading" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/bg_logo" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/reading__reading_background_view__logo" android:layout_centerHorizontal="true" android:contentDescription="@null" />
+    <ImageView android:id="@id/mark_header_view_dividingline" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/reading__reading_background_view__shadow" android:scaleType="fitXY" android:layout_alignParentRight="true" android:contentDescription="@null" />
+    <RelativeLayout android:orientation="horizontal" android:id="@id/do_mark_header_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/page_mark_icon_temp" android:background="@drawable/reading__shared__bookmark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:contentDescription="@null" />
+        <ImageView android:id="@id/do_mark_header_icon" android:background="@drawable/reading__reading_background_view__arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/page_mark_icon_temp" android:layout_centerVertical="true" android:contentDescription="@null" />
+        <TextView android:textColor="#ffa48872" android:id="@id/do_mark_header_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="10.0dip" android:singleLine="true" android:layout_toLeftOf="@id/do_mark_header_icon" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

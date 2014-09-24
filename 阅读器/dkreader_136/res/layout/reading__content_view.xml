@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/reading__content_view_bg" android:visibility="invisible" layout="@layout/reading__content_view_bg" />
+        <com.duokan.reader.ui.general.PageFrameView android:id="@id/reading__content_view__page_frame" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.duokan.reader.ui.general.PageFlipperView android:id="@id/reading__content_view__page_flipper" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </com.duokan.reader.ui.general.PageFrameView>
+        <ImageView android:id="@id/page_mark_icon" android:background="@drawable/reading__shared__bookmark_highlight" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:contentDescription="@null" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/layout_booknavigatinfo" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    <LinearLayout android:id="@id/notify_anchor" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_alignParentBottom="true" />
+    <SurfaceView android:layout_width="0.0dip" android:layout_height="0.0dip" />
+</RelativeLayout>

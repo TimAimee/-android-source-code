@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.duokan.reader.ui.general.DkLabelView android:textSize="@dimen/general__shared__font_size_px_28" android:textColor="@color/general__shared__color_888888" android:id="@id/store__detail_more_info_item_view__left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/general__shared__dip_14" />
+    <com.duokan.reader.ui.general.DkLabelView android:textSize="@dimen/general__shared__font_size_px_28" android:textColor="@color/general__shared__color_666666" android:id="@id/store__detail_more_info_item_view__right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/general__shared__dip_14" />
+</LinearLayout>

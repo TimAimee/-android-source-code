@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/reading__reading_orientation_view__root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/reading__reading_orientation_view__rotate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/reading__reading_orientation_view__rotate" android:scaleType="center" android:contentDescription="@null" />
+    <ImageView android:layout_gravity="center" android:id="@id/reading__reading_orientation_view__rotate_clockwise" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/reading__reading_orientation_view__rotate_clockwise" android:scaleType="center" android:contentDescription="@null" />
+    <ImageView android:layout_gravity="center" android:id="@id/reading__reading_orientation_view__rotate_counter_clockwise" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/reading__reading_orientation_view__rotate_counter_clockwise" android:scaleType="center" android:contentDescription="@null" />
+</FrameLayout>

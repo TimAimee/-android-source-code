@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/general__shared__guide_tips_bg" android:padding="@dimen/general__shared__dip_20" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/home__feature_guide__view__left_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/general__shared__left_indicator" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/general__shared__dip_20" android:layout_marginRight="@dimen/general__shared__dip_20">
+        <TextView android:textSize="@dimen/general__shared__font_size_px_36" android:textColor="@color/general__shared__color_ffffff" android:ellipsize="end" android:gravity="center" android:id="@id/home__feature_guide__view__first_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textSize="@dimen/general__shared__font_size_px_28" android:textColor="@color/general__shared__color_ffffff" android:ellipsize="end" android:gravity="center" android:id="@id/home__feature_guide__view__second_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+    <ImageView android:id="@id/home__feature_guide__view__right_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/general__shared__right_indicator" />
+</LinearLayout>

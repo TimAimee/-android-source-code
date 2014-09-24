@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/general__shared__color_ebebeb" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.duokan.reader.ui.general.DkHeaderView android:id="@id/reading__send_error_view__title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <EditText android:textSize="@dimen/general__shared__font_size_px_32" android:textColor="@color/general__shared__color_333333" android:gravity="top|left|center" android:id="@id/reading__send_error_view__text" android:background="@null" android:paddingLeft="@dimen/general__shared__dip_10" android:paddingTop="@dimen/general__shared__dip_5" android:paddingRight="@dimen/general__shared__dip_10" android:paddingBottom="@dimen/general__shared__dip_5" android:layout_width="fill_parent" android:layout_height="0.0dip" android:hint="@string/reading__send_error_view__hint" android:layout_weight="1.0" />
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/general__shared__color_eeeeee" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.duokan.reader.ui.general.DkHeaderView android:id="@id/account__share_view__header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <EditText android:textSize="@dimen/general__shared__font_size_px_32" android:textColor="@color/general__shared__color_333333" android:gravity="top|left|center" android:id="@id/share_content" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="16.0dip" android:minLines="3" android:layout_weight="1.0" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="5.0dip">
+            <CheckBox android:textSize="@dimen/general__shared__font_size_px_28" android:textColor="@color/general__shared__color_888888" android:id="@id/share_change_2bitmap" android:background="@null" android:paddingLeft="40.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share_2bitmap_prompt" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/general__shared__checkbox_style" />
+            <LinearLayout android:id="@id/share_bitmap_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                <ImageView android:id="@id/share_bitmap_show" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+                <com.duokan.reader.ui.general.DkLabelView android:textSize="@dimen/general__shared__font_size_px_28" android:textColor="@color/general__shared__color_888888" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share_share_bitmap" />
+            </LinearLayout>
+            <com.duokan.reader.ui.general.DkNumView android:id="@id/share_text_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/general__shared__dip_4" android:layout_toLeftOf="@id/share_suffix" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true" />
+            <com.duokan.reader.ui.general.DkLabelView android:textSize="@dimen/general__shared__font_size_px_28" android:textColor="@color/general__shared__color_888888" android:id="@id/share_suffix" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

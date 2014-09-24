@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/general__shared__color_eeeeee" android:padding="@dimen/general__shared__dip_10" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.duokan.reader.ui.general.DkLabelView android:textSize="@dimen/general__shared__font_size_px_28" android:textColor="@color/general__shared__color_666666" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/general__shared__dip_14" android:text="@string/store__inquire_redemption_code_view__prompt" android:singleLine="false" />
+    <LinearLayout android:layout_gravity="center" android:background="@drawable/general__shared__single_input" android:layout_width="fill_parent" android:layout_height="@dimen/general__shared__button_heigh" android:layout_marginTop="@dimen/general__shared__dip_10">
+        <EditText android:textSize="@dimen/general__shared__font_size_px_28" android:textColor="@color/general__shared__color_333333" android:gravity="left|center" android:id="@id/store__inquire_redem_code_view__redem_code" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/general__shared__dip_10" android:layout_marginRight="@dimen/general__shared__dip_10" android:hint="@string/store__inquire_redemption_code_view__hint" android:singleLine="true" style="@style/general__shared__digits_style" />
+    </LinearLayout>
+    <com.duokan.reader.ui.general.DkLabelView android:id="@id/store__inquire_redem_code_view__inquire" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/general__shared__dip_10" android:text="@string/store__inquire_redemption_code_view__send" style="@style/store__shard__big_button_style" />
+</LinearLayout>

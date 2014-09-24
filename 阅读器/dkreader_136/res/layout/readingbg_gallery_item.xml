@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="54.0dip" android:layout_height="54.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.duokan.reader.ui.reading.BorderImageView android:id="@id/theme_image" android:layout_width="54.0dip" android:layout_height="54.0dip" android:layout_margin="2.0dip" android:layout_centerInParent="true" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/reading__colorpicker_view__gallery" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/general__shared__normal_text_size" android:id="@id/reading__colorpicker_view__custom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reading__theme__custom" />
+        <TextView android:textSize="@dimen/general__shared__very_small_text_size" android:gravity="center" android:id="@id/reading__colorpicker_view__custom1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reading__theme__long_click" />
+    </LinearLayout>
+</RelativeLayout>

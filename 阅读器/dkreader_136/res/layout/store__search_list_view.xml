@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.duokan.reader.ui.store.StoreListView android:id="@id/store__search_list_view__list" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/general__shared__list_view_style" />
+    <include android:id="@id/store__search_list_view__empty_view" layout="@layout/store__search_split_title_view" />
+</LinearLayout>

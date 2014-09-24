@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="500.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/statistics__header_view" android:background="@drawable/general__shared__header_view_1_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/text" />
+    <ImageView android:id="@id/statistics__header_circle" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/personal__statistics__header_circle" android:scaleType="centerCrop" />
+</FrameLayout>

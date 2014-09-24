@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.duokan.reader.ui.general.BookCoverView android:id="@id/store__topic_item_view__cover" android:layout_width="52.666992dip" android:layout_height="70.66699dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <RelativeLayout android:id="@id/store__topic_item_view__container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/store__topic_item_view__cover">
+        <TextView android:id="@id/store__topic_item_view__first_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/store__topic_item_view__highlight" android:layout_alignParentLeft="true" />
+        <TextView android:id="@id/store__topic_item_view__highlight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <TextView android:id="@id/store__topic_item_view__second_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/store__topic_item_view__cover" android:layout_below="@id/store__topic_item_view__container" />
+    <TextView android:id="@id/store__topic_item_view__third_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/store__topic_item_view__cover" android:layout_below="@id/store__topic_item_view__second_line" />
+</RelativeLayout>

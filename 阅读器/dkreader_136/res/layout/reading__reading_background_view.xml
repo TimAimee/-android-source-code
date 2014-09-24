@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/reading__reading_background_view__shading" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/reading__reading_background_view__logo" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/general__shared__background_logo" android:layout_centerHorizontal="true" android:contentDescription="@null" />
+    <ImageView android:id="@id/reading__reading_background_view__shadow" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/reading__reading_background_view__shadow" android:scaleType="fitXY" android:layout_alignParentRight="true" android:contentDescription="@null" />
+    <RelativeLayout android:orientation="horizontal" android:id="@id/reading__reading_background_view__header" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/reading__reading_background_view__bookmark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/reading__shared__bookmark" android:layout_alignParentRight="true" android:contentDescription="@null" />
+        <ImageView android:id="@id/reading__reading_background_view__arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/reading__reading_background_view__arrow" android:layout_toLeftOf="@id/reading__reading_background_view__bookmark" android:layout_centerVertical="true" android:contentDescription="@null" />
+        <com.duokan.reader.ui.general.DkLabelView android:textColor="#ffa48872" android:id="@id/reading__reading_background_view__bookmark_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="10.0dip" android:singleLine="true" android:layout_toLeftOf="@id/reading__reading_background_view__arrow" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

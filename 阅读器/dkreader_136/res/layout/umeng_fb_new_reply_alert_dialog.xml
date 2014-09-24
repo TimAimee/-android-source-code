@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/umeng_fb_gray_frame" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip">
+        <TextView android:textSize="20.0dip" android:textColor="#ff565656" android:gravity="center" android:id="@id/umeng_fb_new_reply_alert_title" android:background="@drawable/umeng_fb_bar_bg" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="您的反馈收到了回复" />
+        <TextView android:textSize="19.0dip" android:textColor="#ff6f6f6f" android:gravity="center_vertical" android:id="@id/umeng_fb_new_dev_reply_box" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="8.0dip" android:minHeight="110.0dip" android:text="This is the reply from dev" />
+        <View android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="3.0dip" android:layout_marginTop="3.0dip" android:layout_marginBottom="1.0dip" />
+        <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:background="#ffe0e0e0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dip">
+            <Button android:textColor="#ffffffff" android:id="@id/umeng_fb_exitBtn" android:background="@drawable/umeng_fb_submit_selector" android:layout_width="80.0dip" android:layout_height="45.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/UMFeedbackGotIt" android:layout_weight="1.0" />
+            <Button android:textColor="#ffffffff" android:id="@id/umeng_fb_see_detail_btn" android:background="@drawable/umeng_fb_submit_selector" android:layout_width="80.0dip" android:layout_height="45.0dip" android:layout_marginLeft="40.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/UMFeedbackSeeDetail" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

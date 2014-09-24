@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/bookshelf__search_book_view__header" android:background="@drawable/general__dk_header_view__background1" android:paddingTop="@dimen/general__shared__dip_5" android:paddingRight="@dimen/general__shared__dip_5" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:gravity="center" android:id="@id/bookshelf__search_book_view__back" android:paddingLeft="@dimen/general__shared__dip_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/general__shared__back" android:scaleType="center" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <EditText android:textSize="@dimen/general__shared__font_size_px_32" android:textColorHint="@color/general__shared__color_4d000000" android:gravity="left|center" android:id="@id/bookshelf__search_book_view__edit" android:background="@drawable/general__shared_search_box" android:paddingLeft="@dimen/general__shared__dip_10" android:paddingTop="@dimen/general__shared__dip_3" android:paddingRight="@dimen/general__shared__dip_10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/general__shared__dip_5" android:layout_marginTop="@dimen/general__shared__dip_10" android:layout_marginRight="@dimen/general__shared__dip_10" android:hint="@string/general__shared__search" android:singleLine="true" android:drawableLeft="@drawable/general__shared_search_box_icon" android:drawablePadding="@dimen/general__shared__dip_10" android:layout_toRightOf="@id/bookshelf__search_book_view__back" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/bookshelf__search_book_view__listview" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/general__shared__list_view_style" />
+        <View android:id="@id/bookshelf__search_book_view__list_emptyview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</LinearLayout>

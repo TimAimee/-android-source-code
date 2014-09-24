@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.duokan.reader.ui.reading.ReadingView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/reading__reading_view__background" android:visibility="invisible" layout="@layout/reading__reading_background_view" />
+    <View android:id="@id/reading__reading_operation_view__background" android:background="@drawable/reading__reading_operation_view__bg" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.duokan.reader.ui.general.PageFrameView android:id="@id/reading__reading_view__page_frame" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.duokan.reader.ui.general.PageFlipperView android:id="@id/reading__reading_view__page_flipper" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.duokan.reader.ui.reading.SlideShowView android:id="@id/reading__reading_view__comic_show" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </com.duokan.reader.ui.general.PageFrameView>
+        <ImageView android:layout_gravity="top|right|center" android:id="@id/reading__reading_view__bookmark" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/reading__shared__bookmark_highlight" android:contentDescription="@null" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/reading__reading_view__navigation_frame" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="right" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/reading__reading_view__navigation_shadow" android:scaleType="fitXY" android:contentDescription="@null" />
+        <ImageView android:layout_gravity="right|center" android:id="@id/reading__reading_view__navigation_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/reading__reading_view__navigation_back" android:scaleType="fitXY" android:contentDescription="@null" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/reading__reading_view__root" android:background="@android:color/transparent" android:visibility="invisible" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:gravity="center" android:layout_gravity="bottom" android:id="@id/reading__reading_view__operation_panel" android:layout_width="fill_parent" android:layout_height="100.0dip">
+            <View android:background="@drawable/reading__reading_operation_view__shadow" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+            <com.duokan.reader.ui.general.BoxView android:layout_width="fill_parent" android:layout_height="fill_parent" android:maxWidth="300.0dip" android:layout_centerHorizontal="true">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/reading__fast_operation_view__comment_root" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30.0dip">
+                        <ImageButton android:id="@id/reading__fast_operation_view__comment" android:background="@drawable/reading__reading_operation_view__orange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/reading__reading_operation_view__comment" />
+                        <com.duokan.reader.ui.general.DkLabelView android:textSize="@dimen/general__shared__font_size_px_24" android:textColor="@color/general__shared__color_ccffffff" android:id="@id/reading__fast_operation_view__comment_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reading__fast_operation_view__comment" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageButton android:id="@id/reading__fast_operation_view__navigation" android:background="@drawable/reading__reading_operation_view__black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/reading__reading_operation_view__navigation" />
+                        <com.duokan.reader.ui.general.DkLabelView android:textSize="@dimen/general__shared__font_size_px_24" android:textColor="@color/general__shared__color_ccffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reading__fast_operation_view__navigation" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip">
+                        <ImageButton android:id="@id/reading__fast_operation_view__back" android:background="@drawable/reading__reading_operation_view__black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/reading__reading_operation_view__back" />
+                        <com.duokan.reader.ui.general.DkLabelView android:textSize="@dimen/general__shared__font_size_px_24" android:textColor="@color/general__shared__color_ccffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reading__fast_operation_view__back" />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.duokan.reader.ui.general.BoxView>
+        </RelativeLayout>
+    </FrameLayout>
+</com.duokan.reader.ui.reading.ReadingView>

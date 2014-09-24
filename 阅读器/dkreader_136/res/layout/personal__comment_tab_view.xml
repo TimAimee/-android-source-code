@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.duokan.reader.ui.general.DkLabelView android:gravity="center" android:background="@drawable/general__shared__tab_item_background" android:layout_width="fill_parent" android:layout_height="42.0dip" style="@style/general__shared__tab_text_style"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

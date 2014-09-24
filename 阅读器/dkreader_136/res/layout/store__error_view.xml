@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/general__shared__color_eeeeee" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/store__error_view__network_error" />
+        <com.duokan.reader.ui.general.DkLabelView android:text="@string/bookcity_store__error" style="@style/bookcity__shared__error" />
+        <com.duokan.reader.ui.general.DkLabelView android:layout_gravity="center" android:id="@id/store__error_view__reload" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/bookcity_store__reload" style="@style/store__shard__big_button_style" />
+    </LinearLayout>
+</RelativeLayout>

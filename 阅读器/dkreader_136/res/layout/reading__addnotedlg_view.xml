@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/reading_notes_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/reading__addnotedlg_view__btns" android:paddingLeft="18.0dip" android:paddingTop="6.0dip" android:paddingRight="18.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <com.duokan.reader.ui.general.DkLabelView android:textColor="#ff000000" android:gravity="center" android:id="@id/reading__addnotedlg_view__cancel" android:background="@drawable/general__shared__button5" android:layout_width="0.0dip" android:layout_height="35.0dip" android:text="@string/reading__addnotedlg_view__cancel" android:layout_weight="1.0" />
+        <com.duokan.reader.ui.general.DkLabelView android:textSize="@dimen/general__shared__font_size_px_36" android:textColor="#ff7b5332" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reading__addnotedlg_view__note" android:layout_weight="2.0" />
+        <com.duokan.reader.ui.general.DkLabelView android:textColor="#ff000000" android:gravity="center" android:id="@id/reading__addnotedlg_view__save" android:background="@drawable/general__shared__button5" android:layout_width="0.0dip" android:layout_height="35.0dip" android:text="@string/reading__addnotedlg_view__save" android:layout_weight="1.0" />
+    </LinearLayout>
+    <EditText android:scrollbarStyle="insideOverlay" android:gravity="top" android:id="@id/reading__addnotedlg_view__note" android:background="@android:color/transparent" android:paddingLeft="18.0dip" android:paddingRight="18.0dip" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:singleLine="false" android:layout_below="@id/reading__addnotedlg_view__btns" android:lineSpacingMultiplier="1.2" />
+</RelativeLayout>

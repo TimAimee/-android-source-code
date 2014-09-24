@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/reading__bookmark_item_view__root" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="13.0dip">
+        <TextView android:textSize="@dimen/general__shared__font_size_px_24" android:textColor="@color/general__shared__color_666666" android:ellipsize="end" android:id="@id/reading__bookmark_item_view__add_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentLeft="true" />
+        <com.duokan.reader.ui.general.DkLabelView android:textSize="@dimen/general__shared__font_size_px_28" android:textColor="@color/general__shared__color_666666" android:gravity="right" android:id="@id/reading__bookmark_item_view__page_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <com.duokan.reader.ui.general.DkTextView android:textSize="@dimen/general__shared__font_size_px_28" android:textColor="@color/general__shared__color_333333" android:ellipsize="end" android:gravity="fill" android:id="@id/reading__bookmark_item_view__sample" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:maxLines="3" />
+    <ImageView android:id="@id/reading__bookmark_item_view__horz_divider" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:contentDescription="@null" />
+</LinearLayout>

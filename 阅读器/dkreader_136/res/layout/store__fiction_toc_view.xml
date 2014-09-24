@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ExpandableListView android:id="@id/store__fiction_chapter_view__list" android:paddingLeft="@dimen/general__shared__dip_15" android:paddingRight="@dimen/general__shared__dip_15" android:layout_width="fill_parent" android:layout_height="fill_parent" android:childDivider="@color/general__shared__color_bcbcbc" android:divider="@color/general__shared__color_bcbcbc" style="@style/general__shared__list_view_style" />
+</LinearLayout>

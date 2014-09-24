@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/general__shared__color_ebebeb" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/store__change_log_item_view__time_line" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="16.0dip" />
+    <TextView android:textSize="@dimen/general__shared__font_size_px_24" android:textColor="@color/general__shared__color_666666" android:id="@id/store__change_log_item_view__time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="@dimen/general__shared__dip_10" android:layout_marginRight="@dimen/general__shared__dip_10" android:layout_toRightOf="@id/store__change_log_item_view__time_line" />
+    <com.duokan.reader.ui.general.DkTextView android:textSize="@dimen/general__shared__font_size_px_28" android:textColor="@color/general__shared__color_333333" android:id="@id/store__change_log_item_view__detail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="@dimen/general__shared__dip_10" android:layout_marginRight="@dimen/general__shared__dip_10" android:layout_below="@id/store__change_log_item_view__time" />
+</RelativeLayout>

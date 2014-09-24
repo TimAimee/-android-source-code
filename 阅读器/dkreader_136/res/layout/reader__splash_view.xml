@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/general__shared__color_ffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/welcomeimage" android:background="@drawable/general__shared__splash" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="50.0dip" />
+    <LinearLayout android:gravity="center" android:layout_gravity="bottom|center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="40.0dip">
+        <ProgressBar android:gravity="center" android:layout_gravity="center" android:id="@id/welcomeprogress" android:layout_width="22.0dip" android:layout_height="22.0dip" style="@style/refresh_progressbar" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/general__shared__color_ffbbbbbb" android:gravity="center" android:layout_gravity="center" android:id="@id/welcome_sn_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="30.0dip" android:text="2.0.0" android:singleLine="false" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/general__shared__color_ffbbbbbb" android:gravity="center" android:layout_gravity="center" android:id="@id/reader__splash_view__tip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:singleLine="false" />
+    </LinearLayout>
+</FrameLayout>

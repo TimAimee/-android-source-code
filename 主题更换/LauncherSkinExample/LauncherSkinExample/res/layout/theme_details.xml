@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+    <RelativeLayout 
+        android:id="@+id/toplayout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@color/top_bg_color"
+        android:padding="4dip"
+     >
+        <TextView 
+             android:id="@+id/themename_label"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="@string/theme_name_detail"
+             android:layout_alignParentLeft="true"
+             android:gravity="center"
+             android:textSize="18dip"
+             android:textColor="@color/top_text_color"
+             android:layout_centerVertical="true"
+         />
+       
+        <ImageView 
+             android:id="@+id/Delete_img"
+             android:layout_width="47dip"
+             android:layout_height="47dip"
+             android:src="@drawable/delete_2"   
+             android:layout_alignParentRight="true"
+         />
+        
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:id="@+id/bottomlayout" 
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@color/top_bg_color"              
+        android:layout_alignParentBottom="true"     
+        android:gravity="center"
+     >
+        
+        <Button 
+             android:id="@+id/apply_btn"
+             android:layout_width="150dip"
+             android:layout_height="wrap_content"
+             android:text="@string/apply_btn"
+             android:textSize="16dip"
+             android:textColor="@color/top_text_color"
+             
+         />
+        
+    </LinearLayout>
+      
+    <RelativeLayout 
+        android:id="@+id/middlelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/toplayout"
+        android:layout_above="@id/bottomlayout"
+        android:background="@color/background_color"
+     >
+        
+        <ImageView 
+             android:id="@+id/theme_preview"
+             android:layout_width="150dip"
+             android:layout_height="225dip"
+             android:src="@drawable/themepreview"   
+             android:layout_centerInParent="true"
+         />
+        
+    </RelativeLayout>
+    
+    
+
+</RelativeLayout>

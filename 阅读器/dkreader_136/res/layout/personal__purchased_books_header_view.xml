@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@android:color/transparent" android:paddingLeft="20.0dip" android:paddingTop="10.0dip" android:paddingRight="20.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.duokan.reader.ui.general.DkLabelView android:gravity="center" android:id="@id/personal__purchased_books_header_view__updata_all" android:background="@drawable/general__shared__btn_45dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/personal__purchased_books_header_view__update_all" style="@style/store__shard__big_button_style" />
+</LinearLayout>

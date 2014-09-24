@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/reading__reading_options_view__theme7_normal" />
+    <item android:drawable="@drawable/reading__reading_options_view__theme_highlight" />
+</layer-list>

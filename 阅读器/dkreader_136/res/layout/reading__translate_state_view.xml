@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/reading__translate_view__download" android:paddingTop="12.0dip" android:layout_width="260.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+        <ImageView android:gravity="center_horizontal" android:id="@id/reading__translate_state_view__stat_icon" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/reading__translate__disable" />
+        <com.duokan.reader.ui.general.DkLabelView android:textSize="@dimen/general__shared__large_text_size" android:textColor="@color/general__shared__color_b2000000" android:id="@id/reading__translate_state_view__state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:id="@id/reading__translate_view__more" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/reading__translate__ciba" />
+        <com.duokan.reader.ui.general.DkLabelView android:textColor="@color/general__shared__color_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="@string/reading__translate_view__more" />
+    </LinearLayout>
+</LinearLayout>

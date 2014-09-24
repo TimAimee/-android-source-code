@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:drawable="@color/general__shared__color_d5d5d5" />
+    <item android:drawable="@color/general__shared__color_ebebeb" />
+</selector>

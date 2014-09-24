@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/personal__home_title_view__message_button" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@id/personal__home_title_view__message" android:background="@drawable/personal__message_view_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-1.0dip" android:layout_marginRight="4.0dip" />
+        <ImageView android:layout_gravity="top|right|center" android:id="@id/personal__home_title_view__unread_message_count_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-8.0dip" android:layout_marginRight="-4.0dip" />
+    </FrameLayout>
+    <ImageView android:id="@id/personal__home_title_view__setting" android:background="@drawable/general__shared__settings" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" />
+</LinearLayout>

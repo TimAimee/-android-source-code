@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/general__shared__color_ffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/general__shared__bg_orange" android:layout_width="fill_parent" android:layout_height="@dimen/general__shared__dip_290">
+        <com.duokan.reader.ui.general.DkHeaderView android:id="@id/general__about_view__title" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+        <ImageView android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/general__about_view__logo" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.duokan.reader.ui.general.DkLabelView android:textSize="@dimen/general__shared__font_size_px_32" android:textColor="@color/general__shared__color_ffffff" android:gravity="center" android:id="@id/general__about_view__first_line" android:background="@drawable/general__about_view__version_bg" android:paddingLeft="@dimen/general__shared__dip_40" android:paddingRight="@dimen/general__shared__dip_40" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.duokan.reader.ui.general.DkLabelView android:textSize="@dimen/general__shared__font_size_px_30" android:textColor="#ffb0b8bd" android:id="@id/general__about_view__second_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/general__shared__company" />
+        <TextView android:textSize="@dimen/general__shared__font_size_px_28" android:textColor="#ffb0b8bd" android:id="@id/general__about_view__third_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/general__shared__website" />
+    </LinearLayout>
+</LinearLayout>

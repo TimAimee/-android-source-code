@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/general__shared__dip_50"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.duokan.reader.ui.general.DkLabelView android:textSize="@dimen/general__shared__font_size_px_32" android:textColor="@drawable/general__shared__menu_item_view__textcolor" android:gravity="left|center" android:id="@id/general__shared_spirt_menu_item_view__text" android:background="@drawable/general__shared__menu_item_view__bg" android:paddingLeft="@dimen/general__shared__dip_20" android:paddingTop="@dimen/general__shared__dip_15" android:paddingBottom="@dimen/general__shared__dip_15" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:layout_gravity="bottom" android:background="@color/general__shared__color_bcbcbc" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</FrameLayout>

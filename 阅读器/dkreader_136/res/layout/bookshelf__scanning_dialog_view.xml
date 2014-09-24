@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/general__shared__dip_30">
+            <TextView android:textSize="@dimen/general__shared__font_size_px_32" android:textColor="@color/general__shared__color_333333" android:id="@id/scanning_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:shadowColor="@color/general__shared__color_ccffffff" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="1.0" />
+        </LinearLayout>
+        <TextView android:textColor="@color/general__shared__color_898989" android:gravity="center" android:id="@id/scanning_type" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/general__shared__dip_15" />
+    </LinearLayout>
+    <Button android:textSize="@dimen/general__shared__font_size_px_32" android:textColor="@color/general__shared__color_333333" android:id="@id/scanning_cancel" android:background="@drawable/general__shared__btn_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/general__shared__dip_15" android:layout_marginTop="@dimen/general__shared__dip_15" android:layout_marginRight="@dimen/general__shared__dip_15" android:text="@string/general__shared__cancel" />
+</LinearLayout>

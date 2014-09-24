@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/general__shared__dip_20" android:textColor="@color/home__shared__home_tab_colors" android:gravity="center" android:padding="@dimen/general__shared__dip_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/home__personal_tab_view__title"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

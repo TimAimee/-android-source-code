@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="textColor" format="color" />
+    <attr name="textSize" format="dimension" />
+    <attr name="normaltextColor" format="color" />
+    <attr name="focustextColor" format="color" />
+    <attr name="normaldrawable" format="reference" />
+    <attr name="focusdrawable" format="reference" />
+    <attr name="draw_continous" format="boolean" />
+    <attr name="draw_position" format="string" />
+    <attr name="width_adaptive" format="boolean" />
+    <attr name="normal_resource" format="reference" />
+    <attr name="highlight_resource" format="reference" />
+    <attr name="custom_opration" format="boolean" />
+    <attr name="high_score" format="reference" />
+    <attr name="normal_score" format="reference" />
+    <attr name="score_space" format="dimension" />
+</resources>

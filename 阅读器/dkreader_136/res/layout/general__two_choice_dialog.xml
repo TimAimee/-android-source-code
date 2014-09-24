@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/general__two_choice_dialog__first_choice" layout="@layout/general__dk_spirt_menu_item_view" />
+    <include android:id="@id/general__two_choice_dialog__second_choice" layout="@layout/general__dk_spirt_menu_item_view" />
+</LinearLayout>

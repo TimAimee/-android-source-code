@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/store__search_title_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:id="@id/store__search_title_view__edittext" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/store__search_title_view__search" android:layout_toLeftOf="@id/store__search_title_view__button" android:layout_centerVertical="true" style="@style/general__shared__search_text_style" />
+        <Button android:id="@id/store__search_title_view__button" android:background="@drawable/store__search_title_view__search_button" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

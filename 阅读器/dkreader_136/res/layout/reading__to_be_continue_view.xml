@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/reading__to_be_continue_view__root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.duokan.reader.ui.general.DkLabelView android:textSize="26.0dip" android:textStyle="normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reading__to_be_continue_view__not_complete" />
+    <com.duokan.reader.ui.general.DkLabelView android:textSize="18.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reading__to_be_continue_view__more_in_full_book" />
+    <LinearLayout android:gravity="center" android:id="@id/reading__to_be_continue_view__buy_full_book" android:background="@drawable/general__shared__confirm_btn_45dip" android:layout_width="140.0dip" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <com.duokan.reader.ui.general.DkLabelView android:textSize="@dimen/general__shared__middle_text_size" android:textColor="@android:color/white" android:gravity="center" android:id="@id/reading__to_be_continue_view__buy_full_book1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.duokan.reader.ui.general.DkLabelView android:textSize="@dimen/general__shared__middle_text_size" android:textColor="@android:color/white" android:gravity="center" android:id="@id/reading__to_be_continue_view__buy_full_book2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/store__book_detail_view__xiaomi_price_suffix" />
+    </LinearLayout>
+    <com.duokan.reader.ui.general.DkLabelView android:textSize="20.0dip" android:gravity="center" android:id="@id/reading__to_be_continue_view__download_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_margin="20.0dip" />
+</LinearLayout>

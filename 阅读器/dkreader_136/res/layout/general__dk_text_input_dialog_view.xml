@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EditText android:textAppearance="?android:textAppearanceMedium" android:gravity="left|center" android:id="@id/general__shared_text_input_dialog_view__edit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:selectAllOnFocus="true" android:inputType="textCapSentences"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

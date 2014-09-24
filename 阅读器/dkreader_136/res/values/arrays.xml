@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="general__shared__splash_tips">
+        <item>小提示: 您可以通过导入本地书目获取书籍</item>
+        <item>小提示: 左右滑动可以切换书城、书架、个人中心</item>
+        <item>小提示: 阅读时可以点击屏幕中部弹出工具栏</item>
+        <item>小提示: 阅读时双指上下滑动可以快捷调节亮度</item>
+        <item>小提示: 阅读时单指下拉可以增删书签</item>
+        <item>小提示: 阅读时长按文字可以查字典、做笔记</item>
+        <item>小提示: 阅读时单指上拉可以返回书架、查看目录</item>
+        <item>小提示: 阅读时可以跨页加书摘喔</item>
+        <item>小提示: 所有图书都可以同步进度、书签和笔记喔</item>
+        <item>小提示: 在书架拖拽封面叠加可以创建分组</item>
+        <item>小提示: 购买书后就可以发表评论啦</item>
+        <item>小提示: 漫画图书可以双击图片切换阅读模式</item>
+    </string-array>
+    <array name="bind_title_array">
+        <item>@string/account_bind_sina</item>
+        <item>@string/account_bind_qq</item>
+        <item>@string/account_bind_renren</item>
+        <item>@string/account_bind_kaixin</item>
+    </array>
+    <array name="share_title_array">
+        <item>@string/share_name_sina</item>
+        <item>@string/share_name_qq</item>
+        <item>@string/share_name_renren</item>
+        <item>@string/share_name_kaixin</item>
+    </array>
+    <array name="reading__comment_view__level">
+        <item>@string/reading__comment_view__level1</item>
+        <item>@string/reading__comment_view__level2</item>
+        <item>@string/reading__comment_view__level3</item>
+        <item>@string/reading__comment_view__level4</item>
+        <item>@string/reading__comment_view__level5</item>
+    </array>
+    <string-array name="UMageList">
+        <item>年龄</item>
+        <item>18岁以下</item>
+        <item>18-24岁</item>
+        <item>25-30岁</item>
+        <item>31-35岁</item>
+        <item>36-40岁</item>
+        <item>41-50岁</item>
+        <item>51-59岁</item>
+        <item>60岁及以上</item>
+    </string-array>
+    <string-array name="UMgenderList">
+        <item>性别</item>
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+</resources>

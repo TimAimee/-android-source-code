@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/reading__annotationoperatordlg_view__bg" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/reading__annotationoperatordlg_view__menu" layout="@layout/general__bubble_floating_view" />
+</RelativeLayout>

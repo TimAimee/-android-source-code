@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/reading__custom_theme_view__root" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/reading__custom_theme_view__empty" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/general__shared__bottom_panel1_shadow" android:scaleType="fitXY" android:contentDescription="@null" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/general__shared__bottom_panel1_background" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.duokan.reader.ui.reading.ColorPickerView android:id="@id/reading__custom_theme_view__picker" android:layout_width="fill_parent" android:layout_height="@dimen/general__shared__dip_160" />
+        <com.duokan.reader.ui.general.TabBarView android:id="@id/reading__custom_theme_view__tab_bar" android:layout_width="fill_parent" android:layout_height="@dimen/general__shared__dip_40" />
+    </LinearLayout>
+</LinearLayout>

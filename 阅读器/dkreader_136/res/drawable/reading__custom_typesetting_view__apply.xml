@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:drawable="@drawable/reading__custom_typesetting_view__apply_pressed" />
+    <item android:drawable="@drawable/reading__custom_typesetting_view__apply_normal" />
+</selector>

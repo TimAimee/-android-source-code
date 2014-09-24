@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:layout_gravity="center_vertical" android:id="@id/listview_item_loading_progressbar" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginRight="20.0dip" style="@style/refresh_progressbar" />
+    <com.duokan.reader.ui.general.DkLabelView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/listview_item_loading_result" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/loading" android:singleLine="true" style="@style/general__shared__listview_foot_style" />
+</LinearLayout>

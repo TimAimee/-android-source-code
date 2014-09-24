@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:paddingLeft="@dimen/general__shared__dip_30" android:paddingRight="@dimen/general__shared__dip_30" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.duokan.reader.ui.general.DkLabelView android:textSize="@dimen/general__shared__font_size_px_28" android:textColor="@color/general__shared__color_333333" android:gravity="center" android:id="@id/bookshelf__search_list_footer_view__search_online" android:background="@drawable/general__shared__btn_45dip" android:paddingLeft="@dimen/general__shared__dip_30" android:paddingTop="@dimen/general__shared__dip_15" android:paddingRight="@dimen/general__shared__dip_30" android:paddingBottom="@dimen/general__shared__dip_15" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/general__shared__dip_30" android:text="@string/bookshelf__search_book_view__search_by_store" />
+</LinearLayout>

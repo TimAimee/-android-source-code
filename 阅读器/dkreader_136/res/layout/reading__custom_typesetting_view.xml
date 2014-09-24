@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/general__shared__color_ffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.duokan.reader.ui.general.DkTextView android:gravity="fill" android:id="@id/reading__custom_typesetting_view__preview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/reading__custom_typesetting_view__demo" />
+    <LinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@id/reading__custom_typesetting_view__options" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/general__shared__bottom_panel1_shadow" android:scaleType="fitXY" android:contentDescription="@null" />
+        <FrameLayout android:layout_gravity="bottom|center" android:background="@drawable/general__shared__bottom_panel1_background" android:layout_width="fill_parent" android:layout_height="59.0dip">
+            <com.duokan.reader.ui.general.BoxView android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:maxWidth="480.0dip">
+                <com.duokan.reader.ui.general.HorzLinearView android:gravity="center" android:id="@id/reading__custom_typesetting_view__option_bar" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </com.duokan.reader.ui.general.BoxView>
+        </FrameLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@id/reading__custom_typesetting_view__edit" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/reading__custom_typesetting_view__line_gap" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.duokan.reader.ui.general.DkLabelView android:textSize="16.0dip" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="bottom|center" android:background="@drawable/general__shared__popup1_background" android:paddingLeft="30.0dip" android:paddingRight="30.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="220.0dip" android:text="@string/reading__custom_typesetting_view__line_gap_hint" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/reading__custom_typesetting_view__para_spacing" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.duokan.reader.ui.general.DkLabelView android:textSize="16.0dip" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="bottom|center" android:background="@drawable/general__shared__popup1_background" android:paddingLeft="30.0dip" android:paddingRight="30.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="220.0dip" android:text="@string/reading__custom_typesetting_view__para_spacing_hint" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/reading__custom_typesetting_view__page_padding" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.duokan.reader.ui.general.DkLabelView android:textSize="16.0dip" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="bottom|center" android:background="@drawable/general__shared__popup1_background" android:paddingLeft="30.0dip" android:paddingRight="30.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="220.0dip" android:text="@string/reading__custom_typesetting_view__page_padding_hint" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/reading__custom_typesetting_view__indent" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.duokan.reader.ui.general.DkLabelView android:textSize="16.0dip" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="bottom|center" android:background="@drawable/general__shared__popup1_background" android:paddingLeft="30.0dip" android:paddingRight="30.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="220.0dip" android:text="@string/reading__custom_typesetting_view__indent_hint" />
+        </FrameLayout>
+        <LinearLayout android:layout_gravity="bottom|center" android:orientation="horizontal" android:id="@id/reading__custom_typesetting_view__confirm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="125.0dip">
+            <ImageView android:id="@id/reading__custom_typesetting_view__discard" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/general__shared__dip_30" android:src="@drawable/reading__custom_typesetting_view__discard" android:contentDescription="@null" />
+            <ImageView android:id="@id/reading__custom_typesetting_view__apply" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/reading__custom_typesetting_view__apply" android:contentDescription="@null" />
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

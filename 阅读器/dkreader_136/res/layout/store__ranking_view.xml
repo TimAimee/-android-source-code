@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.duokan.reader.ui.general.ScrollerView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:padding="@dimen/general__shared__dip_15" android:layout_width="fill_parent" android:layout_height="206.0dip">
+        <com.duokan.reader.ui.general.TagCloud android:id="@id/store__ranking_view__tag_cloud" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <com.duokan.reader.ui.store.TwoListLayoutView android:id="@id/store__ranking_view__list" android:background="@color/general__shared__color_eeeeee" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</com.duokan.reader.ui.general.ScrollerView>

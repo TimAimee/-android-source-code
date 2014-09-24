@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/reading__reading_menu_view__top_bar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/reading__reading_menu_view__top_background" android:paddingLeft="18.0dip" android:paddingTop="10.0dip" android:paddingRight="18.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <LinearLayout android:id="@id/reading__reading_menu_view__top_left_panel" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toLeftOf="@id/reading__reading_menu_view__top_right_panel" android:layout_alignParentLeft="true">
+                <ImageView android:id="@id/reading__reading_menu_view__back" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/general__shared__back" android:scaleType="center" android:contentDescription="@null" />
+                <ImageView android:background="#33ffffff" android:layout_width="1.0dip" android:layout_height="30.0dip" android:layout_marginLeft="18.0dip" android:layout_marginRight="18.0dip" android:contentDescription="@null" />
+                <ImageView android:id="@id/reading__reading_menu_view__navigation" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/reading__reading_menu_view__navigation" android:scaleType="center" android:contentDescription="@null" />
+                <com.duokan.reader.ui.general.DkLabelView android:textColor="@color/general__shared__color_ffffff" android:gravity="center" android:id="@id/reading__reading_menu_view__buy" android:background="@drawable/general__shared__confirm_btn_35dip" android:layout_width="40.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/general__shared__buy" />
+                <TextView android:textSize="@dimen/general__shared__font_size_px_24" android:textColor="@color/general__shared__color_ccffffff" android:layout_gravity="center_vertical" android:id="@id/reading__reading_menu_view__progress" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/reading__reading_menu_view__top_right_panel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                <ImageView android:id="@id/reading__reading_menu_view__search" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="18.0dip" android:src="@drawable/reading__reading_menu_view__search" android:scaleType="center" android:contentDescription="@null" />
+                <ImageView android:id="@id/reading__reading_menu_view__bookmark" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/reading__reading_menu_view__bookmark" android:scaleType="center" android:contentDescription="@null" />
+            </LinearLayout>
+        </RelativeLayout>
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/reading__reading_menu_view__top_shadow" android:scaleType="fitXY" android:contentDescription="@null" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/reading__reading_menu_view__empty" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="vertical" android:id="@id/reading__reading_menu_view__bottom_bar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/general__shared__bottom_panel1_shadow" android:scaleType="fitXY" android:contentDescription="@null" />
+            <ImageView android:layout_gravity="bottom|right|center" android:id="@id/reading__reading_menu_view__slide_show" android:background="@drawable/reading__reading_menu_view__slide_show_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/reading__reading_menu_view__slide_show_icon" android:scaleType="center" android:contentDescription="@null" />
+        </FrameLayout>
+        <FrameLayout android:background="@drawable/general__shared__bottom_panel1_background" android:layout_width="fill_parent" android:layout_height="69.0dip">
+            <com.duokan.reader.ui.general.BoxView android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:maxWidth="400.0dip">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <com.duokan.reader.ui.general.DkLabelView android:textSize="@dimen/general__shared__font_size_px_24" android:textColor="@color/general__shared__color_ccffffff" android:gravity="center_horizontal" android:layout_gravity="center" android:id="@id/reading__reading_menu_view__rotate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableTop="@drawable/reading__reading_menu_view__rotate" android:layout_weight="1.0" />
+                    <ImageView android:id="@id/reading__reading_menu_view__rotate_divider" android:background="#33ffffff" android:layout_width="1.0dip" android:layout_height="30.0dip" android:contentDescription="@null" />
+                    <com.duokan.reader.ui.general.DkLabelView android:textSize="@dimen/general__shared__font_size_px_24" android:textColor="@color/general__shared__color_ccffffff" android:gravity="center_horizontal" android:layout_gravity="center" android:id="@id/reading__reading_menu_view__seek_page" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reading__reading_menu_view__seek_page" android:drawableTop="@drawable/reading__reading_menu_view__seek_page" android:layout_weight="1.0" />
+                    <ImageView android:background="#33ffffff" android:layout_width="1.0dip" android:layout_height="30.0dip" android:contentDescription="@null" />
+                    <com.duokan.reader.ui.general.DkLabelView android:textSize="@dimen/general__shared__font_size_px_24" android:textColor="@color/general__shared__color_ccffffff" android:gravity="center_horizontal" android:id="@id/reading__reading_menu_view__options" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reading__reading_menu_view__options" android:drawableTop="@drawable/reading__reading_menu_view__options" android:layout_weight="1.0" />
+                    <ImageView android:background="#33ffffff" android:layout_width="1.0dip" android:layout_height="30.0dip" android:contentDescription="@null" />
+                    <com.duokan.reader.ui.general.DkLabelView android:textSize="@dimen/general__shared__font_size_px_24" android:textColor="@color/general__shared__color_ccffffff" android:gravity="center_horizontal" android:id="@id/reading__reading_menu_view__nightly_mode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reading__reading_menu_view__nightly_mode" android:drawableTop="@drawable/reading__reading_menu_view__nightly_mode" android:layout_weight="1.0" />
+                </LinearLayout>
+            </com.duokan.reader.ui.general.BoxView>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

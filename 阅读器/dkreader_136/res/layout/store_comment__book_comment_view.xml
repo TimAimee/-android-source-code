@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/general__shared__color_eeeeee" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/store_comment__book_comment_view__send_container" android:background="@drawable/general__shared__bottom_view_bg" android:paddingLeft="@dimen/general__shared__dip_10" android:paddingRight="@dimen/general__shared__dip_10" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.duokan.reader.ui.general.DkLabelView android:id="@id/store_comment__book_comment_view__send" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/store_comment__book_comment_view__send" style="@style/store__shard__big_button_style" />
+    </LinearLayout>
+    <include layout="@layout/store_comment__comment_empty_view" />
+</LinearLayout>

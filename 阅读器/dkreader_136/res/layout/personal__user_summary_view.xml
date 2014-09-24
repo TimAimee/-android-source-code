@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="140.0dip">
+        <com.duokan.reader.ui.general.DkLabelView android:textSize="@dimen/general__shared__font_size_px_40" android:textStyle="normal" android:textColor="#ffffffff" android:id="@id/personal__user_summary_view__login_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:shadowColor="#7f000000" android:shadowDx="0.0" android:shadowDy="5.0" android:shadowRadius="10.0" />
+    </LinearLayout>
+</LinearLayout>

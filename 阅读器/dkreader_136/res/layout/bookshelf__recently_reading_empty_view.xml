@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.duokan.reader.ui.general.DkLabelView android:textSize="@dimen/general__shared__font_size_px_32" android:textColor="@color/general__shared__color_66000000" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/bookshelf__recently_reading_empty_view__recently_reading" android:shadowColor="@color/general__shared__color_33ffffff" android:shadowDy="1.0" android:shadowRadius="0.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

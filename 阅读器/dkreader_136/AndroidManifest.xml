@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="220130518" android:versionName="2.2.0" android:installLocation="auto" package="com.duokan.reader"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="14" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="com.xiaomi.xmsf.permission.PAYMENT" />
+    <supports-screens android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" />
+    <application android:theme="@style/AppTheme" android:label="@string/general__shared__app_name" android:icon="@drawable/logo" android:name="com.duokan.reader.DkReader" android:largeHeap="true">
+        <meta-data android:name="UMENG_APPKEY" android:value="4e45f361431fe3248f000490" />
+        <meta-data android:name="UMENG_CHANNEL" android:value="当乐网" />
+        <meta-data android:name="DEBUG_REPORT" android:value="false" />
+        <meta-data android:name="DK_DIST_CHANNEL" android:value="" />
+        <meta-data android:name="STORE_INDEX" android:value="0" />
+        <activity android:name="com.duokan.reader.DkReaderActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:windowBackground="@null" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain" />
+                <data android:pathPattern=".*\\.txt" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="application/epub+zip" />
+                <data android:scheme="file" android:host="" />
+                <data android:pathPattern=".*\\.epub" />
+            </intent-filter>
+        </activity>
+        <service android:name="com.duokan.reader.domain.cloud.DkCloudNotificationService" android:exported="true" />
+        <service android:name="com.duokan.reader.domain.downloadcenter.DownloadNotificationService" android:exported="true" />
+        <service android:name="com.duokan.reader.common.download.DownloadService" />
+        <service android:name=".common.ftp.FTPServerService" />
+        <activity android:theme="@style/FullHeightDialog" android:name=".ui.general.ServerSettingActivity" android:launchMode="singleInstance" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="duokan-reader" android:host="test" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.umeng.fb.ui.SendFeedback" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.umeng.fb.ui.FeedbackConversations" />
+        <activity android:name="com.umeng.fb.ui.FeedbackConversation" android:configChanges="keyboard" />
+        <service android:name="com.umeng.common.net.DownloadingService" android:exported="true" android:process=":DownloadingService" />
+    </application>
+</manifest>

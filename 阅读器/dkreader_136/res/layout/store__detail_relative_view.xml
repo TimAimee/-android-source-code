@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.duokan.reader.ui.general.DotScrollerView android:orientation="vertical" android:id="@id/store__detail_relative_view__root" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:reader="http://schemas.android.com/apk/res/com.duokan.reader">
+    <com.duokan.reader.ui.general.ScrollerView android:id="@id/store__detail_relative_view__container" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.duokan.reader.ui.general.DotProgressBar android:layout_width="fill_parent" android:layout_height="@dimen/general__shared__dip_10" reader:draw_continous="false" reader:draw_position="center" reader:width_adaptive="false" />"
+</com.duokan.reader.ui.general.DotScrollerView>

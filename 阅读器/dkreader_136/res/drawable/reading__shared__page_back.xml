@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <selector>
+            <item android:state_enabled="false">
+                <bitmap android:gravity="center" android:src="@drawable/reading__shared__page_back_disabled" />
+            </item>
+            <item android:state_checked="false">
+                <bitmap android:gravity="center" android:src="@drawable/reading__shared__page_back_normal" />
+            </item>
+            <item android:state_enabled="true">
+                <bitmap android:gravity="center" android:src="@drawable/reading__shared__page_back_checked" />
+            </item>
+        </selector>
+    </item>
+    <item android:drawable="@drawable/reading__reading_options_view__auto_brightness_border" />
+</layer-list>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, MainActivity!</string>
+    <string name="app_name">LauncherSkinExample</string>
+    
+    <string name="managertheme">主题管理</string>
+    <string name="default_theme_name">默认主题</string>
+    <string name="apply_btn">应用主题</string>
+    <string name="theme_name_detail">主题名称</string>
+     <string name="theme_applyed">该主题已应用</string>
+     <string name="waiting_dialog">主题载入中...</string>
+     
+</resources>

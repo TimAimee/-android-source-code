@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="47.0dip" android:layout_marginBottom="30.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <Button android:gravity="center" android:id="@id/reading__shared__search_next" android:background="@drawable/general_btn_left_selector" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reading__shared__search_next" android:drawableLeft="@drawable/arrow_left" android:drawablePadding="4.0dip" style="@style/general__shared__colored_text_style_ffffff" />
+        <ImageView android:gravity="center" android:id="@id/reading__search_next_view__continuesearch" android:background="@drawable/general_btn_middle_selector" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_search" android:text="@string/reading__search_next_view__prev" style="@style/general__shared__colored_text_style_ffffff" />
+        <Button android:gravity="center" android:id="@id/reading__shared__search_prev" android:background="@drawable/general_btn_right_selector" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reading__shared__search_prev" android:drawableRight="@drawable/arrow_right" android:drawablePadding="4.0dip" style="@style/general__shared__colored_text_style_ffffff" />
+    </LinearLayout>
+</RelativeLayout>

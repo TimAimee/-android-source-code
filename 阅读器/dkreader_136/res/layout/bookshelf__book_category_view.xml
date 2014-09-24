@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/general__shared__color_ebebeb" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.duokan.reader.ui.general.DkHeaderView android:id="@id/bookshelf__book_category_view__title_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ListView android:id="@id/bookshelf__book_category_view__list" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/general__shared__list_view_style" />
+</LinearLayout>

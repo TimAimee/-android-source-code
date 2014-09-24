@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:background="@drawable/bg_menu2" android:layout_width="310.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.duokan.reader.ui.general.DkLabelView android:textSize="20.0dip" android:textColor="#ffee7714" android:gravity="center" android:id="@id/general__ok_dialog_view__title" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="15.0dip" />
+        <com.duokan.reader.ui.general.DkLabelView android:textSize="14.0dip" android:gravity="center" android:id="@id/general__ok_dialog_view__prompt" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="15.0dip" android:maxLines="2" android:singleLine="false" style="@style/PlainAuthorStyle" />
+        <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="22.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:layout_weight="1.0" android:layout_alignParentBottom="true">
+            <com.duokan.reader.ui.general.DkLabelView android:gravity="center" android:id="@id/general__ok_dialog_view__ok" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/dialog_button" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

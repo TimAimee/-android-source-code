@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/general__shared__bg_black" android:padding="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/general__dk_loading_view__bar" android:background="@drawable/general__dk_loading_view__shadow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/general__loading_view__bg" android:indeterminateDuration="1000" />
+    <com.duokan.reader.ui.general.DkLabelView android:textSize="@dimen/general__shared__font_size_px_32" android:textColor="@color/general__shared__color_ffffff" android:ellipsize="end" android:gravity="center" android:id="@id/general__dk_loading_view__text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/general__shared__dip_10" android:text="@string/general__shared__loading" android:singleLine="true" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:reader="http://schemas.android.com/apk/res/com.duokan.reader">
+    <com.duokan.reader.ui.general.DkLabelView android:textSize="26.0dip" android:textStyle="normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reading__comment_view__how_about_this_book" />"
+<com.duokan.reader.ui.store.comment.DkCommentScoreView android:id="@id/reading__comment_view__score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" reader:custom_opration="true" reader:high_score="@drawable/store_comment__shared__blue_star" reader:normal_score="@drawable/store_comment__shared__gray_star" reader:score_space="16.0dip" />
+    <com.duokan.reader.ui.general.DkLabelView android:textSize="18.0dip" android:id="@id/reading__comment_view__prompt" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.duokan.reader.ui.general.DkLabelView android:textSize="@dimen/general__shared__middle_text_size" android:textColor="@android:color/white" android:gravity="center" android:id="@id/reading__comment_view__publish_comment" android:background="@drawable/general__shared__button2" android:layout_width="140.0dip" android:layout_height="40.0dip" android:layout_marginTop="20.0dip" android:text="@string/reading__comment_view__publish_comment" />
+    <com.duokan.reader.ui.general.DkLabelView android:textSize="@dimen/general__shared__middle_text_size" android:textColor="@android:color/white" android:gravity="center" android:id="@id/reading__comment_view__look_comment" android:background="@drawable/general__shared__button2" android:layout_width="140.0dip" android:layout_height="40.0dip" android:layout_margin="20.0dip" android:text="@string/reading__comment_view__look_comment" />
+</LinearLayout>

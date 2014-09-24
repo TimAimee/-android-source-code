@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="@dimen/general__shared__dip_15" android:paddingTop="@dimen/general__shared__dip_10" android:paddingRight="@dimen/general__shared__dip_15" android:layout_width="fill_parent" android:layout_height="@dimen/general__shared__dip_60"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.duokan.reader.ui.general.DkLabelView android:gravity="left|center" android:paddingTop="@dimen/general__shared__dip_5" android:paddingBottom="@dimen/general__shared__dip_5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/bookshelf__title_view__bookshelf" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/general__shared__headline_text_style" />
+    <ImageButton android:id="@id/bookshelf__title_view__menu" android:background="@drawable/bookshelf__menu_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="@dimen/general__shared__dip_15" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/general__shared__font_size_px_24" android:textColor="@color/general__shared__color_666666" android:gravity="left|center" android:id="@id/bookshelf__category_edit_item_view__book_count" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/general__shared__font_size_px_28" android:textColor="@color/general__shared__color_333333" android:gravity="left|center" android:id="@id/bookshelf__category_edit_item_view__category_name" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" android:layout_toLeftOf="@id/bookshelf__category_edit_item_view__book_count" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+</RelativeLayout>

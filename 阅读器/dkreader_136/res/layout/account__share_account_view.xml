@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/general__shared__color_ebebeb" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.duokan.reader.ui.general.DkHeaderView android:id="@id/account__share_account_view__header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="left|center" android:id="@id/account_sina_ll" android:layout_width="fill_parent" android:layout_height="60.0dip">
+                <ImageView android:layout_gravity="left|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:src="@drawable/general__shared__sina_icon" />
+                <com.duokan.reader.ui.general.DkLabelView android:gravity="left|center" android:id="@id/account_sina" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:text="@string/account_bind_sina" style="@style/general__shared__text_view_style1" />
+            </LinearLayout>
+            <LinearLayout android:background="@color/general__shared__color_bcbcbc" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:gravity="left|center" android:id="@id/account_qq_ll" android:layout_width="fill_parent" android:layout_height="60.0dip">
+                <ImageView android:layout_gravity="left|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:src="@drawable/general__shared__qq_icon" />
+                <com.duokan.reader.ui.general.DkLabelView android:gravity="left|center" android:id="@id/account_qq" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:text="@string/account_bind_qq" style="@style/general__shared__text_view_style1" />
+            </LinearLayout>
+            <LinearLayout android:background="@color/general__shared__color_bcbcbc" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:gravity="left|center" android:id="@id/account_renren_ll" android:layout_width="fill_parent" android:layout_height="60.0dip">
+                <ImageView android:layout_gravity="left|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:src="@drawable/general__shared__renren_icon" />
+                <com.duokan.reader.ui.general.DkLabelView android:gravity="left|center" android:id="@id/account_renren" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:text="@string/account_bind_renren" style="@style/general__shared__text_view_style1" />
+            </LinearLayout>
+            <LinearLayout android:background="@color/general__shared__color_bcbcbc" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:gravity="left|center" android:id="@id/account_kaixin_ll" android:layout_width="fill_parent" android:layout_height="60.0dip">
+                <ImageView android:layout_gravity="left|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:src="@drawable/general__shared__kaixin_icon" />
+                <com.duokan.reader.ui.general.DkLabelView android:gravity="left|center" android:id="@id/account_kaixin" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:text="@string/account_bind_kaixin" style="@style/general__shared__text_view_style1" />
+            </LinearLayout>
+            <LinearLayout android:background="@color/general__shared__color_bcbcbc" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:gravity="left|center" android:id="@id/account_yingxiang_ll" android:layout_width="fill_parent" android:layout_height="60.0dip">
+                <ImageView android:layout_gravity="left|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:src="@drawable/general__shared__yingxiang_icon" />
+                <com.duokan.reader.ui.general.DkLabelView android:gravity="left|center" android:id="@id/account_yingxiang" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:text="@string/account_bind_yingxiang" style="@style/general__shared__text_view_style1" />
+            </LinearLayout>
+            <LinearLayout android:background="@color/general__shared__color_bcbcbc" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

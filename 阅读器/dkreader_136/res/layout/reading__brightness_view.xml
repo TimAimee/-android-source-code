@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/reading__brightness_view__empty" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="vertical" android:id="@id/reading__brightness_view__bottom_panel" android:background="@color/general__shared__color_0000ff" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_gravity="center_horizontal" android:padding="@dimen/general__shared__dip_10" android:layout_width="fill_parent" android:layout_height="@dimen/general__shared__dip_40">
+            <TextView android:textSize="@dimen/general__shared__dev_sp_14" android:textColor="@color/general__shared__color_000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reading__brightness_view__auto" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <com.duokan.reader.ui.general.DkSwitchView android:id="@id/reading__brightness_view__auto" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/general__shared__horizontal_devider1" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:padding="@dimen/general__shared__dip_10" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/reading__brightness_view__dark" android:background="@drawable/reading__brightness_view__dark" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <SeekBar android:id="@id/reading__brightness_view__seek_bar" android:paddingLeft="@dimen/general__shared__dip_10" android:paddingRight="@dimen/general__shared__dip_10" android:layout_width="0.0dip" android:layout_height="wrap_content" android:progressDrawable="@drawable/general__shared__seek_bar" android:thumb="@drawable/general__shared__seek_bar_thumb" android:layout_weight="1.0" />
+            <TextView android:id="@id/reading__brightness_view__light" android:background="@drawable/reading__brightness_view__light" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

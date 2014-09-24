@@ -1,0 +1,11 @@
+.class public interface abstract Lcom/duokan/reader/ui/reading/a/f;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/duokan/reader/ui/general/jd;
+
+
+# virtual methods
+.method public abstract a(Lcom/duokan/reader/domain/document/o;)V
+.end method

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/store__recommend_app_item_view__root" android:paddingLeft="8.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/store__recommend_app_item_view__cover_frame" android:background="@drawable/store__recommend_app_item_view__cover_frame" android:padding="4.0dip" android:layout_width="66.0dip" android:layout_height="66.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <com.duokan.reader.ui.general.PicView android:id="@id/store__recommend_apps_item_view__cover" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <com.duokan.reader.ui.general.DkLabelView android:textSize="@dimen/general__shared__font_size_px_24" android:textColor="@color/general__shared__color_ffffff" android:id="@id/store__recommend_app_item_view____icon" android:background="@drawable/store__recommend_app_item_view__icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/store__recommend_app_item_view__icon" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:layout_toLeftOf="@id/store__recommend_app_item_view____icon" android:layout_toRightOf="@id/store__recommend_app_item_view__cover_frame" android:layout_centerVertical="true">
+        <com.duokan.reader.ui.general.DkLabelView android:textSize="@dimen/general__shared__font_size_px_32" android:textColor="@color/general__shared__color_333333" android:ellipsize="end" android:id="@id/store__recommend_app_item_view____first_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+        <com.duokan.reader.ui.general.DkLabelView android:textSize="@dimen/general__shared__font_size_px_24" android:textColor="@color/general__shared__color_666666" android:ellipsize="end" android:id="@id/store__recommend_app_item_view____second_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/general__shared__dip_5" android:maxLines="2" />
+    </LinearLayout>
+</RelativeLayout>

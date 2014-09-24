@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/general__shared__multimedia_bg" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/general__shared__voice_bg" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/reading__audioplayerwindow_view__playercontroller" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageButton android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/reading__audioplayerwindow_view__status_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/reading__audioplayerwindow_view__playercontroller" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/general__shared__normal_text_size" android:textColor="@color/general__floatingWindow__text_color" android:ellipsize="end" android:id="@id/reading__audioplayerwindow_view__title" android:paddingLeft="@dimen/general__shared__dip_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/general__shared__dip_6" android:text="title" android:singleLine="true" />
+            <SeekBar android:layout_gravity="center_vertical" android:id="@id/reading__audioplayerwindow_view__playerschedule" android:paddingLeft="@dimen/general__shared__dip_10" android:paddingRight="@dimen/general__shared__dip_10" android:layout_width="fill_parent" android:layout_height="16.0dip" android:layout_marginBottom="@dimen/general__shared__dip_6" android:maxHeight="6.0dip" android:max="100" android:progressDrawable="@drawable/general__shared__media_seekbar" android:thumb="@drawable/general__shared__media_jindu_rollbox" />
+            <TextView android:textSize="@dimen/general__shared__normal_text_size" android:textColor="@color/general__floatingWindow__text_color" android:ellipsize="end" android:id="@id/reading__audioplayerwindow_view__time" android:paddingLeft="@dimen/general__shared__dip_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/general__shared__dip_10" android:text="playtime" android:singleLine="true" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

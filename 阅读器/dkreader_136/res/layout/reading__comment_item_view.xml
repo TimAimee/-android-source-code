@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/reading__comment_item_view__root" android:paddingTop="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/reading__comment_item_view__horz_divider" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="@null" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="13.0dip">
+        <ImageView android:id="@id/reading__comment_item_view__color" android:layout_width="3.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignTop="@id/reading__comment_item_view__add_time" android:layout_alignBottom="@id/reading__comment_item_view__add_time" android:layout_alignParentLeft="true" android:contentDescription="@null" />
+        <com.duokan.reader.ui.general.DkLabelView android:textSize="@dimen/general__shared__font_size_px_24" android:textColor="@color/general__shared__color_666666" android:ellipsize="end" android:id="@id/reading__comment_item_view__add_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toLeftOf="@id/reading__comment_item_view__page_num" android:layout_toRightOf="@id/reading__comment_item_view__color" />
+        <com.duokan.reader.ui.general.DkLabelView android:textSize="@dimen/general__shared__font_size_px_28" android:textColor="@color/general__shared__color_666666" android:gravity="right" android:id="@id/reading__comment_item_view__page_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <com.duokan.reader.ui.general.DkTextView android:textSize="@dimen/general__shared__font_size_px_28" android:textColor="@color/general__shared__color_333333" android:ellipsize="end" android:gravity="fill" android:id="@id/reading__comment_item_view__sample" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:maxLines="3" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/reading__comment_item_view__note" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <com.duokan.reader.ui.general.DkTextView android:textSize="@dimen/general__shared__font_size_px_28" android:id="@id/reading__comment_item_view__note_mark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reading__comment_item_view__note_mark" />
+        <ImageView android:id="@id/reading__comment_item_view__vert_divider" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_marginRight="7.0dip" android:scaleType="fitXY" android:contentDescription="@null" />
+        <com.duokan.reader.ui.general.DkTextView android:textSize="@dimen/general__shared__font_size_px_28" android:layout_gravity="fill" android:id="@id/reading__comment_item_view__note_text" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

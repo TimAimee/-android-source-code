@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="general__shared__cover_list_style">
+        <item name="android:layout_width">@dimen/general__shared__cover_list_width</item>
+        <item name="android:layout_height">@dimen/general__shared__cover_list_height</item>
+    </style>
+    <style name="general__shared__cover_grid_style">
+        <item name="android:layout_width">@dimen/general__shared__cover_grid_width</item>
+        <item name="android:layout_height">@dimen/general__shared__cover_grid_height</item>
+    </style>
+    <style name="general__shared__cover_recently_style">
+        <item name="android:layout_width">@dimen/general__shared__cover_recently_width</item>
+        <item name="android:layout_height">@dimen/general__shared__cover_recently_height</item>
+    </style>
+    <style name="general__shared__colored_text_style_ffffff">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:shadowColor">#d0000000</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">-1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="general__shared__headline_text_style">
+        <item name="android:textSize">@dimen/general__shared__font_size_px_40</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:shadowColor">#80000000</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">6.0</item>
+        <item name="android:shadowRadius">8.0</item>
+    </style>
+    <style name="general__shared__search_text_style">
+        <item name="android:textSize">@dimen/general__shared__font_size_px_32</item>
+        <item name="android:textColor">@color/general__shared__color_333333</item>
+        <item name="android:textColorHint">@color/general__shared__color_888888</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:background">@drawable/store__search_title_view</item>
+        <item name="android:paddingLeft">@dimen/general__shared__dip_12</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawableLeft">@drawable/general__shared_search_box_icon</item>
+        <item name="android:drawablePadding">@dimen/general__shared__dip_12</item>
+        <item name="android:imeOptions">actionSearch</item>
+    </style>
+    <style name="general__shared__spirt_dialog_animation" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/general__shared__push_down_in</item>
+        <item name="android:windowExitAnimation">@anim/general__shared__push_down_out</item>
+    </style>
+    <style name="general__shared__spirt_dialog_style">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="general__shared__list_view_style">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/general__shared__color_ebebeb</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:fadingEdgeLength">5.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:listSelector">@android:color/transparent</item>
+        <item name="android:cacheColorHint">@color/general__shared__color_ebebeb</item>
+        <item name="android:divider">@color/general__shared__color_bcbcbc</item>
+        <item name="android:dividerHeight">1.0px</item>
+        <item name="android:fastScrollEnabled">true</item>
+        <item name="android:headerDividersEnabled">true</item>
+        <item name="android:footerDividersEnabled">true</item>
+    </style>
+    <style name="general__shared__digits_style">
+        <item name="android:digits">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</item>
+    </style>
+    <style name="general__shared__text_view_style1">
+        <item name="android:textSize">@dimen/general__shared__middle_text_size</item>
+        <item name="android:textColor">#ff333333</item>
+        <item name="android:shadowColor">#bbffffff</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="general__shared__text_view_style2">
+        <item name="android:textSize">@dimen/general__shared__normal_text_size</item>
+        <item name="android:textColor">#ff666666</item>
+        <item name="android:shadowColor">#bbffffff</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="general__shared__common_dialog_style">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <style name="general__shared__checkbox_style" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/general__shared__check_box1</item>
+    </style>
+    <style name="setting_text_for_button">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">#ff333333</item>
+        <item name="android:shadowColor">#bbffffff</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="dialog_button">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">#ff333333</item>
+        <item name="android:background">@drawable/general__shared__btn_2</item>
+    </style>
+    <style name="FullHeightDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:backgroundDimAmount">0.6</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="PlainAuthorStyle">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textColor">#ff666666</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:shadowColor">#ccffffff</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="AppBaseTheme" parent="@android:style/Theme.NoTitleBar" />
+    <style name="AppTheme" parent="@style/AppBaseTheme">
+        <item name="android:windowBackground">@color/general__shared__color_ffffff</item>
+    </style>
+    <style name="bookcity__shared__error">
+        <item name="android:textSize">@dimen/general__shared__font_size_px_32</item>
+        <item name="android:textColor">#ffcfcfcf</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/general__shared__dip_12</item>
+        <item name="android:layout_marginBottom">@dimen/general__shared__dip_12</item>
+        <item name="android:shadowColor">@color/general__shared__color_ffffff</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="popwindow_anim">
+        <item name="android:windowEnterAnimation">@anim/popupwindow_show</item>
+        <item name="android:windowExitAnimation">@anim/popupwindow_dismiss</item>
+    </style>
+    <style name="general__shared__title_text_with_dark_color_background">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">#80ffffff</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_marginLeft">16.0dip</item>
+        <item name="android:layout_marginRight">16.0dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:shadowColor">#bb000000</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="general__shared__list_item_maintitle_style">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:shadowColor">#ccffffff</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="general__shared__list_item_childtitle_style1">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textColor">#ff666666</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:shadowColor">#ccffffff</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="general__shared__list_item_childtitle_style">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textColor">#ff666666</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:shadowColor">#ccffffff</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="general__shared__listview_foot_style">
+        <item name="android:textSize">@dimen/general__shared__normal_text_size</item>
+        <item name="android:textColor">#ffb0b0b0</item>
+    </style>
+    <style name="general__shared__fullscreen_dialog_style">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+    </style>
+    <style name="refresh_progressbar">
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:indeterminateDrawable">@drawable/general__shared__loading</item>
+        <item name="android:indeterminateDuration">2000</item>
+        <item name="android:indeterminateBehavior">repeat</item>
+    </style>
+    <style name="general__account_dialog_anim" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/bookcity_comment__publish_comment_view__show</item>
+        <item name="android:windowExitAnimation">@anim/bookcity_comment__publish_comment_view__dismiss</item>
+    </style>
+    <style name="general__shared__tab_text_style">
+        <item name="android:textSize">@dimen/general__shared__font_size_px_28</item>
+        <item name="android:textColor">@drawable/general__tab_bar_view__text_color</item>
+        <item name="android:shadowColor">#80ffffff</item>
+        <item name="android:shadowDx">2.0</item>
+        <item name="android:shadowDy">2.0</item>
+        <item name="android:shadowRadius">2.0</item>
+    </style>
+    <style name="personal__message__error">
+        <item name="android:textSize">@dimen/general__shared__font_size_px_32</item>
+        <item name="android:textColor">#ffcfcfcf</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/general__shared__dip_12</item>
+        <item name="android:layout_marginBottom">@dimen/general__shared__dip_12</item>
+        <item name="android:shadowColor">@color/general__shared__color_eeeeee</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="search_dialog_style">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="reading__note__notetextview_style">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textColor">#ff37312b</item>
+        <item name="android:paddingLeft">28.0dip</item>
+        <item name="android:paddingTop">28.0dip</item>
+        <item name="android:paddingRight">26.0dip</item>
+        <item name="android:paddingBottom">34.0dip</item>
+    </style>
+    <style name="NoteDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:backgroundDimAmount">0.0</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="color_picker" parent="@android:style/Theme.Dialog">
+        <item name="android:backgroundDimAmount">0.1</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@style/color_picker_animation</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="color_picker_animation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/color_picker_push_up_in</item>
+        <item name="android:windowExitAnimation">@anim/color_picker_push_down_out</item>
+    </style>
+    <style name="reading__menu__text">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:paddingLeft">14.0dip</item>
+        <item name="android:paddingRight">14.0dip</item>
+    </style>
+    <style name="store__shared__list_button_style">
+        <item name="android:textSize">@dimen/general__shared__font_size_px_24</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">@dimen/general__shared__dip_20</item>
+        <item name="android:paddingRight">@dimen/general__shared__dip_20</item>
+        <item name="android:layout_width">@dimen/general__shared__dip_60</item>
+    </style>
+    <style name="store__shard__big_button_style">
+        <item name="android:textSize">@dimen/general__shared__font_size_px_28</item>
+        <item name="android:textColor">@color/general__shared__color_666666</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/general__shared__btn_45dip</item>
+        <item name="android:paddingLeft">@dimen/general__shared__dip_20</item>
+        <item name="android:paddingRight">@dimen/general__shared__dip_20</item>
+    </style>
+    <style name="store__shard__small_button_style">
+        <item name="android:textSize">@dimen/general__shared__font_size_px_28</item>
+        <item name="android:textColor">@color/general__shared__color_666666</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/general__shared__btn_35dip</item>
+        <item name="android:paddingLeft">@dimen/general__shared__dip_20</item>
+        <item name="android:paddingRight">@dimen/general__shared__dip_20</item>
+    </style>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:layout_weight="1.0">
+        <com.duokan.reader.ui.general.DkLabelView android:textSize="@dimen/general__shared__font_size_px_28" android:textColor="@color/general__shared__color_666666" android:id="@id/store__book_expand_operation_view__favorites" android:paddingTop="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="5.0dip" android:layout_centerInParent="true" android:drawableStart="@drawable/store__book_expand_operation_view__favourite" />
+    </RelativeLayout>
+    <LinearLayout android:background="@color/general__shared__color_bcbcbc" android:layout_width="1.0px" android:layout_height="fill_parent" />
+    <RelativeLayout android:gravity="center" android:id="@id/store__book_expand_operation_view__shopping_cart" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_weight="1.8">
+        <ImageView android:id="@id/store__book_expand_operation_view__shopping_cart_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/store__book_expand_operation_view__shopping_cart" />
+        <com.duokan.reader.ui.general.DkLabelView android:textSize="@dimen/general__shared__font_size_px_28" android:textColor="@color/general__shared__color_666666" android:id="@id/store__book_expand_operation_view__shopping_cart_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/store__book_expand_operation_view__shopping_cart_icon" android:layout_alignBottom="@id/store__book_expand_operation_view__shopping_cart_icon" />
+    </RelativeLayout>
+    <LinearLayout android:background="@color/general__shared__color_bcbcbc" android:layout_width="1.0px" android:layout_height="fill_parent" />
+    <RelativeLayout android:gravity="center" android:id="@id/store__book_expand_operation_view__share" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_weight="1.0">
+        <ImageView android:id="@id/store__book_expand_operation_view__share_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/store__book_expand_operation_view__share" />
+        <com.duokan.reader.ui.general.DkLabelView android:textSize="@dimen/general__shared__font_size_px_28" android:textColor="@color/general__shared__color_666666" android:id="@id/store__book_expand_operation_view__share_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/store__book_expand_operation_view__share" android:layout_toRightOf="@id/store__book_expand_operation_view__share_icon" android:layout_alignBottom="@id/store__book_expand_operation_view__share_icon" />
+    </RelativeLayout>
+</LinearLayout>

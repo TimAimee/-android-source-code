@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="148dip"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+   
+   
+    <com.app.LauncherSkinExample.Activity.ThemePickerItem
+            android:id="@+id/thumbnail"
+            android:layout_width="142dip"
+            android:layout_height="142dip"
+            android:scaleType="fitCenter" />
+
+    <TextView android:id="@+id/title"
+            android:paddingTop="3dip"
+            android:paddingBottom="9dip"
+            android:paddingRight="13dip"
+            android:paddingLeft="13dip"
+            android:gravity="top|center_horizontal"
+            android:textSize="14sp"
+            android:singleLine="true"
+            android:textColor="@color/default_color"
+            android:ellipsize="marquee"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+  
+</LinearLayout> 

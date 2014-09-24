@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.duokan.reader.ui.general.ScrollerView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/general__shared__dip_10" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.duokan.reader.ui.store.AdsView android:id="@id/store__fiction_boy_adsview_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <com.duokan.reader.ui.store.AdsView android:id="@id/store__fiction_boy_adsview_2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/general__shared__dip_5" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/general__shared__dip_5">
+            <com.duokan.reader.ui.store.AdsView android:id="@id/store__fiction_boy_adsview_3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <com.duokan.reader.ui.store.AdsView android:id="@id/store__fiction_boy_adsview_4" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/general__shared__dip_5" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/general__shared__color_eeeeee" android:paddingLeft="@dimen/general__shared__dip_15" android:paddingTop="@dimen/general__shared__dip_15" android:paddingRight="@dimen/general__shared__dip_15" android:paddingBottom="@dimen/general__shared__dip_15" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/store__fiction_boy_recommend_header" layout="@layout/store__shared__discript_view" />
+        <com.duokan.reader.ui.store.LimitGridView android:id="@id/store__fiction_boy_recommend_grid" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.duokan.reader.ui.general.DkLabelView android:layout_gravity="center_horizontal" android:id="@id/store__fiction_boy_recommend_all" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/general__shared__dip_15" android:layout_marginBottom="@dimen/general__shared__dip_15" android:text="@string/store__fiction_boy_recommend_all" style="@style/store__shard__small_button_style" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/store__shared__horizontal_split" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/general__shared__dip_5">
+            <com.duokan.reader.ui.store.AdsView android:id="@id/store__fiction_boy_adsview_5" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <com.duokan.reader.ui.store.AdsView android:id="@id/store__fiction_boy_adsview_6" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/general__shared__dip_5" android:layout_weight="1.0" />
+        </LinearLayout>
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/general__shared__dip_5" android:src="@drawable/store__shared__horizontal_split" />
+        <include android:id="@id/store__fiction_boy_ranking_header" layout="@layout/store__shared__discript_view" />
+        <com.duokan.reader.ui.store.LimitGridView android:id="@id/store__fiction_boy_ranking_grid" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.duokan.reader.ui.general.DkLabelView android:layout_gravity="center_horizontal" android:id="@id/store__fiction_boy_ranking_all" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/general__shared__dip_15" android:layout_marginBottom="@dimen/general__shared__dip_15" android:text="@string/store__fiction_boy_ranking_all" style="@style/store__shard__small_button_style" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/store__shared__horizontal_split" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.duokan.reader.ui.store.AdsView android:id="@id/store__fiction_boy_adsview_7" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <com.duokan.reader.ui.store.AdsView android:id="@id/store__fiction_boy_adsview_8" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/general__shared__dip_5" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/general__shared__dip_5" android:layout_marginBottom="@dimen/general__shared__dip_5">
+            <com.duokan.reader.ui.store.AdsView android:id="@id/store__fiction_boy_adsview_9" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <com.duokan.reader.ui.store.AdsView android:id="@id/store__fiction_boy_adsview_10" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/general__shared__dip_5" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</com.duokan.reader.ui.general.ScrollerView>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/personal__personal_center_view__root" android:background="@color/general__shared__color_eeeeee" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/personal__personal_center_view__titlebar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.duokan.reader.ui.general.DKStackView android:id="@id/personal__personal_center_view__container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

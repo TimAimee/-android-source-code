@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="500" android:drawable="@drawable/personal__running_download_tasks_view__icon1" />
+    <item android:duration="500" android:drawable="@drawable/personal__running_download_tasks_view__icon2" />
+</animation-list>
