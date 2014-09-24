@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">欢迎使用二维码生成器</string>
+    <string name="app_name">CQRcode</string>
+    <string name="app_about">关于</string>
+  <string name="app_about_msg">作者：xidianw3\nEmail:xidianw3@gmail.com\nQQ:306538474\n感谢您使用QRcode生成器！本生成器可以生成名片，短信。电子邮件，文本，网络书签等二维码图像。</string>
+  <string name="str_ok">确认</string>
+  <string name="str_exit">退出</string>
+</resources>

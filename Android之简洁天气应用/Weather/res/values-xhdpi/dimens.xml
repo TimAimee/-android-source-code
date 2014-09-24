@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="time_mask_width">110.0dip</dimen>
+    <dimen name="time_mask_height">116.0dip</dimen>
+    <dimen name="time_interval">10.0dip</dimen>
+    <dimen name="time_marginBottom">40.0dip</dimen>
+</resources>

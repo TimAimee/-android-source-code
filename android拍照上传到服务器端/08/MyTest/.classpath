@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="melibrary.com.genuitec.eclipse.j2eedt.core.MYECLIPSE_JAVAEE_5_CONTAINER"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/antlr-2.7.2.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/aopalliance-1.0.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/classworlds-1.1.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/commons-beanutils-1.7.0.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/commons-chain-1.2.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/commons-collections-3.2.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/commons-digester-2.0.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/commons-fileupload-1.2.1.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/commons-io-1.3.2.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/commons-lang-2.3.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/commons-logging-1.0.4.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/commons-logging-api-1.1.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/commons-validator-1.3.1.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/freemarker-2.3.16.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/javassist-3.7.ga.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/json-lib-2.1-jdk15.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/ognl-3.0.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/oro-2.0.8.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/sslext-1.2-0.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/struts2-convention-plugin-2.2.1.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/struts2-core-2.2.1.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/struts2-embeddedjsp-plugin-2.2.1.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/struts2-json-plugin-2.2.1.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/xwork-core-2.2.1.jar"/>
+	<classpathentry kind="output" path="WebRoot/WEB-INF/classes"/>
+</classpath>

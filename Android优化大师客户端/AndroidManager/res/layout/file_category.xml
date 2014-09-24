@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="@drawable/list_bg" android:paddingTop="30dp" android:paddingLeft="10dp" android:paddingRight="10dp">
+	<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+			<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:layout_weight="0.5">
+				<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+					<ImageView android:src="@drawable/file_category_pic" android:layout_width="72.0dip" android:layout_height="72.0dip" android:baselineAlignBottom="true" android:layout_centerHorizontal="true"/>
+				</RelativeLayout>
+				<TextView android:text="图片浏览" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center" android:textColor="@android:color/black" android:textSize="16.0sp"/>
+			</LinearLayout>
+			<ImageView android:src="@drawable/main_divider" android:layout_width="2.0dip" android:layout_height="fill_parent" android:scaleType="fitXY"/>
+			<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:layout_weight="0.5">
+				<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+					<ImageView android:src="@drawable/file_category_music" android:layout_width="72.0dip" android:layout_height="72.0dip" android:baselineAlignBottom="true" android:layout_centerHorizontal="true"/>
+				</RelativeLayout>
+				<TextView android:text="音乐浏览" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center" android:textColor="@android:color/black" android:textSize="16.0sp"/>
+			</LinearLayout>
+		</LinearLayout>
+		<ImageView android:src="@drawable/main_divider" android:layout_width="fill_parent" android:layout_height="2.0dip" android:scaleType="fitXY"/>
+		<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+			<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:layout_weight="0.5">
+				<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+					<ImageView android:src="@drawable/file_category_movie" android:layout_width="72.0dip" android:layout_height="72.0dip" android:baselineAlignBottom="true" android:layout_centerHorizontal="true"/>
+				</RelativeLayout>
+				<TextView android:text="视频浏览" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center" android:textColor="@android:color/black" android:textSize="16.0sp"/>
+			</LinearLayout>
+			<ImageView android:src="@drawable/main_divider" android:layout_width="2.0dip" android:layout_height="fill_parent" android:scaleType="fitXY"/>
+			<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:layout_weight="0.5">
+				<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+					<ImageView android:src="@drawable/file_category_text" android:layout_width="72.0dip" android:layout_height="72.0dip" android:baselineAlignBottom="true" android:layout_centerHorizontal="true"/>
+				</RelativeLayout>
+				<TextView android:text="文档浏览" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center" android:textColor="@android:color/black" android:textSize="16.0sp"/>
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+</RelativeLayout>

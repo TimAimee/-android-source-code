@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFDAB9"
+    android:orientation="vertical" >
+    
+<RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/title_back"
+            android:text="返回"
+            android:textColor="#ffffffff" />
+
+        <Button
+            android:id="@+id/selectImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/title_comit"
+            android:text="选择"
+            android:textColor="#ffffffff" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="拍照上传"
+            android:textColor="#DC143C"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="230dp"
+        android:orientation="horizontal"
+        android:paddingTop="10dp" >
+
+        <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/table_qiandao_text"
+        android:scaleType="fitXY" />
+
+
+         <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/camera_icon" >
+            </ImageButton>
+
+        </RelativeLayout> 
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line_fenge_pink" >
+        </ImageView> 
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+		<ProgressBar
+		android:layout_marginTop="1dip"    
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+		
+        
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#DC143C"
+        android:text="" />
+    
+    <TextView
+        android:id="@+id/uploadImageResult"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:textColor="#DC143C"
+        android:text="" />
+
+    <Button
+        android:id="@+id/uploadImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/icon_sign"
+        android:textSize="16dp"
+        android:text="立即上传"
+        android:textColor="#ffffffff" >
+    </Button>
+
+</LinearLayout>

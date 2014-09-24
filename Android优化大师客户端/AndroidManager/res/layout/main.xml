@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@android:id/tabhost" android:layout_width="fill_parent" 
+	android:layout_height="fill_parent">
+	<LinearLayout android:layout_width="fill_parent" android:orientation="vertical"
+		android:layout_height="fill_parent" android:padding="5dp">
+		<FrameLayout android:id="@android:id/tabcontent"
+					 android:padding="5dp" 
+					 android:layout_width="fill_parent"
+					 android:layout_weight="1.0"
+			         android:layout_height="0.0dip" />
+		<TabWidget android:id="@android:id/tabs" 
+				   android:layout_width="fill_parent"
+				   android:visibility="gone"
+			       android:layout_height="wrap_content" />
+		<RadioGroup android:orientation="horizontal" android:id="@+id/main_radio" android:gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0">
+			<RadioButton android:id="@+id/btn1" android:layout_marginTop="2.0dip" android:tag="btn1"  android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableTop="@drawable/process" android:text="进程" style="@style/main_tab_bottom"/>
+			<RadioButton android:id="@+id/btn2" android:layout_marginTop="2.0dip" android:tag="btn2"  android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableTop="@drawable/task" android:text="任务" style="@style/main_tab_bottom"/>
+			<RadioButton android:id="@+id/btn3" android:layout_marginTop="2.0dip" android:tag="btn3"  android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableTop="@drawable/service" android:text="服务" style="@style/main_tab_bottom"/>
+			<RadioButton android:id="@+id/btn4" android:layout_marginTop="2.0dip" android:tag="btn4"  android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableTop="@drawable/chart" android:text="图表" style="@style/main_tab_bottom"/>
+			<RadioButton android:id="@+id/btn5" android:layout_marginTop="2.0dip" android:tag="btn5"  android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableTop="@drawable/filebtn" android:text="文件" style="@style/main_tab_bottom"/>
+		</RadioGroup>
+	</LinearLayout>
+</TabHost>
+
+

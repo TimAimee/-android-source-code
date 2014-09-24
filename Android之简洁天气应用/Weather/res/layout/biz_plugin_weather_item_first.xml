@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/biz_weather_padding" >
+
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15.0dip"
+        android:singleLine="true"
+        android:text="N/A"
+        android:textColor="@android:color/white"
+        android:textSize="40.0sp" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/city"
+        android:layout_marginTop="5dip"
+        android:layout_marginLeft="15.0dip"
+        android:singleLine="true"
+        android:text="N/A"
+        android:textColor="@android:color/white"
+        android:textSize="15.0sp" />
+      <TextView
+        android:id="@+id/humidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/time"
+        android:layout_marginLeft="15.0dip"
+        android:singleLine="true"
+        android:text="N/A"
+        android:textColor="@android:color/white"
+        android:textSize="15.0sp" />
+
+    <LinearLayout
+        android:id="@+id/pm2_5_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="6.0dip"
+            android:paddingLeft="12.0dip"
+            android:paddingRight="12.0dip"
+            android:paddingTop="6.0dip" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/pm2_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="PM2.5"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/biz_plugin_weather_selectcity_indicator_textsize" />
+
+                <TextView
+                    android:id="@+id/pm_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="N/A"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/biz_plugin_weather_temperature_textsize" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/pm2_5_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:src="@drawable/biz_plugin_weather_0_50" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/pm2_5_quality"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="N/A"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/biz_plugin_weather_climate_textsize" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pm2_5_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5.0dip" >
+        android:layout_alignParentLeft="true"
+
+        <ImageView
+            android:id="@+id/weather_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/biz_plugin_weather_qing" />
+            android:layout_alignParentLeft="true"
+
+        <TextView
+            android:id="@+id/week_today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/weather_img"
+            android:singleLine="true"
+            android:text="N/A"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/biz_plugin_weather_climate_textsize" />
+
+        <TextView
+            android:id="@+id/temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/week_today"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/weather_img"
+            android:singleLine="true"
+            android:text="N/A"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/biz_plugin_weather_temperature_textsize" />
+
+        <TextView
+            android:id="@+id/climate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/temperature"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/weather_img"
+            android:singleLine="true"
+            android:text="N/A"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/biz_plugin_weather_climate_textsize" />
+
+        <TextView
+            android:id="@+id/wind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/climate"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/weather_img"
+            android:singleLine="true"
+            android:text="N/A"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/biz_plugin_weather_climate_textsize" />
+    </RelativeLayout>
+
+</RelativeLayout>

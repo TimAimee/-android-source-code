@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/list_item_bg_style" android:layout_width="fill_parent" android:layout_height="40.0dip">
+	<RelativeLayout android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_weight="0.0">
+		<ImageView android:id="@+id/icon" android:layout_width="32.0dip" android:layout_height="32.0dip" android:scaleType="fitCenter" android:layout_centerInParent="true" />
+	</RelativeLayout>
+	<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="40.0dip" android:padding="4.0dip" android:layout_weight="1.0">
+		<TextView android:id="@+id/programName" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="12.0sp"/>
+		<TextView android:id="@+id/sysName" android:textColor="#ff1169ee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="用户程序" android:textSize="10.0sp"/>
+		<!-- <TextView android:id="@+id/processName" android:layout_width="wrap_content" 
+			android:layout_alignParentTop="true" android:layout_toRightOf="@id/icon" 
+			android:layout_height="wrap_content" /> -->
+	</LinearLayout>
+	<TextView android:id="@+id/cpuMemString" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_weight="0.0" android:gravity="center_vertical"/>
+	<CheckBox android:id="@+id/process_checkbox" android:layout_weight="0.0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:focusable="false"/>
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/main_title" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/title"
+        android:background="@drawable/biz_plugin_weather_shenzhen_bg"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/biz_plugin_weather_paddingTopAndBottom" >
+
+        <include
+            android:id="@+id/weather_today"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/biz_plugin_weather_item_first" />
+
+        <ImageView
+            android:id="@+id/divider"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/base_list_divider_drawable"
+            android:visibility="gone" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/biz_weather_pager_height"
+            android:layout_marginTop="5dip"
+            android:overScrollMode="never"
+            android:paddingLeft="@dimen/biz_plugin_weather_paddingLeftAndRight"
+            android:paddingRight="@dimen/biz_plugin_weather_paddingLeftAndRight" />
+
+        <com.way.indicator.CirclePageIndicator
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/indicator"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5.0dip" />
+    </LinearLayout>
+
+  <!--   <LinearLayout
+        android:id="@+id/adLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal" >
+    </LinearLayout>
+ -->
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<constant name="struts.custom.i18n.resources" value="globalMessages"/>
+	<constant name="struts.i18n.encoding" value="utf-8"/>
+	<!-- 服务器指定一个临时的路径  否则会上传失败 -->
+	<!--<constant name="struts.multipart.saveDir" value="D:/apache-tomcat-7.0.22/temp"/>
+	-->
+	<constant name="struts.multipart.saveDir" value="D:/test"/>
+	<constant name="struts.multipart.maxSize" value="30000000"></constant>
+	<package name="lee" extends="struts-default" namespace="/p">
+		<action name="file" class="com.zhangke.action.FileUpload" method="upload">
+			<interceptor-ref name="fileUpload">
+				<!--<param name="allowedTypes">application/zip,application/octet-stream</param>-->
+				<param name="maximumSize">524288000</param>
+			</interceptor-ref>
+			<interceptor-ref name="defaultStack"/>
+			<!-- 保存路径为当前项目WebRoot/upload -->
+			<param name="savePath" >/upload</param>
+			<result name="success">index.jsp</result>
+			<result name="input">index.jsp</result>
+		</action>
+	</package>
+</struts>    

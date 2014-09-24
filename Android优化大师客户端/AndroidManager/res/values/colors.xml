@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <item type="color" name="banner_text_color">@android:color/black</item>
+    <item type="color" name="list_primary_text_color">@android:color/black</item>
+    <item type="color" name="list_primary_text_selected_color">@android:color/black</item>
+    <color name="list_secondary_text_color">#ff888888</color>
+    <color name="list_secondary_text_selected_color">#ff888888</color>
+    <color name="list_item_pressed_color">#aa00ff00</color>
+    <color name="list_item_focused_color">#aa00ff00</color>
+    <color name="tab_text_color">#ffc4c4c4</color>
+    <color name="tab_text_selected_color">#ff679306</color>
+    <item type="color" name="btn_text_color">@android:color/black</item>
+    <item type="color" name="btn_text_selected_color">@android:color/white</item>
+    <item type="color" name="main_grid_text_color">@android:color/black</item>
+    <item type="color" name="main_grid_text_selected_color">@android:color/black</item>
+    <color name="main_grid_bg">#ffffffff</color>
+    <item type="color" name="grid_text_color">@android:color/black</item>
+    <item type="color" name="grid_text_selected_color">@android:color/black</item>
+    <color name="textColorIconOverlay">#ffffffff</color>
+    <color name="textColorIconOverlayShadow">#ff000000</color>
+    <color name="sect_secondary">#44ffffff</color>
+    <color name="quickaction_disambig">#fff2f2f2</color>
+    <color name="quickaction_disambig_divider">#ffafafaf</color>
+    <color name="edit_divider">#ff666666</color>
+</resources>

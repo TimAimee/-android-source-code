@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/group_title"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/biz_plugin_weather_selectcity_index_bg"
+    android:gravity="left|center"
+    android:paddingBottom="5.0dip"
+    android:paddingLeft="@dimen/biz_plugin_weather_selectcity_group_item_padding"
+    android:paddingRight="@dimen/biz_plugin_weather_selectcity_group_item_padding"
+    android:paddingTop="5.0dip"
+    android:textStyle="bold"
+    android:textColor="@color/biz_plugin_weather_text1" />

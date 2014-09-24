@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/biz_plugin_weather_indicator_popup_bg" >
+
+    <TextView
+        android:id="@+id/indicator_popup"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textSize="36.0sp" />
+
+</FrameLayout>

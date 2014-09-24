@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <ProgressBar
+        android:id="@+id/ip_loading_bar"
+        style="@style/base_small_progressbar_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="left|center"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/ip_query_city"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/ip_loading_bar"
+        layout="@layout/biz_plugin_weather_more_list_item" />
+
+</RelativeLayout>

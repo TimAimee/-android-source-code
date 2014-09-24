@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <include
+        android:id="@+id/subitem1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2.0dip"
+        android:layout_weight="1.0"
+        layout="@layout/biz_plugin_weather_subitem" />
+
+    <include
+        android:id="@+id/subitem2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2.0dip"
+        android:layout_marginRight="2.0dip"
+        android:layout_weight="1.0"
+        layout="@layout/biz_plugin_weather_subitem" />
+
+    <include
+        android:id="@+id/subitem3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2.0dip"
+        android:layout_weight="1.0"
+        layout="@layout/biz_plugin_weather_subitem" />
+
+</LinearLayout>

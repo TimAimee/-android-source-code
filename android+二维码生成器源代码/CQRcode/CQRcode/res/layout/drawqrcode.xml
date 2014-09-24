@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:orientation="vertical"
+  android:background="@drawable/white">
+  <TextView
+   android:id="@+id/result"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent"
+   android:textColor="@drawable/blue"
+   />
+  <SurfaceView
+    android:id="@+id/mSurfaceView1"
+    android:visibility="visible" 
+    android:layout_width="320px" 
+    android:layout_height="240px">
+  </SurfaceView> 
+  <ImageView
+    android:id="@+id/myImageView1" 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:layout_gravity="center" />
+  <Button
+    android:id="@+id/draw"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="产生QRcode条形码"/>
+    <Button
+    android:id="@+id/back"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="返回选择页面"/>
+     <Button
+    android:id="@+id/draw"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="保存QRcode条形码"/>
+</LinearLayout>

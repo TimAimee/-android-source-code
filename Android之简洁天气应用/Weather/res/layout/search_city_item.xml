@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/friends_item_alpha_line"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@drawable/base_list_divider_drawable" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/kaixin_list_item_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/search_province"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:gravity="center_vertical"
+            android:minHeight="40.0dip"
+            android:text="广东"
+            android:textColor="@color/base_black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/column_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:gravity="center_vertical"
+            android:minHeight="40.0dip"
+            android:text="深圳"
+            android:textColor="@color/biz_plugin_weather_text1"
+            android:textSize="@dimen/biz_plugin_weather_selectcity_item_textsize" />
+    </LinearLayout>
+
+</LinearLayout>
