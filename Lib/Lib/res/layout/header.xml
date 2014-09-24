@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:id="@+id/LinearLayout01"
+      android:layout_width="fill_parent"
+      android:layout_height="47dp"
+      android:background="@drawable/bg_header"
+      android:gravity="center_vertical"
+      android:layout_alignParentTop="true"
+      >
+           
+       
+    </RelativeLayout>
+    
+      

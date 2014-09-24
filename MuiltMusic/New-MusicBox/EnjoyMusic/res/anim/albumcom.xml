@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <scale
+      android:fromXScale="0"
+      android:toXScale="1"
+      android:fromYScale="0"
+      android:toYScale="1"
+      android:pivotX="50%"
+      android:pivotY="50%"
+      android:startOffset="400"
+      android:duration="900"
+    ></scale>
+    <alpha android:fromAlpha="0.5"
+    android:toAlpha="1"
+    android:duration="1000"
+    />
+    <translate
+        android:fromXDelta="100%p"
+        android:toXDelta="0"
+        android:duration="1200"
+        ></translate>
+   <!--  <rotate
+    android:fromDegrees="0"
+    android:toDegrees="360"
+    android:duration="900"
+    ></rotate> -->
+</set>

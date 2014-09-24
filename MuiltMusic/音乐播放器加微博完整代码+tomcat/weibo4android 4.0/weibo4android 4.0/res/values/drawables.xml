@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <item type="drawable" name="ltgray">#fff4f4f4</item>
+    <item type="drawable" name="ltyellow">#fffff4db</item>
+    <item type="drawable" name="black">#ff000000</item>
+    <item type="drawable" name="transparent">#00000000</item>
+    <item type="drawable" name="widget_edit_block_bg_normal">@android:color/transparent</item>
+    <item type="drawable" name="transparent_background">#99000000</item>
+    <item type="drawable" name="list_background">#fff4f4f4</item>
+</resources>

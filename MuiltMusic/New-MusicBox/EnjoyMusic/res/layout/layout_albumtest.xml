@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#30000000" 
+    android:orientation="vertical" >
+
+    
+
+    <RelativeLayout 
+				android:id="@+id/relativelayout1"
+				android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#30000000" 
+				>
+			
+					<ImageView 
+  						android:id="@+id/inverted_view"
+  						android:background="#30000000" 
+  						android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"/>
+  							
+  					<ImageView 
+  						android:id="@+id/iv_x"
+  						android:src="@drawable/default_bg_l"
+  						android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"/>
+  				
+  					<ImageView 
+  						android:id="@+id/show_album"	
+  						android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"/>
+	               <ImageView 
+  						android:background="#30000000" 
+  						android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"/>
+	               
+  					     <TextView
+  					         android:id="@+id/tvcrrent_lrc"
+  					         android:layout_width="wrap_content"
+  					         android:layout_height="wrap_content"
+  					         android:layout_alignParentBottom="true"
+  					         android:layout_centerHorizontal="true"
+  					         android:layout_marginBottom="32dp"
+  					         android:ellipsize="middle"
+  					         android:focusable="true"
+  					         android:gravity="center"
+  					         android:marqueeRepeatLimit="marquee_forever"
+  					         android:maxLength="25"
+  					         android:singleLine="true"
+  					         android:text="未找到对应的歌词文件"
+  					         android:textColor="#ffffff" />
+
+  					 </RelativeLayout>
+		
+   
+
+</FrameLayout>

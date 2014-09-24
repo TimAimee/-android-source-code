@@ -1,0 +1,65 @@
+<RelativeLayout android:orientation="horizontal"
+	android:id="@+id/top_navigate" 
+	android:background="@drawable/top_back_image"
+	android:layout_width="fill_parent" 
+	android:layout_height="66px"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	
+	<LinearLayout 
+	    android:gravity="center"
+		android:layout_gravity="center_vertical" 
+		android:orientation="vertical"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true" 
+		android:layout_centerVertical="true"
+		android:layout_marginLeft="5dip">
+		
+		<TextView android:textSize="13.5sp" 
+		    android:textColor="#ffffffff"
+			android:gravity="center" 
+			android:id="@+id/NavigateBack"
+			android:paddingLeft="4px" 
+			android:clickable="true" 
+			android:text="返回"
+			android:background="@drawable/btn_back_bg" 
+			android:layout_width="71px"
+			android:layout_height="45px" />
+		
+	</LinearLayout>
+	
+	<TextView 
+	    android:textSize="18.0sp" 
+	    android:textColor="#ffffffff"
+		android:id="@+id/NavigateTitle" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:text=""
+		android:layout_centerInParent="true" 
+		android:layout_centerVertical="true" />
+	
+	<LinearLayout 
+	    android:gravity="center"
+		android:layout_gravity="center_vertical" 
+		android:orientation="vertical"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true" 
+		android:layout_centerVertical="true"
+		android:layout_marginRight="5dip">
+		
+		<TextView 
+		    android:textSize="13.5sp" 
+		    android:textColor="#ffffffff"
+			android:gravity="center" 
+			android:id="@+id/NavigateHome" 
+			android:text="首页"
+			android:clickable="true" 
+			android:background="@drawable/btn_home_bg"
+			android:layout_width="71px" 
+			android:layout_height="45px"
+			 />
+		
+	</LinearLayout>
+	
+</RelativeLayout>

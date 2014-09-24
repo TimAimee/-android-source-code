@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/top_bar_bg"
+	android:paddingLeft="4.0dip" android:paddingTop="7.0dip"
+	android:paddingRight="4.0dip" android:layout_width="fill_parent"
+	android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android">
+	<ImageView android:id="@+id/title_bt_left"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true" />
+	<TextView android:textSize="18.0sp" android:textStyle="bold"
+		android:textColor="@color/feed_head_text_color" android:ellipsize="end"
+		android:text="INFO" android:id="@+id/tvinfo" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_marginTop="4.0dip"
+		android:maxWidth="200.0dip" android:singleLine="true"
+		android:shadowColor="@color/white" android:shadowDy="1.0"
+		android:shadowRadius="1.0" android:layout_weight="1.0"
+		android:layout_centerHorizontal="true" />
+	<FrameLayout android:layout_height="wrap_content"
+		android:layout_alignParentRight="true" android:layout_width="wrap_content">
+		<ProgressBar android:id="@+id/titleprogressBar"
+			style="?android:attr/progressBarStyleLarge" mce_style="?android:attr/progressBarStyleLarge"
+			android:indeterminateDrawable="@drawable/progressbar"
+			android:layout_width="30dip" android:layout_height="30dip"
+			android:visibility="gone" />
+		<ImageView android:id="@+id/title_bt_right"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+	</FrameLayout>
+</RelativeLayout>
+  

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@drawable/appdrawer_bg" android:orientation="vertical"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<TextView android:textSize="16dip" android:textColor="@color/black"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:text="@string/usericon" />
+		
+	<ImageView android:layout_gravity="center_horizontal"
+		android:id="@+id/user_prot" android:layout_width="wrap_content"
+		android:background="@drawable/detail_pic_bg" android:layout_height="wrap_content"
+		android:src="@drawable/portrait" />
+	<TextView android:layout_height="wrap_content" android:text="@string/usernickname"
+		android:textColor="@color/black" android:layout_width="wrap_content"
+		android:textSize="16dip"></TextView>
+	<RelativeLayout android:layout_width="match_parent"
+		android:paddingBottom="15dp" android:layout_height="wrap_content"
+		android:background="#40ffffff" android:layout_margin="3dp"
+		android:paddingTop="15dp" android:id="@+id/relativeLayout1">
+		<RelativeLayout android:layout_height="wrap_content"
+			android:id="@+id/etrelat" android:layout_width="wrap_content">
+			<EditText android:singleLine="true" android:id="@+id/user"
+				android:focusable="false" android:drawableLeft="@drawable/icon"
+				android:layout_height="wrap_content" android:layout_marginLeft="13dip"
+				android:layout_width="fill_parent" android:layout_marginRight="5dp"
+				android:inputType="textEmailAddress"></EditText>
+			<ImageButton android:id="@+id/btchoseuser"
+				android:focusable="true" android:src="@drawable/et_arror"
+				android:background="@null" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_centerVertical="true"
+				android:layout_alignParentRight="true" android:layout_marginRight="14dp"></ImageButton>
+		</RelativeLayout>
+		<Button android:background="@drawable/blue_button" android:layout_marginRight="1dp"
+			android:textColor="@color/black" android:text="@string/regist"
+			android:layout_height="50dip" android:id="@+id/regist_Button"
+			android:layout_width="132dip" android:layout_below="@+id/auto_login"
+			android:layout_toLeftOf="@+id/login_Button"></Button>
+		<Button android:background="@drawable/blue_button" android:layout_marginLeft="15dp"
+			android:textColor="@color/black" android:text="@string/login"
+			android:layout_height="50dip" android:id="@+id/login_Button"
+			android:layout_width="132dip" android:layout_below="@+id/auto_login"
+			android:layout_alignParentRight="true" android:layout_marginRight="15dp"></Button>
+		<CheckBox android:text="@string/autologin" android:button="@drawable/btn_comment_sametime"
+			android:checked="false" android:layout_height="41dp"
+			android:textColor="@color/black" android:id="@+id/auto_login"
+			android:layout_width="wrap_content" android:gravity="center"
+			android:layout_below="@+id/etrelat" android:layout_alignRight="@+id/regist_Button"></CheckBox>
+	</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/tvposition"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:shadowColor="@color/white"
+        android:shadowDy="1.0"
+        android:shadowRadius="3.0"
+        android:text="10"
+        android:textSize="22dp" />
+
+    <TextView
+        android:id="@+id/ivAlbum"
+        android:layout_width="1dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center_vertical"
+        android:layout_toRightOf="@+id/ivAlbum"
+        android:paddingLeft="10dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="2dp"
+            android:background="@color/group_chile_div" />
+
+        <TextView
+            android:id="@+id/tvMusicName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView1"
+            android:layout_alignLeft="@+id/textView1"
+            android:singleLine="true"
+            android:text="MusicName"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvSinger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_below="@+id/tvMusicName"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:text="Singer"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/textView1"
+            android:layout_below="@+id/tvMusicName"
+            android:singleLine="true"
+            android:text="00:00"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/fahion_child_div" />
+
+</RelativeLayout>

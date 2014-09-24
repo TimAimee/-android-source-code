@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@android:id/tabhost" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<LinearLayout android:orientation="vertical"
+		android:layout_height="fill_parent" android:layout_width="fill_parent">
+		<TabWidget android:id="@android:id/tabs" 
+			android:layout_height="wrap_content" android:layout_width="fill_parent" />
+		<FrameLayout android:id="@android:id/tabcontent"
+			android:layout_width="fill_parent" android:layout_height="fill_parent">
+			
+			<LinearLayout android:layout_width="fill_parent"
+				android:orientation="vertical" android:background="#90ffffff"
+				android:layout_height="fill_parent" android:id="@+id/tab1">
+				<GridView android:layout_height="fill_parent" android:id="@+id/grid0"
+					android:layout_width="fill_parent" android:numColumns="4"></GridView>
+			</LinearLayout>
+			
+			<LinearLayout android:layout_width="fill_parent" android:background="#90ffffff"
+				android:layout_height="fill_parent" android:id="@+id/tab2">
+				<GridView android:layout_height="fill_parent" android:id="@+id/grid1"
+					android:layout_width="fill_parent" android:numColumns="4"></GridView>
+			</LinearLayout>
+			<LinearLayout android:layout_width="fill_parent" android:background="#90ffffff"
+				android:layout_height="fill_parent" android:id="@+id/tab3">
+				<GridView android:layout_height="fill_parent" android:id="@+id/grid2"
+					android:layout_width="fill_parent" android:numColumns="4"></GridView>
+			</LinearLayout>
+
+
+		</FrameLayout>
+	</LinearLayout>
+</TabHost>

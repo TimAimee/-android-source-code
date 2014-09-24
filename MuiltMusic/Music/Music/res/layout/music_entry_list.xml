@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_below="@+id/music_entry01"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/addBtnlay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/add_btn_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingTop="5dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="54dip"
+            android:text="@string/addITem"
+            android:textAppearance="?android:textAppearanceMedium" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/addList"
+        style="@style/ListView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdgeLength="0.0dip"
+        android:focusable="true" >
+    </ListView>
+
+</LinearLayout>

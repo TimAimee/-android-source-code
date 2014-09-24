@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/exp_title"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="116dp"
+        android:ellipsize="end"
+        android:maxWidth="200.0dip"
+        android:shadowColor="@color/white"
+        android:shadowDy="1.0"
+        android:shadowRadius="3.0"
+        android:singleLine="true"
+        android:text="INFO"
+        android:textColor="@color/black"
+        android:textSize="18.0sp"
+        android:textStyle="bold" >
+    </TextView>
+
+</RelativeLayout>

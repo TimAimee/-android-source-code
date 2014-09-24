@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- Header -->
+
+    <include layout="@layout/main_header" />
+
+    <ListView
+        android:id="@+id/borrowed_section_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/dashed_line"
+        android:dividerHeight="1dip"
+        android:fadeScrollbars="true"
+        android:fastScrollEnabled="true" />
+
+</LinearLayout>

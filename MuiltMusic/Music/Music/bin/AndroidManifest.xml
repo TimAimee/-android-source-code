@@ -1,0 +1,34 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.music"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="4"
+        android:targetSdkVersion="15" />
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".MainActivity"
+            android:alwaysRetainTaskState="true"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MusicListActivity"
+            android:alwaysRetainTaskState="true" />
+        <activity
+            android:name=".MuicEntry"
+            android:alwaysRetainTaskState="true" />
+        <service android:name=".MusicControl" />
+    </application>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />  
+    <!-- 监听电话呼出 -->  
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>  
+    <!-- 监听电话状态改变 -->  
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />   
+</manifest>

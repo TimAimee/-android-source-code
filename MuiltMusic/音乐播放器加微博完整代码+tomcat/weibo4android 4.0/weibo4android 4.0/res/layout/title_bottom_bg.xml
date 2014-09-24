@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:id="@+id/FrameLayout01"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:background="@drawable/titlebar_bg_nor"
+	android:orientation="horizontal"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<ImageButton
+       android:src="@drawable/btn_insert_location" 
+	    android:id="@+id/title_bt_GPS"
+	    android:textColor="@color/white"
+		android:layout_gravity="center_vertical" 
+		android:background="@drawable/bg_btn_nor"
+		android:layout_height="wrap_content" 
+		android:layout_width="wrap_content" ></ImageButton>
+		
+		<ImageButton
+       android:src="@drawable/btn_insert_pic" 
+	    android:id="@+id/title_bt_PIC"
+	    android:textColor="@color/white"
+		android:layout_gravity="center_vertical" 
+		android:background="@drawable/bg_btn_nor"
+		android:layout_height="wrap_content" 
+		android:layout_width="wrap_content" >
+		</ImageButton>
+		<ImageButton
+       android:src="@drawable/btn_insert_topic" 
+	    android:id="@+id/title_bt_TOP"
+	    android:textColor="@color/white"
+		android:layout_gravity="center_vertical" 
+		android:background="@drawable/bg_btn_nor"
+		android:layout_height="wrap_content" 
+		android:layout_width="wrap_content" >
+		</ImageButton>
+			<ImageButton
+       android:src="@drawable/btn_insert_at" 
+	    android:id="@+id/title_bt_AT"
+	    android:textColor="@color/white"
+		android:layout_gravity="center_vertical" 
+		android:background="@drawable/bg_btn_nor"
+		android:layout_height="wrap_content" 
+		android:layout_width="wrap_content" >
+		</ImageButton>
+			<ImageButton
+       android:src="@drawable/btn_insert_face" 
+	    android:id="@+id/title_bt_FAC"
+	    android:textColor="@color/white"
+		android:layout_gravity="center_vertical" 
+		android:background="@drawable/bg_btn_nor"
+		android:layout_height="wrap_content" 
+		android:layout_width="wrap_content" >
+		</ImageButton>
+		</LinearLayout>

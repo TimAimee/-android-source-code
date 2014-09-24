@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+	<!-- 认证dialog的样式 -->
+	<style name="oauthdialog" parent="@android:style/Theme.Dialog">
+		<item name="android:windowFrame">@null</item>
+		<item name="android:windowIsFloating">true</item>
+		<item name="android:windowIsTranslucent">false</item>
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:backgroundDimEnabled">true</item>
+	</style>
+	<!-- TabActivity页面的Radiobutton按钮样式 -->
+	<style name="main_tab_bottom">
+		<item name="android:textSize">@dimen/bottom_tab_font_size</item>
+		<item name="android:textColor">#ffffffff</item>
+		<item name="android:ellipsize">marquee</item>
+		<item name="android:gravity">center_horizontal</item>
+		<item name="android:background">@drawable/home_btn_bg</item>
+		<item name="android:paddingTop">@dimen/bottom_tab_padding_up</item>
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:button">@null</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:drawablePadding">@dimen/bottom_tab_padding_drawable</item>
+		<item name="android:layout_weight">1.0</item>
+	</style>
+	<style name="detail_btn">
+		<item name="android:textSize">@dimen/bottom_tab_font_size</item>
+		<item name="android:textColor">@android:color/black</item>
+		<item name="android:ellipsize">marquee</item>
+		<item name="android:gravity">center_horizontal</item>
+		<item name="android:background">@drawable/detail_btn_bg</item>
+		<item name="android:paddingTop">8.0dip</item>
+		<item name="android:paddingBottom">5.0dip</item>
+		<item name="android:focusable">true</item>
+		<item name="android:clickable">true</item>
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:layout_weight">1.0</item>
+	</style>
+	<style name="userprogress" >
+	  	<item name="android:textColor">#ff7f7f7f</item>
+	  		<item name="android:background">@null</item>
+	  		<item name="android:progressDrawable">@drawable/progressbar2</item>
+	   </style>
+	<!-- search radio button -->
+	<style name="search_radiobutton_weibo">
+		<item name="android:textColor">#ff7f7f7f</item>
+		<item name="android:ellipsize">marquee</item>
+		<item name="android:background">@drawable/search_radio_weibo</item>
+		<item name="android:paddingLeft">@dimen/searchbar_radiobutton_padding</item>
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">fill_parent</item>
+		<item name="android:button">@null</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:drawablePadding">6.0dip</item>
+		<item name="android:layout_weight">1.0</item>
+	</style>
+	<style name="search_radiobutton_user">
+		<item name="android:textColor">#ff7f7f7f</item>
+		<item name="android:ellipsize">marquee</item>
+		<item name="android:background">@drawable/search_radio_user</item>
+		<item name="android:paddingLeft">@dimen/searchbar_radiobutton_padding_user</item>
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">fill_parent</item>
+		<item name="android:button">@null</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:drawablePadding">6.0dip</item>
+		<item name="android:layout_weight">1.0</item>
+	</style>
+	<style name="my_AutoCompleteText_style" parent="@android:style/Widget.AutoCompleteTextView">
+
+		<item name="android:background">@drawable/search_edittext_bg</item>
+
+	</style>
+</resources>

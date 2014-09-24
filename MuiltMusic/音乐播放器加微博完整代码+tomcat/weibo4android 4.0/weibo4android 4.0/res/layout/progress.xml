@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:visibility="visible" android:gravity="center"
+	android:id="@+id/show_progress_layout"
+	android:background="@color/white" android:orientation="horizontal"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+      <ProgressBar   
+          android:id="@+id/progressBar"    
+          style="?android:attr/progressBarStyleLarge"
+          mce_style="?android:attr/progressBarStyleLarge"
+          android:indeterminateDrawable="@drawable/progressbar2"
+          android:layout_width="40dip"   
+          android:layout_height="40dip"            
+         />  
+        <!--   mce_style="?android:attr/progressBarStyleLarge"  --> 
+      <TextView android:paddingLeft="3dp"
+                     android:id="@+id/progress_tv" 
+                     android:textColor="@color/black" 
+                     android:layout_width="wrap_content" 
+                     android:layout_height="wrap_content" 
+                     android:text="@string/loadinfo" />
+</LinearLayout>  

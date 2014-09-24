@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/desktop_background2"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/toplayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/top_layout_bg" >
+
+        <TextView
+            android:id="@+id/tv_songname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            android:maxLength="12"
+            android:shadowColor="@color/like_bg"
+            android:singleLine="true"
+            android:text="TheSong Name"
+            android:textColor="#525040"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_singer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_songname"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:maxLength="15"
+            android:shadowColor="@color/like_bg"
+            android:singleLine="true"
+            android:text="Singer Name"
+            android:textColor="#525040"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/chose_albumlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="3dp"
+            android:src="@drawable/chose_albumlist" />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="46dp"
+            android:layout_margin="3dp"
+            android:layout_toLeftOf="@+id/chose_albumlist"
+            android:background="#70a1a1a1" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/boottom_layout_bg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/show_time_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="20dp" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:layout_alignParentTop="true"
+                android:background="@color/fahion2" />
+
+            <TextView
+                android:id="@+id/tv_durrction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="3dp"
+                android:text="00:00" />
+
+            <TextView
+                android:id="@+id/tv_current_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="3dp"
+                android:text="00:00" />
+
+            <SeekBar
+                android:id="@+id/my_seekbar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="3dp"
+                android:layout_toLeftOf="@+id/tv_durrction"
+                android:layout_toRightOf="@+id/tv_current_time"
+                android:progressDrawable="@drawable/seek_bg"
+                android:thumb="@drawable/thumb" 
+                android:thumbOffset="3dp"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center_vertical" >
+
+            <ImageButton
+                android:id="@+id/btn_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/desktop_playbt_b" />
+
+            <ImageButton
+                android:id="@+id/btn_previous"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="6dp"
+                android:layout_toLeftOf="@+id/btn_play"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/desktop_prevbt_b" />
+
+            <ImageButton
+                android:id="@+id/btn_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dp"
+                android:layout_toRightOf="@+id/btn_play"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/desktop_nextbt_b" />
+
+            <ImageButton
+                android:id="@+id/btnplay_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="6dp"
+                android:layout_toLeftOf="@+id/btn_previous"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/play_node1" />
+
+            <ImageButton
+                android:id="@+id/btnplay_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dp"
+                android:layout_toRightOf="@+id/btn_next"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/play_list" />
+            
+        </RelativeLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomlayout"
+        android:layout_below="@+id/toplayout" >
+
+        <ListView
+            android:id="@+id/showalbum_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@drawable/menu_divider"
+            android:dividerHeight="2dp"
+            android:cacheColorHint="#00000000"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/contain_viewpager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/center_body_view_pager"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+            </android.support.v4.view.ViewPager>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="12dp"
+                android:layout_alignParentBottom="true"
+                android:background="#70000000"
+                android:gravity="center_horizontal" >
+
+                <ImageView
+                    android:id="@+id/show_nowpage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/show_mid" />
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
+</RelativeLayout>

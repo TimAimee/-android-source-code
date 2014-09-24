@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal"
+     android:background="@color/white" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+      <RelativeLayout android:layout_height="wrap_content" android:layout_width="fill_parent">
+        <AutoCompleteTextView android:id="@+id/AutoCompleteTextView01" android:paddingLeft="25dp" android:hint="soso" style="@style/my_AutoCompleteText_style" android:layout_height="wrap_content" android:singleLine="true" android:completionThreshold="1" android:layout_width="match_parent"/>
+        <Button android:id="@+id/btSearch" android:layout_height="wrap_content" android:layout_width="wrap_content" android:background="@drawable/search_button_bg" android:layout_alignParentTop="true" android:layout_alignParentRight="true"></Button>
+    </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <RadioGroup android:gravity="center"  android:layout_gravity="bottom" android:orientation="horizontal" android:id="@+id/main_radio" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RadioButton android:textSize="17.0sp" android:id="@+id/rbSearchWeibo" android:checked="true" android:tag="radio_button0" android:text="@string/search_weibo" android:drawableLeft="@drawable/search_radio_1" style="@style/search_radiobutton_weibo" />
+            <RadioButton android:textSize="17.0sp" android:id="@+id/rbSearchUser" android:tag="radio_button1" android:text="@string/search_user" android:drawableLeft="@drawable/search_radio_2" style="@style/search_radiobutton_user" />
+        </RadioGroup>
+    </LinearLayout>
+</LinearLayout>

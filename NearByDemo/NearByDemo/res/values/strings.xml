@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">附近的人</string>
+    <string name="action_settings">附近的人</string>
+    <string name="name">用户名：</string>
+    <string name="describe">签名：</string>
+    <string name="menu_submit">提交</string>
+
+</resources>

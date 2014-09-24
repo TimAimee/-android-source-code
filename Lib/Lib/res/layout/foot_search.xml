@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 顶部条 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout02"
+    android:layout_width="fill_parent"
+    android:layout_height="47dp"
+    android:background="@drawable/bg_header"
+    android:gravity="center_vertical" >
+
+    <Button
+        android:id="@+id/next"
+        style="@style/simple_button"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="19dp"
+        android:text="下一页" />
+
+    <Button
+        android:id="@+id/pre"
+        style="@style/simple_button"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:text="前一页" />
+
+    <TextView
+        android:id="@+id/page_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/next"
+        android:text="1/1"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/bookTitleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/pre"
+        android:text="总数："
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/sum_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/bookTitleTV"
+        android:text="0"
+        android:textColor="@color/opaque_red"
+        android:textSize="15dp" />
+
+</RelativeLayout>

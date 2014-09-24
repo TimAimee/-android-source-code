@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/mention_background"
+    android:paddingBottom="4dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp" >
+
+    <TextView
+        android:id="@+id/bookTitleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="题名/责任者"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/link_color" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bookTitleTV"
+        android:layout_below="@+id/bookTitleTV"
+        android:text="借阅日期:"
+        android:textColor="@color/simiple_button_color"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:text="应还日期:"
+        android:textColor="@color/simiple_button_color"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_below="@+id/textView4"
+        android:textColor="@color/simiple_button_color"
+        android:text="条码号:" />
+
+    <TextView
+        android:id="@+id/barcodeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/paybackDateTV"
+        android:layout_marginLeft="19dp"
+        android:layout_toRightOf="@+id/textView4"
+        android:textColor="@color/simiple_button_color"
+        android:text="123456" />
+
+    <TextView
+        android:id="@+id/paybackDateTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView7"
+        android:layout_alignLeft="@+id/barcodeTV"
+        android:text="2013-6-30"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/simiple_button_color" />
+
+    <TextView
+        android:id="@+id/borrowedDateTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/paybackDateTV"
+        android:layout_alignLeft="@+id/paybackDateTV"
+        android:text="2013-5-30"
+        android:textColor="@color/simiple_button_color"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        android:id="@+id/renewButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/bookTitleTV"
+        android:layout_marginRight="14dp"
+        android:focusable="false"
+        android:text="续借"
+        android:textColor="@color/simiple_button_color"
+        android:visibility="invisible" />
+
+</RelativeLayout>

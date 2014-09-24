@@ -1,0 +1,16 @@
+<resources>
+
+    <style name="AppBaseTheme" parent="android:Theme.Light"></style>
+
+    <style name="AppTheme" parent="AppBaseTheme"></style>
+
+    <style name="settingWindowStyle">
+        <item name="android:windowEnterAnimation">@anim/up_anim</item>
+        <item name="android:windowExitAnimation">@anim/down_anim</item>
+    </style>
+
+    <style name="transparentFrameWindowStyle" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/bg_window</item>
+    </style>
+
+</resources>

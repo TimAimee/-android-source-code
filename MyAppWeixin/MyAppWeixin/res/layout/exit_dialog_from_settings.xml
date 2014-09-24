@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"       
+        >
+
+        <LinearLayout
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"  
+            android:gravity="center_horizontal"
+             >
+        
+       <LinearLayout
+        	android:id="@+id/exit_layout2"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:gravity="center_horizontal"
+        	android:layout_gravity="bottom"
+        	android:orientation="vertical"
+        	android:background="@drawable/exit_dialog_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:text="退出后不会删除任何历史数据，下次\n登录依然可以使用本帐号" />           
+            
+            <Button
+              android:id="@+id/exitBtn0"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:text="退出登录"
+              android:textSize="18sp"
+              android:textColor="#fff"
+              android:layout_marginTop="15dp"
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="10dp"
+              android:background="@drawable/btn_style_alert_dialog_special"
+              android:gravity="center"
+			  android:onClick="exitbutton0"
+              />
+            
+            <Button
+              android:id="@+id/exitBtn1"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="15dp"
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="10dp"
+              android:layout_marginBottom="10dp"
+              android:text="取消"
+              android:textSize="18sp"
+              android:textColor="#fff"
+              android:background="@drawable/btn_style_alert_dialog_cancel"
+              android:gravity="center"
+			  android:onClick="exitbutton1"
+              />
+           
+       </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

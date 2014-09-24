@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="backgroundcolor">#f8f9e6</color>
+    <color name="musicnamecolor">#6e6e6e</color>
+    <color name="veryblack">#000000</color>
+    <color name="black">#121211</color>
+    <color name="blakmore">#020202</color>
+    <color name="white">#fefefa</color>
+</resources>

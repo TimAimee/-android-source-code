@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/style_brilliant_starlight" />
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/screen_audio_player_button_bg"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="我要K歌"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+    <ListView
+        android:id="@+id/listview1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/t1"
+        android:cacheColorHint="#00000000" >
+    </ListView>
+
+</RelativeLayout>

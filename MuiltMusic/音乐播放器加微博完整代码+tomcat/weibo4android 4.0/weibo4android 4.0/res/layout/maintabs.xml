@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TabHost android:id="@android:id/tabhost" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+<FrameLayout android:id="@+id/msg_title" android:visibility="gone"
+	android:layout_width="fill_parent" android:layout_height="wrap_content">
+</FrameLayout>
+        <FrameLayout android:id="@android:id/tabcontent" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <!-- TabHost必须要有 TabWidget 否则要报错,我们这里设置它不可见-->
+        <TabWidget android:id="@android:id/tabs" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0" />
+        <!-- 底部按钮 -->
+        <RadioGroup android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@+id/main_radio" android:background="@drawable/maintab_toolbar_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/radio_button0" android:tag="radio_button0" android:layout_marginTop="2.0dip" android:text="@string/main_home" android:drawableTop="@drawable/icon_1_n" style="@style/main_tab_bottom" />
+            <RadioButton android:id="@+id/radio_button1" android:tag="radio_button1" android:layout_marginTop="2.0dip" android:text="@string/main_news" android:drawableTop="@drawable/icon_2_n" style="@style/main_tab_bottom" />
+            <RadioButton android:id="@+id/radio_button2" android:tag="radio_button2" android:layout_marginTop="2.0dip" android:text="@string/main_my_info" android:drawableTop="@drawable/icon_3_n" style="@style/main_tab_bottom" />
+            <RadioButton android:id="@+id/radio_button3" android:tag="radio_button3" android:layout_marginTop="2.0dip" android:text="@string/menu_search" android:drawableTop="@drawable/icon_4_n" style="@style/main_tab_bottom" />
+            <RadioButton android:id="@+id/radio_button4" android:tag="radio_button4" android:layout_marginTop="2.0dip" android:text="@string/more" android:drawableTop="@drawable/icon_5_n" style="@style/main_tab_bottom" />
+        </RadioGroup>
+    
+    </LinearLayout>
+</TabHost>

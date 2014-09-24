@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:background="@color/white" android:layout_height="fill_parent">
+    <!-- 标题头 -->
+	<include android:id="@+id/freelook_title_home" layout="@layout/feed_head_layout" />
+	<!-- 自定义的圆形进度条 -->
+	<include android:id="@+id/loginprogres" layout="@layout/progress" />
+	<!-- 用于显示主页面信息的ListView -->
+		 <weibo4android.logic.ui.util.PullToRefreshListView 
+	                android:listSelector="#00000000"
+	                android:cacheColorHint="#00000000"
+	                android:id="@+id/weibolist"
+	                android:drawSelectorOnTop="false"
+	                 android:scrollingCache="false"
+	                android:divider="@drawable/list_separator" 
+	                android:dividerHeight="1.0dip" 
+	                android:layout_width="fill_parent" 
+	                android:focusable="true"
+	                android:layout_height="wrap_content"/>
+
+</LinearLayout>

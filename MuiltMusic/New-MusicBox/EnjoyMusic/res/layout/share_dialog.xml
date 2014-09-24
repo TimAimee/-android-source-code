@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+    android:id="@+id/menu_sleep"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="3dp"
+    > 
+    <ImageView 
+  			android:id="@+id/menu_image1"	
+  		    android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/shakedsong"
+            android:layout_centerVertical="true"
+            />
+
+    <TextView
+        android:id="@+id/menu_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:layout_marginLeft="27dp"
+        android:layout_toRightOf="@+id/menu_image1"
+        android:text="亲，来摇一摇换首歌吧！"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+    
+     </RelativeLayout>
+     
+  
+</LinearLayout>

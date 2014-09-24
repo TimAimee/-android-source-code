@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dip" >
+
+    <TextView
+        android:id="@+id/myDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dip"
+        android:text="@string/hello_world" />
+
+    <TextView
+        android:id="@+id/myBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/myDate"
+        android:layout_centerVertical="true"
+        android:background="@drawable/my_txt_bg"
+        android:gravity="center_vertical"
+        android:text="@string/hello_world"
+        android:textSize="20sp" />
+
+</RelativeLayout>

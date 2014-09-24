@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_topbar" >
+
+    <ImageButton
+        android:id="@+id/backImgBtn01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_play_back"
+        android:padding="10dip" />
+
+    <TextView
+        android:id="@+id/topBarText01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/play"
+        android:layout_toRightOf="@+id/backImgBtn"
+        android:gravity="center_horizontal"
+        android:paddingTop="5dip"
+        android:text="@string/Isplaying"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/RelativeLayout_Item" android:layout_width="wrap_content"
+	android:layout_height="wrap_content" >
+	<ImageView android:id="@+id/menuiv"
+	    android:maxWidth="44dp" android:maxHeight="44dp"
+	    android:adjustViewBounds="true" android:scaleType="fitCenter"
+		android:layout_centerHorizontal="true" android:layout_width="45dp"
+		android:layout_height="45dp">
+	</ImageView>
+	<TextView android:layout_below="@id/menuiv" android:textColor="@color/blakmore"
+		android:id="@+id/menutv" android:layout_centerHorizontal="true"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:text="选项"></TextView>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="ExportedService" severity="ignore" />
+    <issue id="HardcodedText" severity="ignore" />
+    <issue id="NestedWeights" severity="ignore" />
+    <issue id="OldTargetApi" severity="ignore" />
+    <issue id="SimpleDateFormat" severity="ignore" />
+    <issue id="TextFields" severity="ignore" />
+</lint>

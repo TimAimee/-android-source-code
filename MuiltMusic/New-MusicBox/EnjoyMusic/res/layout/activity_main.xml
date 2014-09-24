@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/desktop_background2"
+    android:orientation="vertical" >
+
+    <LinearLayout android:orientation="horizontal" 
+      android:id="@+id/actionbar" 
+      android:layout_width="fill_parent" 
+      android:layout_height="wrap_content" 
+      android:weightSum="3.0" 
+      android:layout_alignParentTop="true">
+     <ImageButton
+            android:id="@+id/imagemusic"         
+            android:background="@null" 
+            android:layout_width="fill_parent" 
+            android:layout_height="fill_parent" 
+            android:src="@drawable/tab_local_media" 
+            android:layout_weight="1.0" />
+       <ImageButton
+            android:id="@+id/imagelove"
+            android:background="@null" 
+            android:layout_width="fill_parent" 
+            android:layout_height="fill_parent" 
+            android:src="@drawable/tab_grop_media" 
+            android:layout_weight="1.0" />
+       <ImageButton
+            android:id="@+id/imagenet"
+            android:background="@null" 
+            android:layout_width="fill_parent" 
+            android:layout_height="fill_parent" 
+            android:src="@drawable/tab_net_media" 
+            android:layout_weight="1.0" />
+       </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottomView"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/top_layout_bg"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/list_show_album"
+            android:layout_width="54dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="3dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/detail_pic_bg"
+            android:minHeight="60dp"
+            android:minWidth="60dp"
+            android:paddingTop="4dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/default_bg_s" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/list_show_album"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/list_song_name"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:text="歌曲名:"
+                android:textColor="@color/fashion_color"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/list_song_durction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00--00:00"
+                android:textColor="@color/fashion_color" />
+        </LinearLayout>
+
+        <ViewFlipper
+            android:id="@+id/myfliper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/linearLayout1" >
+
+            <LinearLayout
+                android:id="@+id/control"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="2dp" >
+
+                <ImageButton
+                    android:id="@+id/btnPrevious_player"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/desktop_prevbt" />
+
+                <ImageButton
+                    android:id="@+id/btnPlay_player"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/desktop_playbt" />
+
+                <ImageButton
+                    android:id="@+id/btnNext_player"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/desktop_nextbt" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/choes_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical|right"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/move_to_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/move2group" />
+            </LinearLayout>
+        </ViewFlipper>
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="4dp"
+            android:layout_alignParentTop="true"
+            android:progressDrawable="@drawable/progress_dotted" />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/center_body_view_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/bottomView"
+        android:layout_below="@+id/actionbar" >
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>

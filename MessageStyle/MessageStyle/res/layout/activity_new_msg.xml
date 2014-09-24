@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/newMsg_titleLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_title"
+        android:padding="5dip" >
+
+        <TextView
+            android:id="@+id/newMsg_txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="写消息"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/newMsg_btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_back_selector" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/newMsg_topLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newMsg_titleLayout"
+        android:background="@drawable/bg_title"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="3dip" >
+
+        <EditText
+            android:id="@+id/newMsg_etNumber"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:hint="对方号码"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/newMsg_btnLinkMan"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="联系人" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/newMsg_bottomLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_title"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="3dip" >
+
+        <EditText
+            android:id="@+id/newMsg_etText"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:hint="输入消息内容"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/newMsg_btnSend"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/send" />
+    </LinearLayout>
+
+</RelativeLayout>

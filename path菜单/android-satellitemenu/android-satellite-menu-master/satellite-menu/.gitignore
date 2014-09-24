@@ -1,0 +1,11 @@
+.class
+.DS_Store
+/local.properties
+/.settings
+/target
+/gen
+/bin
+/tests
+/project.properties
+/default.properties
+/lint.xml

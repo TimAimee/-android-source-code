@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/simple_position"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="@color/whites"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/divider_line"
+        android:layout_width="2dp"
+        android:layout_height="46dp"
+        android:layout_margin="1dp"
+        android:layout_toRightOf="@+id/simple_position"
+        android:background="@color/fahion1"
+        android:textColor="@color/whites" />
+
+    <TextView
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/divider_line"
+        android:id="@+id/simple_muic_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="歌曲名称:"
+        android:singleLine="true"
+        android:maxLength="13"
+        android:textColor="@color/whites"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+  <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/divider_line"
+        android:layout_below="@+id/simple_muic_name"
+        android:id="@+id/simple_singer_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="歌手名称:"
+        android:singleLine="true"
+        android:maxEms="10"
+        android:textColor="@color/whites"
+        android:textSize="14dp"
+         />
+    <TextView
+        android:layout_marginRight="4dp"
+        android:id="@+id/simple_durction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="00:00"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+         />
+</RelativeLayout>

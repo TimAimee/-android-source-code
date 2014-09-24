@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#282828"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:padding="3dp" >
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxHeight="70dp"
+        android:src="@drawable/icon"
+        android:maxWidth="70dp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/no_musicname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="歌曲名"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="7dp" >
+
+            <!--
+         	<TextView android:id="@+id/no_album"    
+		android:textSize="12dp"   android:singleLine="true" android:maxLength="12"
+		 android:text="专辑名称" android:layout_width="wrap_content"
+		android:layout_height="fill_parent"  />
+		<TextView android:id="@+id/no_artist"  android:singleLine="true" android:maxLength="12"
+		android:textSize="12dp" android:paddingLeft="5dp"
+		android:text="歌手名称" android:layout_width="wrap_content"
+		android:layout_height="fill_parent" />
+            -->
+            <ImageButton
+                android:id="@+id/btnPrevious_player"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/desktop_prevbt" />
+            <ImageButton
+                android:id="@+id/btnPlay_player"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/desktop_playbt" />
+            <ImageButton
+                android:id="@+id/btnNext_player"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/desktop_nextbt" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

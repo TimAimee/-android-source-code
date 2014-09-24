@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+    
+    <TextView android:id="@+id/tv_wb" android:layout_height="wrap_content"
+		android:layout_width="fill_parent" android:background="@drawable/top_bar_bg"
+		></TextView>	
+		<RelativeLayout
+		android:layout_marginTop="10dp"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:layout_gravity="center_horizontal"
+		>
+			<Button android:text="@string/private_mess" android:layout_height="wrap_content" android:layout_width="wrap_content" android:background="@drawable/title_button_group_middle" android:id="@+id/bt_mid" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"></Button>
+			<Button android:text="@string/atme" android:layout_height="wrap_content" android:layout_width="wrap_content" android:background="@drawable/title_button_group_right" android:id="@+id/bt_aboutme" android:layout_alignParentTop="true" android:layout_toRightOf="@+id/bt_mid"></Button>
+			<Button android:text="@string/atcomment" android:layout_height="wrap_content"  android:layout_width="wrap_content" android:background="@drawable/title_button_group_left" android:id="@+id/bt_abounmecomment" android:layout_alignParentTop="true" android:layout_toLeftOf="@+id/bt_mid"></Button>
+		</RelativeLayout>
+	
+</FrameLayout>

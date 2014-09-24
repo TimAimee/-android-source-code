@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:apk="http://schemas.android.com/apk/res/android"
+    apk:layout_width="match_parent"
+  apk:layout_height="match_parent"
+    apk:orientation="vertical" >
+
+    <ImageView
+        apk:id="@+id/tweenMM"
+        apk:layout_width="fill_parent"
+        apk:layout_height="fill_parent"
+      apk:background="@drawable/style_brilliant_starlight" />
+
+    <TextView
+        apk:id="@+id/textleibie"
+        apk:layout_width="fill_parent"
+        apk:layout_height="50dp"
+        apk:background="@drawable/screen_audio_player_button_bg"
+        apk:gravity="center_vertical|center_horizontal"
+        apk:text="淘歌乐库"
+        apk:textColor="#ffffff"
+        apk:textSize="20dp" />
+
+    <Button
+        apk:id="@+id/bb1"
+        apk:layout_width="wrap_content"
+        apk:layout_height="wrap_content"
+        apk:layout_marginLeft="20dp"
+        apk:layout_marginTop="10dp"
+        apk:onClick="fanhui"
+        apk:background="@drawable/fanhui" />
+
+    <LinearLayout
+        apk:layout_width="fill_parent"
+        apk:layout_height="fill_parent"
+        apk:layout_below="@id/textleibie"
+        apk:orientation="vertical"
+         >
+        <LinearLayout 
+            apk:layout_width="fill_parent"
+            apk:layout_height="wrap_content"
+            apk:layout_marginTop="20dp"
+            apk:orientation="horizontal"
+            >
+            <Button 
+                apk:id="@+id/bb2"
+                apk:layout_width="wrap_content"
+                apk:layout_height="wrap_content"
+                apk:background="@null"
+                apk:layout_weight="1"
+               apk:drawableTop="@drawable/screen_search_categorys_hkat"
+                
+                 apk:text="港台歌曲"
+                apk:textColor="#000000"
+                />
+            <Button
+                apk:id="@+id/bb3"
+                 apk:layout_width="wrap_content"
+                apk:layout_height="wrap_content"
+                apk:background="@null"
+                apk:layout_weight="1"
+                apk:drawableTop="@drawable/screen_search_categorys_europe"
+                apk:text="欧美歌曲"
+                apk:textColor="#000000"
+                />
+            <Button 
+                apk:id="@+id/bb4"
+                apk:layout_weight="1"
+                 apk:layout_width="wrap_content"
+                apk:layout_height="wrap_content"
+                apk:drawableTop="@drawable/screen_search_categorys_jask"
+                apk:background="@null"
+                 apk:text="日韩歌曲"
+                apk:textColor="#000000"
+                />
+        </LinearLayout>
+      
+        <LinearLayout 
+            apk:layout_width="fill_parent"
+            apk:layout_height="wrap_content"
+            apk:layout_marginTop="10dp"
+            >
+            <Button 
+                apk:id="@+id/bb5"
+                apk:layout_width="wrap_content"
+                apk:layout_height="wrap_content"
+                apk:background="@null"
+               apk:layout_weight="1"
+               apk:drawableTop="@drawable/screen_search_categorys_china"
+                apk:onClick="forNeiDi"
+                   apk:text="内地歌曲"
+                apk:textColor="#000000"/>
+            <Button 
+                 apk:layout_width="wrap_content"
+                apk:layout_height="wrap_content"
+                apk:layout_weight="1"
+                apk:drawableTop="@drawable/screen_search_categorys_love"
+                apk:background="@null"
+                apk:text="情歌对唱"
+                apk:textColor="#000000"
+                />
+            <Button 
+                apk:id="@+id/bb7"
+                 apk:layout_width="wrap_content"
+                apk:layout_height="wrap_content"
+                apk:layout_weight="1"
+                apk:drawableTop="@drawable/screen_search_categorys_television"
+                apk:background="@null"
+                apk:text="影视金曲"
+                apk:textColor="#000000"
+                />
+        </LinearLayout>
+       
+         <LinearLayout 
+            apk:layout_width="fill_parent"
+            apk:layout_height="wrap_content"
+            apk:layout_marginTop="10dp"
+            >
+            <Button 
+                apk:id="@+id/bb8"
+                apk:layout_width="wrap_content"
+                apk:layout_height="wrap_content"
+                apk:background="@null"
+                apk:layout_weight="1"
+                 apk:text="经典歌曲"
+                apk:textColor="#000000"
+                apk:drawableTop="@drawable/screen_search_categorys_classic"
+                />
+            <Button 
+                apk:id="@+id/bb9"
+                 apk:layout_width="wrap_content"
+                apk:layout_height="wrap_content"
+                apk:drawableTop="@drawable/screen_search_categorys_child"
+                apk:background="@null"
+                 apk:text="儿童歌曲"
+                apk:textColor="#000000"
+                apk:layout_weight="1"
+                />
+             <Button 
+                 apk:id="@+id/bb12"
+                 apk:layout_width="wrap_content"
+                apk:layout_height="wrap_content"
+                apk:drawableTop="@drawable/screen_search_categorys_child"
+                apk:background="@null"
+                 apk:text="儿童歌曲"
+                apk:textColor="#000000"
+                apk:layout_weight="1"
+                />
+           
+        </LinearLayout>
+        
+      
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="#ffefebe7" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingTop="60.0dip" android:paddingRight="10.0dip" android:paddingBottom="60.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" >
+                <TableLayout android:id="@+id/MorePageTableLayout_Favorite" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="0" android:shrinkColumns="0">
+                    <TableRow android:id="@+id/more_page_row0" android:background="@drawable/more_item_press" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip">
+                        <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:gravity="center_vertical" android:paddingLeft="17.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/myweibo" android:includeFontPadding="false" android:drawableLeft="@drawable/mylike" android:drawablePadding="10.0dip" />
+                        <ImageView android:gravity="center_vertical" android:layout_gravity="right" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_arrow" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+            <TextView android:textSize="16.0sp" android:textColor="#ff888888" android:gravity="center_vertical" android:paddingLeft="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/mysetting" />
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TableLayout android:id="@+id/MorePageTableLayout_Follow" android:paddingLeft="1.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="0" android:shrinkColumns="0">
+                    <TableRow android:id="@+id/more_page_row1" android:background="@drawable/more_itemtop_press" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip">
+                        <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:gravity="center_vertical" android:paddingLeft="17.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/user_manger" android:includeFontPadding="false" android:drawableLeft="@drawable/myfollow" android:drawablePadding="10.0dip" />
+                        <ImageView android:gravity="center_vertical" android:layout_gravity="right" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_arrow" />
+                    </TableRow>
+                    <TableRow android:id="@+id/more_page_row2" android:background="@drawable/more_itemmiddle_press" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip">
+                        <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:gravity="center_vertical" android:paddingLeft="17.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/findfrinends" android:includeFontPadding="false" android:drawableLeft="@drawable/search_friends" android:drawablePadding="10.0dip" />
+                        <ImageView android:gravity="center_vertical" android:layout_gravity="right" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_arrow" />
+                    </TableRow>
+                    <TableRow android:id="@+id/more_page_row3" android:background="@drawable/more_itembottom_press" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip">
+                        <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:gravity="center_vertical" android:paddingLeft="17.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/invite_frinends" android:includeFontPadding="false" android:drawableLeft="@drawable/invite_friends" android:drawablePadding="10.0dip" />
+                        <ImageView android:gravity="center_vertical" android:layout_gravity="right" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_arrow" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+            <TextView android:textSize="16.0sp" android:textColor="#ff888888" android:gravity="center_vertical" android:paddingLeft="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="客户端" />
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TableLayout android:id="@+id/MorePageTableLayout_Client" android:paddingLeft="1.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="0" android:shrinkColumns="0">
+                    <TableRow android:id="@+id/more_page_row4" android:background="@drawable/more_itemtop_press" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip">
+                        <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:gravity="center_vertical" android:paddingLeft="17.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/setting" android:includeFontPadding="false" android:drawableLeft="@drawable/setting_mor" android:drawablePadding="10.0dip" />
+                        <ImageView android:gravity="center_vertical" android:layout_gravity="right" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_arrow" />
+                    </TableRow>  
+                    <TableRow android:id="@+id/more_page_row5" android:background="@drawable/more_itemmiddle_press" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip">
+                        <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:gravity="center_vertical" android:paddingLeft="17.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/addcomment" android:includeFontPadding="false" android:drawableLeft="@drawable/feed_back" android:drawablePadding="10.0dip" />
+                        <ImageView android:gravity="center_vertical" android:layout_gravity="right" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_arrow" />
+                    </TableRow>
+                        <TableRow android:id="@+id/more_page_row6" android:background="@drawable/more_itemmiddle_press" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip">
+                        <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:gravity="center_vertical" android:paddingLeft="17.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/checkupdate" android:includeFontPadding="false" android:drawableLeft="@drawable/moreitems_version" android:drawablePadding="10.0dip" />
+                        <ImageView android:gravity="center_vertical" android:layout_gravity="right" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_arrow" />
+                    </TableRow>
+                    <TableRow android:id="@+id/more_page_row7" android:background="@drawable/more_itembottom_press" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip">
+                        <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:gravity="center_vertical" android:paddingLeft="17.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/about" android:includeFontPadding="false" android:drawableLeft="@drawable/about_page_mor" android:drawablePadding="10.0dip" />
+                        <ImageView android:gravity="center_vertical" android:layout_gravity="right" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_arrow" />
+                    </TableRow>
+                </TableLayout>  
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout android:background="@drawable/top_bar_bg" android:paddingLeft="4.0dip" android:paddingTop="6.0dip" android:paddingRight="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_centerHorizontal="true">
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/more" android:singleLine="true" android:shadowColor="@color/white" android:shadowDy="1.0" android:shadowRadius="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/mention_background"
+    android:paddingBottom="4dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp" >
+
+    <TextView
+        android:id="@+id/bookTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoLink="web"
+        android:text="bookTitle"
+        android:textColor="@color/link_color"
+        android:textSize="20dip" />
+
+    <TextView
+        android:id="@+id/bookAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bookTitle"
+        android:layout_below="@+id/bookTitle"
+        android:singleLine="true"
+        android:text="bookAuthor"
+        android:textColor="@color/simiple_button_color"
+        android:textSize="15dip" />
+
+    <TextView
+        android:id="@+id/bookPublisher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bookAuthor"
+        android:layout_below="@+id/bookAuthor"
+        android:text="bookPublisher"
+        android:textColor="@color/simiple_button_color" />
+
+    <TextView
+        android:id="@+id/bookCallno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bookPublisher"
+        android:layout_below="@+id/bookPublisher"
+        android:text="bookCallno"
+        android:textColor="@color/simiple_button_color" />
+    
+</RelativeLayout>

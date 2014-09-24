@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:background="@drawable/dialog_bg"
+  android:padding="10dp">
+   <LinearLayout
+	android:layout_width="wrap_content"
+	android:layout_height="40dip"
+	android:orientation="horizontal">
+	<ImageView
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:src="@drawable/dialog_info">
+	</ImageView>
+	<TextView
+	android:paddingTop="10dp"
+	android:gravity="center"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="@string/mess_txt"
+	android:textSize="20px"
+	android:textColor="#219ac6"
+	android:layout_marginLeft="5dip">	</TextView>
+	</LinearLayout>
+	
+	
+	<TextView
+	android:id="@+id/text_info"
+	android:layout_marginTop="6px"
+	android:layout_width="200px"
+	android:layout_height="wrap_content"
+	android:textColor="#eeeff0"
+	android:textSize="16px"
+	android:text="@string/oauth_txt">
+	</TextView>
+	
+	<RelativeLayout
+	android:layout_width="fill_parent"
+	android:layout_height="40px">
+	
+	<LinearLayout
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal"
+	android:layout_centerHorizontal="true"
+	android:layout_alignParentBottom="true">
+	<Button
+	android:text="@string/ok"
+	android:id="@+id/btn_start"
+	android:layout_width="80px"
+	android:layout_height="31px"
+	 android:background="@drawable/dialog_bt_positive"
+	/>
+	</LinearLayout>
+	</RelativeLayout>	
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false" android:drawable="@drawable/mm_title_btn_menu_disable" />
+    <item android:drawable="@drawable/mm_title_btn_menu_normal" />
+</selector>

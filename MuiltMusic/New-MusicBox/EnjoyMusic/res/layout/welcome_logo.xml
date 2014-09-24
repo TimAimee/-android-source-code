@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:background="@drawable/splash_bg"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+     >
+  <ImageView  
+      android:id="@+id/logo"
+      android:layout_gravity="bottom"
+      android:src="@drawable/tmusic_txt"
+      android:layout_height="wrap_content"
+      android:layout_width="wrap_content"
+      />
+
+</LinearLayout>

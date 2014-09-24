@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/RelativeLayout_Item"
+	android:layout_width="wrap_content" android:layout_height="wrap_content"
+	android:paddingBottom="5dip">
+	<ImageView android:id="@+id/item_image"
+		android:layout_centerHorizontal="true" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" ></ImageView>
+	<TextView android:layout_below="@id/item_image" android:id="@+id/item_text"
+		android:layout_centerHorizontal="true" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="选项" ></TextView>
+</RelativeLayout>

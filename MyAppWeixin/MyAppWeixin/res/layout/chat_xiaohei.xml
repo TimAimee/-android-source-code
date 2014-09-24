@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@drawable/chat_bg_default" >
+    
+    <RelativeLayout 
+        android:id="@+id/rl_layout"
+  			android:layout_width="fill_parent"
+  			android:layout_height="45dp"
+  			android:background="@drawable/title_bar"
+  			android:gravity="center_vertical"  > 
+  			<Button
+            android:id="@+id/btn_back"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="返回"
+            android:textSize="14sp"
+            android:textColor="#fff"
+            android:onClick="chat_back"
+            android:background="@drawable/title_btn_back"
+		    />    
+      		<TextView
+        		android:layout_width="wrap_content" 
+        		android:layout_height="wrap_content" 
+        		android:text="小黑"
+        		android:layout_centerInParent="true"
+        		android:textSize="20sp"		
+				android:textColor="#ffffff" /> 
+			<ImageButton 
+			    android:id="@+id/right_btn"
+			    android:layout_width="67dp" 
+        		android:layout_height="wrap_content"
+        		android:layout_alignParentRight="true" 
+        		android:layout_centerVertical="true"
+        		android:layout_marginRight="5dp"
+        		android:src="@drawable/mm_title_btn_contact_normal"
+				android:background="@drawable/title_btn_right"
+				
+			    />      
+		</RelativeLayout>
+    
+	  
+   <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/chat_footer_bg" >
+        
+        <Button
+        android:id="@+id/btn_send"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        android:text="发送"
+        android:background="@drawable/chat_send_btn" />
+         
+        
+        <EditText
+        android:id="@+id/et_sendmessage"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_toLeftOf="@id/btn_send"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/login_edit_normal"
+        android:layout_centerVertical="true"
+        android:singleLine="true"
+        android:textSize="18sp"/>
+         
+    </RelativeLayout>
+    
+        
+    <ListView
+    android:id="@+id/listview"
+    android:layout_below="@id/rl_layout"
+    android:layout_above="@id/rl_bottom"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"    
+	android:divider="@null"
+    android:dividerHeight="5dp"
+    android:stackFromBottom="true"
+    android:scrollbarStyle="outsideOverlay" 
+    android:cacheColorHint="#0000"/>
+    
+</RelativeLayout>

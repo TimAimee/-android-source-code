@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView android:background="#fff4f4f4"
+	android:scrollbars="none" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+	<LinearLayout android:orientation="vertical"
+		android:background="@color/mibai_background" android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<!-- 头布局 -->
+		<include android:id="@+id/freelook_title_userinfo" layout="@layout/feed_head_layout" />
+		<LinearLayout android:orientation="vertical"
+			android:layout_width="fill_parent" android:layout_height="fill_parent">
+			<!-- 用户头像及用户名布局 -->
+			<RelativeLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+				<FrameLayout android:layout_marginTop="5dp"
+					android:layout_marginLeft="15dp" android:layout_width="wrap_content"
+					android:layout_marginBottom="1dp" android:layout_height="115dp"
+					android:id="@+id/frameLayout2">
+					<ImageView android:layout_margin="3dp" android:id="@+id/user_portrait"
+						android:layout_width="114dp" android:scaleType="centerInside"
+						android:layout_height="114dp" android:src="@drawable/portrait" />
+					<ImageView android:layout_width="114dp"
+						android:scaleType="centerInside" android:layout_margin="3dp"
+						android:layout_height="114dp" android:src="@drawable/portrait_round" />
+				</FrameLayout>
+				<Button android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:background="@drawable/attend_do"
+					android:id="@+id/button1" android:text="编辑"
+					android:layout_alignParentBottom="true"
+					android:layout_alignParentRight="true" android:layout_marginRight="17dp"></Button>
+				<TextView android:layout_width="wrap_content"
+					android:gravity="center_horizontal" android:id="@+id/user_nickname"
+					android:textSize="20dp" android:text="用户名" android:textColor="#0e0e0e"
+					android:layout_height="wrap_content" android:layout_alignParentTop="true"
+					android:layout_marginTop="19dp" android:layout_alignRight="@+id/button1"
+					android:layout_toRightOf="@+id/frameLayout2"></TextView>
+			</RelativeLayout>
+             <!-- 用户地址和登录布局 -->
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="vertical"
+				android:gravity="center_horizontal" android:layout_margin="10dp">
+				<FrameLayout android:layout_width="fill_parent"
+					android:layout_marginBottom="1dp" android:layout_height="wrap_content"
+					android:gravity="center_horizontal">
+					<ImageButton android:layout_gravity="center_horizontal"
+						android:background="@null" android:src="@drawable/list_above_nor"
+						android:layout_width="wrap_content" android:layout_height="wrap_content" />
+					<RelativeLayout android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:orientation="horizontal"
+						android:layout_gravity="center_vertical">
+						<TextView android:paddingTop="5dp" android:textColor="#9da6b5"
+							android:paddingLeft="10dp" android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:text="地址:"
+							android:textSize="22dp" android:id="@+id/textView1" />
+						<TextView android:layout_height="wrap_content"
+							android:id="@+id/user_adress" android:layout_width="wrap_content"
+							android:paddingTop="5dp" android:textSize="22dp" android:text="用户地址"
+							android:paddingLeft="35dp" android:layout_alignParentTop="true"
+							android:layout_toRightOf="@+id/textView1"></TextView>
+					</RelativeLayout>
+				</FrameLayout>
+				<FrameLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:gravity="center_horizontal">
+					<ImageButton android:layout_gravity="center_horizontal"
+						android:background="@null" android:src="@drawable/list_below_nor"
+						android:layout_width="wrap_content" android:layout_height="wrap_content" />
+					<RelativeLayout android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:orientation="horizontal"
+						android:layout_gravity="center_vertical">
+						<TextView android:paddingTop="5dp" android:textColor="#9da6b5"
+							android:paddingLeft="10dp" android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:text="登录账号:"
+							android:textSize="22dp" android:id="@+id/textView1" />
+						<TextView android:layout_height="wrap_content"
+							android:id="@+id/user_loginname" android:layout_width="wrap_content"
+							android:paddingTop="5dp" android:textSize="20dp" android:text="登录账号"
+							android:paddingLeft="5dp" android:layout_alignParentTop="true"
+							android:layout_toRightOf="@+id/textView1"></TextView>
+					</RelativeLayout>
+				</FrameLayout>
+			</LinearLayout>
+           <!--微博 话题 粉丝条数布局  -->	
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:gravity="center_horizontal">
+				<RelativeLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:gravity="center_horizontal">
+					<FrameLayout android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:gravity="center_horizontal"
+						android:id="@+id/frameLayout1">
+						<ImageButton android:layout_gravity="center_horizontal"
+							android:background="@null" android:src="@drawable/bg_panel_above_left"
+							android:layout_width="wrap_content" android:layout_height="wrap_content" />
+						<LinearLayout android:orientation="vertical"
+							android:layout_width="fill_parent" android:gravity="center"
+							android:layout_height="fill_parent">
+							<TextView android:text="0" android:textColor="@color/blue"
+								android:id="@+id/user_attention_num" android:layout_height="wrap_content"
+								android:layout_width="wrap_content" android:textSize="20dp"
+								android:paddingTop="2dp" android:layout_alignParentTop="true"
+								android:layout_centerHorizontal="true"></TextView>
+							<TextView android:gravity="center_vertical"
+								android:layout_height="wrap_content" android:layout_width="wrap_content"
+								android:textSize="20dp" android:text="@string/attention"
+								android:textColor="#9da6b5" android:layout_alignParentBottom="true"
+								android:layout_centerHorizontal="true"></TextView>
+						</LinearLayout>
+					</FrameLayout>
+					<FrameLayout android:layout_height="wrap_content"
+						android:id="@+id/famlayout2" android:layout_width="wrap_content"
+						android:layout_alignParentTop="true" android:layout_toRightOf="@+id/frameLayout1">
+						<ImageButton android:layout_height="wrap_content"
+							android:id="@+id/user_weibo" android:layout_gravity="center_horizontal"
+							android:src="@drawable/bg_panel_above_right"
+							android:layout_width="wrap_content" android:background="@null"></ImageButton>
+						<LinearLayout android:orientation="vertical"
+							android:layout_width="fill_parent" android:gravity="center"
+							android:layout_height="fill_parent">
+							<TextView android:text="0" android:textColor="@color/blue"
+								android:id="@+id/user_weibo_num" android:layout_height="wrap_content"
+								android:layout_width="wrap_content" android:paddingTop="2dp"
+								android:textSize="20dp" android:layout_alignParentTop="true"
+								android:layout_centerHorizontal="true"></TextView>
+							<TextView android:gravity="center_vertical"
+								android:layout_height="wrap_content" android:layout_width="wrap_content"
+								android:textSize="20dp" android:text="@string/weibo"
+								android:textColor="#9da6b5" android:layout_alignParentBottom="true"
+								android:layout_centerHorizontal="true"></TextView>
+						</LinearLayout>
+					</FrameLayout>
+
+					<FrameLayout android:layout_height="wrap_content"
+						android:layout_width="wrap_content" android:layout_below="@+id/frameLayout1">
+						<ImageButton android:layout_height="wrap_content"
+							android:layout_gravity="center_horizontal" android:src="@drawable/bg_panel_below_right"
+							android:layout_width="wrap_content" android:background="@null"></ImageButton>
+						<LinearLayout android:orientation="vertical"
+							android:layout_width="fill_parent" android:gravity="center"
+							android:layout_height="fill_parent">
+							<TextView android:text="0" android:textColor="@color/blue"
+								android:id="@+id/user_fans_num" android:layout_height="wrap_content"
+								android:layout_width="wrap_content" android:paddingTop="2dp"
+								android:textSize="20dp" android:layout_alignParentTop="true"
+								android:layout_centerHorizontal="true"></TextView>
+							<TextView android:gravity="center_vertical"
+								android:layout_height="wrap_content" android:layout_width="wrap_content"
+								android:textSize="20dp" android:text="@string/fans"
+								android:textColor="#9da6b5" android:layout_alignParentBottom="true"
+								android:layout_centerHorizontal="true"></TextView>
+						</LinearLayout>
+					</FrameLayout>
+					<FrameLayout android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:layout_alignParentBottom="true" android:layout_alignLeft="@+id/famlayout2">
+						<ImageButton android:layout_height="wrap_content"
+							android:layout_gravity="center_horizontal" android:src="@drawable/bg_panel_below_left"
+							android:layout_width="wrap_content" android:background="@null"></ImageButton>
+						<LinearLayout android:orientation="vertical"
+							android:layout_width="fill_parent" android:gravity="center"
+							android:layout_height="fill_parent">
+							<TextView android:text="0" android:textColor="@color/blue"
+								android:id="@+id/user_topic_num" android:layout_height="wrap_content"
+								android:layout_width="wrap_content" android:paddingTop="2dp"
+								android:textSize="20dp" android:layout_alignParentTop="true"
+								android:layout_centerHorizontal="true"></TextView>
+							<TextView android:gravity="center_vertical"
+								android:layout_height="wrap_content" android:layout_width="wrap_content"
+								android:textSize="20dp" android:text="@string/topic"
+								android:textColor="#9da6b5" android:layout_alignParentBottom="true"
+								android:layout_centerHorizontal="true"></TextView>
+						</LinearLayout>
+					</FrameLayout>
+
+				</RelativeLayout>
+			</LinearLayout>
+           <!--底部收藏和黑名单  -->
+			<LinearLayout android:layout_width="fill_parent"  android:id="@+id/Userfavlin"
+				android:layout_height="wrap_content" android:orientation="vertical"
+				android:gravity="center_horizontal" android:layout_margin="10dp">
+				<FrameLayout android:layout_width="fill_parent"
+					android:layout_marginBottom="1dp" android:layout_height="wrap_content"
+					android:gravity="center_horizontal">
+					<ImageButton android:layout_gravity="center_horizontal"
+						android:id="@+id/user_fav_bt" android:background="@null"
+						android:src="@drawable/circle_list_top" android:layout_width="wrap_content"
+						android:layout_height="wrap_content" />
+					<RelativeLayout android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:orientation="horizontal"
+						android:layout_gravity="center_vertical">
+
+						<TextView android:paddingTop="5dp" android:textColor="#9da6b5"
+							android:paddingLeft="10dp" android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:text="收藏:"
+							android:textSize="22dp" android:id="@+id/textView1" />
+						<ImageView android:layout_centerVertical="true"
+							android:layout_marginRight="8dp" android:layout_alignParentRight="true"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:src="@drawable/ic_arrow" />
+						<TextView android:layout_height="wrap_content"
+							android:textColor="@color/blue" android:id="@+id/user_collect_num"
+							android:layout_width="wrap_content" android:paddingTop="5dp"
+							android:textSize="22dp" android:text="0" android:paddingLeft="35dp"
+							android:layout_alignParentTop="true" android:layout_toRightOf="@+id/textView1"
+							android:layout_marginLeft="22dp"></TextView>
+					</RelativeLayout>
+				</FrameLayout>
+				<FrameLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:gravity="center_horizontal">
+					<ImageButton android:layout_gravity="center_horizontal"
+						android:background="@null" android:src="@drawable/circle_list_bottom"
+						android:layout_width="wrap_content" android:layout_height="wrap_content" />
+					<RelativeLayout android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:orientation="horizontal"
+						android:layout_gravity="center_vertical">
+						<TextView android:paddingTop="5dp" android:textColor="#9da6b5"
+							android:paddingLeft="10dp" android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:text="黑名单:"
+							android:textSize="22dp" android:id="@+id/textView1" />
+						<TextView android:layout_height="wrap_content"
+							android:id="@+id/user_blacklist_num" android:textColor="@color/blue"
+							android:layout_width="wrap_content" android:paddingTop="5dp"
+							android:textSize="22dp" android:text="0" android:paddingLeft="35dp"
+							android:layout_alignParentTop="true" android:layout_toRightOf="@+id/textView1"></TextView>
+						<ImageView android:layout_centerVertical="true"
+							android:layout_marginRight="8dp" android:layout_alignParentRight="true"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:src="@drawable/ic_arrow" />
+					</RelativeLayout>
+				</FrameLayout>
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+</ScrollView>

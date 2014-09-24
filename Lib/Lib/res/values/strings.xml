@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">汗牛充栋</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">丑版先行（内测版1.1）</string>
+    <string name="login_label_username">学号:</string>
+    <string name="login_label_password">密码:</string>
+    <string name="login_label_signin">登 录</string>
+    <string name="recd">记住密码</string>
+    <string name="login_register_link">默认帐号和密码是相同的！如果没登陆上，则需检查账号密码！</string>
+    <string name="grade_remark">目前等级评价机制为自定义。</string>
+    <string name="action_recommend">软件推荐</string>
+    <string name="about_soft">本软件目前可实现的功能：图书检索、个人信息查看、当前借阅信息查看、五天内图书到期提醒等功能。\n暑假期间准备实现图书续借、图书具体信息查看、以及分享等功能，谢谢大家支持！\n 这是在下的第一个试水作品，不足之处还请多多指正！</string>
+    <string name="about_me"> 关于作者：本人是计算机爱好者，希望对此感兴趣的可以联系我，大家共同交流，一起进步！  \n 人人：<a href="http://www.renren.com/333447753">耿介之</a>\n新浪微博：<a href="http://weibo.com/1723846713/profile?topnav=1&amp;wvr=5">长剑耿介</a></string>
+
+</resources>

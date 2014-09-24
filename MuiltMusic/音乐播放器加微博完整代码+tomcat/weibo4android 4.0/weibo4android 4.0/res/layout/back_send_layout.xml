@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/top_bar_bg" 
+android:paddingLeft="4.0dip" android:paddingTop="3.0dip" 
+android:paddingRight="4.0dip" android:layout_width="fill_parent" 
+android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+>
+    <ImageView android:id="@+id/title_bt_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" />
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/feed_head_text_color" android:ellipsize="end"  android:text="INFO"
+    android:id="@+id/tvinfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" 
+    android:maxWidth="200.0dip" android:singleLine="true" android:shadowColor="@color/white" android:shadowDy="1.0" android:shadowRadius="1.0" android:layout_weight="1.0" android:layout_centerHorizontal="true" />
+    <Button
+    android:background="@drawable/ic_btn_send"
+    android:id="@+id/title_bt_right" 
+    android:text="发送 "
+    android:layout_alignParentRight="true"
+    android:gravity="center"
+    android:layout_width="wrap_content" 
+    android:layout_height="40dp"
+     />
+</RelativeLayout>
+  

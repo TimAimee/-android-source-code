@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+    android:id="@+id/menu_sleep"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="3dp"
+    > 
+    <ImageView 
+  			android:id="@+id/menu_image1"	
+  		    android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/menu_icon_sleep"
+            />
+    
+    <TextView 
+        android:id="@+id/menu_text1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:layout_margin="10dp"
+        android:text="睡眠定时"   />
+    
+     </LinearLayout>
+     
+    
+   <LinearLayout
+    android:id="@+id/menu_skin"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="3dp"
+    > 
+    <ImageView 
+  			android:id="@+id/menu_image2"	
+  		    android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/menu_icon_skin"
+            />
+    
+    <TextView 
+        android:id="@+id/menu_text2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:layout_margin="10dp"
+        android:text="更换背景图片"   />
+    
+     </LinearLayout>
+     
+   
+    <LinearLayout
+    android:id="@+id/menu_set"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="3dp"
+    > 
+    <ImageView 
+  			android:id="@+id/menu_image3"	
+  		    android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/menu_icon_set"
+            />
+    
+    <TextView 
+        android:id="@+id/menu_text3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:layout_margin="10dp"
+        android:text="其它设置"   />
+    
+     </LinearLayout>
+     
+    <LinearLayout
+    android:id="@+id/menu_find"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="3dp"
+    > 
+    <ImageView 
+  			android:id="@+id/menu_image4"	
+  		    android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/menu_icon_find_music"
+            />
+    
+    <TextView 
+        android:id="@+id/menu_text4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:layout_margin="10dp"
+        android:text="本地音乐查找"   />
+     </LinearLayout>
+     
+       <LinearLayout
+    android:id="@+id/menu_playmode"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="3dp"
+    > 
+    <ImageView 
+  			android:id="@+id/menu_image5"	
+  		    android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/menu_icon_playmode"
+            />
+    
+    <TextView 
+        android:id="@+id/menu_text5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:layout_margin="10dp"
+        android:text="更改播放模式"   />
+     </LinearLayout>
+                  
+       <LinearLayout
+    android:id="@+id/menu_download"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="3dp"
+    > 
+    <ImageView 
+  			android:id="@+id/menu_image6"	
+  		    android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/menu_icon_download"
+            />
+    
+    <TextView 
+        android:id="@+id/menu_text6"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:layout_margin="10dp"
+        android:text="音乐下载管理"   />
+     </LinearLayout>   
+     
+            <LinearLayout
+    android:id="@+id/menu_exit"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="3dp"
+    > 
+    <ImageView 
+  			android:id="@+id/menu_image7"	
+  		    android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/menu_icon_exit"
+            />
+    
+    <TextView 
+        android:id="@+id/menu_text7"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:layout_margin="10dp"
+        android:text="退出应用"   />
+     </LinearLayout>
+</LinearLayout>

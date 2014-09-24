@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 顶部条 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="47dp"
+    android:layout_alignParentTop="true"
+    android:background="@drawable/bg_header"
+    android:gravity="center_vertical" >
+
+    <Button
+        android:id="@+id/top_search"
+        style="@style/simple_button"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="书目检索"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/top_info"
+        style="@style/simple_button"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="15dp"
+        android:text="我的信息" />
+
+    <Button
+        android:id="@+id/top_borrowed"
+        style="@style/simple_button"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="当前借阅"
+        android:textSize="15dp" />
+
+</LinearLayout>

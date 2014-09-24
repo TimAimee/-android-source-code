@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">魔乐盒</string>
+    <string name="streamloadingtext" msgid="3367150884806639224">         "正在连接"</string>
+
+    <string name="set_time">请输入睡眠时间的整分钟数(分)</string>
+    <string name="Search">搜索</string>
+    <string name="Yes">确定</string>
+    <string name="cancel">取消</string>
+    <string name="start">开启</string>
+    <string name="content_description">图片描述</string>
+    <string name="text_default">魔乐盒</string>
+    <string name="List_sleep">选择睡眠模式开启后的响应方式</string>
+    <string name="sleep_summary">睡眠模式</string>
+    <string name="sleep_title">休眠</string>
+    <string name="dialog_title_value">休眠后操作</string>
+    <string name="text_duration">00:00</string>
+    <string name="about_title_name">关于魔乐盒</string>
+    <string name="set_play_mode">播放模式设置</string>
+   <string name="close_title">关闭设置窗口</string>
+   <string name="some_set">相关设置</string>
+   <string name="set_share_title">摇甩换歌曲</string>
+   <string name="share_info">已开启摇甩换歌曲功能，下一次进入播放页面正式使用！</string>
+   <string name="share_cancel">已取消摇甩换歌曲功能！</string>
+   <string name="biaoqian_num">标签个数选择</string>
+   <string name="cannot_find">未找到歌词文件</string>
+   <string name="input_info">输入信息</string>
+   <string name="input_groupname">请输入分组名</string>
+   <string name="choice_do">操作选择</string>
+   <string name="choice_group">选择分组</string>
+   <string name="standby_new">列表正在刷新中,请等待......</string>
+    
+   <string  name="skin_settings">皮肤设置</string>
+   
+</resources>

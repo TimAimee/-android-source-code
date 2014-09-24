@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <AbsoluteLayout android:id="@+id/AbsoluteLayout01" android:layout_width="fill_parent" 
+ android:layout_height="fill_parent" 
+ xmlns:android="http://schemas.android.com/apk/res/android">
+ 
+<ListView 
+
+  android:id="@id/android:list" 
+  android:layout_width="fill_parent"  
+  android:layout_height="fill_parent" 
+  android:layout_weight="1" 
+  android:drawSelectorOnTop="false"/>
+<Button   android:id="@+id/last"  
+android:background="@drawable/last"
+  android:layout_x="10px"
+  android:layout_y="70px"
+android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+
+<Button  android:id="@+id/stop" android:background="@drawable/stop"
+  android:layout_x="70px"
+  android:layout_y="70px"
+ android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+ 
+<Button  android:id="@+id/start" 
+  android:layout_x="130px"
+  android:layout_y="70px"
+  android:background="@drawable/start"
+android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+
+<Button  android:id="@+id/pause" android:layout_width="wrap_content"
+  android:layout_x="190px"
+  android:layout_y="70px" 
+android:background="@drawable/pause"
+ android:layout_height="wrap_content"></Button>
+ 
+<Button  android:id="@+id/next"   android:layout_x="250px"
+  android:layout_y="70px" android:background="@drawable/next"
+android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+</AbsoluteLayout>

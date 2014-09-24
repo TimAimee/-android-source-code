@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, MusicClentActivity!</string>
+    <string name="app_name">MusicClent</string>
+     <string name="servicelaber">360服务</string>
+     <string name="servicedesciption">360后台服务</string>
+</resources>

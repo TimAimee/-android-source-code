@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:background="@drawable/more_itemmiddle_press"  
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content">
+ <FrameLayout  android:layout_height="82dp" 
+    android:id="@+id/user_port_fram"
+   android:layout_width="82dp">
+ <ImageView  android:src="@drawable/portrait"  android:id="@+id/photo"
+ android:layout_height="fill_parent"  android:layout_width="fill_parent"/>
+  <ImageView 
+  android:src="@drawable/bg_avatar_grey" 
+  android:layout_height="fill_parent" android:layout_width="fill_parent"
+ />
+ </FrameLayout>
+ <TextView  android:id="@+id/user_decription"  android:layout_height="wrap_content" android:layout_width="fill_parent" android:visibility="gone"/>
+ <TextView 
+  android:id="@+id/user_name" 
+  android:textSize="20dp"
+  android:paddingTop="10dp"
+  android:layout_height="wrap_content" 
+  android:paddingLeft="15dp" 
+  android:layout_width="fill_parent" 
+  android:layout_toRightOf="@+id/user_port_fram"></TextView>
+  	 <Button 
+  	     android:layout_marginRight="10dp"
+  	     android:layout_alignParentRight="true"
+  	     android:layout_height="wrap_content" 
+		 android:id="@+id/chosecancle"
+		 android:layout_width="wrap_content" 
+		  android:focusableInTouchMode="true"
+		 android:focusable="false"
+		 android:background="@drawable/bt_removeuser"
+		 android:layout_centerVertical="true"
+		 /> 
+</RelativeLayout>

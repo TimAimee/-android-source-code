@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+     <LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:background="@drawable/list_item_bg"
+  android:layout_height="wrap_content" 
+  android:orientation="horizontal" 
+  android:layout_width="fill_parent"
+>
+<LinearLayout  
+    	android:id="@+id/moreweibo"
+    	android:layout_width="fill_parent" 
+        android:padding="5dp"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+<ProgressBar   
+          android:id="@+id/progressBar"    
+          style="?android:attr/progressBarStyleLarge"
+          mce_style="?android:attr/progressBarStyleLarge"
+          android:indeterminateDrawable="@drawable/progressbar"
+          android:layout_width="30dip"   
+          android:layout_height="30dip"         
+          android:visibility="gone"   
+         />  
+        <!--   mce_style="?android:attr/progressBarStyleLarge"  --> 
+      <TextView android:id="@+id/progress_tv" 
+                     android:textColor="@color/black" 
+                     android:text="@string/more"
+                     android:gravity="center"
+                     android:layout_width="wrap_content" 
+                     android:layout_height="fill_parent"></TextView>
+                     </LinearLayout>
+</LinearLayout>

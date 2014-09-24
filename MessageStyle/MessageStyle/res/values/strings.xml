@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">短信Style</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="send">发送</string>
+    <string name="allMessage">所有消息</string>
+    <string name="viewSetting">界面设置</string>
+    <string name="hintSetting">提醒设置</string>
+    <string name="exitApp">退出应用</string>
+</resources>

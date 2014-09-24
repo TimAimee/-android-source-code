@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- setting.xml中睡眠选择值 -->
+    <string-array name="setting_sleep">
+        <item>退出</item>
+      	<item>退出并打开飞行模式</item>
+    </string-array>
+    <string-array name="setting_sleep_value">
+        <item>0</item>
+      	<item>1</item>
+    </string-array>
+    <!-- setting.xml中在下载设置 -->
+    <string-array name="setting_downloadImg">
+        <item>始终自动下载</item>
+        <item>wifi开启时下载</item>
+        <item>不自动下载</item>
+    </string-array>
+    <string-array name="setting_downloadImg_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <!-- help_in.xml使用的配置文件 -->
+    <string-array name="help_in_help">
+        <item>版本</item>
+    </string-array>
+    <!-- music_manager_dialog的listView的值 -->
+    <string-array name="manager_listview">
+	    <item>删除</item>
+	    <item>管理歌曲</item>
+	    <item>发送</item>
+	    <item>歌曲信息</item>
+	    <item>设为铃声</item>
+	</string-array>
+</resources>

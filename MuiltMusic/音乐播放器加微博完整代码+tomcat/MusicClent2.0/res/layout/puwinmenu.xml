@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:background="#90000000"
+	android:layout_height="wrap_content" android:gravity="bottom|center_horizontal">
+	<LinearLayout android:layout_width="fill_parent"
+		 android:id="@+id/popdialog"
+		android:layout_height="wrap_content" android:gravity="center_vertical|center_horizontal">
+		<GridView android:id="@+id/gvmenu" android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:numColumns="4"
+			android:stretchMode="columnWidth" android:gravity="center" />
+	</LinearLayout>
+</LinearLayout>

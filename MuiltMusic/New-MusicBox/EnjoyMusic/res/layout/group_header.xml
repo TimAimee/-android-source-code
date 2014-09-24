@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <TextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="38dp"
+        android:textSize="16dp"
+        android:id="@+id/add_group"
+        android:background="@drawable/exp_title"
+        android:gravity="center_vertical"
+        android:textColor="@color/fahion1"
+        android:drawableLeft="@drawable/add_group"
+        android:text="点击添加分组" />
+

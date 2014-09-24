@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:stretchColumns="1"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+    <TableRow >
+    	<TextView 
+    		android:text="音乐名"
+    	/>
+    	<EditText 
+    		android:id="@+id/etMusicName_Dialog"
+    		android:paddingLeft="10dp"
+    	/>
+    </TableRow>
+     <TableRow >
+    	<TextView 
+    		android:text="歌手名"
+    	/>
+    	<EditText 
+    		android:id="@+id/etSinger_Dialog"
+    		android:paddingLeft="10dp"
+    	/>
+    </TableRow>
+</TableLayout>

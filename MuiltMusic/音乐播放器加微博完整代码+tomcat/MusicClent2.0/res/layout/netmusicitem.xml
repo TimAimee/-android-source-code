@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="horizontal"
+  android:layout_width="match_parent"
+  android:layout_height="80dp">
+  <ImageView  android:src="@drawable/default_charts" 
+  	    android:id="@+id/ivAlbum"
+  	    android:layout_gravity="center"
+  	    android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+  	    android:maxWidth="64dp"
+  	    android:maxHeight="64dp"
+  	    android:layout_margin="2dp"
+    	android:layout_width="63dp"
+    	android:layout_height="63dp"
+  />
+  <!--   -->
+  <RelativeLayout android:layout_height="65dp" android:paddingLeft="10dp" android:layout_gravity="center_vertical" android:layout_width="fill_parent">
+      <TextView android:layout_width="wrap_content" android:textColor="@color/black" android:text="" android:maxLength="20" android:singleLine="true" android:id="@+id/tvSinger" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignLeft="@+id/tvMusicName"></TextView>
+      <TextView android:layout_width="wrap_content" android:singleLine="true" android:textColor="@color/blakmore" android:text="" android:id="@+id/tvTime" android:layout_height="wrap_content" android:layout_alignTop="@+id/tvSinger" android:layout_marginRight="5dp" android:layout_alignParentRight="true"></TextView>
+      <TextView android:layout_width="wrap_content" android:text="" android:id="@+id/tvLoaded" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignTop="@+id/tvAlbum" android:layout_alignRight="@+id/tvTime" android:layout_marginRight="1dp"></TextView>
+      <TextView android:layout_width="wrap_content" android:maxLength="20" android:text="" android:id="@+id/tvAlbum" android:textColor="@color/musicnamecolor" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentBottom="true" android:layout_alignLeft="@+id/tvSinger"></TextView>
+      <TextView android:layout_width="wrap_content" android:text="" android:id="@+id/tvMusicName" android:textColor="@color/veryblack" android:textStyle="bold" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentTop="true" android:layout_alignParentLeft="true"></TextView>
+  </RelativeLayout>
+    
+</LinearLayout>

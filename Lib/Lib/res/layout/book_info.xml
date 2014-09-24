@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="@color/body_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout03"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10.0dip"
+        android:background="@drawable/panel_bg" >
+
+        <TextView
+            android:id="@+id/TextView06"
+            style="@style/normalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="题名/责任者:"
+            android:textColor="#FF7D899D"
+            android:textSize="16.0dp" />
+
+        <TextView
+            android:id="@+id/TextView05"
+            style="@style/normalText.span"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout02"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10.0dip"
+        android:background="@drawable/panel_bg" >
+
+        <TextView
+            android:id="@+id/TextView04"
+            style="@style/normalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10.0dip"
+            android:text="出版发行项:"
+            android:textColor="#FF7D899D"
+            android:textSize="16.0dp" />
+
+        <TextView
+            android:id="@+id/TextView03"
+            style="@style/normalText.span"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/TextView04"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@+id/TextView04" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_following"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10.0dip"
+        android:background="@drawable/panel_bg" >
+
+        <TextView
+            android:id="@+id/numberText"
+            style="@style/normalText.span"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:layout_below="@id/numberText"
+            android:layout_centerHorizontal="true"
+            android:scrollHorizontally="true" />
+
+        <TextView
+            android:id="@+id/book_number"
+            style="@style/normalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="23dp"
+            android:text="证号："
+            android:textColor="#FF7D899D"
+            android:textSize="16.0dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </RelativeLayout>
+
+</LinearLayout>

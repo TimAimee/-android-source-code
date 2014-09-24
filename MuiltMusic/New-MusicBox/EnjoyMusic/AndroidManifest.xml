@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="enjoy.the.music"
+    android:versionCode="1"
+    android:versionName="1.0" >
+ 
+    <uses-sdk android:minSdkVersion="10" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name="com.tarena.fashionmusic.MyApplication"
+        android:icon="@drawable/music"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".FashionMusicActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name=".SearchActivity"
+             android:theme="@style/CustomDialog" 
+            android:screenOrientation="portrait" >
+        </activity>
+       
+         <activity
+            android:name=".SkinSettingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+            <activity
+            android:name=".FindSongActivity"
+            android:label="本地音乐查找"
+            android:screenOrientation="portrait" >
+        </activity>
+     
+        <activity
+            android:name="com.tarena.fashionmusic.play.MusicPlayActivity"
+            android:screenOrientation="portrait"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:taskAffinity=""
+            tools:ignore="ExportedActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="file" />
+                <data android:mimeType="audio/*" />
+                <data android:mimeType="application/ogg" />
+                <data android:mimeType="application/x-ogg" />
+                <data android:mimeType="application/itunes" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="http" />
+                <data android:mimeType="audio/*" />
+                <data android:mimeType="application/ogg" />
+                <data android:mimeType="application/x-ogg" />
+                <data android:mimeType="application/itunes" />
+            </intent-filter>
+            <intent-filter android:priority="-1" >
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="content" />
+                <data android:mimeType="audio/*" />
+                <data android:mimeType="application/ogg" />
+                <data android:mimeType="application/x-ogg" />
+                <data android:mimeType="application/itunes" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".play.popmenu.lrcsetting"
+            android:icon="@drawable/setting_icon"
+            android:screenOrientation="portrait"
+            android:label="音乐歌词设置"
+            android:theme="@style/CustomDialog" >
+        </activity>
+         <activity
+            android:name=".play.popmenu.AllSetActivity"
+            android:screenOrientation="portrait">
+        </activity>
+          <service android:name=".service.MusicPlayerService" >
+            <intent-filter>
+                <action android:name="com.tarena.fashion.service.MusicPlayerService" >
+                </action>
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+        <service android:name=".service.DownloadService" >
+        </service>
+       
+        <receiver
+            android:name=".widget.AppWidget"
+            tools:ignore="ExportedReceiver" >
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/appwidgetprovider" />
+
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.tarena.action.UPDATE" />
+                <action android:name="com.tarena.play" />
+                <action android:name="com.tarena.pause" />
+                <action android:name="com.tarena.isplay" />
+                <action android:name="com.tarena.ispause" />
+                <action android:name="com.tarena.nextone" />
+                <action android:name="com.tarena.lastone" />
+                <action android:name="com.tarena.startapp" />
+                <action android:name="com.tarena.update" />
+            </intent-filter>
+        </receiver>
+    </application>
+    
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.INTERNAL_SYSTEM_WINDOW"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+
+</manifest>

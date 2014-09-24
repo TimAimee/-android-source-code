@@ -1,0 +1,14 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent"
+   android:background="#ffffff"
+   android:orientation="vertical"
+   android:padding="5dp" >
+    <TextView
+       android:id="@+id/table_lrc"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center"
+       android:textColor="#000000" 
+       android:text="我爱加上双方随即封锁酸辣粉丝激发了http://orgcent.com"/>
+</LinearLayout>

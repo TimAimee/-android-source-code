@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="bendi">本地乐库</string>
+    <string name="kge">我要K歌</string>
+    <string name="luyin">我的录音</string>
+   	<string name="app_name">模仿爱音乐</string>
+    <string name="yueku">淘歌乐库</string>
+    <string name="setting">设置</string>
+<color name="white">#ffffff</color>
+<color name="black">#000000</color>
+<string name="menu1">扫描歌曲</string>
+<string name="menu2">退出软件</string>
+
+
+</resources>

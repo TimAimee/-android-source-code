@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      android:versionCode="1"
+      android:versionName="1.0" package="weibo4android.logic">
+      <uses-sdk android:minSdkVersion="8"></uses-sdk>
+    <application android:icon="@drawable/logo" android:name=".WeiboApplication" android:label="@string/app_name">
+		  <activity android:name=".ui.Logo"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.OAuthActivity">
+	        <intent-filter>
+		        <action android:name="android.intent.action.VIEW" />
+		        <category android:name="android.intent.category.DEFAULT" />
+		        <category android:name="android.intent.category.BROWSABLE" />
+		        <data android:scheme="weibo4android" android:host="OAuthActivity" /> 
+			</intent-filter>
+        </activity>
+         <activity android:name="weibo4android.logic.ui.Login" android:launchMode="singleTop"></activity>
+         <activity android:name="weibo4android.logic.ui.MainActivity" android:launchMode="singleTop"></activity>
+         <activity  android:name="weibo4android.logic.ui.HomeActivity" android:launchMode="singleTask" ></activity>
+         <activity  android:name="weibo4android.logic.ui.MSGActivity"></activity>
+         <activity  android:name="weibo4android.logic.ui.SearchUser"></activity>
+         <activity  android:name="weibo4android.logic.ui.MoreSetting"></activity>
+         <activity  android:name="weibo4android.logic.ui.UserInfoActivity"></activity>
+         <activity android:name="weibo4android.logic.weibo.ui.WriteWeibo"></activity>
+         <activity android:name="weibo4android.logic.weibo.ui.WeiboInfo"></activity>
+          <activity android:name="weibo4android.logic.weibo.ui.Respostweibo"></activity>
+         <activity android:name="weibo4android.logic.weibo.ui.AddComment"></activity>
+             <activity android:name="weibo4android.logic.weibo.ui.UserManger"></activity>
+    
+          
+          <!--  注册服务 -->
+        <service  android:name=".MainService" >
+        <intent-filter >
+         <action android:name="weibo4android.logic.MainService"></action>
+        </intent-filter>
+        </service>
+    
+    </application>
+ <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+   <uses-permission android:name="android.permission.INTERNET" /> 
+     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"></uses-permission>
+    <uses-permission android:name="android.permission.MOUNT_FORMAT_FILESYSTEMS"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_OWNER_DATA"></uses-permission>
+     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+</manifest> 

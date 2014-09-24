@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="backgroundcolor">#f8f9e6</color>
+    <color name="musicnamecolor">#6e6e6e</color>
+    <color name="veryblack">#000000</color>
+    <color name="black">#121211</color>
+    <color name="blakmore">#020202</color>
+    <color name="white">#fefefa</color>
+    <color name="fashion_color">#0099cc</color>
+    <color name="play_bg_color">#8033b5e5</color>
+    <color name="null_bg">#00000000</color>
+    <color name="fahion1">#33B5E5</color>
+    <color name="fahion2">#0099CC</color>
+    <color name="whites">#ffffff</color>
+    <color name="dividers">#70ffffff</color>
+    <color name="shorblack">#a1a1a1</color>
+    <color name="like_bg">#37383a</color>
+    <color name="translucence">#30000000</color>
+    <color name="group_chile_div">#68e2e1e1</color>
+    <color name="fahion_child_div">#5033B5E5</color>
+    <color name="dialog_line">#8F999999</color>
+    <!-- lrc color -->
+
+    <color name="lrc_f">#051583</color>
+    <color name="lrc_e">#5a045d</color>
+    <color name="lrc_d">#590903</color>
+    <color name="lrc_c">#3a7901</color>
+    <color name="lrc_b">#a08a08</color>
+    <color name="lrc_a">#33B5E5</color>
+</resources>

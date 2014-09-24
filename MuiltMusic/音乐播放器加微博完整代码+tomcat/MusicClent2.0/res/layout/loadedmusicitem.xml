@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:paddingTop="20dp"
+  android:paddingBottom="20dp"
+  >
+    <ImageView 
+    android:id="@+id/ivMusicIcon" 
+    android:layout_height="32dp" 
+    android:src="@drawable/icon" 
+    android:layout_width="32dp"
+    android:layout_gravity="center"/>
+    <TextView 
+    	android:id="@+id/tvMusicName_Loaded"
+    	android:layout_width="wrap_content"
+		android:layout_height="32dp"
+		android:gravity="center_vertical"
+		android:layout_weight="1.0"
+		android:paddingLeft="10dp"
+		android:textSize="30sp"
+    />
+    <TextView 
+    	android:id="@+id/tvSinger_Loaded"
+    	android:layout_width="wrap_content"
+		android:layout_height="32dp"
+		android:gravity="center_vertical"
+		android:textSize="30sp"
+    />
+</LinearLayout>

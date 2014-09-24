@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.djgzhiyong.msgstyle"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="8" />
+
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_MMS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.djgzhiyong.messagestyle.LogoActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.djgzhiyong.messagestyle.HomeActivity" >
+        </activity>
+        <activity
+            android:name="com.djgzhiyong.messagestyle.DialogueActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity android:name="com.djgzhiyong.messagestyle.NewMsgActivity" >
+        </activity>
+        <activity
+            android:name="com.djgzhiyong.messagestyle.MsgDialogActivity"
+            android:theme="@style/transparentFrameWindowStyle" >
+        </activity>
+
+        <service android:name="com.djgzhiyong.msg.listener.MessageListenerService" >
+            <intent-filter>
+                <action android:name="com.djgzhiyong.msg.listener" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

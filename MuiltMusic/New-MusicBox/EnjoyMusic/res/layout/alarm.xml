@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:text="  温馨提示：魔乐盒为免费软件,不对用户收取任何费用,在使用过程中除歌词寻址以及歌曲下载其余皆不会产生网络流量,敬请放心！
+   作者：萧丶翰       QQ：752280466"
+        android:textSize="15sp" />
+      
+</LinearLayout>

@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_submit"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_action_submit"
+        android:showAsAction="always"
+        android:title="@string/menu_submit"/>
+
+</menu>

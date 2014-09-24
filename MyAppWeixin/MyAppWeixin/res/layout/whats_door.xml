@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+         >
+        
+        <ImageView
+            android:id="@+id/imageLeft"
+            android:scaleType="fitXY"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"            
+            android:src="@drawable/w_left" />
+        
+        <ImageView
+            android:id="@+id/imageRight"
+            android:visibility="visible"
+            android:scaleType="fitXY"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"            
+            android:src="@drawable/w_right" />
+        <TextView 
+            android:id="@+id/anim_text"
+        	android:layout_width="fill_parent" 
+        	android:layout_height="wrap_content" 
+        	android:gravity="center" 
+        	android:layout_alignParentTop="true"
+            android:layout_marginTop="35dp"
+        	android:text=" \n \n微信，是一个生活方式\n \n "         	
+        	android:textSize="22sp"
+        	android:textColor="#fff" 
+        />
+
+    </RelativeLayout>

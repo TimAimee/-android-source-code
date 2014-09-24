@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+	<string name="hello">Hello World!</string>
+	<string name="app_name">新浪微博</string>
+	<string name="ok">确定</string>
+	<string name="cancle">取消</string>
+	<string name="main_home">首页</string>
+	<string name="main_news">信息</string>
+	<string name="main_my_info">我的资料</string>
+	<string name="menu_search">收索</string>
+	<string name="more">更多</string>
+	<string name="weibo">微博</string>
+	<string name="attention">关注</string>
+	<string name="fans">粉丝</string>
+	<string name="topic">话题</string>
+	<string name="loadinfo">加载中....</string>
+	<string name="menu_setting">设置</string>
+	<string name="menu_switchuser">账号</string>
+	<string name="menu_officialweibo">官方微博</string>
+	<string name="menu_comment">意见反馈</string>
+	<string name="menu_aboutweibo">关于</string>
+	<string name="exit_app">退出</string>
+	<string name="question_exit">确定退出客户端?</string>
+	<!-- oath -->
+	<string name="neterror">网络连接出错</string>
+	<string name="oautherror">登陆认证出错</string>
+	<string name="oatherror">由于你的网络环境的问题,您需要返回从新授权,或者检查你的网络重新授权!!!</string>
+	<string name="oathsuccess">得到AccessToken的key和Secret,可以使用这两个参数进行授权登录了</string>
+	<string name="oauth_txt">第一次使用需要输入您的新浪微博账号和密码进行登录授权!</string>
+	<string name="main_fetch_fail">网络异常</string>
+	<string name="NoSignalException">无法连接到网络，请检查网络配置</string>
+	<string name="mess_txt">信息提示</string>
+	<string name="index_info">新浪微博Android版本</string>
+	<string name="newweibo">发表新微博</string>
+	<string name="forward">转发</string>
+	<string name="comment">评论</string>
+	<string name="main_reload">刷新</string>
+	<string name="itemmenu_bookmark">收藏</string>
+	<string name="weiboinfo">微博信息</string>
+	<string name="new_weibo_fail">发表微博失败</string>
+	<string name="new_weibo_succeed">发表微博成功</string>
+	<string name="new_comment_succeed">发布评论成功。</string>
+	<string name="new_comment_fail">发布评论失败。</string>
+	<string name="new_response_succeed">发布评论成功。</string>
+	<string name="new_response_fail">发布评论失败。</string>
+	<string name="comment_add_forward">同时发一条微博</string>
+	<string name="tvuser">既然来了就说点什么吧!</string>
+	<string name="holduser">你在想神马评论呢?</string>
+	<string name="resopnse_page">转发页面</string>
+	<string name="notnull">输入内容不许为空</string>
+	<string name="userinfo">个人信息</string>
+	<string name="getfail">获取用户信息失败</string>
+	<string name="destoryfirendship">取消关注</string>
+	<string name="apn_is_wrong1_exit">退出</string>
+	<string name="apn_is_wrong1_setnet">网络设置</string>
+	<!-- login -->
+	<string name="usernickname">用户昵称</string>
+	<string name="weibosqure">微博广场</string>
+	<string name="usericon">用户头像</string>
+	<string name="autologin">自动登录</string>
+	<string name="login">登陆</string>
+	<string name="regist">注册</string>
+	<!-- more setting -->
+	<string name="mysetting">我的设置</string>
+	<string name="myweibo">我的微博</string>
+	<string name="user_manger">账号管理</string>
+	<string name="findfrinends">寻找好友</string>
+	<string name="invite_frinends">邀请好友</string>
+	<string name="setting">设置</string>
+	<string name="addcomment">意见反馈</string>
+	<string name="checkupdate">检查更新</string>
+	<string name="about">关于</string>
+	<string name="moreset">更多</string>
+	<!-- search -->
+	<string name="search_weibo">搜索微博</string>
+	<string name="search_user">搜索用户</string>
+	<string name="search">搜索</string>
+	<string name="search_notnull">请输入你要收索的内容</string>
+	<!-- message -->
+	<string name="private_mess">私信</string>
+	<string name="atme">关于我</string>
+	<string name="atcomment">评论</string>
+	<!-- 数据库 -->
+	<string name="tvdp">保存数据</string>
+	<string name="tvsaveuserinfo">正在保存用户信息请稍后.....</string>
+	<!-- 拖拽 -->
+	 <string name="pull_to_refresh_pull_label">下拉可以刷新...</string>
+    <string name="pull_to_refresh_release_label">松手可以刷新...</string>
+    <string name="pull_to_refresh_refreshing_label">刷新中...</string>
+    <string name="pull_to_refresh_tap_label">Tap to refresh...</string>
+</resources>

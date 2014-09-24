@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="match_parent"
+	android:background="@drawable/desktop_background2"
+	android:id="@+id/main_relatlayout"
+	android:layout_height="match_parent">
+	<RelativeLayout android:layout_height="wrap_content" android:id="@+id/titret"
+		android:background="@drawable/exp_title" android:orientation="horizontal"
+		android:layout_width="fill_parent">
+		<TextView android:singleLine="true" android:textStyle="bold"
+			android:textSize="18.0sp" android:maxWidth="200.0dip"
+			android:ellipsize="end" android:shadowRadius="3.0" android:shadowDy="1.0"
+			android:shadowColor="@color/white" android:layout_height="wrap_content"
+			android:textColor="@color/black" android:layout_centerInParent="true"
+			android:id="@+id/tvMusicName_player" android:layout_width="wrap_content"
+			android:text="MusicName" />
+			<ImageButton android:background="@null"  android:layout_marginRight="10dp"
+			android:layout_height="wrap_content" android:id="@+id/btnList_player" android:src="@drawable/list_playlist" android:layout_width="wrap_content" android:layout_centerVertical="true" android:layout_alignParentRight="true"></ImageButton>
+	</RelativeLayout>
+	<LinearLayout android:layout_width="match_parent"  android:id="@+id/control"
+		android:layout_height="wrap_content" android:paddingBottom="2dp"
+		android:layout_alignParentBottom="true" android:gravity="center_vertical"
+			android:background="@drawable/desktop_menu_footbg"
+		android:orientation="horizontal">
+		<ImageButton android:background="@null" android:id="@+id/btnPrevious_player"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/desktop_prevbt" android:scaleType="fitCenter"
+			android:layout_weight="1" />
+		<ImageButton android:background="@null" android:id="@+id/btnPlay_player"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/desktop_playbt" android:scaleType="fitCenter"
+			android:layout_weight="1" />
+		<ImageButton android:background="@null" android:id="@+id/btnNext_player"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/desktop_nextbt" android:scaleType="fitCenter"
+			android:layout_weight="1" />
+	</LinearLayout>
+	<android.support.v4.view.ViewPager
+		android:id="@+id/main_layout" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:layout_above="@+id/control" android:layout_below="@+id/titret"
+		android:orientation="horizontal">
+	</android.support.v4.view.ViewPager>
+	
+</RelativeLayout>

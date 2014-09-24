@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:background="@color/white" android:layout_height="fill_parent">
+	<include android:id="@+id/title" layout="@layout/feed_head_layout" />
+	<include android:id="@+id/search" layout="@layout/searchpre" />
+	<ListView android:listSelector="#00000000"
+		android:cacheColorHint="#00000000" android:id="@+id/searchweibolist"
+		android:divider="@drawable/list_separator" android:dividerHeight="1.0dip"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"></ListView>
+</LinearLayout>

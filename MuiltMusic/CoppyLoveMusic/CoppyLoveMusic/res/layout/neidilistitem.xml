@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/neidilistitem"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/screen_download_select_bg" />
+
+    <TextView
+        android:id="@+id/neidi_musicname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="13dp"
+        android:text="歌名"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/neidi_musicname"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@id/neidi_musicname"
+        android:text="-"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/neidi_musicauthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/neidi_musicname"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/neidi_musicname"
+        android:text="歌手"
+        android:textColor="#ffffff" />
+
+    <ImageView
+        android:id="@+id/listImage"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_toRightOf="@id/neidi_musicauthor" />
+
+    <ImageView
+        android:id="@+id/showPop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="255dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/screen_audio_song_options_large" />
+
+    <ImageView
+        android:id="@+id/listimage"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="210dp"
+        android:focusable="false"
+         />
+
+</RelativeLayout>

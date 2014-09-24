@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:background="@null">
+
+    <PreferenceCategory>
+        <ListPreference
+            android:defaultValue="0"
+            android:dialogTitle="@string/dialog_title_value"
+            android:entries="@array/setting_sleep"
+            android:entryValues="@array/setting_sleep_value"
+            android:key="@string/List_sleep"
+            android:order="1"
+            android:summary="@string/sleep_summary"
+            android:title="@string/sleep_title" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:order="2"
+        android:title="在线音乐设置" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="Listen and save"
+            android:selectable="true"
+            android:summary="在线音乐存自动保存"
+            android:summaryOff="已关闭自动下载图片"
+            android:summaryOn="已开启自动下载图片"
+            android:title="边听变存" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:order="3"
+        android:title="下载设置" >
+        <CheckBoxPreference
+            android:selectable="true"
+            android:summaryOff="已关闭自动下载专辑图片"
+            android:summaryOn="已开启自动下载专辑图片" 
+            android:title="词图设置:" 
+            android:key="download_img_key"/>
+        
+        <CheckBoxPreference
+            android:selectable="true"
+            android:summaryOff="已关闭自动下载歌词"
+            android:summaryOn="已开启自动下载歌词" 
+            android:title="下载歌词设置:" 
+            android:key="download_lrc_key"/>
+        
+    </PreferenceCategory>
+
+</PreferenceScreen>

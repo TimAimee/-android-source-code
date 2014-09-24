@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="smsContent">
+        <item>你好！</item>
+        <item>你也好！</item>
+        <item>张三，最近干嘛呢！</item>
+        <item>没有，最近闲的没事！</item>
+        <item>喔喔！</item>
+        <item>你呢！</item>
+        <item>我在吃饭！</item>
+        <item>没问你现在，问你这一段时间！</item>
+        <item>这一段时间，在玩！</item>
+        <item>很好，你很潇洒呀！</item>
+        <item>没有吧，你也是！</item>
+        <item>你才是，你全家都是！</item>
+        <item>哎呀！</item>
+        <item>怎么还不放假呀！</item>
+        <item>你还没放假呀，我已经在家了，羡慕吧！哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈！</item>
+        <item>别得瑟了！</item>
+        <item>我没有得瑟！</item>
+        <item>好吧，下次再聊！</item>
+        <item>OK！</item>
+        <item>拜拜！</item>
+        <item>再见！</item>
+    </string-array>
+
+</resources>

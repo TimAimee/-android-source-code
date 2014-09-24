@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+android:background="#ffefebe7" 
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+  
+     <LinearLayout android:layout_width="wrap_content" android:gravity="center_horizontal" android:background="@drawable/top_bar_bg" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_centerHorizontal="true">
+            <TextView android:textSize="18.0sp" android:paddingTop="5dp" android:textStyle="bold" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="账号管理" android:singleLine="true" android:shadowColor="@color/white" android:shadowDy="1.0" android:shadowRadius="1.0" />
+        </LinearLayout>
+        <TextView android:textSize="16.0sp" android:paddingLeft="10dp" android:textColor="#ff888888" android:gravity="center_vertical"  android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="当前用户" />
+  <LinearLayout android:layout_width="fill_parent"   android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+            android:background="@drawable/more_item_press" android:layout_height="wrap_content" >
+              <RelativeLayout  android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView  android:id="@+id/nowuser" android:textSize="20dp" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                 <ImageView android:src="@drawable/bt_adduser" android:id="@+id/bt_addmoreuser" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:layout_centerVertical="true" android:layout_marginRight="10dp" android:layout_alignParentRight="true"></ImageView>
+              </RelativeLayout>
+            </LinearLayout>
+    <LinearLayout 
+    android:layout_height="fill_parent" android:layout_width="fill_parent" android:layout_margin="10dp" android:orientation="vertical" 
+     >
+    <TextView android:textSize="16.0sp" android:textColor="#ff888888" android:gravity="center_vertical" android:paddingLeft="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="可选账号" />
+        <ListView  android:id="@+id/alluserlist" android:layout_height="fill_parent" android:layout_width="wrap_content" android:cacheColorHint="#00000000"></ListView>
+    
+    </LinearLayout>
+</LinearLayout>

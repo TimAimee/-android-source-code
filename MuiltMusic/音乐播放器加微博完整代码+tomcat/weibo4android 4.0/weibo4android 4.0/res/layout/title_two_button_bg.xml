@@ -1,0 +1,15 @@
+<FrameLayout android:id="@+id/FrameLayout01"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<TextView android:id="@+id/tvHomeUserName"
+		android:layout_height="45dip" android:textColor="@color/black"
+		android:textSize="25dip" android:text="" android:layout_width="fill_parent"
+		android:background="@drawable/search_bg" android:gravity="center"></TextView>
+	<Button android:background="@drawable/title_back" android:id="@+id/title_bt_left"
+		android:textColor="@color/white" android:layout_gravity="center_vertical"
+		android:layout_height="36dip" android:layout_width="49dip"></Button>
+	<Button android:background="@drawable/title_home" android:id="@+id/title_bt_right"
+		android:layout_gravity="right" android:layout_height="36dip"
+		android:textColor="@color/white" android:layout_width="49dip"
+		android:layout_marginRight="2dip" android:layout_marginTop="4dip"></Button>
+</FrameLayout>

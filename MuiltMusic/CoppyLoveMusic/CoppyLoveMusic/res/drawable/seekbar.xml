@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@android:id/background"
+        android:drawable="@drawable/screen_audio_song_lyric_fulllyric"
+        />
+    <item
+        android:id="@android:id/progress"
+        android:drawable="@drawable/pbar"
+        />
+    <item
+        android:id="@android:id/secondaryProgress"
+        android:drawable="@drawable/pbar"
+        />
+    
+</layer-list>

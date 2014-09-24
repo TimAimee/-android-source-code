@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:orientation="vertical"  android:background="#fff4f4f4"
+ android:layout_width="fill_parent" android:layout_height="fill_parent" 
+xmlns:android="http://schemas.android.com/apk/res/android" >
+  	<include android:id="@+id/detailweibo_title" layout="@layout/back_send_layout"/> 
+  	 <include layout="@layout/progress" android:id="@+id/detaweibo_progress"></include>
+<RelativeLayout  android:layout_width="fill_parent" android:layout_height="fill_parent"
+> <!-- 下面的TAB按钮 -->
+    <LinearLayout android:orientation="horizontal" android:id="@+id/tweet_bottom_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_alignParentBottom="true">
+        <TextView android:id="@+id/tvReload" android:text="@string/main_reload" android:drawableTop="@drawable/detail_refresh_icon" style="@style/detail_btn" />
+        <TextView android:id="@+id/tvComment" android:text="@string/comment" android:drawableTop="@drawable/detail_comment_icon" style="@style/detail_btn" />
+        <TextView android:id="@+id/tvForward" android:text="@string/forward" android:drawableTop="@drawable/detail_forward_icon" style="@style/detail_btn" />
+        <TextView android:id="@+id/tvFav" android:text="@string/itemmenu_bookmark" android:drawableTop="@drawable/detail_fav_icon" style="@style/detail_btn" />
+        <TextView android:id="@+id/tvMore" android:text="@string/more" android:drawableTop="@drawable/detail_more_icon" style="@style/detail_btn" />
+    </LinearLayout>
+    <!-- ScrollView 没有仔细研究作用 -->
+    <ScrollView android:id="@+id/tweet_main_view" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/tweet_bottom_bar">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/tweet_profile" android:background="@android:drawable/list_selector_background" android:paddingBottom="10.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <!-- 头像 -->
+                <ImageView android:id="@+id/tweet_profile_preview" android:layout_width="60.0sp" android:layout_height="60.0sp" android:layout_margin="10.0dip" android:src="@drawable/portrait" />
+                <!-- 昵称 -->
+                <TextView android:textSize="18.0dip"  android:typeface="monospace" android:textStyle="bold" android:textColor="#ff222222" android:ellipsize="marquee" android:id="@+id/tweet_profile_name" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="26.0dip" android:singleLine="true" android:layout_toRightOf="@id/tweet_profile_preview" />
+                <!-- 是否是VIP -->
+                <ImageView android:id="@+id/tweet_profile_vip"  android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="26.0dip" android:layout_marginBottom="5.0dip" android:src="@drawable/v" android:layout_toRightOf="@id/tweet_profile_name" />
+                <!-- 没仔细研究作用 -->
+                <View android:id="@+id/arrow" android:background="@drawable/ic_arrow" android:layout_width="12.0dip" android:layout_height="22.0dip" android:layout_marginTop="29.0dip" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <!-- 分割线。 -->
+            <ImageView android:id="@+id/tweet_divider" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:src="@drawable/divider_horizontal_timeline" android:layout_below="@id/tweet_profile" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/tweet_divider">
+               <!-- 微博内容 -->
+                <TextView android:textSize="18.0sp"  android:text="内容" android:textColor="#ff222222" android:id="@+id/tweet_message" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:bufferType="spannable" />
+                <!-- 转发内容 默认不显示 -->
+                <LinearLayout android:orientation="vertical" android:visibility="gone" android:id="@+id/src_text_block" android:background="@drawable/popup2"  android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/tweet_message">
+                    <!-- 转发内容 -->
+                    <TextView android:textSize="16.0sp"  android:textColor="#ff222222" android:id="@+id/tweet_oriTxt" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:bufferType="spannable" />
+                    <!-- 转发内容图片 --> 
+                    <ImageView android:id="@+id/tweet_upload_pic2" android:visibility="visible"  android:background="@drawable/detail_pic_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+                                        android:layout_gravity="center_horizontal" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:src="@drawable/preview_pic_loading" android:scaleType="centerInside" android:maxWidth="120dip" android:maxHeight="120dip" android:minWidth="48.0dip" android:minHeight="33.0dip"/>
+                </LinearLayout>
+                <View android:id="@+id/vDevider" android:layout_width="fill_parent" android:layout_height="10.0sp" android:layout_below="@id/src_text_block" />
+               <!-- 在转发内容下面显示的图片 具体作用不知道 -->
+               
+                <ImageView android:id="@+id/tweet_upload_pic" android:visibility="gone" android:background="@drawable/detail_pic_bg"  android:layout_width="wrap_content" android:layout_height="wrap_content" 
+                android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:src="@drawable/preview_pic_loading" android:scaleType="centerInside" android:maxWidth="120dip" android:maxHeight="120dip" android:minWidth="48.0dip" android:minHeight="33.0dip" android:layout_below="@id/vDevider" />
+            
+               <RelativeLayout android:orientation="horizontal" android:id="@+id/rlTextDescBlock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/tweet_upload_pic">
+                     <!-- 转发 -->
+                    <!-- 评论-->
+                         <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"  android:id="@+id/de" android:gravity="center" android:orientation="horizontal">
+                         <Button android:background="@drawable/detail_redirect"  android:layout_width="wrap_content" android:id="@+id/detail_redirect" android:layout_height="45dp" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:layout_marginLeft="15dp"></Button>
+                       <Button android:background="@drawable/detail_comment1" android:layout_centerInParent="true" android:layout_width="wrap_content" android:id="@+id/detail_comment" android:layout_height="45dp" android:layout_alignParentTop="true" android:layout_toRightOf="@+id/detail_redirect"></Button>
+                    </LinearLayout>  
+                </RelativeLayout>
+               <!-- 时间 -->
+                    <TextView  android:textSize="14.0sp" android:textColor="#ff7d7d7d" android:id="@+id/tweet_updated" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <!-- 来自 -->
+                <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff7d7d7d" android:id="@+id/tweet_via" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/rlTextDescBlock" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
+</LinearLayout>

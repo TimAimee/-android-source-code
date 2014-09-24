@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="47dp"
+        android:background="@drawable/bg_header"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="关于我们"
+            android:textColor="@color/link_color"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FFEFF0F4"
+        android:scrollbars="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/relative_3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/panel_bg" >
+
+            <TextView
+                android:id="@+id/about_soft"
+                style="@style/normalText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/about_soft"
+                android:textColor="#FF7D899D"
+                android:textSize="16.0sp" >
+            </TextView>
+            <!-- 分隔条 -->
+
+            <View
+                android:id="@+id/view_3"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_below="@id/about_soft"
+                android:layout_centerVertical="true"
+                android:background="@drawable/horizontal_separation_line" >
+            </View>
+
+            <TextView
+                android:id="@+id/about_me"
+                style="@style/normalText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/about_soft"
+                android:layout_below="@id/view_3"
+                android:autoLink="all|web"
+                android:text="@string/about_me"
+                android:textColor="#FF7D899D"
+                android:textSize="16.0sp" >
+            </TextView>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

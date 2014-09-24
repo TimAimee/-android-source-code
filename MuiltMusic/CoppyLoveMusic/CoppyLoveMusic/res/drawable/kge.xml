@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:drawable="@drawable/screen_tabhost_bottom_kmedia_press" android:state_checked="true"></item>
+    <item android:drawable="@drawable/screen_tabhost_bottom_kmedia" android:state_checked="false"></item>
+</selector>

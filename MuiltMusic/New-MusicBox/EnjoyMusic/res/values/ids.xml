@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 主界面布局ID -->
+    <item name="main_top_rela" type="id"/>
+    <item name="main_top_btn" type="id"/>
+    <item name="main_top_bt1" type="id"/>
+    <item name="main_top_bt2" type="id"/>
+    <item name="main_bottom_linea" type="id"/>
+    <item name="main_bottom_relative" type="id"/>
+    <item name="main_listView" type="id"/>
+    <item name="main_handler_icon" type="id"/>
+    <item name="main_cutlineleft" type="id"/>
+    <item name="main_handle_panel" type="id"/>
+    <item name="main_handler_play" type="id"/>
+    <item name="main_handler_pause" type="id"/>
+    <item name="main_cutlineright" type="id"/>
+    <item name="main_textSongNum" type="id"/>
+    <item name="main_textPlaySong" type="id"/>
+    <item name="btnPlay_player" type="id"/>
+    <item name="btnNext_player" type="id"/>
+    <item name="center_body_view_pager" type="id"/>
+    <!-- 本地播放列表的Item -->
+    <item name="local_music_image" type="id"/>
+    <item name="local_music_item_name" type="id"/>
+    <item name="local_music_item_artist" type="id"/>
+    <item name="handler_down_icon" type="id"/>
+
+</resources>

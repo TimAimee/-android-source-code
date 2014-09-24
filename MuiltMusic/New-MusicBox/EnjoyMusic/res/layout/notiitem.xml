@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+    
+    <RelativeLayout 
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_marginBottom="5dp"
+    	android:layout_marginTop="5dp"
+    >
+    	<TextView 
+    		android:id="@+id/tv1"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+			android:text="正在下载："
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentTop="true"			
+    	/>
+    	<TextView 
+    		android:id="@+id/tvMusicName_noti"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_toRightOf="@id/tv1"
+    		
+    	/>
+    	<TextView 
+    		android:id="@+id/tvFileLength"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_alignParentTop="true"
+    		android:layout_alignParentRight="true"
+    	/>
+    	<TextView 
+    		android:id="@+id/tv2"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_toLeftOf="@id/tvFileLength"
+    		android:text="/"
+    	/>
+    	<TextView 
+    		android:id="@+id/tvLoadedLength"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_toLeftOf="@id/tv2"
+    		
+    	/>
+    </RelativeLayout>
+    <ProgressBar 
+    	android:layout_height="wrap_content" 
+    	android:id="@+id/progressBar1" 
+    	style="?android:attr/progressBarStyleHorizontal" 
+    	android:layout_width="match_parent"/>
+</LinearLayout>

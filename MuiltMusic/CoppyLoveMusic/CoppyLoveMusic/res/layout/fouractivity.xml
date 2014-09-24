@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/style_brilliant_starlight" />
+
+    <TextView
+        android:id="@+id/i1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/screen_audio_player_button_bg"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="淘歌乐库"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/i1"
+        android:background="@drawable/screen_search_content"
+        android:hint="在百度中搜索"
+        android:paddingRight="60dp"
+        android:paddingLeft="55dp"
+        android:singleLine="true"
+        android:textColor="#ffffff"
+        android:textSize="15dp" />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="63dp"
+        android:background="@drawable/baidu_image" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/select_image" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="290dp"
+        android:layout_marginTop="65dp"
+        android:background="@drawable/screen_audio_song_options_attributes_icon" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/guidePages"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/viewGroup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="40dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imagesearch1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/screen_download_select_bg" 
+        android:onClick="forleibie"/>
+
+    <ImageView
+        android:id="@+id/imagesearch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="260dp"
+        android:background="@drawable/screen_search_category" />
+
+    <TextView
+        android:id="@+id/textsearch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="250dp"
+        android:text="类别搜索"
+        android:textColor="#ffffff"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/textsearch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="270dp"
+        android:textSize="10dp"
+        android:text="按歌曲类别搜索" />
+
+    <ImageView
+        android:id="@+id/imagesearch3"
+        android:layout_below="@id/imagesearch1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/screen_download_select_bg" />
+
+    <ImageView
+        android:layout_below="@id/imagesearch1"
+        android:id="@+id/imagesearch4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/screen_search_singer" />
+
+    <TextView
+        android:layout_below="@id/textsearch1"
+        android:id="@+id/textsearch3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="30dp"
+        android:text="歌星搜索"
+        android:textColor="#ffffff"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_below="@id/textsearch2"
+        android:id="@+id/textsearch4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="35dp"
+        android:text="按歌手姓名首字母搜索"
+        android:textSize="10dp" />
+
+    <ImageView
+        android:layout_below="@id/imagesearch3"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/screen_download_select_bg" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/imagesearch3"
+        android:background="@drawable/screen_search_song" />
+
+    <TextView
+        android:layout_below="@id/textsearch3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="30dp"
+        android:text="歌名搜索"
+        android:textColor="#ffffff"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="35dp"
+        android:text="按歌曲名称首字母搜索"
+        android:textSize="10dp"
+        android:layout_below="@id/textsearch4" />
+
+</RelativeLayout>

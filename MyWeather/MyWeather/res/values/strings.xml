@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, Weather!</string>
+    <string name="app_name">天气预报</string>
+    <string name="btn_apply">查询</string>
+    <string name="text_hint">城市中文名</string>
+    <string name="province">省份</string>
+    <string name="city">城市</string>
+</resources>

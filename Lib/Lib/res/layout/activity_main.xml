@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/mention_background" >
+
+    <!-- 搜索框 -->
+
+    <Button
+        android:id="@+id/searchButton"
+        style="@style/blue_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="检索" />
+
+    <include
+        android:layout_above="@+id/searchText"
+        android:layout_alignParentLeft="true"
+        layout="@layout/main_header"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/loginButton"
+        style="@style/blue_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="17dp"
+        android:text="登录"
+        android:textSize="10dp"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/searchText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="89dp"
+        android:background="@drawable/textfield_search_empty"
+        android:ems="10"
+        android:hint="请输入检索关键词"
+        android:maxLines="1" />
+
+    <!-- 广告 -->
+
+    <Button
+        android:id="@+id/clearBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/searchText"
+        android:layout_alignBottom="@+id/searchText"
+        android:layout_marginLeft="28dp"
+        android:layout_toRightOf="@+id/searchButton"
+        android:background="@drawable/search_button_clear"
+        android:paddingTop="5.0dip"
+        android:visibility="gone" />
+
+    
+
+</RelativeLayout>

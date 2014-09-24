@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<dimen name="button_height">45.0dip</dimen>
+	<dimen name="bottom_tab_font_size">10.0dip</dimen>
+	<dimen name="bottom_tab_padding_up">5.0dip</dimen>
+	<dimen name="bottom_tab_padding_drawable">2.0dip</dimen>
+	<dimen name="switch_logo_bottom_padding">30.0sp</dimen>
+	<dimen name="widget_height">100.0dip</dimen>
+	<dimen name="sta_height">48.0dip</dimen>
+	<dimen name="widget_write_margin_top">19.0dip</dimen>
+	<dimen name="widget_write_margin_left">10.0dip</dimen>
+	<dimen name="widget_content_margin_top">20.0dip</dimen>
+	<dimen name="widget_content_margin_left">10.0dip</dimen>
+	<dimen name="widget_logo_size">35.0dip</dimen>
+	<dimen name="title_height">74.0dip</dimen>
+	<dimen name="new_blog_size">70.0dip</dimen>
+	<dimen name="searchbar_padding">5.0px</dimen>
+	<dimen name="searchbar_textsize">24.0px</dimen>
+	<dimen name="searchbar_paddingleft">30.0px</dimen>
+	<dimen name="searchbar_paddingright">126.0px</dimen>
+	<dimen name="searchbar_marginright">62.0px</dimen>
+	<dimen name="searchbar_radiobutton_padding">40.0dip</dimen>
+	<dimen name="searchbar_radiobutton_padding_user">55.0dip</dimen>
+</resources>

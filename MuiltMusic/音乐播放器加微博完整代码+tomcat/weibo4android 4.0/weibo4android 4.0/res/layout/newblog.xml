@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout android:orientation="vertical"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@drawable/list_item_bg" xmlns:android="http://schemas.android.com/apk/res/android">
+	<LinearLayout  android:id="@+id/titlelayout" android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_alignParentTop="true" >
+	<include android:id="@+id/newblog_title" layout="@layout/back_send_layout" />
+	</LinearLayout>
+
+	<RelativeLayout android:id="@+id/bottomtitle" android:layout_width="fill_parent"
+	   android:layout_alignParentBottom="true" 
+		android:layout_height="70dp">
+		<LinearLayout android:orientation="vertical" android:layout_height="fill_parent" android:layout_width="fill_parent">
+		<include layout="@layout/write_limits_bg"></include>
+		<include layout="@layout/title_bottom_bg" android:layout_gravity="bottom" android:id="@+id/tit_control" />
+		</LinearLayout>
+	</RelativeLayout>
+		<LinearLayout  android:layout_above="@+id/bottomtitle" android:orientation="vertical" android:layout_below="@+id/titlelayout" android:layout_height="match_parent" android:layout_width="fill_parent">
+	<LinearLayout android:layout_height="280dp"  android:orientation="vertical"
+		android:layout_width="fill_parent">
+		<EditText android:gravity="top" android:id="@+id/etBlog"
+			android:hint="说点什么吧..." android:background="@null"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:bufferType="spannable" />
+	</LinearLayout>
+	<LinearLayout  android:layout_height="wrap_content" android:orientation="horizontal" android:layout_width="fill_parent">
+	<ImageView android:layout_marginLeft="10dp"  android:id="@+id/weibopic" 
+					android:layout_height="wrap_content" 
+					android:layout_width="wrap_content"
+					/>
+					<LinearLayout android:orientation="horizontal"
+				android:id="@+id/linear_progress" android:visibility="gone"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_alignParentBottom="true">
+				<ProgressBar android:id="@+id/progress_location"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_margin="2.0dip" android:indeterminateDrawable="@drawable/progress_small"
+					style="\@android:style/Widget.ProgressBar.Small" />
+				<!-- 进度条后面的文字 -->
+				<TextView android:text="正在发送中....." android:gravity="right|center"
+					android:layout_gravity="right|center_horizontal" android:id="@+id/text_location"
+					android:layout_width="wrap_content" android:layout_height="16.0dip"
+					android:layout_margin="2.0dip" />
+			</LinearLayout>
+	</LinearLayout>
+	</LinearLayout>
+</RelativeLayout>

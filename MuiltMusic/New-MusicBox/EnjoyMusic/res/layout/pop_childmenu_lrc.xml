@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/my_childpop"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/desktop_background2"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_lrcsize"
+        android:layout_margin="6dp"
+        android:gravity="center_vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:textColor="#4b9e07"
+        android:text="设置歌词文本大小" />
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:max="35"
+        android:progressDrawable="@drawable/black_seekbar"
+        android:thumb="@drawable/seek_thumb" />
+
+    <TextView
+        android:id="@+id/lrc_color"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:textColor="#4b9e07"
+        android:text="设置歌词颜色" 
+        />
+
+    <LinearLayout
+        android:layout_margin="6dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/color_a"
+            style="@style/MyCheckBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:id="@+id/color_e"
+            style="@style/MyCheckBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:id="@+id/color_b"
+            style="@style/MyCheckBox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:id="@+id/color_c"
+            style="@style/MyCheckBox4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:id="@+id/color_d"
+            style="@style/MyCheckBox5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:id="@+id/color_f"
+            style="@style/MyCheckBox6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_height="wrap_content" >
+
+        <Button
+                android:id="@+id/ok"
+                style="@style/btn_dialog"
+                android:onClick="dosave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:maxLines="2" 
+                android:text="确认" />
+
+        <Button
+                android:id="@+id/cancle"
+                style="@style/btn_dialog"
+                android:onClick="dosave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:maxLines="2" 
+                android:text="取消" />
+    </LinearLayout>
+
+</LinearLayout>

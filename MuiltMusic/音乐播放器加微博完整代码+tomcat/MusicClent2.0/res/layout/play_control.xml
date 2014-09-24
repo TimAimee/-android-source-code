@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<LinearLayout android:paddingTop="4dp"
+		android:layout_width="match_parent" android:orientation="vertical"
+		android:layout_height="wrap_content" android:gravity="center"
+		android:paddingBottom="2dp" android:id="@+id/linearLayout3">
+		<TextView android:singleLine="true" android:textStyle="bold"
+			android:ellipsize="marquee" android:focusable="true"
+			android:marqueeRepeatLimit="marquee_forever" android:shadowRadius="3.0"
+			android:shadowDy="1.0" android:maxLength="20" android:shadowColor="@color/white"
+			android:textColor="@color/musicnamecolor" android:id="@+id/tvMusicAlbumName"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:text="AlbumName" android:layout_weight="1.0" />
+		<TextView android:layout_marginTop="5dp" android:textColor="@color/musicnamecolor"
+			android:singleLine="true" android:id="@+id/tvSinger_player"
+			android:shadowRadius="3.0" android:shadowDy="1.0" android:maxLength="20"
+			android:shadowColor="@color/white" android:layout_width="wrap_content"
+			android:text="SingerName" android:layout_height="wrap_content" />
+		<RelativeLayout android:layout_height="wrap_content"
+			android:layout_marginTop="45dp" android:gravity="center_vertical"
+			android:layout_width="fill_parent" android:animationCache="true">
+			<FrameLayout android:id="@+id/frameLayout1"
+				android:layout_width="fill_parent" android:layout_height="wrap_content">
+				<ImageView android:id="@+id/ivAlbum" android:src="@drawable/desktop_musicview_bg"
+					android:layout_width="200dp" android:layout_height="250dp"
+					android:layout_gravity="center" android:layout_below="@+id/linearLayout3"
+					android:adjustViewBounds="true" android:maxWidth="200dp"
+					android:maxHeight="240dp" android:scaleType="fitCenter"
+					android:layout_centerHorizontal="true"></ImageView>
+			</FrameLayout>
+			<TextView android:focusable="true" android:gravity="center_horizontal"
+				android:ellipsize="marquee" android:marqueeRepeatLimit="marquee_forever"
+				android:text="Lrc" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:paddingTop="15dp"
+				android:textColor="@color/black" android:id="@+id/tvLrc"
+				android:layout_below="@+id/frameLayout1"
+				android:layout_centerHorizontal="true"></TextView>
+		</RelativeLayout>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/linearLayout2"
+		android:layout_marginBottom="50dp" android:layout_alignParentBottom="true"
+		android:layout_width="fill_parent" android:layout_height="50dp"
+		android:orientation="vertical">
+		<SeekBar android:paddingRight="15dp" android:progressDrawable="@drawable/progressbar_second"
+			android:layout_width="fill_parent" android:id="@+id/SeekBar"
+			android:layout_weight="1" android:layout_height="wrap_content"
+			android:thumb="@drawable/progress_dot_default" android:paddingLeft="15dp"></SeekBar>
+		<LinearLayout android:layout_weight="1"
+			android:orientation="horizontal" android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			<TextView android:id="@+id/tvcurrenttime"
+				android:layout_marginLeft="15dp" android:textColor="@color/blakmore"
+				android:layout_gravity="left" android:text="00:00"
+				android:layout_width="45dp" android:layout_weight="1"
+				android:layout_height="wrap_content"></TextView>
+			<TextView android:id="@+id/tvmusictime" android:textColor="@color/blakmore"
+				android:layout_gravity="right" android:layout_marginRight="15dp"
+				android:text="00:00" android:layout_width="45dp" android:gravity="right"
+				android:layout_weight="1" android:layout_height="wrap_content"></TextView>
+		</LinearLayout>
+	</LinearLayout>
+</RelativeLayout>
