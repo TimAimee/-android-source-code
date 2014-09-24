@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/svn/!svn/ver/26/trunk/Shelves
+END
+default.properties
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/23/trunk/Shelves/default.properties
+END
+Shelves.ipr
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/26/trunk/Shelves/Shelves.ipr
+END
+local.properties
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/24/trunk/Shelves/local.properties
+END
+AndroidManifest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/23/trunk/Shelves/AndroidManifest.xml
+END
+Shelves.iml
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/25/trunk/Shelves/Shelves.iml
+END
+build.properties
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/23/trunk/Shelves/build.properties
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/23/trunk/Shelves/build.xml
+END

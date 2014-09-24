@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/20/trunk/Shelves/src/org/curiouscreature/android/shelves/util
+END
+TextUtilities.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/17/trunk/Shelves/src/org/curiouscreature/android/shelves/util/TextUtilities.java
+END
+Preferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/3/trunk/Shelves/src/org/curiouscreature/android/shelves/util/Preferences.java
+END
+UserTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/3/trunk/Shelves/src/org/curiouscreature/android/shelves/util/UserTask.java
+END
+IOUtilities.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/3/trunk/Shelves/src/org/curiouscreature/android/shelves/util/IOUtilities.java
+END
+ImportUtilities.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/3/trunk/Shelves/src/org/curiouscreature/android/shelves/util/ImportUtilities.java
+END
+CookieStore.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/3/trunk/Shelves/src/org/curiouscreature/android/shelves/util/CookieStore.java
+END
+UIUtilities.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/20/trunk/Shelves/src/org/curiouscreature/android/shelves/util/UIUtilities.java
+END
+HttpManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/3/trunk/Shelves/src/org/curiouscreature/android/shelves/util/HttpManager.java
+END
+ImageUtilities.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/13/trunk/Shelves/src/org/curiouscreature/android/shelves/util/ImageUtilities.java
+END

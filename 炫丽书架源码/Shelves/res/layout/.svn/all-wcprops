@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/19/trunk/Shelves/res/layout
+END
+book_notification.xml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/9/trunk/Shelves/res/layout/book_notification.xml
+END
+progress_overlay.xml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/12/trunk/Shelves/res/layout/progress_overlay.xml
+END
+screen_shelves.xml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/18/trunk/Shelves/res/layout/screen_shelves.xml
+END
+grid_position.xml
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/3/trunk/Shelves/res/layout/grid_position.xml
+END
+search_bar.xml
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/9/trunk/Shelves/res/layout/search_bar.xml
+END
+shelf_book.xml
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/18/trunk/Shelves/res/layout/shelf_book.xml
+END
+screen_add_search.xml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/9/trunk/Shelves/res/layout/screen_add_search.xml
+END
+search_result_book.xml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/18/trunk/Shelves/res/layout/search_result_book.xml
+END
+screen_bookdetails.xml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/19/trunk/Shelves/res/layout/screen_bookdetails.xml
+END

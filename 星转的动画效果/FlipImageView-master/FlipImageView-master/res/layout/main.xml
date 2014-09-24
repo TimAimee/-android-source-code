@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
+
+    <fr.castorflex.android.flipimageview.library.FlipImageView
+        android:id="@+id/imageview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_action_star_0"
+        app:flipDrawable="@drawable/ic_action_star_10"
+        app:flipDuration="5000"
+        app:flipInterpolator="@android:anim/bounce_interpolator"
+        app:flipRotations="y|x|z"
+        app:reverseRotation="true"/>
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_marginTop="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="16dp"
+        android:max="5000"
+        android:progress="500" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="duration:" />
+
+        <TextView
+            android:id="@+id/textview_duration"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="500" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="16dp"
+        android:minHeight="48dp"
+        android:gravity="center">
+
+        <CheckBox
+            android:id="@+id/checkedtextview_x"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Rot. X" />
+
+        <CheckBox
+            android:id="@+id/checkedtextview_y"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Rot. Y"
+            android:checked="true"/>
+
+        <CheckBox
+            android:id="@+id/checkedtextview_z"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Rot. Z" />
+
+    </LinearLayout>
+    
+    
+		<CheckBox
+			android:id="@+id/checkedtextview_reverse"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Reverse rotation" />
+
+
+</LinearLayout>
+

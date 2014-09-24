@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hello"
+        android:id="@+id/checkpass"
+         />
+	<org.incoding.checkdemo.CheckView
+	    android:layout_width="fill_parent"
+        android:layout_height="72dip"
+        android:id="@+id/checkView"
+	    >
+	    
+	</org.incoding.checkdemo.CheckView>
+	
+	<EditText 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/checkTest"
+	    android:inputType="number"
+	    />
+	
+	<Button 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/submit"
+	    android:text="提交"
+	    />
+	<Button 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/ref"
+	    android:text="，看不清,刷新"
+	    />
+</LinearLayout>

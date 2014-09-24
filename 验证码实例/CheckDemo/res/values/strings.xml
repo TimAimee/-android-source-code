@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">请输入验证码:</string>
+    <string name="app_name">CheckDemo</string>
+
+</resources>

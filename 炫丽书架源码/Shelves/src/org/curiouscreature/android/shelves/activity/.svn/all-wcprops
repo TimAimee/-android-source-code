@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/25/trunk/Shelves/src/org/curiouscreature/android/shelves/activity
+END
+AddBookActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/25/trunk/Shelves/src/org/curiouscreature/android/shelves/activity/AddBookActivity.java
+END
+BookViewHolder.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/15/trunk/Shelves/src/org/curiouscreature/android/shelves/activity/BookViewHolder.java
+END
+ShelvesActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/23/trunk/Shelves/src/org/curiouscreature/android/shelves/activity/ShelvesActivity.java
+END
+SettingsActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/25/trunk/Shelves/src/org/curiouscreature/android/shelves/activity/SettingsActivity.java
+END
+BookDetailsActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/25/trunk/Shelves/src/org/curiouscreature/android/shelves/activity/BookDetailsActivity.java
+END
+BooksAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/25/trunk/Shelves/src/org/curiouscreature/android/shelves/activity/BooksAdapter.java
+END

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (C) 2008 Romain Guy
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+
+<resources>
+    <string name="application_name">Shelves</string>
+
+    <string name="activity_preferences">Settings</string>
+    <string name="activity_book_details">Book details</string>
+    <string name="activity_add_book">Add book</string>
+
+    <string name="bookstore_all">All stores</string>
+    <string name="bookstore_amazon">Amazon</string>
+    <string name="bookstore_google">Google</string>
+
+    <string name="error_missing_barcode_scanner">You must first install the application Barcode Scanner</string>
+    <string name="error_import_in_progress">You are already importing books</string>
+    <string name="error_search_in_progress">You are already searching for books</string>
+    <string name="error_missing_import_file">Could not find /sdcard/library.txt</string>
+    <string name="error_adding_book">Could not find book</string>
+    <string name="error_book_exists">You already have this book</string>
+
+    <string name="success_imported">Successfully imported %d books</string>
+    <string name="success_added">Successfully added book %s</string>
+    <string name="success_book_not_found">You do not have this book</string>
+    <string name="success_book_deleted">Book deleted</string>
+    <string name="success_found">Found %d books</string>
+
+    <string name="menu_item_add_search_label">Add</string>
+    <string name="menu_item_add_label">Scan to add</string>
+    <string name="menu_item_check_label">Scan to find</string>
+    <string name="menu_item_search_label">Search</string>
+    <string name="menu_item_settings_label">Settings</string>
+
+    <string name="context_menu_item_view_label">View</string>
+    <string name="context_menu_item_buy_label">Buy</string>
+    <string name="context_menu_item_delete_label">Delete</string>
+
+    <string name="add_label">Adding...</string>
+    <string name="import_label">Importing...</string>
+    <string name="cancel_label">Cancel</string>
+    <string name="search_label">Books</string>
+    <string name="search_hint">Search by title or author</string>
+
+    <string name="search_title">Search for books to add</string>
+    <string name="search_add_hint">Title, author or keywords</string>
+    <string name="search_progress">Searching...</string>
+
+    <string name="label_pages">%s pages</string>    
+
+    <string name="dialog_add_message">Do you want to add this book to your collection?</string>
+    <string name="dialog_add_ok">Add</string>
+    <string name="dialog_add_cancel">Don\'t add</string>
+
+    <string name="preferences_category_bookstore">Books</string>
+    <string name="preferences_bookstore">Book store</string>
+    <string name="preferences_bookstore_summary">Your books will be imported from %s</string>
+    <string name="preferences_bookstore_dialog_title">Choose a book store</string>
+
+    <string name="preferences_category_data">Data management</string>
+    <string name="preferences_import">Import</string>
+    <string name="preferences_import_summary">Import a list of books from the file called library.txt on the SD card</string>
+    <string name="preferences_backup">Backup</string>
+    <string name="preferences_backup_summary">Backup all your data on the SD card</string>
+    <string name="preferences_restore">Restore</string>
+    <string name="preferences_restore_summary">Restore your data from the SD card</string>
+</resources>
+        

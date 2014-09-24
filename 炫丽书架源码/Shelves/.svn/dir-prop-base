@@ -1,0 +1,12 @@
+K 10
+svn:ignore
+V 95
+local.properties
+
+old__local_build.properties
+old__shared_build.properties
+old__build.xml
+
+gen
+
+END
